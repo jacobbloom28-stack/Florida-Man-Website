@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getStoryTimestamp } from "../lib/storyDate";
+import React from "react";
 
 export default function Calendar() {
   const dates = Array.from(
@@ -54,6 +55,7 @@ export default function Calendar() {
                 </p>
 
                 <h3 className="mt-2 text-xl font-black md:text-2xl">
+                  {day.contentNote && <span title="Content note">⚠️ </span>}
                   {day.title}
                 </h3>
 

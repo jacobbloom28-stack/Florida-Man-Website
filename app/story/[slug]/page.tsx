@@ -7,6 +7,7 @@ import {
   getScoreLabel,
   getScoreTextColor,
 } from "../../components/StoryVisual";
+import React from "react";
 
 export default async function StoryPage({
   params,
@@ -108,6 +109,15 @@ export default async function StoryPage({
         </div>
 
         <div className="mt-10 text-lg leading-8">
+          {story.contentNote && (
+            <div className="mb-6 border-2 border-[#B91C1C] bg-[#FEE2E2] px-4 py-3 text-base text-[#7F1D1D]">
+              <p className="text-xs font-black uppercase tracking-widest">
+                ⚠️ Content Note
+              </p>
+              <p className="mt-1 font-semibold">{story.contentNote}</p>
+            </div>
+          )}
+
           <p className="font-semibold">{story.description}</p>
 
           {story.fullStory && (

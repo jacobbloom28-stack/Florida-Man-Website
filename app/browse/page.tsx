@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getStoryTimestamp } from "../lib/storyDate";
+import React from "react";
 
 const SORT_OPTIONS = {
   "Newest First": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
@@ -230,6 +231,9 @@ function BrowseContent() {
                   </p>
 
                   <h3 className="mt-2 text-2xl font-black hover:underline">
+                    {story.contentNote && (
+                      <span title="Content note">⚠️ </span>
+                    )}
                     {story.title}
                   </h3>
                 </div>

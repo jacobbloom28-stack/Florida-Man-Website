@@ -1,5 +1,24 @@
-export const stories = [
-    
+export type Story = {
+  id: string;
+  date: string;
+  year: string;
+  month: string;
+  day: string;
+  city: string;
+  score: number;
+  title: string;
+  description: string;
+  fullStory: string;
+  source: string;
+  sourceUrl: string;
+  // Set only for stories involving real injury, animal harm, or a serious
+  // crime with no comedic angle — shown as a visible warning on the story
+  // page rather than silently blending into the "funny" archive.
+  contentNote?: string;
+};
+
+export const stories: Story[] = [
+
     {
       id: "flock-camera-decoy",
       date: "August 20, 2026",
@@ -731,6 +750,135 @@ export const stories = [
       sourceUrl:
         "https://abcnews.com/US/florida-man-wearing-batman-pajamas-thwarts-burglary-detains/story?id=125059192",
     },
+    {
+      id: "roach-spray-nunchucks-noise-complaint",
+      date: "August 12, 2019",
+      year: "2019",
+      month: "August",
+      day: "12",
+      city: "Daytona Beach",
+      score: 7.4,
+      title: "Florida Man Sprays Neighbors With Roach Spray, Then Breaks Out Nunchucks Over Loud Music",
+      description:
+        "Florida Man sprays neighbors with roach spray, then pulls out nunchucks during a noise complaint dispute.",
+      fullStory:
+        "Larry Darnell Adams, 61, got into an argument with a group of women celebrating a birthday over loud music outside his Daytona Beach home on August 12, 2019. He sprayed roach pesticide directly at them, then produced a pair of nunchucks and swung them at the group, accidentally striking himself in the forehead before throwing the weapon at their car. He was charged with aggravated assault and aggravated battery with a deadly weapon.",
+      contentNote:
+        "Victims required medical attention during this incident, and deputies found a loaded firearm magazine in the suspect's apartment.",
+      source: "WSOC-TV",
+      sourceUrl:
+        "https://www.wsoctv.com/news/deep-viral/police-florida-man-sprays-women-with-roach-spray-break-out-nunchucks-over-loud-music/976378849/",
+    },
+    {
+      id: "mcdonalds-drive-thru-worker-punched",
+      date: "July 30, 2019",
+      year: "2019",
+      month: "July",
+      day: "30",
+      city: "Leesburg",
+      score: 5.8,
+      title: "Florida Man Allegedly Punches McDonald's Drive-Thru Worker for Taking Too Long",
+      description:
+        "Florida Man allegedly strikes a McDonald's drive-thru worker after growing impatient with the line.",
+      fullStory:
+        "Sherman Lee Brown, 34, was a passenger in his girlfriend's car at a Leesburg McDonald's drive-thru around 3:20 a.m. on July 30, 2019, when he grew angry about the slow-moving line. He yelled at the employee to hurry up, and when she refused to serve him without more respectful language, he got out of the car, threatened her, and struck her in the face when she tried to close the window. He was charged with burglary and battery.",
+      contentNote:
+        "This incident involved a real assault — the worker suffered a cut lip and facial injuries.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/2019/08/22/florida-man-hits-mcdonalds-drive-thru-worker-for-taking-too-long-police-say/",
+    },
+    {
+      id: "cat-shot-bb-gun-chickens",
+      date: "August 16, 2026",
+      year: "2026",
+      month: "August",
+      day: "16",
+      city: "Fort Myers",
+      score: 4.8,
+      title: "Florida Man Allegedly Shoots Neighbor's Cat With BB Gun Over Killed Chickens",
+      description:
+        "Florida Man allegedly shoots a neighborhood cat with a BB gun after it killed his chickens.",
+      fullStory:
+        "Nicholas Laney allegedly shot a stray cat named Tubby with a BB gun in Lee County after the cat had been killing his chickens. A neighbor heard gunshots and the cat screeching, then found Tubby limping with a broken leg hours later. Tubby survived. Laney was arrested and charged with aggravated animal cruelty.",
+      contentNote:
+        "This incident involved real harm to an animal — the cat sustained a broken leg but survived.",
+      source: "KSN Local 4",
+      sourceUrl:
+        "https://www.ksnblocal4.com/2026/08/19/man-accused-shooting-neighbors-cat-with-bb-gun-officials-say/",
+    },
+    {
+      id: "dog-slam-headbutt-patrol-car",
+      date: "August 30, 2025",
+      year: "2025",
+      month: "August",
+      day: "30",
+      city: "Brevard County",
+      score: 5.3,
+      title: "Florida Man Accused of Slamming Dog, Then Headbutting a Patrol Car",
+      description:
+        "Florida Man allegedly slams a small dog to the ground, then headbutts a patrol car while resisting arrest.",
+      fullStory:
+        "Christopher Stanley, 39, allegedly slammed a small dog to the ground outside a Brevard County tiki bar while intoxicated. When deputies responded, he resisted, made threats, and headbutted a patrol car during his arrest. He was already on probation for stalking at the time. Stanley was charged with animal cruelty, resisting with violence, threats to law enforcement, disorderly intoxication, and criminal mischief.",
+      contentNote: "This incident involved real harm to an animal.",
+      source: "KATV",
+      sourceUrl:
+        "https://katv.com/news/nation-world/bodycam-florida-man-accused-of-slamming-dog-headbutting-patrol-car-tiki-bar-brevard-county-sheriffs-office-jail-august-30-2025",
+    },
+    {
+      id: "counterfeit-passport-check-fraud",
+      date: "August 18, 2023",
+      year: "2023",
+      month: "August",
+      day: "18",
+      city: "Melbourne",
+      score: 4.4,
+      title: "Florida Man Sentenced for Counterfeit Passport Check-Cashing Scheme",
+      description:
+        "Florida Man sentenced to federal prison for a counterfeit passport check-cashing scheme using stolen identities.",
+      fullStory:
+        "Robert Allen Naber of Melbourne obtained counterfeit U.S. passport cards bearing stolen identities purchased on the dark web, then used them along with stolen bank information to cash forged checks across multiple states. He was sentenced to 48 months in federal prison, to run consecutively with two Iowa state sentences for similar conduct.",
+      contentNote:
+        "This is a serious identity-theft and fraud case involving real victims, not a lighthearted incident.",
+      source: "U.S. Department of Justice",
+      sourceUrl: "https://www.justice.gov/usao-wdmi/pr/2023_0818_Naber",
+    },
+    {
+      id: "fentanyl-drone-federal-prisons",
+      date: "August 29, 2025",
+      year: "2025",
+      month: "August",
+      day: "29",
+      city: "Eustis",
+      score: 3.9,
+      title: "Florida Man Indicted for Flying Fentanyl Into Federal Prisons by Drone",
+      description:
+        "Florida Man indicted for conspiring with inmates to smuggle fentanyl into federal prisons using a drone.",
+      fullStory:
+        "James Key III, 45, of Eustis, was indicted on a federal charge of conspiracy to distribute fentanyl after prosecutors said he conspired with Federal Bureau of Prisons inmates between December 2024 and August 2025 to smuggle fentanyl and contraband cellphones into prisons in California, Florida, and South Carolina. Key and his co-conspirators applied fentanyl to paper, wrapped it in synthetic grass, and delivered it by drone. He faces up to 20 years in federal prison if convicted.",
+      contentNote:
+        "This is a serious federal drug-trafficking case, not a lighthearted incident.",
+      source: "U.S. Department of Justice",
+      sourceUrl:
+        "https://www.justice.gov/usao-edca/pr/florida-man-indicted-conspiring-distribute-fentanyl-federal-prisons-drone",
+    },
+    {
+      id: "sprinklers-disabled-children-bus-stop",
+      date: "August 17, 2025",
+      year: "2025",
+      month: "August",
+      day: "17",
+      city: "Ocala",
+      score: 4.7,
+      title: "Florida Man Rigs Sprinklers to Spray Disabled Children at School Bus Stop",
+      description:
+        "Florida Man allegedly rigs his sprinklers to spray disabled children waiting for their school bus.",
+      fullStory:
+        "Antonio Roman, 61, allegedly used surveillance cameras to track when a school bus picked up disabled children in his Ocala neighborhood, then remotely triggered his sprinkler system to spray them twice a day for months, upset that the bus stop used part of his driveway for a wheelchair ramp. A parent began dressing the children in swimsuits for protection before deputies caught him in the act. He was charged with stalking and battery on a disabled person.",
+      contentNote:
+        "This incident involved deliberate targeting of disabled children, not just eccentric behavior.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2025/08/19/florida-man-arrested-after-using-sprinklers-to-spray-disabled-children-deputies-say/",
+    },
   ];
-
-export type Story = (typeof stories)[number];
