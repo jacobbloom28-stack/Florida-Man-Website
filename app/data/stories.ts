@@ -527,6 +527,91 @@ export const stories = [
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-allegedly-leads-deputies-2-mph-chase-stolen-electric-walmart-scooter",
     },
+    {
+      id: "ronald-mcdonald-clown-arrest",
+      date: "March 24, 2025",
+      year: "2025",
+      month: "March",
+      day: "24",
+      city: "Palm Bay",
+      score: 8.7,
+      title: "Florida Man Dressed as Ronald McDonald Arrested, Tells Cops 'I Am a Clown, Stupid'",
+      description:
+        "Florida Man dressed as Ronald McDonald gets arrested for trespassing and has a message for the officer who called him a clown.",
+      fullStory:
+        "Christopher Wayne Marlowe, 40, was arrested at a Palm Bay shopping plaza on March 24, 2025, after police responded to complaints about a man in full clown makeup and a Ronald McDonald-style costume causing a disturbance. When an officer told him he looked like a clown, Marlowe shot back, 'I am a clown, stupid!' Deputies found a box full of clown noses and extra costume pieces in his bag. He was booked into the Brevard County Jail on trespassing and resisting-an-officer-with-violence charges.",
+      source: "NBC 6 South Florida",
+      sourceUrl:
+        "https://www.nbcmiami.com/news/local/bodycam-shows-clown-tussling-with-officer-calling-him-stupid-in-palm-bay-arrest/3578100/",
+    },
+    {
+      id: "lego-booster-target-theft",
+      date: "September 23, 2019",
+      year: "2019",
+      month: "September",
+      day: "23",
+      city: "Port Orange",
+      score: 7.8,
+      title: "Florida Man Dubbed the 'Lego Booster' Arrested After Months-Long Target Shoplifting Spree",
+      description:
+        "Florida Man nicknamed the 'Lego Booster' is arrested after stealing over $1,000 in Lego sets from Target stores.",
+      fullStory:
+        "Sean Nicholas Dunlop, 30, was arrested at a Port Orange Target on September 23, 2019, after deputies connected him to a string of high-value Lego thefts that began at a Flagler County Target earlier that month. Investigators say Dunlop used the same vehicle and method to lift Lego sets worth more than $1,000 from multiple Target and Kohl's locations. He was charged with aggravated retail theft and grand theft.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/2019/12/03/lego-thief-charged-with-grand-theft-deputies-say/",
+    },
+    {
+      id: "forklift-atm-joyride",
+      date: "November 17, 2025",
+      year: "2025",
+      month: "November",
+      day: "17",
+      city: "Tallahassee",
+      score: 9.1,
+      title: "Florida Man Steals a Forklift, Uses It to Drag Away an ATM",
+      description:
+        "Florida Man allegedly steals a forklift from a school and uses it to make off with an ATM.",
+      fullStory:
+        "Joshua Hidalgo, 38, allegedly stole a forklift from a Tallahassee school and drove it to a nearby business, where he used it to rip an ATM from a parking lot and haul it through town on a joyride. Officers caught up to him and arrested him after he tried to flee. He was charged with grand theft, trespassing on school grounds, and possession of burglary tools.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/florida-man-took-forklift-steal-atm-police-say/IQULQRELMNFLHOTIRVVXUCUGOI/",
+    },
+    {
+      id: "god-18th-birthday-arrest",
+      date: "March 4, 2026",
+      year: "2026",
+      month: "March",
+      day: "4",
+      city: "Davenport",
+      score: 9.3,
+      title: "Florida Man Turns 18, Claims to Be God, Gets Arrested Minutes Later",
+      description:
+        "Florida Man allegedly steals cigarettes, declares himself God, then gets caught with meth in his sock.",
+      fullStory:
+        "Tyler Voisard, freshly 18, allegedly stole two packs of cigarettes worth $19.62 from a Davenport 7-Eleven on March 4, 2026. Confronted outside by deputies, he declared, 'I'm God, and I'm leaving here in two seconds,' before running off; he was caught shortly after. At the Polk County jail, deputies said they found methamphetamine hidden in his sock. He was charged with burglary of an occupied structure, resisting an officer, drug possession, and introducing contraband into a detention facility.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/trending/man-accused-stealing-cigarettes-gas-station-tells-deputies-he-is-god/NO63NIPYAJEJLA5UTEZAX35S6I/",
+    },
+    {
+      id: "chuck-e-cheese-mascot-fraud",
+      date: "July 23, 2025",
+      year: "2025",
+      month: "July",
+      day: "23",
+      city: "Tallahassee",
+      score: 8.5,
+      title: "Florida Man Arrested Mid-Shift While Dressed as Chuck E. Cheese",
+      description:
+        "Florida Man is handcuffed and led out of a Chuck E. Cheese in full mascot costume over a stolen credit card.",
+      fullStory:
+        "Jermell Jones, 41, was arrested just after 6:30 p.m. on July 23, 2025, while working inside the mouse costume at a Tallahassee Chuck E. Cheese. A parent who'd hosted a birthday party there noticed over $100 in fraudulent charges on their card, pulled store surveillance footage, and recognized the mascot performer as the culprit. Officers cuffed Jones and walked him out in full costume as parents and kids watched. He was charged with theft of a credit card, fraudulent use of a credit card, and criminal use of personal identification.",
+      source: "WCTV",
+      sourceUrl:
+        "https://www.wctv.tv/2025/07/25/tallahassee-police-cuff-arrest-florida-man-dressed-chuck-e-cheese-while-kids-watch/",
+    },
   ];
 
 export type Story = (typeof stories)[number];

@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
+import { FloridaRail } from "./components/FloridaRail";
 import { stories } from "./data/stories";
 import {
   StoryVisual,
@@ -44,28 +46,42 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
       <Header />
+      <FloridaRail side="left" />
+      <FloridaRail side="right" />
 
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12">
-        <div className="mb-10 text-center">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-[#FF3E7F]">
-            {formattedToday}
-          </p>
+        <div className="relative mb-10 flex min-h-[380px] items-center justify-center overflow-hidden border-4 border-[#171717] px-6 py-16 text-center shadow-[8px_8px_0px_#171717] md:min-h-[460px]">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#171717]/60 via-[#171717]/70 to-[#171717]/90" />
 
-          <h2 className="text-6xl font-black uppercase leading-none tracking-tight md:text-8xl">
-            Florida Man
-            <br />
-            <span className="bg-gradient-to-r from-[#FF6B35] via-[#FF3E7F] to-[#7B2FF7] bg-clip-text text-transparent">
-              of the Day
-            </span>
-          </h2>
+          <div className="relative z-10">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-[#FFC93C]">
+              {formattedToday}
+            </p>
 
-          <div className="mx-auto mt-6 h-1.5 w-24 bg-gradient-to-r from-[#FF3E7F] via-[#FFC93C] to-[#00B8A9]" />
+            <h2 className="text-6xl font-black uppercase leading-none tracking-tight text-white md:text-8xl">
+              Florida Man
+              <br />
+              <span className="bg-gradient-to-r from-[#FF6B35] via-[#FFC93C] to-[#00B8A9] bg-clip-text text-transparent">
+                of the Day
+              </span>
+            </h2>
 
-          <p className="mx-auto mt-4 max-w-xl text-sm font-semibold text-gray-600">
-            {isOnThisDay
-              ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
-              : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
-          </p>
+            <div className="mx-auto mt-6 h-1.5 w-24 bg-gradient-to-r from-[#FF3E7F] via-[#FFC93C] to-[#00B8A9]" />
+
+            <p className="mx-auto mt-4 max-w-xl text-sm font-semibold text-white/80">
+              {isOnThisDay
+                ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
+                : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
+            </p>
+          </div>
         </div>
 
         {/* Stat strip */}

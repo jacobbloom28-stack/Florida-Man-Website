@@ -1,4 +1,6 @@
+import React from "react";
 import Header from "../components/Header";
+import { FloridaRail } from "../components/FloridaRail";
 import { stories } from "../data/stories";
 
 const RUBRIC = [
@@ -58,6 +60,8 @@ export default function About() {
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
       <Header />
+      <FloridaRail side="left" />
+      <FloridaRail side="right" />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#FF3E7F]">

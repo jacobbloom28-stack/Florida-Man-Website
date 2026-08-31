@@ -19,7 +19,7 @@ type Category = {
 // involved, since those aren't ours to republish.
 const CATEGORIES: Category[] = [
   {
-    test: /gator|croc/i,
+    test: /\balligators?\b|\bgators?\b|\bcrocs?\b|crocodile/i,
     emoji: "🐊",
     label: "Gator Alert",
     gradient: "from-[#0F9B6E] to-[#00B8A9]",
@@ -38,7 +38,16 @@ const CATEGORIES: Category[] = [
       credit: "Joshua Ganderson / Wikimedia Commons (CC BY 2.0)",
     },
   },
-  { test: /spider-?man|bunny|tutu|mask|costume/i, emoji: "🎭", label: "Costume Chaos", gradient: "from-[#7B2FF7] to-[#FF3E7F]" },
+  {
+    test: /spider-?man|bunny|tutu|mask|costume/i,
+    emoji: "🎭",
+    label: "Costume Chaos",
+    gradient: "from-[#7B2FF7] to-[#FF3E7F]",
+    photo: {
+      url: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Carnival_mask.jpg",
+      credit: "Heterotrofo / Wikimedia Commons (CC0)",
+    },
+  },
   { test: /naked|nude|prosthetic/i, emoji: "🍑", label: "Bare Necessities", gradient: "from-[#FF3E7F] to-[#FFC93C]" },
   {
     test: /gun|machete|knife|armed|weapon/i,
@@ -50,11 +59,20 @@ const CATEGORIES: Category[] = [
       credit: "SimmeD / Wikimedia Commons (CC BY-SA 4.0)",
     },
   },
-  { test: /meth|marijuana|drug|clonazepam/i, emoji: "💊", label: "Substance Situation", gradient: "from-[#5B21B6] to-[#7B2FF7]" },
-  { test: /lawn mower|scooter|helicopter|truck|mph|car|vehicle/i, emoji: "🚗", label: "Vehicular Villainy", gradient: "from-[#FF6B35] to-[#FFC93C]" },
-  { test: /steal|theft|burglary|rob|coin|avocado/i, emoji: "💰", label: "Petty Heist", gradient: "from-[#FFC93C] to-[#FF6B35]" },
+  { test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i, emoji: "💊", label: "Substance Situation", gradient: "from-[#5B21B6] to-[#7B2FF7]" },
+  { test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i, emoji: "🚗", label: "Vehicular Villainy", gradient: "from-[#FF6B35] to-[#FFC93C]" },
   {
-    test: /police|officer|deputy|cop|911|bomb|carjack/i,
+    test: /steal\w*|stolen|theft|burglary|\brob\w*|\bcoins?\b|avocado/i,
+    emoji: "💰",
+    label: "Petty Heist",
+    gradient: "from-[#FFC93C] to-[#FF6B35]",
+    photo: {
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Shopping_cart.jpg",
+      credit: "Guanaco / Wikimedia Commons (CC0)",
+    },
+  },
+  {
+    test: /police|officers?|deput\w*|\bcops?\b|\b911\b|bomb|carjack/i,
     emoji: "🚨",
     label: "Cop Trouble",
     gradient: "from-[#1D4ED8] to-[#FF3E7F]",

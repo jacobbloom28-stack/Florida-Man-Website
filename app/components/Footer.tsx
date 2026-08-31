@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
@@ -36,11 +37,13 @@ export default function Footer() {
         </p>
 
         <p className="mt-2 text-xs text-white/30">
-          Photos via Wikimedia Commons, licensed CC BY / CC BY-SA, credited on
-          each image: American Alligator (Postdlf), Horse3 (Joshua
-          Ganderson), Handcuffs 1 (SimmeD), Police car with emergency lights
-          on (Scott Davidson), Sunset on coast of Florida (Don Miller), Palm
-          Coast Sunset (Andyrkellergmail).
+          Photos via Wikimedia Commons, licensed CC0 / CC BY / CC BY-SA,
+          credited on each image: American Alligator (Postdlf), Horse3
+          (Joshua Ganderson), Handcuffs 1 (SimmeD), Police car with emergency
+          lights on (Scott Davidson), Sunset on coast of Florida (Don
+          Miller), Palm Coast Sunset (Andyrkellergmail), American Flamingo
+          (Charles J. Sharp), Everglades Swamp (Hein Mück), Shopping Cart
+          (Guanaco), Carnival Mask (Heterotrofo).
         </p>
       </div>
     </footer>
