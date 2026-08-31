@@ -612,6 +612,125 @@ export const stories = [
       sourceUrl:
         "https://www.wctv.tv/2025/07/25/tallahassee-police-cuff-arrest-florida-man-dressed-chuck-e-cheese-while-kids-watch/",
     },
+    {
+      id: "hookah-caterpillar-liquor-store",
+      date: "August 14, 2017",
+      year: "2017",
+      month: "August",
+      day: "14",
+      city: "Crestview",
+      score: 9.0,
+      title: "Florida Man Blames 'Hookah-Smoking Caterpillar' for $100,000 Liquor Store Rampage",
+      description:
+        "Florida Man causes six figures in damage with a stolen forklift, then blames a hookah-smoking caterpillar.",
+      fullStory:
+        "Matthew Horace Jones broke into a fenced construction site in Crestview and used a forklift to cause more than $100,000 in damage to a liquor store under construction, at one point aiming the forklift at responding officers before they stopped him at gunpoint. Identifying himself as 'Alice Wonderland,' Jones told police a hookah-smoking caterpillar was behind the rampage and that he had 'a problem with building a place to sell alcohol.' He was charged with felony grand theft and criminal mischief.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/2017/08/14/florida-man-blames-hookah-smoking-caterpillar-for-wrecking-liquor-store-police-say/",
+    },
+    {
+      id: "gator-in-yoga-pants-traffic-stop",
+      date: "August 15, 2019",
+      year: "2019",
+      month: "August",
+      day: "15",
+      city: "Punta Gorda",
+      score: 8.8,
+      title: "Florida Traffic Stop Turns Up 41 Turtles and a Baby Alligator Hidden in a Passenger's Pants",
+      description:
+        "A routine traffic stop uncovers dozens of stolen turtles — and a foot-long alligator tucked into a passenger's yoga pants.",
+      fullStory:
+        "A Charlotte County deputy pulled over a pickup truck driven by Michael Clemons, 22, after it ran a stop sign near Punta Gorda. A search turned up 41 three-striped turtles stuffed in a backpack; when asked if she had anything else, passenger Ariel Machan-Le Quire, 25, pulled a foot-long alligator out of her yoga pants. Machan-Le Quire pleaded guilty to four charges and was sentenced to probation.",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/florida-woman-gator-pants-traffic-stop/",
+    },
+    {
+      id: "mcdonalds-ice-cream-machine-gun",
+      date: "August 13, 2017",
+      year: "2017",
+      month: "August",
+      day: "13",
+      city: "Delray Beach",
+      score: 8.2,
+      title: "Florida Man Pulls Fake Assault Rifle on McDonald's Drive-Thru Over Broken Ice Cream Machine",
+      description:
+        "Florida Man allegedly brandishes what looks like an AR-15 at a McDonald's drive-thru after being told the ice cream machine was broken.",
+      fullStory:
+        "Jerry Alexander Henry, 19, was a passenger in a car that pulled up to a Delray Beach McDonald's drive-thru just before midnight when he and the driver were told the ice cream machine was broken. Henry responded by pulling out what turned out to be an unmarked airsoft rifle styled like an AR-15. He was charged with improper exhibition of a dangerous weapon or firearm.",
+      source: "NBC 6 South Florida",
+      sourceUrl:
+        "https://www.nbcmiami.com/news/local/florida-man-displayed-gun-after-learning-delray-beach-mcdonalds-had-broken-ice-cream-machine/21862/",
+    },
+    {
+      id: "beers-always-gone-dui-shirt",
+      date: "August 16, 2023",
+      year: "2023",
+      month: "August",
+      day: "16",
+      city: "Ocala",
+      score: 7.9,
+      title: "Florida Man Arrested for DUI While Wearing 'I'm the Reason the Beer's Always Gone' T-Shirt",
+      description:
+        "Florida Man is caught driving nearly three times the legal limit — in a shirt that gave the game away.",
+      fullStory:
+        "A Marion County deputy clocked James Rix Jr., 41, doing 89 mph in a 45 mph zone near Ocala, then watched him flee with his headlights off before catching up. Rix, wearing a shirt reading 'I'm the Reason the Beer's Always Gone,' failed field sobriety tests and blew a .204 and .200 — nearly three times the legal limit. He was charged with DUI, fleeing to elude, unlawful speed, and an open container violation.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/james-rix-jr-florida-man-arrested-for-dui-wearing-im-the-reason-the-beers-always-gone-t-shirt-marion-oaks-manor-ocala-marion-county-sheriffs-office-august-23-2023",
+    },
+    {
+      id: "fake-flight-attendant-free-flights",
+      date: "June 5, 2025",
+      year: "2025",
+      month: "June",
+      day: "5",
+      city: "Fort Lauderdale",
+      score: 7.6,
+      title: "Florida Man Convicted After Posing as a Flight Attendant for Over 120 Free Flights",
+      description:
+        "Florida Man impersonates flight attendants from seven different airlines to fly for free more than 100 times.",
+      fullStory:
+        "Tiron Alexander, 35, was convicted by a federal jury on June 5, 2025, of using an airline's internal booking system meant for working crew members to book more than 120 free flights between 2018 and 2024, flying on 34 of them without paying. He falsely claimed to work for seven different airlines, inventing badge numbers and hire dates, and was also convicted of entering the secure area of Fort Lauderdale-Hollywood International Airport under false pretenses. He faces up to 30 years in federal prison at sentencing.",
+      source: "Local 10",
+      sourceUrl:
+        "https://www.local10.com/news/local/2025/06/11/south-florida-man-posed-as-flight-attendant-to-fly-free-120-times-feds-say/",
+    },
+    {
+      id: "naked-cookie-grill-fire",
+      date: "September 12, 2018",
+      year: "2018",
+      month: "September",
+      day: "12",
+      city: "Niceville",
+      score: 8.7,
+      title: "Naked Florida Man Starts House Fire Trying to Bake Cookies on a George Foreman Grill",
+      description:
+        "Florida Man tries baking cookies on an indoor grill after two liters of vodka, and the results are not great.",
+      fullStory:
+        "A Niceville man answered his door naked around midnight, said 'I'm sorry,' and closed it again as his smoke-filled home burned behind him. He'd been drinking two liters of vodka and smoking marijuana since 9 p.m. when he tried baking cookies on a George Foreman grill; when it caught fire, he tried smothering the flames with dry towels, which also caught fire. Officers removed him from the house after he showed no concern for his own safety.",
+      source: "USA Today",
+      sourceUrl:
+        "https://www.usatoday.com/story/news/nation-now/2018/09/07/florida-man-drunk-and-naked-allegedly-set-house-fire/1228241002/",
+    },
+    {
+      id: "batman-pajamas-burglary-bust",
+      date: "August 27, 2025",
+      year: "2025",
+      month: "August",
+      day: "27",
+      city: "Cape Coral",
+      score: 7.9,
+      title: "Florida Man in Batman Pajamas Catches Burglary Suspect Before Police Arrive",
+      description:
+        "Florida Man's home security alert sends him outside in Batman pajamas to catch a burglar in the act.",
+      fullStory:
+        "Kyle Myvett was in bed wearing Batman pajamas around 2 a.m. when his home security system alerted him that someone was breaking into his truck. He went outside, spotted the suspect rifling through his truck and then a neighbor's garage, and detained him before Cape Coral police arrived. Officers arrested Justin Schimpl, 20, on burglary charges. Myvett later said the costume 'gave me the confidence I needed.'",
+      source: "ABC News",
+      sourceUrl:
+        "https://abcnews.com/US/florida-man-wearing-batman-pajamas-thwarts-burglary-detains/story?id=125059192",
+    },
   ];
 
 export type Story = (typeof stories)[number];
