@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 const NAV_LINKS = [
   { href: "/", label: "Today" },
