@@ -1064,4 +1064,24 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.wftv.com/news/local/man-covered-grease-blood-peppermint-oil-breaks-into-homes-jumps-into-pool-onto-trampoline/E2DIP5F45NESHDHBG3G3RWEPEA/",
     },
+    {
+      id: "wet-willy-battery-charge",
+      date: "August 31, 2018",
+      year: "2018",
+      month: "August",
+      day: "31",
+      city: "St. Lucie County",
+      score: 68,
+      rubric: { absurdity: 19, humor: 11, floridaFactor: 11, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Arrested for Giving Girlfriend a 'Wet Willy'",
+      description:
+        "Florida Man is charged with battery after allegedly forcing a 'wet willy' on his girlfriend during an argument.",
+      fullStory:
+        "Joseph Sireci, 47, was arrested in St. Lucie County in August 2018 after his girlfriend told a deputy he had been drinking and grew belligerent during an outing with her and her daughter. On the way home, she said, Sireci grabbed her arm and stuck his wet finger in her ear, giving her a 'wet willy.' Her daughter corroborated the account. Sireci, who denied being intoxicated and declined to give a statement, was charged with second-degree battery and released on a $2,500 bond.",
+      contentNote:
+        "This involved a real domestic battery charge — the act was forced on his girlfriend during an argument, not a lighthearted or consensual encounter.",
+      source: "Fox News",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-arrested-after-he-allegedly-gave-girlfriend-a-wet-willy-affidavit-says",
+    },
   ];
