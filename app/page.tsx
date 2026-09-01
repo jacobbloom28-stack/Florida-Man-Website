@@ -10,6 +10,7 @@ import {
   getScoreTextColor,
 } from "./components/StoryVisual";
 import { getStoryOfTheDay } from "./lib/storyOfTheDay";
+import React from "react";
 
 // Recompute on every request (in Florida's timezone) instead of freezing
 // "today" at build time, so the featured story actually changes daily.
