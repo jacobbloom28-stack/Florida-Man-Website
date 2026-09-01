@@ -1007,4 +1007,61 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.clickorlando.com/news/local/2025/08/19/florida-man-arrested-after-using-sprinklers-to-spray-disabled-children-deputies-say/",
     },
+    {
+      id: "walmart-tiktok-dog-bed",
+      date: "January 13, 2026",
+      year: "2026",
+      month: "January",
+      day: "13",
+      city: "Englewood",
+      score: 82,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title:
+        "Florida Man Tries to Spend the Night in a Closed Walmart for a TikTok Challenge, Found Hiding in the Dog Bed Section",
+      description:
+        "Florida Man allegedly tries to stay overnight inside a closed Walmart for a TikTok challenge and gets caught hiding in the dog bed aisle.",
+      fullStory:
+        "Charlotte County deputies responded to a reported burglary at a Walmart on McCall Road in Englewood just after 11 p.m. on January 13, 2026, after a caller reported a man livestreaming from inside the closed store. Deputies found 18-year-old Isaac Hurley in the dog bed section; he said he'd entered around 10:15 p.m. planning to stay overnight to complete a TikTok challenge and earn money from the views. Deputies also noted he'd unwrapped an iPhone charger while inside. Hurley was arrested on charges of burglary of an occupied structure and petit theft and bonded out for $1,500.",
+      source: "Charlotte County Sheriff's Office / FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/tiktok-challenge-lands-florida-man-jail-trying-spend-night-walmart-after-closed-ccso",
+    },
+    {
+      id: "prison-costume-dui-halloween",
+      date: "October 31, 2025",
+      year: "2025",
+      month: "October",
+      day: "31",
+      city: "Port St. Lucie",
+      score: 82,
+      rubric: { absurdity: 20, humor: 23, floridaFactor: 12, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Arrested for DUI on Halloween While Dressed as a Prison Inmate",
+      description:
+        "Florida Man leaving a Halloween party dressed as a prison inmate gets arrested for DUI, already dressed the part.",
+      fullStory:
+        "Port St. Lucie police pulled over 18-year-old Jimmie Glover in the early hours of October 31, 2025, as he drove home from a Halloween party still wearing his costume: a black-and-white striped prison inmate outfit. Glover failed field sobriety tests and was arrested for DUI. The department posted the bodycam footage on social media with the caption, 'Locked up inmate Halloween costume was already dressed for arrest!'",
+      source: "Port St. Lucie Police Department / WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/florida/florida-man-wearing-inmate-halloween-costume-charged-with-dui/",
+    },
+    {
+      id: "greased-up-naked-debary-burglar",
+      date: "April 7, 2023",
+      year: "2023",
+      month: "April",
+      day: "7",
+      city: "DeBary",
+      score: 90,
+      rubric: { absurdity: 24, humor: 22, floridaFactor: 16, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Naked, Grease-Covered Florida Man Evades Deputies via Pool and Trampoline",
+      description:
+        "A naked Florida man covered in wheel-bearing grease and peppermint oil breaks into two homes, then tries to escape deputies by jumping in a pool and onto a trampoline.",
+      fullStory:
+        "Volusia County deputies responded to a burglary in progress on Highbanks Road in DeBary around 2 a.m. on April 7, 2023, and found that 34-year-old Blake Tokman had smashed a window to break into one home before breaking into a second. Bodycam video showed Tokman, naked and covered in wheel-bearing grease, peppermint oil, and his own blood, running from deputies, diving into a backyard pool, then climbing out and jumping onto a trampoline before he was taken into custody. He was charged with two counts of burglary of an occupied dwelling, battery on a law enforcement officer, resisting arrest with violence, and criminal mischief.",
+      contentNote:
+        "During the struggle to arrest Tokman, one deputy sustained a laceration to his arm.",
+      source: "WFTV / Volusia County Sheriff's Office",
+      sourceUrl:
+        "https://www.wftv.com/news/local/man-covered-grease-blood-peppermint-oil-breaks-into-homes-jumps-into-pool-onto-trampoline/E2DIP5F45NESHDHBG3G3RWEPEA/",
+    },
   ];
