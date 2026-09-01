@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Header from "../../components/Header";
-import { stories } from "../../data/stories";
+import { stories, RUBRIC, getCategoryBreakdown } from "../../data/stories";
 import {
   StoryVisual,
   getScoreColor,
   getScoreLabel,
   getScoreTextColor,
 } from "../../components/StoryVisual";
-import React from "react";
 
 export default async function StoryPage({
   params,
@@ -42,6 +41,7 @@ export default async function StoryPage({
 
   const previousStory = stories[storyIndex - 1];
   const nextStory = stories[storyIndex + 1];
+  const categoryScores = getCategoryBreakdown(story);
 
   const relatedStories = stories
     .filter((s) => s.id !== story.id && s.city === story.city)
@@ -92,7 +92,7 @@ export default async function StoryPage({
                   className="text-[9px] font-black uppercase tracking-widest"
                   style={{ color: getScoreTextColor(story.score) }}
                 >
-                  /10
+                  /100
                 </p>
               </div>
 
@@ -123,6 +123,39 @@ export default async function StoryPage({
           {story.fullStory && (
             <p className="mt-6 text-gray-700">{story.fullStory}</p>
           )}
+
+          <div className="mt-10 border-t-2 border-[#171717] pt-6">
+            <p className="text-xs font-black uppercase tracking-widest">
+              Score Breakdown
+            </p>
+
+            <div className="mt-5 space-y-4">
+              {RUBRIC.map((row) => {
+                const value = categoryScores[row.category] ?? 0;
+                const pct = (value / row.points) * 100;
+
+                return (
+                  <div key={row.category}>
+                    <div className="mb-1 flex items-center justify-between gap-3 text-sm font-black uppercase tracking-wide">
+                      <span>{row.category}</span>
+                      <span style={{ color: row.color }}>
+                        {value}/{row.points}
+                      </span>
+                    </div>
+                    <div className="h-3 w-full overflow-hidden border-2 border-[#171717] bg-[#efe7d8]">
+                      <div
+                        className="h-full"
+                        style={{
+                          width: `${pct}%`,
+                          backgroundColor: row.color,
+                        }}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
 
           <div className="mt-10 border-t-2 border-[#171717] pt-6">
             <p className="text-xs font-black uppercase tracking-widest">
@@ -197,7 +230,7 @@ export default async function StoryPage({
                     className="mt-2 text-sm font-black"
                     style={{ color: getScoreColor(s.score) }}
                   >
-                    {s.score}/10
+                    {s.score}/100
                   </p>
                 </Link>
               ))}

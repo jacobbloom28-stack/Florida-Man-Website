@@ -1,52 +1,6 @@
-import React from "react";
 import Header from "../components/Header";
 import { FloridaRail } from "../components/FloridaRail";
-import { stories } from "../data/stories";
-
-const RUBRIC = [
-  {
-    category: "Absurdity",
-    points: 25,
-    weight: "25%",
-    color: "#FF6B35",
-    measures: "How ridiculous or irrational the situation is",
-  },
-  {
-    category: "Humor",
-    points: 25,
-    weight: "25%",
-    color: "#FFC93C",
-    measures: "How genuinely funny the incident is",
-  },
-  {
-    category: "Florida Factor",
-    points: 20,
-    weight: "20%",
-    color: "#00B8A9",
-    measures: "How uniquely Florida the story feels",
-  },
-  {
-    category: "Unexpectedness",
-    points: 15,
-    weight: "15%",
-    color: "#7B2FF7",
-    measures: "How surprising or bizarre the incident or outcome is",
-  },
-  {
-    category: "Headline Quality",
-    points: 10,
-    weight: "10%",
-    color: "#FF3E7F",
-    measures: "How strong and entertaining the headline is",
-  },
-  {
-    category: "Source Quality",
-    points: 5,
-    weight: "5%",
-    color: "#0F9B6E",
-    measures: "How well documented and reliable the source is",
-  },
-];
+import { stories, RUBRIC } from "../data/stories";
 
 const RUBRIC_TOTAL = RUBRIC.reduce((sum, row) => sum + row.points, 0);
 
@@ -117,9 +71,12 @@ export default function About() {
           </h3>
 
           <p className="mt-4 text-gray-700">
-            Every story is scored out of {RUBRIC_TOTAL} points across six
-            categories. The total is divided by 10 and rounded to one decimal
-            place to produce the Florida Man Score shown on each story.
+            Every story is individually scored across six categories, and the
+            Florida Man Score shown on each story is the literal sum of
+            those six numbers — nothing hidden, nothing derived after the
+            fact. Humor and absurdity carry the most weight in the matrix,
+            while serious harm or real victimization lowers a story rather
+            than boosts it.
           </p>
 
           <div className="mt-6 overflow-x-auto border-2 border-[#171717] bg-white">
@@ -176,8 +133,8 @@ export default function About() {
             </p>
 
             <p className="mt-2 font-bold">
-              Total points ÷ 10, rounded to one decimal place — so a perfect
-              {" "}{RUBRIC_TOTAL}/{RUBRIC_TOTAL} story earns a 10.0.
+              The sum of all six category scores, out of {RUBRIC_TOTAL} — so
+              a perfect story earns a {RUBRIC_TOTAL}/{RUBRIC_TOTAL}.
             </p>
           </div>
         </div>

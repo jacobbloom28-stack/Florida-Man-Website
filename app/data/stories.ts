@@ -1,3 +1,57 @@
+export const RUBRIC = [
+  {
+    category: "Absurdity",
+    points: 25,
+    weight: "25%",
+    color: "#FF6B35",
+    measures: "How ridiculous or irrational the situation is",
+  },
+  {
+    category: "Humor",
+    points: 25,
+    weight: "25%",
+    color: "#FFC93C",
+    measures: "How genuinely funny the incident is",
+  },
+  {
+    category: "Florida Factor",
+    points: 20,
+    weight: "20%",
+    color: "#00B8A9",
+    measures: "How uniquely Florida the story feels",
+  },
+  {
+    category: "Unexpectedness",
+    points: 15,
+    weight: "15%",
+    color: "#7B2FF7",
+    measures: "How surprising or bizarre the incident or outcome is",
+  },
+  {
+    category: "Headline Quality",
+    points: 10,
+    weight: "10%",
+    color: "#FF3E7F",
+    measures: "How strong and entertaining the headline is",
+  },
+  {
+    category: "Source Quality",
+    points: 5,
+    weight: "5%",
+    color: "#0F9B6E",
+    measures: "How well documented and reliable the source is",
+  },
+] as const;
+
+export type Rubric = {
+  absurdity: number;
+  humor: number;
+  floridaFactor: number;
+  unexpectedness: number;
+  headlineQuality: number;
+  sourceQuality: number;
+};
+
 export type Story = {
   id: string;
   date: string;
@@ -5,7 +59,9 @@ export type Story = {
   month: string;
   day: string;
   city: string;
+  // Always the literal sum of `rubric`'s six category scores (0-100).
   score: number;
+  rubric: Rubric;
   title: string;
   description: string;
   fullStory: string;
@@ -17,6 +73,26 @@ export type Story = {
   contentNote?: string;
 };
 
+const RUBRIC_KEY_BY_CATEGORY: Record<string, keyof Rubric> = {
+  Absurdity: "absurdity",
+  Humor: "humor",
+  "Florida Factor": "floridaFactor",
+  Unexpectedness: "unexpectedness",
+  "Headline Quality": "headlineQuality",
+  "Source Quality": "sourceQuality",
+};
+
+// The rubric bar chart on the story page reads straight from the story's
+// own authored numbers — no derivation, no guessing, so the displayed
+// total is always exactly what these bars add up to.
+export function getCategoryBreakdown(story: Story): Record<string, number> {
+  return Object.fromEntries(
+    Object.entries(RUBRIC_KEY_BY_CATEGORY).map(([category, key]) => [
+      category,
+      story.rubric[key],
+    ])
+  );
+}
 export const stories: Story[] = [
 
     {
@@ -26,7 +102,8 @@ export const stories: Story[] = [
       month: "August",
       day: "20",
       city: "Oviedo",
-      score: 9.6,
+      score: 86,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 17, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Smashes Fake Police Camera, Only to Discover It Was a Decoy",
       description:
         "A Florida man allegedly tried to destroy a police surveillance camera, only to discover it was a 3D-printed decoy.",
@@ -43,7 +120,8 @@ export const stories: Story[] = [
       month: "August",
       day: "25",
       city: "Hialeah",
-      score: 9.6,
+      score: 77,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
       title: "Florida Man Smashes Taco Bell Ordering Kiosks, Then Flees to a Roof",
       description:
         "Florida Man allegedly destroys Taco Bell ordering equipment before fleeing to a roof.",
@@ -60,7 +138,8 @@ export const stories: Story[] = [
       month: "August",
       day: "19",
       city: "Hialeah",
-      score: 9.1,
+      score: 76,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 13, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
       title: "Florida Man Calls in Bomb Threat Using Phone Registered as 'Alex Boom'",
       description:
         "Florida Man allegedly makes a bomb threat using a phone registered under the name Alex Boom.",
@@ -77,7 +156,8 @@ export const stories: Story[] = [
       month: "August",
       day: "17",
       city: "Longwood",
-      score: 9.8,
+      score: 83,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
       title: "Florida Man Calls 911 to Claim He Is Being Carjacked by the Officer Pulling Him Over",
       description:
         "Florida Man allegedly calls 911 on the police officer who pulled him over.",
@@ -94,7 +174,8 @@ export const stories: Story[] = [
       month: "August",
       day: "19",
       city: "Old Town",
-      score: 9.3,
+      score: 84,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 17, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Pulled Over While Driving a Riding Lawn Mower Has Meth and Other Drugs in a Bag",
       description:
         "Florida Man is pulled over while driving a riding lawn mower and allegedly has drugs in a bag.",
@@ -111,7 +192,8 @@ export const stories: Story[] = [
       month: "",
       day: "",
       city: "Lake City",
-      score: 9.7,
+      score: 80,
+      rubric: { absurdity: 20, humor: 23, floridaFactor: 14, unexpectedness: 11, headlineQuality: 9, sourceQuality: 3 },
       title: "Florida Man Arrested for Refusing to Remove an 'I Eat Ass' Sticker From His Truck",
       description:
         "Florida Man refuses to remove a vulgar sticker from his truck after being stopped by police.",
@@ -128,7 +210,8 @@ export const stories: Story[] = [
       month: "April",
       day: "21",
       city: "Orlando",
-      score: 9.8,
+      score: 91,
+      rubric: { absurdity: 23, humor: 24, floridaFactor: 16, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Gets Beat Up by the Easter Bunny",
       description:
         "A downtown Orlando street fight takes an absurd turn when the Easter Bunny jumps in.",
@@ -144,7 +227,8 @@ export const stories: Story[] = [
       month: "November",
       day: "1",
       city: "Tampa",
-      score: 9.3,
+      score: 81,
+      rubric: { absurdity: 21, humor: 21, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
       title: "Tutu-Wearing Florida Man Breaks Into Farmers Market, Eats Fruit and Drinks Soda",
       description:
         "A tutu-wearing Florida Man breaks into a Tampa farmers market and stops for snacks.",
@@ -161,7 +245,8 @@ export const stories: Story[] = [
       month: "July",
       day: "1",
       city: "Land O' Lakes",
-      score: 9.8,
+      score: 84,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Tries to Steal 26 Cars From Jail Parking Lot Right After Being Released",
       description:
         "Florida Man allegedly tries to steal 26 cars from a jail parking lot immediately after being released.",
@@ -178,7 +263,8 @@ export const stories: Story[] = [
       month: "May",
       day: "12",
       city: "Longwood",
-      score: 9.6,
+      score: 80,
+      rubric: { absurdity: 20, humor: 23, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 3 },
       title: "Florida Man Plays Basketball Naked at Public Park and Says He Was Working on His Skills",
       description:
         "A naked Florida Man tells police he was only working on his basketball skills.",
@@ -195,7 +281,8 @@ export const stories: Story[] = [
       month: "June",
       day: "13",
       city: "Palm Bay",
-      score: 9.7,
+      score: 82,
+      rubric: { absurdity: 21, humor: 21, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Steals 75 Pool Floats to Use for Himself Instead of Committing a Worse Crime",
       description:
         "Florida Man is arrested after admitting to a months-long spree of pool-float thefts across Palm Bay.",
@@ -212,7 +299,8 @@ export const stories: Story[] = [
       month: "February",
       day: "1",
       city: "North Palm Beach",
-      score: 10.0,
+      score: 86,
+      rubric: { absurdity: 24, humor: 23, floridaFactor: 11, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Trades $33,000 in Rare Coins for About $30 at a Coinstar Machine",
       description:
         "Florida Man allegedly steals a friend's rare coin collection, then cashes it in for a fraction of a percent of its value.",
@@ -229,7 +317,8 @@ export const stories: Story[] = [
       month: "August",
       day: "26",
       city: "Atlantic Ocean (Florida resident)",
-      score: 9.9,
+      score: 95,
+      rubric: { absurdity: 25, humor: 23, floridaFactor: 18, unexpectedness: 15, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Arrested Trying to Cross the Atlantic Ocean in a Giant Hamster Wheel",
       description:
         "A Florida marathon runner is intercepted by the Coast Guard while attempting to 'run' to London in a homemade floating hamster wheel.",
@@ -246,7 +335,8 @@ export const stories: Story[] = [
       month: "January",
       day: "",
       city: "Milton",
-      score: 9.9,
+      score: 88,
+      rubric: { absurdity: 23, humor: 23, floridaFactor: 15, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Threatens to 'Kill 'Em With Kindness' — the Name of His Machete",
       description:
         "A Florida man takes the phrase 'kill them with kindness' literally, deputies say.",
@@ -263,7 +353,8 @@ export const stories: Story[] = [
         month: "July",
         day: "25",
         city: "Pasco County",
-        score: 9.5,
+        score: 86,
+      rubric: { absurdity: 22, humor: 22, floridaFactor: 16, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
         title: "Florida Man Breaks Into Home and Blames the Horse",
         description:
         "A homeowner catches a man breaking into his vacant house — with a horse in tow.",
@@ -280,7 +371,8 @@ export const stories: Story[] = [
         month: "January",
         day: "",
         city: "Casselberry",
-        score: 8.4,
+        score: 77,
+      rubric: { absurdity: 19, humor: 21, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
         title: "Florida Man Robs Store Dressed as Spider-Man",
         description:
         "A man shows up unmasked to a liquor store, leaves, then comes back wearing a Spider-Man mask to finish the job.",
@@ -296,7 +388,8 @@ export const stories: Story[] = [
         month: "July",
         day: "29",
         city: "Jacksonville",
-        score: 9.0,
+        score: 94,
+      rubric: { absurdity: 24, humor: 23, floridaFactor: 19, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
         title: "Florida Man Brings Live Alligator into Convenience Store While Buying Beer",
         description:
         "A man walks into a store with a live gator under his arm, then chases a fellow customer with it over the last case of beer.",
@@ -313,7 +406,8 @@ export const stories: Story[] = [
         month: "June",
         day: "12",
         city: "Clearwater Beach",
-        score: 8.6,
+        score: 83,
+      rubric: { absurdity: 21, humor: 23, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
         title: "Florida Man Asks Cop to Help Him Start the Scooter He Was Stealing",
         description:
         "A man caught pushing a scooter he doesn't own asks the responding officer for a screwdriver so he can hot-wire it.",
@@ -329,7 +423,8 @@ export const stories: Story[] = [
         month: "June",
         day: "19",
         city: "Brooksville",
-        score: 9.3,
+        score: 86,
+      rubric: { absurdity: 23, humor: 20, floridaFactor: 15, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
         title: "Florida Man Who Says He Saw the Anti-Christ Tries to Steal a Medical Helicopter",
         description:
         "After crashing his truck, a man runs past first responders and attempts to steal the medevac helicopter that landed for the crash victims.",
@@ -346,7 +441,8 @@ export const stories: Story[] = [
         month: "December",
         day: "14",
         city: "Polk County",
-        score: 9.5,
+        score: 93,
+      rubric: { absurdity: 24, humor: 24, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
         title: "Florida Man Hides Gun Under Prosthetic Silicone Breasts at Construction Site",
         description:
         "Deputies find a man trespassing in lingerie with a loaded handgun concealed beneath silicone breast forms.",
@@ -363,7 +459,8 @@ export const stories: Story[] = [
         month: "August",
         day: "1",
         city: "DeSoto County",
-        score: 8.2,
+        score: 75,
+      rubric: { absurdity: 18, humor: 22, floridaFactor: 12, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
         title: "Florida Man Clocked at 110 MPH Says He Was Racing to Catch His Cheating Girlfriend",
         description:
         "A deputy pulls a man over for driving nearly double the speed limit — and gets an unusually honest excuse.",
@@ -380,7 +477,8 @@ export const stories: Story[] = [
       month: "May",
       day: "7",
       city: "Bartow",
-      score: 9.1,
+      score: 81,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
       title:
         "Florida Man Drives Cadillac While Standing Through the Sunroof and Says He Would Rather Go to Jail Than Go Home",
       description:
@@ -398,7 +496,8 @@ export const stories: Story[] = [
       month: "June",
       day: "2",
       city: "Hudson",
-      score: 8.1,
+      score: 72,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 12, unexpectedness: 11, headlineQuality: 7, sourceQuality: 5 },
       title: "Florida Man Pours Salt on Walmart Floor to Get Rid of Evil Spirits",
       description:
         "Florida Man allegedly covers a Walmart floor with salt to drive away evil spirits.",
@@ -415,7 +514,8 @@ export const stories: Story[] = [
       month: "June",
       day: "11",
       city: "St. Petersburg",
-      score: 8.5,
+      score: 81,
+      rubric: { absurdity: 22, humor: 22, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
       title:
         "Florida Man Breaks Into Home, Steals Alcohol, Poops on Floor, Falls Asleep on Couch",
       description:
@@ -433,7 +533,8 @@ export const stories: Story[] = [
       month: "December",
       day: "22",
       city: "Redland",
-      score: 8.3,
+      score: 76,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Steals 400 Pounds of Avocados to Buy Christmas Presents for His Kids",
       description:
         "A father is caught stealing hundreds of pounds of avocados to fund his kids' Christmas presents.",
@@ -450,7 +551,8 @@ export const stories: Story[] = [
       month: "February",
       day: "6",
       city: "New Smyrna Beach",
-      score: 8.7,
+      score: 85,
+      rubric: { absurdity: 20, humor: 22, floridaFactor: 17, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Drives Truck Into the Ocean, Blames the Truck",
       description:
         "Florida Man drives his pickup truck onto a closed beach and into the ocean, then blames the truck.",
@@ -467,7 +569,8 @@ export const stories: Story[] = [
       month: "February",
       day: "24",
       city: "Hillsborough County",
-      score: 7.5,
+      score: 70,
+      rubric: { absurdity: 18, humor: 17, floridaFactor: 12, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Livestreams Himself Climbing a Cell Tower to Watch the Sunset",
       description:
         "Florida Man climbs a cell phone tower live on social media just to catch the sunset.",
@@ -484,7 +587,8 @@ export const stories: Story[] = [
       month: "October",
       day: "18",
       city: "Miami Gardens",
-      score: 8.2,
+      score: 79,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 11, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title:
         "Florida Man Dresses as Security to Sneak Into Taylor Swift Concert, Gets Caught by His Own 'Clients'",
       description:
@@ -502,7 +606,8 @@ export const stories: Story[] = [
       month: "July",
       day: "15",
       city: "New Smyrna Beach",
-      score: 8.8,
+      score: 84,
+      rubric: { absurdity: 21, humor: 23, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Hides in Walgreens Bathroom for 5 Hours, Then Raids the Snack Aisle",
       description:
         "Florida Man hides in a Walgreens bathroom for five hours, then goes on an after-hours snack raid.",
@@ -519,7 +624,8 @@ export const stories: Story[] = [
       month: "September",
       day: "20",
       city: "Islamorada",
-      score: 9.3,
+      score: 93,
+      rubric: { absurdity: 24, humor: 23, floridaFactor: 19, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Rides a Manatee, Demands to Be Taken to Jail",
       description:
         "Florida Man rides a manatee, tells witnesses he's riding it, then demands to be taken to jail.",
@@ -536,7 +642,8 @@ export const stories: Story[] = [
       month: "July",
       day: "17",
       city: "Lakeland",
-      score: 8.8,
+      score: 84,
+      rubric: { absurdity: 20, humor: 23, floridaFactor: 15, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Leads Deputies on 2 MPH Chase on a Stolen Walmart Scooter",
       description:
         "Florida Man leads deputies on a low-speed chase atop a stolen Walmart electric scooter.",
@@ -553,7 +660,8 @@ export const stories: Story[] = [
       month: "March",
       day: "24",
       city: "Palm Bay",
-      score: 8.7,
+      score: 84,
+      rubric: { absurdity: 21, humor: 23, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Dressed as Ronald McDonald Arrested, Tells Cops 'I Am a Clown, Stupid'",
       description:
         "Florida Man dressed as Ronald McDonald gets arrested for trespassing and has a message for the officer who called him a clown.",
@@ -570,7 +678,8 @@ export const stories: Story[] = [
       month: "September",
       day: "23",
       city: "Port Orange",
-      score: 7.8,
+      score: 74,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 11, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Man Dubbed the 'Lego Booster' Arrested After Months-Long Target Shoplifting Spree",
       description:
         "Florida Man nicknamed the 'Lego Booster' is arrested after stealing over $1,000 in Lego sets from Target stores.",
@@ -587,7 +696,8 @@ export const stories: Story[] = [
       month: "November",
       day: "17",
       city: "Tallahassee",
-      score: 9.1,
+      score: 88,
+      rubric: { absurdity: 23, humor: 21, floridaFactor: 16, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Steals a Forklift, Uses It to Drag Away an ATM",
       description:
         "Florida Man allegedly steals a forklift from a school and uses it to make off with an ATM.",
@@ -604,7 +714,8 @@ export const stories: Story[] = [
       month: "March",
       day: "4",
       city: "Davenport",
-      score: 9.3,
+      score: 90,
+      rubric: { absurdity: 22, humor: 23, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Turns 18, Claims to Be God, Gets Arrested Minutes Later",
       description:
         "Florida Man allegedly steals cigarettes, declares himself God, then gets caught with meth in his sock.",
@@ -621,7 +732,8 @@ export const stories: Story[] = [
       month: "July",
       day: "23",
       city: "Tallahassee",
-      score: 8.5,
+      score: 82,
+      rubric: { absurdity: 20, humor: 22, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Arrested Mid-Shift While Dressed as Chuck E. Cheese",
       description:
         "Florida Man is handcuffed and led out of a Chuck E. Cheese in full mascot costume over a stolen credit card.",
@@ -638,7 +750,8 @@ export const stories: Story[] = [
       month: "August",
       day: "14",
       city: "Crestview",
-      score: 9.0,
+      score: 87,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 15, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Blames 'Hookah-Smoking Caterpillar' for $100,000 Liquor Store Rampage",
       description:
         "Florida Man causes six figures in damage with a stolen forklift, then blames a hookah-smoking caterpillar.",
@@ -655,7 +768,8 @@ export const stories: Story[] = [
       month: "August",
       day: "15",
       city: "Punta Gorda",
-      score: 8.8,
+      score: 86,
+      rubric: { absurdity: 21, humor: 21, floridaFactor: 18, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Traffic Stop Turns Up 41 Turtles and a Baby Alligator Hidden in a Passenger's Pants",
       description:
         "A routine traffic stop uncovers dozens of stolen turtles — and a foot-long alligator tucked into a passenger's yoga pants.",
@@ -672,7 +786,8 @@ export const stories: Story[] = [
       month: "August",
       day: "13",
       city: "Delray Beach",
-      score: 8.2,
+      score: 78,
+      rubric: { absurdity: 19, humor: 21, floridaFactor: 13, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Pulls Fake Assault Rifle on McDonald's Drive-Thru Over Broken Ice Cream Machine",
       description:
         "Florida Man allegedly brandishes what looks like an AR-15 at a McDonald's drive-thru after being told the ice cream machine was broken.",
@@ -689,7 +804,8 @@ export const stories: Story[] = [
       month: "August",
       day: "16",
       city: "Ocala",
-      score: 7.9,
+      score: 75,
+      rubric: { absurdity: 17, humor: 22, floridaFactor: 12, unexpectedness: 10, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Arrested for DUI While Wearing 'I'm the Reason the Beer's Always Gone' T-Shirt",
       description:
         "Florida Man is caught driving nearly three times the legal limit — in a shirt that gave the game away.",
@@ -706,7 +822,8 @@ export const stories: Story[] = [
       month: "June",
       day: "5",
       city: "Fort Lauderdale",
-      score: 7.6,
+      score: 73,
+      rubric: { absurdity: 18, humor: 19, floridaFactor: 9, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Convicted After Posing as a Flight Attendant for Over 120 Free Flights",
       description:
         "Florida Man impersonates flight attendants from seven different airlines to fly for free more than 100 times.",
@@ -723,7 +840,8 @@ export const stories: Story[] = [
       month: "September",
       day: "12",
       city: "Niceville",
-      score: 8.7,
+      score: 83,
+      rubric: { absurdity: 22, humor: 23, floridaFactor: 13, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
       title: "Naked Florida Man Starts House Fire Trying to Bake Cookies on a George Foreman Grill",
       description:
         "Florida Man tries baking cookies on an indoor grill after two liters of vodka, and the results are not great.",
@@ -740,7 +858,8 @@ export const stories: Story[] = [
       month: "August",
       day: "27",
       city: "Cape Coral",
-      score: 7.9,
+      score: 75,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 12, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man in Batman Pajamas Catches Burglary Suspect Before Police Arrive",
       description:
         "Florida Man's home security alert sends him outside in Batman pajamas to catch a burglar in the act.",
@@ -757,7 +876,8 @@ export const stories: Story[] = [
       month: "August",
       day: "12",
       city: "Daytona Beach",
-      score: 7.4,
+      score: 50,
+      rubric: { absurdity: 14, humor: 8, floridaFactor: 10, unexpectedness: 8, headlineQuality: 6, sourceQuality: 4 },
       title: "Florida Man Sprays Neighbors With Roach Spray, Then Breaks Out Nunchucks Over Loud Music",
       description:
         "Florida Man sprays neighbors with roach spray, then pulls out nunchucks during a noise complaint dispute.",
@@ -776,7 +896,8 @@ export const stories: Story[] = [
       month: "July",
       day: "30",
       city: "Leesburg",
-      score: 5.8,
+      score: 37,
+      rubric: { absurdity: 10, humor: 4, floridaFactor: 8, unexpectedness: 6, headlineQuality: 5, sourceQuality: 4 },
       title: "Florida Man Allegedly Punches McDonald's Drive-Thru Worker for Taking Too Long",
       description:
         "Florida Man allegedly strikes a McDonald's drive-thru worker after growing impatient with the line.",
@@ -795,7 +916,8 @@ export const stories: Story[] = [
       month: "August",
       day: "16",
       city: "Fort Myers",
-      score: 4.8,
+      score: 33,
+      rubric: { absurdity: 9, humor: 3, floridaFactor: 7, unexpectedness: 6, headlineQuality: 5, sourceQuality: 3 },
       title: "Florida Man Allegedly Shoots Neighbor's Cat With BB Gun Over Killed Chickens",
       description:
         "Florida Man allegedly shoots a neighborhood cat with a BB gun after it killed his chickens.",
@@ -814,7 +936,8 @@ export const stories: Story[] = [
       month: "August",
       day: "30",
       city: "Brevard County",
-      score: 5.3,
+      score: 35,
+      rubric: { absurdity: 10, humor: 4, floridaFactor: 7, unexpectedness: 6, headlineQuality: 5, sourceQuality: 3 },
       title: "Florida Man Accused of Slamming Dog, Then Headbutting a Patrol Car",
       description:
         "Florida Man allegedly slams a small dog to the ground, then headbutts a patrol car while resisting arrest.",
@@ -832,7 +955,8 @@ export const stories: Story[] = [
       month: "August",
       day: "18",
       city: "Melbourne",
-      score: 4.4,
+      score: 34,
+      rubric: { absurdity: 8, humor: 3, floridaFactor: 6, unexpectedness: 7, headlineQuality: 5, sourceQuality: 5 },
       title: "Florida Man Sentenced for Counterfeit Passport Check-Cashing Scheme",
       description:
         "Florida Man sentenced to federal prison for a counterfeit passport check-cashing scheme using stolen identities.",
@@ -850,7 +974,8 @@ export const stories: Story[] = [
       month: "August",
       day: "29",
       city: "Eustis",
-      score: 3.9,
+      score: 38,
+      rubric: { absurdity: 10, humor: 3, floridaFactor: 6, unexpectedness: 8, headlineQuality: 6, sourceQuality: 5 },
       title: "Florida Man Indicted for Flying Fentanyl Into Federal Prisons by Drone",
       description:
         "Florida Man indicted for conspiring with inmates to smuggle fentanyl into federal prisons using a drone.",
@@ -869,7 +994,8 @@ export const stories: Story[] = [
       month: "August",
       day: "17",
       city: "Ocala",
-      score: 4.7,
+      score: 34,
+      rubric: { absurdity: 9, humor: 2, floridaFactor: 7, unexpectedness: 7, headlineQuality: 5, sourceQuality: 4 },
       title: "Florida Man Rigs Sprinklers to Spray Disabled Children at School Bus Stop",
       description:
         "Florida Man allegedly rigs his sprinklers to spray disabled children waiting for their school bus.",

@@ -111,22 +111,25 @@ export function getStoryVisual(story: StoryLike) {
   return CATEGORIES.find((category) => category.test.test(text)) ?? DEFAULT_CATEGORY;
 }
 
+// Score is out of 100 — the literal sum of a story's six rubric categories.
 export function getScoreColor(score: number) {
-  if (score >= 9.5) return "#FF3E7F";
-  if (score >= 9) return "#FF6B35";
-  if (score >= 8) return "#FFC93C";
-  return "#00B8A9";
+  if (score >= 90) return "#FF3E7F";
+  if (score >= 80) return "#FF6B35";
+  if (score >= 65) return "#FFC93C";
+  if (score >= 50) return "#00B8A9";
+  return "#6B7280";
 }
 
 export function getScoreTextColor(score: number) {
-  return score >= 8 && score < 9 ? "#171717" : "#ffffff";
+  return score >= 65 && score < 80 ? "#171717" : "#ffffff";
 }
 
 export function getScoreLabel(score: number) {
-  if (score >= 9.5) return "Legendary";
-  if (score >= 9) return "Certified Wild";
-  if (score >= 8) return "Pretty Wild";
-  return "Classic Florida";
+  if (score >= 90) return "Legendary";
+  if (score >= 80) return "Certified Wild";
+  if (score >= 65) return "Pretty Wild";
+  if (score >= 50) return "Classic Florida";
+  return "Not Actually Funny";
 }
 
 const SIZES = {

@@ -10,7 +10,6 @@ import {
   getScoreTextColor,
 } from "./components/StoryVisual";
 import { getStoryOfTheDay } from "./lib/storyOfTheDay";
-import React from "react";
 
 // Recompute on every request (in Florida's timezone) instead of freezing
 // "today" at build time, so the featured story actually changes daily.
@@ -153,7 +152,7 @@ export default function Home() {
                     className="text-[9px] font-black uppercase tracking-widest"
                     style={{ color: getScoreTextColor(today.score) }}
                   >
-                    /10
+                    /100
                   </p>
                 </div>
 

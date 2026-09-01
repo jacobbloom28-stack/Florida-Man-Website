@@ -7,7 +7,6 @@ import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getStoryTimestamp } from "../lib/storyDate";
-import React from "react";
 
 const SORT_OPTIONS = {
   "Newest First": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
@@ -62,12 +61,12 @@ function BrowseContent() {
 
       let scoreMatch = true;
 
-      if (score === "9+ Florida Man") {
-        scoreMatch = story.score >= 9;
-      } else if (score === "8+ Florida Man") {
-        scoreMatch = story.score >= 8;
-      } else if (score === "7+ Florida Man") {
-        scoreMatch = story.score >= 7;
+      if (score === "90+ Florida Man") {
+        scoreMatch = story.score >= 90;
+      } else if (score === "80+ Florida Man") {
+        scoreMatch = story.score >= 80;
+      } else if (score === "65+ Florida Man") {
+        scoreMatch = story.score >= 65;
       }
 
       return (
@@ -162,9 +161,9 @@ function BrowseContent() {
             className="border-2 border-[#171717] bg-white p-3 font-bold"
           >
             <option>Any Score</option>
-            <option>9+ Florida Man</option>
-            <option>8+ Florida Man</option>
-            <option>7+ Florida Man</option>
+            <option>90+ Florida Man</option>
+            <option>80+ Florida Man</option>
+            <option>65+ Florida Man</option>
           </select>
         </div>
 
