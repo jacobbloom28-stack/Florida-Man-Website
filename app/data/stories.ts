@@ -1668,4 +1668,136 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-steals-alcohol-offers-deputies-vodka-spritzer-during-police-chase-officials",
     },
+    {
+      id: "peacocks-killed-cooked-spite",
+      date: "September 23, 2025",
+      year: "2025",
+      month: "September",
+      day: "23",
+      city: "Hudson",
+      score: 67,
+      rubric: { absurdity: 19, humor: 8, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Kills and Cooks Neighbor's Peacocks to Spite Him for Feeding Them",
+      description:
+        "A man slits the throats of two pet peacocks and fries them up specifically to spite the neighbor who'd been feeding them.",
+      fullStory:
+        "Pasco County deputies arrested 61-year-old Craig Vogt of Hudson after he admitted to killing two pet peacocks by cutting their necks with a knife, bleeding them out, and cooking them in a frying pan. Vogt had been in an ongoing dispute with a neighbor over the neighbor feeding the birds, and left a letter in the neighbor's mailbox confessing to the killings and explaining he'd done it 'out of spite' to make his point. While being taken to jail, Vogt told deputies he planned to kill his remaining peacocks too, so no one else could take them. He was charged with aggravated animal cruelty, a third-degree felony.",
+      contentNote:
+        "This incident involved real harm to animals — two peacocks were killed.",
+      source: "WFTV / NBC 6 South Florida / KCBY",
+      sourceUrl:
+        "https://www.wftv.com/news/local/florida-man-arrested-killing-pet-peacocks-neighbor-dispute-admits-cooking-them/KHOIIW3TCVBZTPXVNCPLBO2NBQ/",
+    },
+    {
+      id: "spider-monkey-home-depot-attack",
+      date: "July 16, 2018",
+      year: "2018",
+      month: "July",
+      day: "16",
+      city: "Okeechobee",
+      score: 72,
+      rubric: { absurdity: 19, humor: 14, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Arrested After Pet Spider Monkey Attacks Home Depot Employees",
+      description:
+        "A woman's pet spider monkey named Spanky escapes her car and attacks two different Home Depot cashiers in separate incidents.",
+      fullStory:
+        "Tina Ballard, 56, kept a pet spider monkey named Spanky who twice got loose and attacked employees at a Home Depot in Okeechobee County. In May, the monkey jumped from a shopping cart and grabbed a cashier's shirt, leaving marks on her shoulder and back. The following month, Spanky attacked cashier Marilyn Howard, biting her arm, grabbing her hair, and scratching her face, leaving her bloodied. When Florida Fish and Wildlife Conservation Commission investigators went looking for Ballard, they learned she had fled to Linville Land Harbor, North Carolina, with Spanky in tow; she was arrested there and held for extradition. She faced charges including allowing a wild animal to escape, lacking required wildlife permits, failing to immunize the monkey, and felony tampering with evidence.",
+      contentNote:
+        "This incident involved real injury to a person — a Home Depot employee sustained bite wounds and scratches.",
+      source: "Fox News / Inside Edition",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-woman-arrested-after-pet-spider-monkey-allegedly-attacks-home-depot-employees.amp",
+    },
+    {
+      id: "bees-swarm-police-chase",
+      date: "May 17, 2023",
+      year: "2023",
+      month: "May",
+      day: "17",
+      city: "Indian River County",
+      score: 81,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Police Chase Ends With Deputies and Suspects Swarmed by Bees",
+      description:
+        "A 20-mile interstate chase ends with deputies and suspects fighting through the woods together, only for both sides to get swarmed by wild bees.",
+      fullStory:
+        "A Florida Highway Patrol trooper tried to pull over a silver Acura in St. Lucie County; the car fled onto I-95 and into Indian River County, with a sheriff's helicopter and Sebastian police joining a roughly 20-mile pursuit. The three occupants — Joel N. Brown, 20, Markaveli J. Butler, 20, and a 15-year-old boy — abandoned the car and ran into the woods along State Road 60, where K-9 Mako and deputies found them hiding under palmetto bushes. As deputies moved in to make the arrests, a large swarm of bees descended on the area, stinging deputies, the K-9, and the suspects alike as everyone struggled back through chest-deep mud to the road. No one suffered serious injuries from the stings, and all three were booked on felony charges of fleeing and eluding and resisting arrest without violence; Butler also had an active felony warrant and an ICE detainer.",
+      source: "WPTV",
+      sourceUrl:
+        "https://www.wptv.com/news/treasure-coast/region-indian-river-county/bees-attack-deputies-k-9s-3-suspects-during-pursuit",
+    },
+    {
+      id: "raccoon-in-backpack-bike-stop",
+      date: "June 18, 2023",
+      year: "2023",
+      month: "June",
+      day: "18",
+      city: "Clearwater",
+      score: 69,
+      rubric: { absurdity: 16, humor: 17, floridaFactor: 13, unexpectedness: 12, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Woman Pulled Over on Bike Found With Baby Raccoon in Her Backpack",
+      description:
+        "A late-night bike stop over a missing headlight turns up a meth pipe and a week-old raccoon riding along in the woman's backpack.",
+      fullStory:
+        "Clearwater police stopped 43-year-old Lindsay Rodewald around midnight for riding her bicycle without a headlight. During the stop, officers found a broken glass pipe with methamphetamine residue in her backpack — along with a chittering baby raccoon, believed to be about a week old, tucked inside alongside it. Rodewald told officers she'd 'forgotten' the raccoon was in there. She was charged with possession of drug paraphernalia, while the raccoon was taken to a Tampa veterinary emergency clinic to be cared for alongside other orphaned raccoons before an eventual release into the wild.",
+      source: "Fox News / WSVN",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-woman-arrested-police-allegedly-find-meth-baby-raccoon-backpack",
+    },
+    {
+      id: "deer-run-over-tiktok-video",
+      date: "December 31, 2023",
+      year: "2023",
+      month: "December",
+      day: "31",
+      city: "Geneva",
+      score: 61,
+      rubric: { absurdity: 17, humor: 6, floridaFactor: 13, unexpectedness: 13, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Arrested for Intentionally Running Over a Deer to Film a TikTok Video",
+      description:
+        "A man films himself trying to run down five deer with his SUV for a social media video, connecting with just one.",
+      fullStory:
+        "Seminole County deputies arrested 27-year-old Clay Kinney after a video surfaced showing him swerving his Chevy Tahoe at a group of deer and posting the footage to TikTok; he managed to strike one of the five deer he targeted. Detectives recognized the SUV from the viral clip and pulled Kinney over, at which point he also admitted to driving on a suspended license. Kinney had a prior wildlife run-in in 2021, when officers responding to a crash he was in found a fawn he'd been illegally keeping in a dog box in his truck. He was charged with five counts of animal torment, one count of animal torture, and a moving traffic violation.",
+      contentNote:
+        "This incident involved real, intentional harm to an animal.",
+      source: "Fox News / Newsweek",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-arrested-deliberately-hitting-deer-filming-tiktok-police",
+    },
+    {
+      id: "emu-handcuffed-highway-chase",
+      date: "January 9, 2026",
+      year: "2026",
+      month: "January",
+      day: "9",
+      city: "St. Johns County",
+      score: 82,
+      rubric: { absurdity: 19, humor: 21, floridaFactor: 16, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Deputy 'Handcuffs' a Runaway Emu After Wild Highway Chase",
+      description:
+        "A veteran deputy chases down an escaped pet emu running loose on a Florida road and cuffs its legs to keep it from kicking.",
+      fullStory:
+        "St. Johns County deputies responded to calls about a large bird running loose on County Road 13 on January 9, 2026, and found an emu that had wandered more than a mile from its owner's property. Corporal Tommy Keisler, a 25-year veteran of the sheriff's office, cornered the bird, which kicked at him repeatedly with its powerful talons and tried to flee before he lassoed it and cuffed its legs together to keep it under control. 'In my 25 years, I've never handcuffed an emu — this is definitely a new one,' Keisler said afterward, joking that all charges against the bird had been dropped. The emu was uninjured and reunited with its owners; bodycam footage of the chase went viral.",
+      source: "CBS 12 / First Coast News",
+      sourceUrl:
+        "https://cbs12.com/news/local/never-handcuffed-an-emu-florida-deputies-chase-down-feathered-fugitive-bodycam-funny-bodycam-watch-st-johns-county-florida-news-video-january-14-2026",
+    },
+    {
+      id: "poops-on-dead-possum-rush-hour",
+      date: "November 17, 2023",
+      year: "2023",
+      month: "November",
+      day: "17",
+      city: "Clearwater",
+      score: 69,
+      rubric: { absurdity: 18, humor: 16, floridaFactor: 12, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Arrested for Defecating on a Dead Possum During Rush Hour",
+      description:
+        "A man is caught squatting over a dead possum in the middle of a busy intersection, in full view of rush-hour traffic.",
+      fullStory:
+        "A Clearwater police officer patrolling near Belcher Road and Willow Tree Trail around 5:20 p.m. on November 17, 2023, spotted 45-year-old Rudy Wilcox, who had no listed address, defecating on a dead possum with his pants down in full view of passing rush-hour traffic. When questioned after being read his Miranda rights, Wilcox denied it, telling the officer he 'doesn't see straight' — but police said physical evidence at the scene corroborated what they'd witnessed. Wilcox was arrested and booked into the Pinellas County Jail on a charge of exposure of sexual organs.",
+      source: "FOX 35 Orlando / Law & Crime",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-arrested-for-pooping-on-dead-possum-on-street-during-rush-hour-police-say",
+    },
   ];
