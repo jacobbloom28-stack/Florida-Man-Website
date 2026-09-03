@@ -20,6 +20,7 @@ export const ANIMAL_STORY_IDS = [
   "deer-run-over-tiktok-video",
   "emu-handcuffed-highway-chase",
   "poops-on-dead-possum-rush-hour",
+  "chihuahua-thrown-off-balcony",
 ];
 
 export function getAnimalStories(stories: Story[]) {

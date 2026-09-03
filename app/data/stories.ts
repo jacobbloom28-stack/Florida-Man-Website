@@ -1910,4 +1910,98 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.huffpost.com/2011/08/16/charles-patrick-o-bryan-waffle-house_n_928310.html",
     },
+    {
+      id: "nice-car-bro-punch",
+      date: "September 1, 2024",
+      year: "2024",
+      month: "September",
+      day: "1",
+      city: "Winter Haven",
+      score: 82,
+      rubric: { absurdity: 21, humor: 21, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Punches Driver in the Face for Complimenting His Car",
+      description:
+        "A Florida man allegedly punched a stranger in the face after the man told him he liked his car.",
+      fullStory:
+        "Polk County deputies say John Sturgeon, 53, stopped his black Dodge Charger on Tindel Camp Road near Dundee on the evening of September 1, 2024, got out, and punched another driver in the face — after that driver had simply told him, 'Nice car, bro! I like your car!' Dashcam video of the unprovoked punch went viral locally. The Polk County Sheriff's Office issued a warrant for Sturgeon's arrest on a battery charge, and he turned himself in after the footage spread online.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/driver-allegedly-punched-in-face-after-complimenting-mans-car-black-dodge-charger-polk-county-sheriffs-office-florida-september-3-2024",
+    },
+    {
+      id: "toddler-swallows-heroin-melbourne",
+      date: "September 4, 2020",
+      year: "2020",
+      month: "September",
+      day: "4",
+      city: "Melbourne",
+      score: 55,
+      rubric: { absurdity: 15, humor: 5, floridaFactor: 13, unexpectedness: 10, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Charged After His Toddler Daughter Accidentally Swallows Heroin",
+      description:
+        "A Florida man brought his 16-month-old daughter to a fire station after she ingested heroin, then allegedly threatened the man he blamed for it.",
+      fullStory:
+        "Nathaniel Clay, 28, walked into a Melbourne Fire Department station on September 4, 2020, and told firefighters his 16-month-old daughter may have swallowed drugs. She was rushed to a hospital and given three doses of Narcan after a brown substance found on her clothing tested positive for heroin. Clay told investigators the girl had been exposed to the drug while visiting an acquaintance elsewhere in the city, then admitted he had pulled a gun on that person and threatened to shoot him if he told anyone what happened. Melbourne police arrested Clay and charged him with child neglect.",
+      contentNote:
+        "This incident involved a real child ingesting heroin and requiring emergency medical treatment — there is no comedic angle here.",
+      source: "Action News Jax",
+      sourceUrl:
+        "https://www.actionnewsjax.com/news/trending/florida-man-charged-after-toddler-daughter-accidentally-swallows-heroin-police-say/SEHUYIKZYBB6NPJZH4VRZJM6VA/",
+    },
+    {
+      id: "twerking-traffic-stop-rain",
+      date: "September 7, 2021",
+      year: "2021",
+      month: "September",
+      day: "7",
+      city: "Inverness",
+      score: 85,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 16, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Twerks for Deputies in the Rain During Traffic Stop, Gets Tased",
+      description:
+        "Pulled over for passing cars in a turn lane, a Florida man got out of his SUV and began twerking for deputies in a downpour.",
+      fullStory:
+        "Citrus County deputies pulled over Richard Wolfe, 57, of Crystal River, on State Road 44 in Inverness on September 7, 2021, after he was seen using a median and a turn lane to pass cars in the rain. Wolfe got out of his SUV, bent over, and began twerking for the deputy in the downpour, then pulled a knife from his waistband and threw it into the grass while continuing to taunt the officer for nearly 20 seconds. When he tried to walk away and then attempted to flee, deputies deployed a Taser to take him into custody. He was booked on charges of resisting an officer without violence, fleeing law enforcement, and reckless driving, and bystander video of the encounter went viral.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2021/09/10/florida-man-twerks-for-officers-during-traffic-stop-gets-tased-report-says/",
+    },
+    {
+      id: "chihuahua-thrown-off-balcony",
+      date: "September 8, 2024",
+      year: "2024",
+      month: "September",
+      day: "8",
+      city: "Fort Myers",
+      score: 61,
+      rubric: { absurdity: 18, humor: 8, floridaFactor: 12, unexpectedness: 11, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Accused of Throwing a Chihuahua Off a Balcony 'Like a Football'",
+      description:
+        "A Florida man allegedly hurled a friend's chihuahua off a balcony, leaving the dog with multiple broken bones.",
+      fullStory:
+        "A stranger brought a badly injured 3-year-old chihuahua named Raven to a Fort Myers animal hospital on Sunday, September 8, 2024, saying a friend had thrown the dog off a balcony 'like a football.' Lee County Sheriff's Office detectives worked overnight with help from the county's Real Time Intelligence Center to trace the dog back to her owner and identify Dalton Chad Sousa, 30, as the man accused of throwing her. Raven suffered a broken leg and a broken jaw but was expected to make a full recovery. Sousa was located and arrested the next day and charged with aggravated animal cruelty.",
+      contentNote:
+        "This incident involved real, serious harm to a dog, who suffered multiple broken bones.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-accused-animal-cruelty-after-throwing-chihuahua-off-balcony-like-football",
+    },
+    {
+      id: "wendys-break-in-sandwich",
+      date: "September 19, 2025",
+      year: "2025",
+      month: "September",
+      day: "19",
+      city: "Boynton Beach",
+      score: 83,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Breaks Into Wendy's, Makes Himself a Sandwich Before Police Arrive",
+      description:
+        "A Florida man allegedly smashed his way into a Wendy's with a sprinkler pipe, then stopped to make himself a sandwich and pocket some chicken nuggets.",
+      fullStory:
+        "Boynton Beach police say Devin Driver, 28, ripped a sprinkler pipe out of the ground near a Wendy's drive-thru on Woolbright Road on September 19, 2025, used it to smash windows, then hurled a rock through the drive-thru window and climbed inside. Once in the kitchen, Driver made himself a sandwich and pocketed some chicken nuggets before officers arrived. When police tried to arrest him, he swung at them and had to be subdued with a Taser, then spat on and struck an officer while resisting. He was charged with burglary, criminal mischief, throwing a deadly missile, resisting arrest with violence, and three counts of battery on a law enforcement officer.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/armed-burglar-shatters-wendys-window-makes-sandwich-before-arrest-woolbright-road-taser-boynton-beach-police-department-september-19-2025",
+    },
   ];
