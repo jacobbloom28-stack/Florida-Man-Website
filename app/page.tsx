@@ -10,7 +10,6 @@ import {
   getScoreTextColor,
 } from "./components/StoryVisual";
 import { getStoryOfTheDay } from "./lib/storyOfTheDay";
-import { getAnimalStories } from "./lib/animalStories";
 import React from "react";
 
 // Recompute on every request (in Florida's timezone) instead of freezing
@@ -18,12 +17,12 @@ import React from "react";
 export const dynamic = "force-dynamic";
 
 const CHIPS = [
-  { label: "🐊 Gators", query: "gator" },
-  { label: "🚨 Cop Trouble", query: "police" },
-  { label: "💊 Substances", query: "drugs" },
-  { label: "🍑 Bare Necessities", query: "naked" },
-  { label: "💰 Petty Heists", query: "steal" },
-  { label: "🎭 Costumes", query: "mask" },
+  { label: "🐾 Animals", href: "/browse?category=animals" },
+  { label: "🚨 Cop Trouble", href: "/browse?search=police" },
+  { label: "💊 Substances", href: "/browse?search=drugs" },
+  { label: "🍑 Bare Necessities", href: "/browse?search=naked" },
+  { label: "💰 Petty Heists", href: "/browse?search=steal" },
+  { label: "🎭 Costumes", href: "/browse?search=mask" },
 ];
 
 export default function Home() {
@@ -44,11 +43,6 @@ export default function Home() {
   }, {});
 
   const topCity = Object.entries(cityCounts).sort((a, b) => b[1] - a[1])[0][0];
-
-  const animalStories = getAnimalStories(stories)
-    .slice()
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 4);
 
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
@@ -236,56 +230,6 @@ export default function Home() {
           </section>
         )}
 
-        {/* Animal stories — a standing favorite, always worth its own section */}
-        {animalStories.length > 0 && (
-          <section className="mx-auto mt-16 max-w-4xl">
-            <div className="mb-6 flex items-end justify-between border-b-4 border-[#171717] pb-3">
-              <h3 className="text-2xl font-black uppercase">
-                🐾 Animal Chronicles
-              </h3>
-
-              <Link
-                href="/browse?category=animals"
-                className="border-2 border-[#171717] bg-[#00B8A9] px-3 py-2 text-xs font-black uppercase tracking-widest text-white shadow-[3px_3px_0px_#171717] transition-transform hover:-translate-y-0.5"
-              >
-                See All Animal Stories →
-              </Link>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              {animalStories.map((story) => (
-                <Link
-                  key={story.id}
-                  href={`/story/${story.id}`}
-                  className="flex items-center gap-4 border-2 border-[#171717] bg-white p-4 shadow-[4px_4px_0px_#171717] transition-transform hover:-translate-y-0.5"
-                >
-                  <StoryVisual story={story} size="sm" />
-
-                  <div className="min-w-0 flex-1">
-                    <h4 className="text-sm font-black leading-tight">
-                      {story.contentNote && (
-                        <span title="Content note">⚠️ </span>
-                      )}
-                      {story.title}
-                    </h4>
-
-                    <p className="mt-1 text-xs font-semibold text-gray-600">
-                      {story.city}, Florida
-                    </p>
-                  </div>
-
-                  <p
-                    className="shrink-0 text-xl font-black"
-                    style={{ color: getScoreColor(story.score) }}
-                  >
-                    {story.score}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
         {/* Category chips — jump into the archive */}
         <section className="mx-auto mt-16 max-w-4xl">
           <p className="mb-4 text-xs font-black uppercase tracking-widest text-gray-600">
@@ -295,8 +239,8 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             {CHIPS.map((chip) => (
               <Link
-                key={chip.query}
-                href={`/browse?search=${encodeURIComponent(chip.query)}`}
+                key={chip.href}
+                href={chip.href}
                 className="border-2 border-[#171717] bg-white px-4 py-2 text-sm font-black shadow-[3px_3px_0px_#171717] transition-transform hover:-translate-y-0.5 hover:bg-[#FFC93C]"
               >
                 {chip.label}
