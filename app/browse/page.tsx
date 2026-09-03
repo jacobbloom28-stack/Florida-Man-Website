@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getStoryTimestamp } from "../lib/storyDate";
+import { getAnimalStories } from "../lib/animalStories";
 import React from "react";
 
 const SORT_OPTIONS = {
@@ -23,8 +24,10 @@ const SORT_OPTIONS = {
 type SortOption = keyof typeof SORT_OPTIONS;
 
 function BrowseContent() {
-  // Pick up a category filter passed in from the homepage chips (?search=gator)
+  // Pick up a category filter passed in from the homepage chips (?search=gator
+  // or ?category=animals)
   const searchParams = useSearchParams();
+  const category = searchParams.get("category");
   const [search, setSearch] = useState(() => searchParams.get("search") ?? "");
   const [year, setYear] = useState("All Years");
   const [month, setMonth] = useState("All Months");
@@ -33,19 +36,24 @@ function BrowseContent() {
   const [score, setScore] = useState("Any Score");
   const [sort, setSort] = useState<SortOption>("Newest First");
 
+  const basePool = useMemo(
+    () => (category === "animals" ? getAnimalStories(stories) : stories),
+    [category]
+  );
+
   const years = useMemo(
-    () => Array.from(new Set(stories.map((story) => story.year))).sort(
+    () => Array.from(new Set(basePool.map((story) => story.year))).sort(
       (a, b) => Number(b) - Number(a)
     ),
-    []
+    [basePool]
   );
 
   const cities = useMemo(
-    () => Array.from(new Set(stories.map((story) => story.city))).sort(),
-    []
+    () => Array.from(new Set(basePool.map((story) => story.city))).sort(),
+    [basePool]
   );
 
-  const filteredStories = stories
+  const filteredStories = basePool
     .filter((story) => {
       const term = search.toLowerCase();
 
@@ -91,8 +99,23 @@ function BrowseContent() {
         </p>
 
         <h2 className="mt-3 text-6xl font-black uppercase leading-none tracking-tight">
-          Browse
+          {category === "animals" ? "Animal Stories" : "Browse"}
         </h2>
+
+        {category === "animals" && (
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <span className="border-2 border-[#171717] bg-[#FFC93C] px-3 py-1 text-xs font-black uppercase tracking-widest">
+              🐾 Filtered to Animal Stories
+            </span>
+
+            <Link
+              href="/browse"
+              className="text-xs font-black uppercase tracking-widest text-[#FF3E7F] hover:underline"
+            >
+              Clear category →
+            </Link>
+          </div>
+        )}
 
         <div className="mt-10 grid gap-4 md:grid-cols-6">
           <input
@@ -170,7 +193,7 @@ function BrowseContent() {
 
         <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
           <p className="text-xs font-black uppercase tracking-widest text-gray-600">
-            {filteredStories.length} of {stories.length} stories
+            {filteredStories.length} of {basePool.length} stories
           </p>
 
           <div className="flex items-center gap-3">
