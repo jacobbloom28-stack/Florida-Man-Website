@@ -1800,4 +1800,114 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-for-pooping-on-dead-possum-on-street-during-rush-hour-police-say",
     },
+    {
+      id: "kiss-refusal-shooting-granny",
+      date: "March 21, 2011",
+      year: "2011",
+      month: "March",
+      day: "21",
+      city: "Fort McCoy",
+      score: 87,
+      rubric: { absurdity: 23, humor: 21, floridaFactor: 16, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "92-Year-Old Florida Woman Fires Gun at Neighbor's House After He Refuses to Kiss Her",
+      description:
+        "A 92-year-old woman opens fire on her neighbor's house after he won't give her a kiss.",
+      fullStory:
+        "Marion County deputies said 92-year-old Helen Staudinger showed up at neighbor Dwight Bettner's home in Fort McCoy on March 21, 2011, and refused to leave until he gave her a kiss. When the 53-year-old Bettner said no, Staudinger left angry, then returned with a semi-automatic pistol. She had intended to shoot Bettner's car, 'that he loved so much,' but missed and instead fired four shots at his house. One bullet came through a window while Bettner was on the phone with his father, showering him with glass but not striking him. Staudinger was arrested and charged with aggravated assault with a deadly weapon and shooting into a dwelling.",
+      source: "Reuters / NBC News",
+      sourceUrl:
+        "https://www.nbcnews.com/id/wbna42221634",
+    },
+    {
+      id: "mcnuggets-911-call",
+      date: "February 28, 2009",
+      year: "2009",
+      month: "February",
+      day: "28",
+      city: "Fort Pierce",
+      score: 82,
+      rubric: { absurdity: 20, humor: 22, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Calls 911 Three Times Over McDonald's Running Out of McNuggets",
+      description:
+        "A woman dials 911 three separate times after a McDonald's runs out of Chicken McNuggets and won't give her a refund.",
+      fullStory:
+        "Latreasa Goodman, 27, of Fort Pierce, called 911 three times on February 28, 2009, after a McDonald's on U.S. 1 told her they'd run out of Chicken McNuggets and refused to refund the $4.20 she'd already paid. 'This is an emergency,' she told the dispatcher on one call. 'If I would have known they didn't have McNuggets, I wouldn't have given my money, and now she wants to give me a McDouble, but I don't want one.' Police cited Goodman for misuse of the 911 system, a misdemeanor. A McDonald's spokesman later said she should have gotten her refund and sent her a gift card for a free meal.",
+      source: "NBC News (AP)",
+      sourceUrl:
+        "https://www.nbcnews.com/id/wbna29498350",
+    },
+    {
+      id: "snakes-tortoises-in-underwear",
+      date: "August 25, 2011",
+      year: "2011",
+      month: "August",
+      day: "25",
+      city: "Miami",
+      score: 82,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Man Caught Smuggling Baby Pythons and Tortoises in His Underwear at Miami Airport",
+      description:
+        "TSA officers at Miami International Airport find live baby snakes and tortoises hidden in a traveler's underwear.",
+      fullStory:
+        "Simon Turola Borges, a 30-year-old Brazilian national, was pulled aside by TSA officers at Miami International Airport on August 25, 2011, after a body scanner flagged him ahead of a flight home. Officers found two hatchling pythons wrapped in pantyhose in his cargo pants pockets, and when he pulled back the waistband of his underwear, more nylon-wrapped snakes and tortoises fell out. In total, agents recovered three ball pythons, three carpet pythons, one children's python, one Indian star tortoise, and two leopard tortoises — all several-week-old hatchlings protected under international wildlife trade law. Borges pleaded guilty to smuggling and was sentenced to time served, two years of supervised release, and a $400 fine paid to the Miami Science Museum.",
+      source: "U.S. Department of Justice",
+      sourceUrl:
+        "https://www.justice.gov/archive/usao/fls/PressReleases/2011/110914-04.html",
+    },
+    {
+      id: "whale-tail-for-soup",
+      date: "September 2, 2010",
+      year: "2010",
+      month: "September",
+      day: "2",
+      city: "Delray Beach",
+      score: 74,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Cuts Tail Off Dead Whale on Beach, Planned to Eat It",
+      description:
+        "A man fishing at dawn finds a dead whale washed ashore and cuts off its tail to take home and cook.",
+      fullStory:
+        "Chris Hogan, 60, was fishing for blue crabs at dawn on September 2, 2010, when an 8-to-12-foot pygmy sperm whale washed ashore in Delray Beach. Hogan pulled out a knife and cut off the whale's tail, planning to take it home to broil or fry. A lifeguard told him that mutilating a dead whale — a federally protected marine mammal — is a crime even though the animal was already deceased, and Florida Fish and Wildlife agents took him in for questioning. 'I didn't know it was illegal,' Hogan said, adding, 'I apologize to the state of Florida.'",
+      source: "WFLX / NBC Miami",
+      sourceUrl:
+        "https://www.wflx.com/story/13089170/whale-cut-in-half-after-washing-ashore-in-delray/",
+    },
+    {
+      id: "dominos-burns-papa-johns",
+      date: "October 20, 2011",
+      year: "2011",
+      month: "October",
+      day: "20",
+      city: "Lake City",
+      score: 76,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 12, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Domino's Managers Arrested for Burning Down Rival Papa John's",
+      description:
+        "Two Domino's Pizza managers are accused of torching a rival Papa John's to drum up business for their own store.",
+      fullStory:
+        "Lake City police said Bryan David Sullivan, 22, a general manager at a local Domino's Pizza, and Sean Everett Davidson, 23, set fire to a nearby Papa John's on October 20, 2011, causing roughly $500,000 in damage. Investigators said Sullivan was tired of watching Papa John's delivery cars drive past his store and believed that with the new competitor out of the way, business — and a bonus he stood to split with Davidson — would improve. Police said the pair built a homemade timed ignition device out of a clock, a nine-volt battery, and a golf-ball-sized amount of black powder. Both men were arrested and each charged with one count of arson.",
+      source: "NBC News",
+      sourceUrl:
+        "https://www.nbcnews.com/id/wbna45091289",
+    },
+    {
+      id: "waffle-house-truck-through-wall",
+      date: "August 15, 2011",
+      year: "2011",
+      month: "August",
+      day: "15",
+      city: "Panama City Beach",
+      score: 62,
+      rubric: { absurdity: 18, humor: 8, floridaFactor: 14, unexpectedness: 10, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Drives Truck Through Waffle House Trying to Run Over Wife",
+      description:
+        "A man calls ahead to threaten a Waffle House, then drives his truck through the building trying to hit his waitress wife.",
+      fullStory:
+        "Panama City Beach police said Charles Patrick O'Bryan called the Waffle House where his wife, Danielle Gibbons, worked on the evening of August 15, 2011, and told an employee he was going to 'run his truck through the building and kill everyone.' He then drove his pickup through the restaurant's wall, striking Gibbons, before getting out of the truck and brandishing a knife. A bystander subdued him using a broken piece of the building. Gibbons was hospitalized with injuries described as non-life-threatening. O'Bryan was charged with attempted murder and felony criminal mischief.",
+      contentNote:
+        "This incident involved a real injury and an attempted-murder charge — the man's wife was struck by his truck and hospitalized.",
+      source: "HuffPost",
+      sourceUrl:
+        "https://www.huffpost.com/2011/08/16/charles-patrick-o-bryan-waffle-house_n_928310.html",
+    },
   ];
