@@ -26,3 +26,12 @@ export function getStoryTimestamp(story: Pick<Story, "year" | "month" | "day">) 
 
   return new Date(year, month, day).getTime();
 }
+
+// Orders stories by calendar day (month + day) only, ignoring the year, so
+// e.g. a Jan 5 story from 2016 sorts before an Aug 20 story from 2026.
+export function getMonthDayOrder(story: Pick<Story, "month" | "day">) {
+  const month = MONTHS[story.month] ?? 0;
+  const day = parseInt(story.day, 10) || 1;
+
+  return month * 100 + day;
+}

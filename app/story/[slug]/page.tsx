@@ -7,6 +7,7 @@ import {
   getScoreLabel,
   getScoreTextColor,
 } from "../../components/StoryVisual";
+import React from "react";
 
 export default async function StoryPage({
   params,

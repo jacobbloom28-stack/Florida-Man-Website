@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { FloridaRail } from "../components/FloridaRail";
 import { stories, RUBRIC } from "../data/stories";
+import React from "react";
 
 const RUBRIC_TOTAL = RUBRIC.reduce((sum, row) => sum + row.points, 0);
 

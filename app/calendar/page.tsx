@@ -1,26 +1,37 @@
 import Link from "next/link";
 import Header from "../components/Header";
-import { stories } from "../data/stories";
+import { stories, type Story } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
-import { getStoryTimestamp } from "../lib/storyDate";
+import { getMonthDayOrder } from "../lib/storyDate";
 import React from "react";
 
 export default function Calendar() {
-  const dates = Array.from(
-    new Set(stories.map((story) => story.date))
-  )
+  // Group by calendar day (month + day), ignoring year, so every real day
+  // in Florida Man history gets exactly one "of the day" winner. Stories
+  // without a specific day on record (year only) can't win a day, so they're
+  // excluded rather than guessed at.
+  const storiesByDay = new Map<string, Story[]>();
 
-  const days = dates
-    .map((date) => {
-      const storiesForDate = stories.filter(
-        (story) => story.date === date
-      )
+  for (const story of stories) {
+    if (!story.month || !story.day) continue;
 
-      return storiesForDate.reduce((highest, story) =>
+    const key = `${story.month}-${story.day}`;
+    const group = storiesByDay.get(key);
+
+    if (group) {
+      group.push(story);
+    } else {
+      storiesByDay.set(key, [story]);
+    }
+  }
+
+  const days = Array.from(storiesByDay.values())
+    .map((storiesForDay) =>
+      storiesForDay.reduce((highest, story) =>
         story.score > highest.score ? story : highest
       )
-    })
-    .sort((a, b) => getStoryTimestamp(b) - getStoryTimestamp(a))
+    )
+    .sort((a, b) => getMonthDayOrder(a) - getMonthDayOrder(b))
 
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">

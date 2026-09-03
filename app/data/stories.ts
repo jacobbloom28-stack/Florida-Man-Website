@@ -1084,4 +1084,588 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-arrested-after-he-allegedly-gave-girlfriend-a-wet-willy-affidavit-says",
     },
+    {
+      id: "covid-relief-lamborghini",
+      date: "January 12, 2022",
+      year: "2022",
+      month: "January",
+      day: "12",
+      city: "Fort Lauderdale",
+      score: 76,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Uses $4 Million in COVID Relief to Buy Lamborghini",
+      description:
+        "Florida Man allegedly spends millions in fraudulently obtained COVID relief funds on a Lamborghini, Rolex watches, and designer clothes.",
+      fullStory:
+        "Valesky Barosy, 27, of Fort Lauderdale, was charged with wire fraud, money laundering, and aggravated identity theft after federal prosecutors said he submitted fraudulent Paycheck Protection Program loan applications seeking more than $4.2 million during the COVID-19 pandemic. Barosy received roughly $2.1 million in relief funds and spent it on a Lamborghini Huracán EVO, Rolex and Hublot watches, and designer clothing from Louis Vuitton, Gucci, and Chanel. He faced up to 132 years in prison if convicted on all counts.",
+      source: "U.S. Secret Service",
+      sourceUrl:
+        "https://www.secretservice.gov/newsroom/releases/2022/01/south-florida-man-charged-covid-19-relief-fraud-buying-lamborghini-rolex",
+    },
+    {
+      id: "bra-hat-car-burglar",
+      date: "July 14, 2019",
+      year: "2019",
+      month: "July",
+      day: "14",
+      city: "New Port Richey",
+      score: 74,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 13, unexpectedness: 12, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Wearing Nothing but Bra and Hat Burglarizes Cars",
+      description:
+        "Surveillance video shows a naked man wearing only a bra, sneakers, and a baseball cap burglarizing cars in a fenced parking lot.",
+      fullStory:
+        "Pasco County deputies said a man wearing nothing but a black sports bra, sneakers, and a baseball cap was caught on surveillance video climbing into a fenced parking lot and burglarizing several company vehicles at U.S. Water Services Corporation in New Port Richey. The man left drug paraphernalia at the scene and remained unidentified; deputies released the surveillance images publicly in hopes someone would recognize him.",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/pasco-county/naked-florida-man-wearing-bra-burglarizes-several-cars-in-new-port-richey-parking-lot/",
+    },
+    {
+      id: "carjacker-cant-drive-stick",
+      date: "July 16, 2019",
+      year: "2019",
+      month: "July",
+      day: "16",
+      city: "Orlando",
+      score: 82,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Carjacker Arrested Because He Couldn't Drive Stick",
+      description:
+        "A carjacking attempt on an elderly man falls apart after the suspect realizes he can't operate a manual transmission.",
+      fullStory:
+        "Deputies said 25-year-old Jaelyn Alexander tried to carjack an elderly man at the intersection of East Colonial Drive and Dean Road in Orange County just before noon. Once inside, Alexander couldn't get the manual-transmission car moving and jumped out, then stole a second vehicle instead. He was arrested a short time later and charged with carjacking, grand theft, and battery on a victim over 65. The elderly victim told deputies he believed the stall was because Alexander didn't know how to drive a stick shift.",
+      source: "CNN",
+      sourceUrl:
+        "https://www.cnn.com/2019/07/18/us/florida-man-arrested-carjacking-stick-shift-trnd",
+    },
+    {
+      id: "dog-was-driving",
+      date: "October 7, 2015",
+      year: "2015",
+      month: "October",
+      day: "7",
+      city: "Bradenton",
+      score: 78,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Pulled Over During Traffic Stop Claims Dog Was Driving",
+      description:
+        "A DUI suspect tells deputies his dog, not him, was actually behind the wheel of the car.",
+      fullStory:
+        "Manatee County deputies chased down 26-year-old Reliford Cooper III after clocking him speeding around 7:45 p.m. As he was being handcuffed on suspicion of DUI with damage to a person or property, Cooper told deputies, 'I wasn't driving that car.' Pressed for an explanation, he elaborated: 'My dog was driving that car.' There was no dog in the vehicle.",
+      source: "HuffPost",
+      sourceUrl:
+        "https://www.huffingtonpost.com/entry/reliford-cooper-dog-driving-car_us_561bbe80e4b0e66ad4c87505",
+    },
+    {
+      id: "forklift-tired-of-walking",
+      date: "June 25, 2017",
+      year: "2017",
+      month: "June",
+      day: "25",
+      city: "Port Orange",
+      score: 76,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 13, unexpectedness: 11, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Steals Forklift Because He Was Tired of Walking",
+      description:
+        "Florida Man caught driving a stolen forklift says he took it because he was tired of walking — and it wasn't his first time.",
+      fullStory:
+        "Port Orange police approached 43-year-old Bradley Barefoot — who was, fittingly, barefoot — after spotting him driving a stolen forklift worth roughly $38,000. He initially claimed he thought it was equipment stolen from his boss in Alabama, then admitted he took it because he noticed the keys left in the ignition and was tired of walking. He was found parked in a handicap spot with a mattress loaded on the forklift. It was Barefoot's second forklift theft with the same excuse — he'd taken one from behind a Daytona Beach Best Buy the year before. He was charged with grand theft.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/strange-florida/2017/06/29/florida-man-tired-of-walking-steals-forklift-police-say/",
+    },
+    {
+      id: "naked-school-vandal-24hrs",
+      date: "May 25, 2020",
+      year: "2020",
+      month: "May",
+      day: "25",
+      city: "Miramar",
+      score: 79,
+      rubric: { absurdity: 22, humor: 19, floridaFactor: 12, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Naked Florida Man Spends 24 Hours Vandalizing School",
+      description:
+        "A man breaks into a high school and spends nearly a full day smashing computers and flooding hallways while completely nude.",
+      fullStory:
+        "Miramar police said 21-year-old Matthew Crandall broke into Miramar High School around 7 a.m. and spent the next 24 hours inside, naked, smashing computers, destroying classrooms, and flooding hallways. The rampage caused more than $100,000 in damage before Crandall, of North Fort Myers, was arrested and charged with burglary and criminal mischief.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/trending/naked-florida-man-spent-24-hours-vandalizing-school-police-say/O22V4K6C7VDLBJZFQ6YCROB5GY/",
+    },
+    {
+      id: "diaper-monkey-car-theft",
+      date: "June 8, 2018",
+      year: "2018",
+      month: "June",
+      day: "8",
+      city: "Holiday",
+      score: 88,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 15, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Drives Stolen Car into Ditch with Diaper-Wearing Monkey Attached to Him",
+      description:
+        "A man is arrested for driving a stolen car into a ditch — with a diaper-wearing pet monkey clinging to his shirt the whole time.",
+      fullStory:
+        "Pasco County deputies arrested 24-year-old Cody Blake Hesson in Holiday after he drove a stolen vehicle into a ditch and tried to run. When deputies caught up to him, his pet capuchin monkey, named Monk and wearing a diaper, was still clinging to his shirt. Hesson had no permit for the animal and faced additional charges on top of auto theft; deputies had to separate him from Monk, who was confiscated, before the two shared a goodbye hug.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/monkey-in-diaper-found-clinging-to-florida-man-in-stolen-car-police-say/765770525/",
+    },
+    {
+      id: "wears-womans-clothes-asks-drink",
+      date: "May 29, 2019",
+      year: "2019",
+      month: "May",
+      day: "29",
+      city: "Jacksonville",
+      score: 72,
+      rubric: { absurdity: 19, humor: 17, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Breaks into Woman's Home, Wears Her Clothes, Asks Her for a Drink",
+      description:
+        "A man fleeing police breaks into a 77-year-old woman's home, changes into her clothes to hide from officers, then casually asks for a drink.",
+      fullStory:
+        "Jacksonville Sheriff's Office investigators said 37-year-old Kristopher Patterson, being chased by an officer over a robbery, broke into a 77-year-old woman's home and changed into her clothing to avoid being identified. When the homeowner found him, Patterson told her he was hiding from police and asked if he could have a drink from her fridge. He then took her purse and car keys and fled in her Cadillac, which he was later found slumped over the wheel of in a Walmart parking lot on Philips Highway. He was charged with burglary of an occupied dwelling, carjacking, petit theft, and resisting an officer without violence.",
+      source: "News4Jax",
+      sourceUrl:
+        "https://www.news4jax.com/news/2019/05/29/police-burglar-dressed-as-woman-took-her-cadillac-drove-to-walmart/",
+    },
+    {
+      id: "mcdonalds-railing-dance",
+      date: "June 11, 2019",
+      year: "2019",
+      month: "June",
+      day: "11",
+      city: "Naples",
+      score: 77,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Naked Florida Man Dances at McDonald's, Tries to Have Sex with Railing",
+      description:
+        "A man strips naked in a Naples McDonald's, performs a 'strange dance,' and appears to try to have relations with a railing.",
+      fullStory:
+        "Collier County deputies responded to a Naples McDonald's on Tamiami Trail East after witnesses reported a man taking off his clothes and dancing strangely, appearing to try to have sexual contact with a railing. The man was identified as 62-year-old John Francis Morgan, who had been warned the night before to stay away from the restaurant after a prior trespass warning. He was arrested and charged with trespass on property other than a structure.",
+      source: "Newsweek",
+      sourceUrl:
+        "https://www.newsweek.com/florida-man-naked-strange-dance-mcdonalds-sex-railing-1443522",
+    },
+    {
+      id: "dunkin-donuts-restaurant-chairs",
+      date: "June 8, 2019",
+      year: "2019",
+      month: "June",
+      day: "8",
+      city: "Naples",
+      score: 66,
+      rubric: { absurdity: 16, humor: 17, floridaFactor: 10, unexpectedness: 10, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Goes to Restaurant, Stands on Chairs, Flips Off Customers, Tells Cops to Go to Dunkin' Donuts",
+      description:
+        "A disorderly man standing on chairs and cursing at diners tells the deputies who arrive to instead go get Dunkin' Donuts.",
+      fullStory:
+        "The manager of Latino America Restaurant in Naples told Collier County deputies that 55-year-old John Toddy slammed the outdoor menu sign, then went inside, stood on chairs, and stuck his middle finger up at patrons while shouting and cursing. When deputies arrived, Toddy — described as having bloodshot, watery eyes and slurred speech — told them to 'get back in your car and go to Dunkin' Donuts.' He was charged with disorderly intoxication.",
+      source: "WINK News",
+      sourceUrl:
+        "https://www.winknews.com/2019/06/09/florida-man-disrupts-restaurant-tells-officers-go-to-dunkin-donuts/",
+    },
+    {
+      id: "cocaine-on-nose",
+      date: "June 9, 2019",
+      year: "2019",
+      month: "June",
+      day: "9",
+      city: "Hillsborough County",
+      score: 66,
+      rubric: { absurdity: 15, humor: 18, floridaFactor: 10, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man with Cocaine on His Nose Tells Cops It's Not His",
+      description:
+        "A passenger with visible white powder around his nose insists to deputies that the cocaine isn't his.",
+      fullStory:
+        "A Hillsborough County deputy pulled over a car around 4:30 a.m. and noticed a white powdery substance around the nose of 20-year-old passenger Fabricio Tueros Jimenez, which field-tested positive for cocaine. A search also turned up 250 grams of marijuana and 13 Xanax pills in a backpack. Despite the powder on his face, Jimenez told deputies the cocaine was not his.",
+      source: "Newsweek",
+      sourceUrl:
+        "https://www.newsweek.com/florida-man-tells-deputies-cocaine-his-nose-not-his-police-say-1443272",
+    },
+    {
+      id: "excavator-walmart-crash",
+      date: "September 11, 2023",
+      year: "2023",
+      month: "September",
+      day: "11",
+      city: "Gainesville",
+      score: 83,
+      rubric: { absurdity: 23, humor: 19, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Steals Excavator, Goes for Joyride, Crashes into Walmart",
+      description:
+        "A man hot-wires a construction excavator, plows it through several buildings, and finally crashes it into a Walmart loading dock.",
+      fullStory:
+        "Gainesville police said 47-year-old Jesse Charles Smith hot-wired an excavator from a worksite on Southwest 47th Street and went on a rampage, smashing into buildings at a nearby storage facility before driving the machine into the loading dock wall of a Walmart at Butler Plaza. He then climbed out of the cab and entered the store carrying a machete. The damage was estimated at more than $2 million. Smith, who admitted to being on drugs, was later sentenced to 10 years in prison followed by 10 years of probation.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/suspect-plows-through-florida-walmart-with-stolen-excavator-police",
+    },
+    {
+      id: "street-sweeper-theft",
+      date: "September 27, 2023",
+      year: "2023",
+      month: "September",
+      day: "27",
+      city: "Ocala",
+      score: 74,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Steals Employer's Street Sweeper to Clean Streets for Another Company",
+      description:
+        "A former lawn-care employee, denied use of his old boss's street sweeper, steals it anyway to do a job for a competitor.",
+      fullStory:
+        "A Marion County lawn-care business owner reported his street sweeper stolen from a shop on Northeast 150th Avenue. Deputies identified the suspect as 29-year-old Kevin Rodriguez Aponte, a former employee who had left the company about six months earlier after a dispute over him taking contracts to start his own business. Aponte had called the day before asking to borrow the street sweeper and was refused. In a post-Miranda interview, he admitted he didn't have permission but needed it for a job in Ocala and planned to return it. He was charged with grand theft of a motor vehicle.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-arrested-for-borrowing-ex-employers-street-sweeper-to-do-a-job-with-competing-company-deputies",
+    },
+    {
+      id: "trump-trillion-dollars",
+      date: "September 9, 2019",
+      year: "2019",
+      month: "September",
+      day: "9",
+      city: "Fort Walton Beach",
+      score: 80,
+      rubric: { absurdity: 21, humor: 19, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Smashes 20 Car Windows, Says Trump Owes Him 1 Trillion Dollars",
+      description:
+        "A homeless man goes on a window-smashing spree through a hotel parking lot and offers an extraordinary explanation.",
+      fullStory:
+        "Okaloosa County deputies arrested 30-year-old Justin James Wilson after he used rocks and a belt buckle to smash the windows of at least 20 cars parked at a Holiday Inn Resort on Okaloosa Island, causing roughly $30,000 in damage. When confronted, Wilson admitted to breaking the windows, telling deputies: 'Take me to jail. I did it because Donald Trump owes me one trillion dollars and these vehicles belong to the mafia.' He faced 14 felony and six misdemeanor counts of criminal mischief.",
+      source: "Fox News",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-smashed-windows-trump-trillion-dollars",
+    },
+    {
+      id: "breakfast-break-in",
+      date: "September 3, 2019",
+      year: "2019",
+      month: "September",
+      day: "3",
+      city: "Safety Harbor",
+      score: 79,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 12, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Breaks into Home, Cooks Breakfast, Tells Owner to 'Go Back to Sleep'",
+      description:
+        "A homeowner wakes up before dawn to find a stranger cooking himself breakfast in the kitchen, who calmly tells him to go back to bed.",
+      fullStory:
+        "A Safety Harbor resident told Pinellas County deputies he woke up after 4 a.m. to find 19-year-old Gavin Crim, a Marine, cooking and eating a meal in his kitchen after entering through an unlocked rear door. When the homeowner confronted him, Crim told him to 'go back to sleep.' Crim fled into a wooded, swampy area when the resident called 911 but was tracked down by deputies nearby. He was charged with burglary of an occupied dwelling and released on a $1,000 bond.",
+      source: "Tampa Bay Times",
+      sourceUrl:
+        "https://www.tampabay.com/news/florida/2019/09/09/florida-man-breaks-into-home-cooks-meal-tells-owner-go-back-to-sleep/",
+    },
+    {
+      id: "booty-patrol-truck",
+      date: "October 29, 2023",
+      year: "2023",
+      month: "October",
+      day: "29",
+      city: "DeSoto County",
+      score: 79,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Gets Citation for 'Booty Patrol' Truck",
+      description:
+        "A driver is cited after deputies determine his 'Booty Patrol' truck, complete with flashing red and blue lights, too closely resembles a Border Patrol vehicle.",
+      fullStory:
+        "DeSoto County deputies spotted a white Chevy Silverado with a green stripe, the words 'Booty Patrol' on the back, and red and blue flashing lights on the grille at the Mosaic Arena. When a deputy approached, the driver, later identified as Gabriel Luviano-Renteria, turned off the lights and drove away. He was cited under a law banning vehicles from displaying lights that too closely resemble law enforcement lights, and additional charges of impersonating law enforcement and obstructing police followed weeks later.",
+      source: "NBC News",
+      sourceUrl:
+        "https://www.nbcnews.com/news/us-news/driver-booty-patrol-truck-resembled-border-patrol-cited-florida-rcna123262",
+    },
+    {
+      id: "rental-car-uber",
+      date: "October 24, 2023",
+      year: "2023",
+      month: "October",
+      day: "24",
+      city: "Polk County",
+      score: 71,
+      rubric: { absurdity: 17, humor: 18, floridaFactor: 11, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Stops Paying for Rental Car, Uses It to Give Uber Rides",
+      description:
+        "An Uber driver keeps a stolen rental car running nonstop for three weeks straight to dodge the remote shutoff device after he stopped making payments.",
+      fullStory:
+        "Polk County deputies stopped 27-year-old Elijah Mills, of Maitland, on U.S. 27 in Davenport while he was giving an Uber ride to a couple visiting from the United Kingdom for their upcoming wedding. Deputies said Mills had rented the Chevrolet Equinox, stopped making payments, and then kept the vehicle running nonstop for three weeks to avoid a remote shutoff device the rental company could trigger. Mills acknowledged the company had been calling him daily. He was booked on charges of grand theft motor vehicle and driving with a suspended license.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2023/10/26/florida-uber-driver-kept-stolen-rental-car-running-for-3-weeks-to-avoid-payments-deputies-say/",
+    },
+    {
+      id: "naked-asleep-punches-cop",
+      date: "October 24, 2023",
+      year: "2023",
+      month: "October",
+      day: "24",
+      city: "Delray Beach",
+      score: 57,
+      rubric: { absurdity: 17, humor: 8, floridaFactor: 10, unexpectedness: 11, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Found Drunk, Naked and Asleep Outside, Punches Cop Who Wakes Him",
+      description:
+        "A naked man passed out face-down in an intersection wakes up and immediately punches the officer trying to help him.",
+      fullStory:
+        "Delray Beach police found 28-year-old Edward Tuttle lying naked and unconscious, face-down in the grass of an intersection. As an officer shook him awake, Tuttle stood up and, without warning, punched the officer in the nose. He was tased and taken into custody, still naked, and later admitted he had been drunk.",
+      contentNote:
+        "This incident involved a real injury — a police officer was punched in the face.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/edward-tuttle-naked-drunk-man-punched-cop-intoxicated-lying-face-down-battery-delray-beach-police-department-officer-florida-october-24-2023",
+    },
+    {
+      id: "hatchet-spilled-beer",
+      date: "October 23, 2023",
+      year: "2023",
+      month: "October",
+      day: "23",
+      city: "Escambia County",
+      score: 52,
+      rubric: { absurdity: 16, humor: 6, floridaFactor: 10, unexpectedness: 10, headlineQuality: 6, sourceQuality: 4 },
+      title: "Florida Man Hits Other Florida Man in Head with Hatchet Over Spilled Beer",
+      description:
+        "A dispute over a spilled beer inside a tent leads a man to grab a hatchet and swing it at the person he blamed.",
+      fullStory:
+        "Escambia County deputies responded to a report of an armed disturbance near tents by a La Quinta Inn on North Davis Highway. Deputies said 56-year-old Danny Tharp accused another man of spilling his beer inside Tharp's tent, then grabbed a hatchet and swung it wildly at him, striking him several times. The victim escaped bleeding from his eye and mouth and found deputies nearby. Tharp was arrested and charged with attempted homicide.",
+      contentNote:
+        "This incident involved a real injury — the victim was struck in the head with a hatchet and left bleeding.",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/florida/florida-man-hits-another-in-the-face-with-a-hatchet-over-spilled-beer-deputies/",
+    },
+    {
+      id: "bucs-jersey-police-impersonator",
+      date: "October 22, 2023",
+      year: "2023",
+      month: "October",
+      day: "22",
+      city: "Sumter County",
+      score: 79,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in Bucs Jersey Tries Pulling Over Cars, Arrested for Impersonating Police",
+      description:
+        "A man wearing a Buccaneers jersey rigs his truck with red and blue lights and tries to pull over other drivers on I-75.",
+      fullStory:
+        "A Florida Highway Patrol trooper was alerted to a red GMC Sierra pickup trying to pull over other vehicles using flashing red and blue lights on I-75 near Bushnell. A witness said the truck aggressively motioned him to pull over before speeding off. The trooper stopped the truck and identified the driver as 62-year-old Earl Mitchell Cesario, wearing a Rob Gronkowski Buccaneers jersey. A search turned up dashboard-mounted red and blue lights wired to the cigarette lighter. Cesario was charged with false personation of officials.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/tampa-sumter-county-police-officer-impersonator-buccaneers-jersey-interstate",
+    },
+    {
+      id: "dolphin-headbutt-window",
+      date: "October 15, 2023",
+      year: "2023",
+      month: "October",
+      day: "15",
+      city: "Marion County",
+      score: 79,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 12, unexpectedness: 13, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Headbutts Car Window, Flops Out Like a Dolphin, Says He's 'High as F--k'",
+      description:
+        "A man fleeing deputies at high speed crashes through a fence, headbutts his own car window open, and flops out onto the ground.",
+      fullStory:
+        "The Marion County Sheriff's Office said 24-year-old Tyler Fayconsolo led deputies on a chase reaching speeds up to 100 mph after leaving a Circle K, until spike strips deflated his tires and a concrete fence stopped the car. Dashcam video showed Fayconsolo headbutt the passenger window open and come 'flying out like a dolphin' before running from a K-9 officer, who caught him. At the hospital, Fayconsolo told deputies he was 'high as f—' before being booked on charges including DUI and aggravated fleeing.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/high-as-f-dash-cam-video-shows-florida-man-head-butt-car-window-flop-out-of-car-during-high-speed-chase",
+    },
+    {
+      id: "all-gas-no-brakes-tattoo",
+      date: "November 13, 2023",
+      year: "2023",
+      month: "November",
+      day: "13",
+      city: "Polk County",
+      score: 76,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 13, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man with 'ALL GAS No Brakes' Neck Tattoo Crashes While Fleeing Police",
+      description:
+        "A man with a neck tattoo reading 'All gas, no brakes' lives up to it, crashing at high speed while fleeing a string of car burglaries.",
+      fullStory:
+        "Polk County deputies responded to a report of car burglaries in the Preservation Pointe neighborhood around 3:30 a.m. and spotted 37-year-old Timothy Allen Hogue and 31-year-old Rebecca Kozub in a white Cadillac. When a deputy tried to stop them, Hogue sped off and later crashed into a parked car at high speed. Sheriff Grady Judd noted Hogue has a neck tattoo reading 'All gas, no brakes.' Hogue was treated at a hospital and later admitted to the burglaries, blaming the idea on Kozub. He was charged with multiple counts of burglary, fleeing to elude, conspiracy, and drug possession.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/video-florida-man-with-all-gas-no-brakes-neck-tattoo-crashes-after-fleeing-polk-county-crime-scene",
+    },
+    {
+      id: "fbi-haunted-house-bb-gun",
+      date: "October 31, 2023",
+      year: "2023",
+      month: "October",
+      day: "31",
+      city: "Seminole",
+      score: 58,
+      rubric: { absurdity: 18, humor: 7, floridaFactor: 10, unexpectedness: 12, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Dressed as FBI Pistol-Whips Haunted House Host with BB Gun",
+      description:
+        "A man dressed as an FBI agent visiting a free haunted house strikes the host in the face with an airsoft handgun, then says he thought he was a statue.",
+      fullStory:
+        "Deputies said 20-year-old Ingus Schusser, wearing an FBI jacket and body armor and carrying an airsoft handgun resembling a Glock, visited a free haunted house at a Seminole home on Halloween night. Rounding a corner, he struck the 47-year-old host — who was in costume but not actively performing — in the face with the gun's handle, causing significant injury. Schusser reportedly laughed afterward and was unapologetic. He was arrested and charged with aggravated battery and possession of body armor during commission of a felony.",
+      contentNote:
+        "This incident involved a real injury — the victim was struck in the face and sustained significant injury.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-hits-haunted-house-host-in-eye-with-toy-gun-after-mistaken-them-for-statue-deputies",
+    },
+    {
+      id: "dollar-general-voices",
+      date: "November 13, 2023",
+      year: "2023",
+      month: "November",
+      day: "13",
+      city: "Ocala",
+      score: 63,
+      rubric: { absurdity: 16, humor: 15, floridaFactor: 10, unexpectedness: 11, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Robs Same Dollar General Twice, Blames Voices in His Head",
+      description:
+        "A man robs the same Dollar General store on back-to-back days and, when caught, blames voices in his head.",
+      fullStory:
+        "Marion County deputies said a Dollar General employee on West Highway 26 in Ocala recognized a man who returned to the store a day after allegedly robbing it, and tried to call 911. The man, identified as Matthew Pringle, allegedly grabbed the employee, took the phone from his hand, and knocked him to the ground before fleeing again. Pringle was arrested and told deputies he was 'hearing voices' that directed him to commit the robberies. He was charged with two counts of robbery and resisting an officer without violence.",
+      source: "Fox News",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-claims-voices-made-him-rob-dollar-general-twice-2-days-deputies",
+    },
+    {
+      id: "27-tires-secret-government",
+      date: "November 2, 2023",
+      year: "2023",
+      month: "November",
+      day: "2",
+      city: "Miami-Dade County",
+      score: 74,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Slashes 27 Tires, Claims He Was Sabotaged by Secret Government Exposure",
+      description:
+        "A man is caught on home security cameras slashing tires throughout a neighborhood, then claims in court he was targeted by the government.",
+      fullStory:
+        "Home security cameras captured 41-year-old Juan Pablo Ramos-Nieto walking through the Villas Del Campos community in southwest Miami-Dade County with a knife around 5 a.m., slashing tires on 17 vehicles — including a marked Homestead police cruiser — for a total of 27 slashed tires and about $6,000 in damage. In bond court, Ramos-Nieto claimed he had been exposed to 'secret government information' and was being 'demonized' by the CIA. He was charged with 27 counts of criminal mischief.",
+      source: "NBC 6 South Florida",
+      sourceUrl:
+        "https://www.nbcmiami.com/news/local/florida-man-charged-with-27-counts-for-slashing-tires-claims-hes-being-demonized-and-was-exposed-to-government-info/3151606/",
+    },
+    {
+      id: "mclovin-motorcycle",
+      date: "November 5, 2023",
+      year: "2023",
+      month: "November",
+      day: "5",
+      city: "Plant City",
+      score: 78,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in Police Chase on Motorcycle with Fake MCLOVIN License Plate",
+      description:
+        "A motorcyclist with a fake Hawaiian 'MCLOVIN' plate — a reference to Superbad — leads troopers on a 110 mph chase across the Gandy Bridge.",
+      fullStory:
+        "A Florida Highway Patrol trooper spotted 30-year-old Jessie Rivera, of Plant City, swerving between vehicles at high speed on a motorcycle displaying a fake Hawaiian tag reading 'MCLOVIN.' Rivera hit 110 mph in a posted 45 mph zone and fled from the trooper, a St. Petersburg police officer, and a Pinellas deputy before getting onto the Gandy Bridge. The chase ended when the trooper pulled Rivera off the bike, which fell on both of them and broke Rivera's foot. He was booked on a charge of fleeing law enforcement at high speed.",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/hillsborough-county/plant-city-motorcyclist-with-mclovin-plate-flees-from-officers-at-over-110-mph-fhp/",
+    },
+    {
+      id: "school-feces-frosting",
+      date: "August 25, 2019",
+      year: "2019",
+      month: "August",
+      day: "25",
+      city: "Apopka",
+      score: 67,
+      rubric: { absurdity: 20, humor: 12, floridaFactor: 11, unexpectedness: 12, headlineQuality: 7, sourceQuality: 5 },
+      title: "Nearly Naked Florida Man Breaks into School, Smears Feces and Cake Frosting Everywhere",
+      description:
+        "A half-naked man breaks into an elementary school and smears feces and stolen cake frosting across classrooms and hallways.",
+      fullStory:
+        "Seminole County deputies said 25-year-old Christian Dominic Shay broke into Bear Lake Elementary School in Apopka while half-naked and spread cake frosting and human feces across a classroom, leaving frosting and bare footprints on the floor, handprints on a window ledge, a stapler in a toilet, and a feces-covered TV remote. Detectives identified Shay through surveillance footage months later; he told them he believed he committed the offenses after smoking a marijuana blunt he suspected had been laced with an unknown substance. He was charged with petit theft, criminal mischief, exposure of sexual organs, and creating a nuisance injurious to health.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/2019/11/25/mostly-naked-florida-man-accused-of-spreading-feces-during-school-break-in/",
+    },
+    {
+      id: "walmart-ceiling-nurse",
+      date: "November 19, 2019",
+      year: "2019",
+      month: "November",
+      day: "19",
+      city: "New Port Richey",
+      score: 56,
+      rubric: { absurdity: 18, humor: 6, floridaFactor: 10, unexpectedness: 11, headlineQuality: 7, sourceQuality: 4 },
+      title: "Wal-Mart Evacuated After Florida Man Found Crawling Through Ceiling",
+      description:
+        "A Walmart is evacuated after a man barricades himself in a crawl space above the ceiling, and he later attacks a nurse at the hospital.",
+      fullStory:
+        "Pasco County deputies said William L. Harrell Jr., 47, entered a New Port Richey Walmart and asked an employee for a phone, claiming his wife was trying to kill him. He then went behind the service desk, threw a stool, barricaded himself in a communications closet, and climbed into the ceiling crawl space, prompting the store's evacuation. Deputies used a stun gun, bean bag gun, and pepper spray to get him down. At the hospital for medical clearance, Harrell punched a nurse in the face, knocked him down, and continued beating him. He was charged with aggravated assault on a law enforcement officer, business burglary, criminal mischief, disorderly conduct, resisting arrest, and battery on a nurse.",
+      contentNote:
+        "This incident involved a real injury — a nurse was punched, knocked down, and beaten while treating the suspect.",
+      source: "Newsweek",
+      sourceUrl:
+        "https://www.newsweek.com/florida-man-tased-out-ceiling-walmart-1472865",
+    },
+    {
+      id: "meth-belly-button",
+      date: "November 16, 2019",
+      year: "2019",
+      month: "November",
+      day: "16",
+      city: "Clearwater",
+      score: 72,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 11, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "380-Pound Florida Man Hides Meth in Belly Button",
+      description:
+        "A jail intake search turns up a bag of methamphetamine wedged deep inside a 380-pound man's belly button.",
+      fullStory:
+        "Clearwater police responded to a McDonald's after a report of a suspicious person and arrested 41-year-old Martin Skelly, of St. Petersburg, who was found with a hypodermic needle containing methamphetamine. During intake at the Pinellas County Jail, a deputy discovered a small bag of crystal powder wedged deep within the belly button cavity of Skelly, who weighed 380 pounds. He told an investigator he 'was just being dumb and not thinking.' Skelly faced two additional felony charges for introducing contraband into a correctional facility and narcotics possession.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/strange-florida/2019/11/27/florida-man-stashes-meth-deep-in-belly-button-police-say/",
+    },
+    {
+      id: "fake-cop-pulls-over-undercover-deputy",
+      date: "June 24, 2026",
+      year: "2026",
+      month: "June",
+      day: "24",
+      city: "Thonotosassa",
+      score: 86,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 15, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Impersonating Police Tries to Pull Over an Undercover Sheriff's Deputy",
+      description:
+        "A man flashing red and blue lights from his SUV tries to pull over an unmarked car on the highway — which turns out to be an undercover deputy.",
+      fullStory:
+        "Hillsborough County deputies said 46-year-old Nadi Jabari activated red and blue emergency lights on his black Chevrolet Suburban while following an undercover HCSO vehicle on U.S. Highway 301 North in Thonotosassa, appearing to try to pull it over. The undercover deputy alerted other units, who quickly stopped Jabari's SUV. A search turned up the active light setup, a spare light bar, and a handgun. Jabari was charged with false personation, unlawful use of a blue light, and possession of a firearm during the commission of a felony.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/fake-law-enforcement-officer-pulls-over-undercover-hillsborough-county-deputy-hcso",
+    },
+    {
+      id: "key-west-conch-train-birthday-joyride",
+      date: "July 4, 2025",
+      year: "2025",
+      month: "July",
+      day: "4",
+      city: "Key West",
+      score: 90,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Marks His Birthday by Doing Meth and Stealing a Tourist Train",
+      description:
+        "A man celebrates his 57th birthday by sneaking onto a parked sightseeing trolley, driving off with it, and picking up random passengers downtown.",
+      fullStory:
+        "Key West police said 57-year-old Jonathan Patrick Winslow told a Conch Tour Train employee he used to work for the company and asked for a tour, then climbed aboard a trolley parked inside a depot building and drove off in it. Employees tracked the trolley down and told officers Winslow had picked up two random passengers downtown along the way. He was found near the Southernmost Buoy and told police he doesn't steal, he 'borrowed' the trolley, and that it was his birthday. A search after his arrest turned up a glass pipe containing methamphetamine in his swim trunks. He was charged with burglary, grand theft auto, and possession of drug paraphernalia.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-accused-taking-key-west-conch-tour-train-joyride-having-meth",
+    },
+    {
+      id: "vodka-spritzer-police-chase",
+      date: "April 19, 2025",
+      year: "2025",
+      month: "April",
+      day: "19",
+      city: "Sebring",
+      score: 80,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Offers Deputies a Vodka Spritzer Mid-Chase, Asks If They 'Had Fun'",
+      description:
+        "A man leading deputies on a multi-mile chase holds a stolen can of vodka spritzer out the window and offers them a drink.",
+      fullStory:
+        "Highlands County deputies said 39-year-old Richard Christopher Smith stole alcohol and other items from the Spring Lake Market in Sebring, then led deputies on a chase that ended in a parking lot at the Sebring Airport. Bodycam video showed Smith holding a can of Ketel One vodka spritzer out his window as he drove past a deputy, saying, 'I was just going to give you a drink, that's it.' Smith allegedly tried to ram two patrol vehicles before his tires were flattened by spike strips; he then got out smoking a cigarette and was tased. Afterward, he asked deputies, 'You guys had fun, though, right?' He faced charges including aggravated assault on law enforcement, battery on law enforcement, resisting arrest, and DUI.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-steals-alcohol-offers-deputies-vodka-spritzer-during-police-chase-officials",
+    },
   ];
