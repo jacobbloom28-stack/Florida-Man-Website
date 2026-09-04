@@ -2004,4 +2004,178 @@ export const stories: Story[] = [
       sourceUrl:
         "https://cbs12.com/news/local/armed-burglar-shatters-wendys-window-makes-sandwich-before-arrest-woolbright-road-taser-boynton-beach-police-department-september-19-2025",
     },
+    {
+      id: "chimichanga-out-taco-bell-fish",
+      date: "May 28, 2026",
+      year: "2026",
+      month: "May",
+      day: "28",
+      city: "Flagler County",
+      score: 85,
+      rubric: { absurdity: 21, humor: 23, floridaFactor: 15, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Caught With 'Chimichanga Out' at Taco Bell Had a Pet Fish in His Backpack",
+      description:
+        "Deputies say a man exposed himself outside a Taco Bell in the middle of the night, then turned out to have a live pet fish swimming in his backpack.",
+      fullStory:
+        "Flagler County deputies responded to a Taco Bell on State Road 100 just before 1 a.m. on May 28, 2026, after employees reported what the sheriff's office jokingly described as a man with his 'chimichanga out' near a side door. Deputies identified the suspect as Brandon Irizarry, 28, who had multiple pairs of pants pulled down and initially seemed unaware officers had arrived before attempting to cover himself. He was arrested on a charge of unlawful exposure of sexual organs and held on a $5,000 bond. While inventorying his belongings, deputies discovered a live betta fish swimming in a plastic container inside his backpack. They nicknamed the fish 'Baja Blast' and transferred it to the Flagler County Humane Society, where staff said it was doing great.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/his-chimichanga-out-man-arrested-after-lewd-incident-outside-central-florida-taco-bell/L5X6PVN7URG4BCERLUJ5RXC4N4/",
+    },
+    {
+      id: "mar-a-lago-car-wash-checkpoint",
+      date: "August 25, 2026",
+      year: "2026",
+      month: "August",
+      day: "25",
+      city: "Palm Beach",
+      score: 80,
+      rubric: { absurdity: 21, humor: 15, floridaFactor: 17, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman Arrested at Closed Mar-a-Lago Checkpoint, Says She's 'Here for the Car Wash'",
+      description:
+        "A Florida woman allegedly drove up to a closed Secret Service checkpoint near Mar-a-Lago, turned on a hose, and told officers she was there for a car wash.",
+      fullStory:
+        "Palm Beach police were stationed at a closed Secret Service security checkpoint near Mar-a-Lago around 6 p.m. on August 25, 2026, when an officer saw a woman exit a gray Hyundai SUV, walk to a hose and sprinkler system in the closed lot, and turn it on. When an agent approached and questioned her, the woman, identified as Alexa Rae Scharf, 29, of Loxahatchee, allegedly said, 'I'm here for the car wash.' Scharf then fled in her SUV, driving toward officers at the checkpoint, before becoming involved in a standoff several blocks away. During her arrest, police shot and killed her pit bull after it attacked and bit an officer. Scharf faces charges including two counts of aggravated assault with a vehicle, fleeing and eluding police, and resisting an officer without violence, and was held on $16,000 bond.",
+      contentNote:
+        "This incident ended with police shooting and killing the woman's dog after it bit an officer — there is a real animal death here.",
+      source: "WPTV",
+      sourceUrl:
+        "https://www.wptv.com/news/region-c-palm-beach-county/palm-beach/here-for-the-car-wash-woman-arrested-after-high-speed-chase-near-mar-a-lago-security-checkpoint",
+    },
+    {
+      id: "lobster-spot-air-supply-cutoff",
+      date: "July 29, 2026",
+      year: "2026",
+      month: "July",
+      day: "29",
+      city: "Miami",
+      score: 75,
+      rubric: { absurdity: 21, humor: 10, floridaFactor: 17, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Charged With Attempted Murder After Cutting Off Rival Diver's Air Supply Over a Lobster Spot",
+      description:
+        "A dispute over a coveted lobster diving spot during Florida's mini season escalated when a man allegedly jumped in the water and shut off another diver's air supply.",
+      fullStory:
+        "About a half-mile east of Fisher Island shortly after 7 a.m. on July 29, 2026, during Florida's annual lobster mini season, a boat allegedly driven by Michael Joseph Simpson, 51, approached another vessel at a high rate of speed and circled it several times before anchoring about 10 feet away. An argument broke out over the diving spot, and Simpson allegedly threatened to turn off the surface-supplied air system feeding an 18-year-old diver below, then jumped into the water and did exactly that. The diver's boat owner jumped in and pulled him to the surface gasping for air and disoriented, though he was not physically injured. Simpson surrendered to the Turner Guilford Knight Correctional Center and was initially charged with attempted felony murder; a judge later agreed with his defense that the charge should be reduced to second-degree attempted murder.",
+      contentNote:
+        "This incident involved a real attempted-murder charge and put an 18-year-old diver's life in danger underwater — there is no comedic angle to the near-drowning itself.",
+      source: "NBC 6 South Florida",
+      sourceUrl:
+        "https://www.nbcmiami.com/news/local/man-cut-off-divers-air-supply-after-dispute-over-lobster-fishing-spot-in-miami-report-says/3842234/",
+    },
+    {
+      id: "dating-app-drugging-black-widow",
+      date: "August 27, 2026",
+      year: "2026",
+      month: "August",
+      day: "27",
+      city: "Davenport",
+      score: 63,
+      rubric: { absurdity: 18, humor: 8, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Accused of Drugging Dating App Match's Drink During Argument Over a Car",
+      description:
+        "A Florida woman using the pseudonym 'Nala' on a dating app allegedly laced her older match's drink with benzodiazepine after an argument over a car he'd bought her.",
+      fullStory:
+        "Samantha Adams, 39, of Orlando, met a 69-year-old man from Haines City on a dating app while using the pseudonym 'Nala,' authorities said. After the two got into an argument about a car he had apparently purchased for her, Adams allegedly intentionally laced his drink with benzodiazepine. The victim later passed out and was hospitalized, where medical staff determined he had nearly overdosed on benzodiazepine, a drug he had not been prescribed. Adams was arrested on August 27, 2026, at the Posner Park Shopping Center in Davenport and charged with second-degree attempted murder, tampering with evidence, and possession of oxycodone, hydrocodone, and alprazolam.",
+      contentNote:
+        "This incident involved a real near-fatal drug overdose — there is no comedic angle here.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/trending/florida-woman-accused-drugging-man-she-met-through-dating-app/TVYF2WY63BCJLA5T6GDNSJAFBQ/",
+    },
+    {
+      id: "foot-fetish-hotel-hit-and-run",
+      date: "August 29, 2025",
+      year: "2025",
+      month: "August",
+      day: "29",
+      city: "Aventura",
+      score: 69,
+      rubric: { absurdity: 20, humor: 10, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Runs Over Woman With Car After She Refuses to Let Him Smell Her Feet",
+      description:
+        "A Florida man allegedly ran over a woman in a hotel parking garage after she, a professional foot model, quoted him her $1,000 rate instead of letting him smell her feet for free.",
+      fullStory:
+        "Elmoncy Sercle, 28, connected with a woman through Seeking.com and arranged to meet her at the Serena Hotel in Aventura on August 29, 2025. Once inside his room, Sercle asked to smell her feet and offered to buy her worn sneakers; she explained she was a professional foot model and quoted her standard rate of $1,000. When she stepped into the bathroom, Sercle fled the room, and believing he had taken something of hers, she chased him into the hotel's parking garage. Police said Sercle drove past her in a red Mercedes SUV before making a three-point turn and striking her with the vehicle, leaving her with bruises and abrasions across her chest, arms, and back that required immediate treatment. Sercle fled the scene but was arrested days later, on Thursday, August 29, when he returned to book another hotel room, and was charged with aggravated battery.",
+      contentNote:
+        "This incident involved the victim being struck by a car and suffering real injuries requiring treatment — there is no comedic angle to the assault itself.",
+      source: "Complex",
+      sourceUrl:
+        "https://www.complex.com/life/a/bernadette-giacomazzo/florida-man-arrested-after-assaulting-a-woman-smell-feet",
+    },
+    {
+      id: "pelican-tackling-tourist-key-west",
+      date: "March 3, 2019",
+      year: "2019",
+      month: "March",
+      day: "3",
+      city: "Key West",
+      score: 80,
+      rubric: { absurdity: 22, humor: 18, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Maryland Man Convicted After Viral Video Shows Him Tackling a Pelican in Key West",
+      description:
+        "A tourist used a fish to lure a wild pelican close on a Key West dock, then leaped directly on top of it and into the water in a video that went viral.",
+      fullStory:
+        "Video that went viral around March 3, 2019, showed a man on a dock at the Key West Historic Seaport luring a wild pelican closer with a fish, then leaping on top of the bird and into the water with it, surfacing with the pelican in both hands. The Florida Fish and Wildlife Conservation Commission identified the man as William Hunter Hardesty, 31, of Riva, Maryland, and issued a warrant charging him with animal cruelty and the intentional feeding of pelicans. Maryland State Police caught up with Hardesty after a tip that he was staying at a hotel in Ocean City, Maryland, and had been bragging to people there about being wanted for feeding and tackling a pelican in the Florida Keys. He was arrested at the hotel on March 15, 2019, and later found guilty in Monroe County Court on four charges, including two counts of violating the Migratory Bird Treaty Act and two counts of animal cruelty, and was sentenced to 90 days in the Monroe County Detention Center.",
+      contentNote:
+        "This incident involved real animal cruelty convictions for physically harming a wild pelican.",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/man-jumping-on-pelican-florida-keys-arrested-maryland",
+    },
+    {
+      id: "stolen-ambulance-drunken-joyride-beer",
+      date: "March 15, 2025",
+      year: "2025",
+      month: "March",
+      day: "15",
+      city: "Tampa",
+      score: 88,
+      rubric: { absurdity: 23, humor: 23, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Steals Ambulance, Leads Police on Chase, Then Finishes His Beer Before Getting Out",
+      description:
+        "After a hospital wouldn't give him a ride home, a Florida man allegedly stole an ambulance, led troopers on a multi-mile chase, and calmly finished a beer once he finally stopped.",
+      fullStory:
+        "Michael J. Esquilin, 43, was refused a ride home by emergency personnel at HCA South Tampa Hospital on March 15, 2025, so he allegedly stole an ambulance from the hospital instead. Florida Highway Patrol troopers chased him for several miles through South Tampa as he ran stop signs, drove on the wrong side of the road, and nearly hit multiple vehicles. When the chase finally ended at South Hubert Avenue and West Empedrado Street, video showed Esquilin sitting in the ambulance drinking a beer before troopers pulled him out. He was charged with burglary and grand theft of an emergency vehicle, fleeing and eluding, driving with a suspended license, DUI, and resisting arrest; prosecutors noted he had four prior DUI convictions. A judge ordered GPS monitoring and a ban on alcohol while he awaits trial, and he was held on $33,000 bond.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/tampa-man-accused-taking-stolen-ambulance-drunken-joyride-makes-first-court-appearance",
+    },
+    {
+      id: "just-take-me-away-golf-cart-dui",
+      date: "December 22, 2023",
+      year: "2023",
+      month: "December",
+      day: "22",
+      city: "Lady Lake",
+      score: 74,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 14, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Pulled Over for Drunk Golf Cart Driving Tells Deputy 'Just Take Me Away'",
+      description:
+        "A 71-year-old Florida man failed to stop at a flashing red light in his golf cart, then skipped the small talk and told the deputy to just arrest him.",
+      fullStory:
+        "A Sumter County deputy in Lady Lake saw David Clifford Roach, 71, staggering before he climbed into a silver and white golf cart, which then blew through a flashing red signal and drifted across lane dividers multiple times. When the deputy stopped him, Roach had bloodshot, watery eyes and smelled of alcohol. Asked to perform field sobriety tests, Roach replied, 'Just take me away.' He went on to call the deputy a name and threatened that if he weren't in handcuffs he'd 'kick my a**,' before eventually conceding, 'I agree with ya.' He was charged with DUI and given a written warning for the flashing-light violation, and was released from jail in less than 12 hours.",
+      source: "KMPH / NBC affiliate wire",
+      sourceUrl:
+        "https://kmph.com/news/nation-world/just-take-me-away-dui-stop-florida-driving-under-influence-david-roach-golf-cart-lady-lake-arrest-sumter-county-emergency-lights-sheriff-office-deputy",
+    },
+    {
+      id: "flamingo-pinky-busch-gardens-slam",
+      date: "August 3, 2016",
+      year: "2016",
+      month: "August",
+      day: "3",
+      city: "Tampa",
+      score: 60,
+      rubric: { absurdity: 18, humor: 5, floridaFactor: 14, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Reaches Into Pen at Busch Gardens, Slams a Flamingo Named Pinky to the Ground",
+      description:
+        "A Busch Gardens visitor reached into the Jambo Junction habitat, picked up a Chilean flamingo named Pinky, and slammed her into the ground in a rage.",
+      fullStory:
+        "Around 6:45 p.m. on August 3, 2016, Joseph Carrao, 45, was visiting Busch Gardens Tampa Bay's Jambo Junction animal viewing area with his family when witnesses say he reached into the pen, picked up a Chilean flamingo named Pinky, and slammed her into the ground in a rage. Pinky suffered severe injuries, and park veterinarians made the decision to humanely euthanize her because of the extent of the harm. Carrao was arrested and charged with felony animal cruelty.",
+      contentNote:
+        "This incident involved a real, fatal animal cruelty attack — the flamingo, named Pinky, did not survive her injuries.",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/man-accused-of-attacking-flamingo-at-busch-gardens-tampa-bay/",
+    },
   ];

@@ -21,6 +21,8 @@ export const ANIMAL_STORY_IDS = [
   "emu-handcuffed-highway-chase",
   "poops-on-dead-possum-rush-hour",
   "chihuahua-thrown-off-balcony",
+  "pelican-tackling-tourist-key-west",
+  "flamingo-pinky-busch-gardens-slam",
 ];
 
 export function getAnimalStories(stories: Story[]) {
