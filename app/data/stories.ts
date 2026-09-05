@@ -2198,4 +2198,22 @@ export const stories: Story[] = [
       sourceUrl:
         "https://keysweekly.com/42/florida-man-arrested-in-reported-swatting-incident-in-key-largo/",
     },
+    {
+      id: "smart-car-parked-in-kitchen-dorian",
+      date: "September 3, 2019",
+      year: "2019",
+      month: "September",
+      day: "3",
+      city: "Jacksonville",
+      score: 82,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 14, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Parks His Smart Car in the Kitchen So Hurricane Dorian Won't Blow It Away",
+      description:
+        "With the garage already full, a Jacksonville man drives his two-seat Smart car through the kitchen's double doors to keep it safe from Hurricane Dorian.",
+      fullStory:
+        "As Hurricane Dorian skirted Florida's coast in early September 2019, Jacksonville resident Patrick Eldridge decided he wasn't taking any chances with his tiny Smart car. With a sedan and a pickup truck already filling the family's two-car garage, Eldridge drove the Smart car through his kitchen's double doors and parked it next to the stove. His wife, Jessica Eldridge, posted photos of the car parked among the kitchen cabinets on Facebook that Tuesday, joking that he was 'afraid his car might blow away.' The post went viral, racking up tens of thousands of shares, before the couple moved the car back outside once the storm passed well clear of Jacksonville.",
+      source: "Associated Press",
+      sourceUrl:
+        "https://calgary.citynews.ca/2019/09/04/florida-man-parks-smart-car-in-kitchen-so-it-wont-blow-away/",
+    },
   ];
