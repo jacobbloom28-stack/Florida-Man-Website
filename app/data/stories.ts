@@ -2216,4 +2216,22 @@ export const stories: Story[] = [
       sourceUrl:
         "https://calgary.citynews.ca/2019/09/04/florida-man-parks-smart-car-in-kitchen-so-it-wont-blow-away/",
     },
+    {
+      id: "sports-grill-dine-and-dash-blazer",
+      date: "May 14, 2025",
+      year: "2025",
+      month: "May",
+      day: "14",
+      city: "Doral",
+      score: 79,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 13, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in Blazer and Sunglasses Dines and Dashes at Five Sports Grill Locations",
+      description:
+        "Dressed to impress, a Miami-Dade man orders wings and top-shelf liquor at five different Sports Grill locations, then tells staff he's stepping out to deliver food to his wife and never comes back.",
+      fullStory:
+        "Doral police arrested 40-year-old Juan Carlos Rivera on the night of Wednesday, May 14, 2025, identifying him as a serial 'dine-and-dasher' who'd hit five different Sports Grill locations across Miami-Dade County over the previous two weeks, racking up roughly $650 in unpaid tabs. Surveillance video showed Rivera, dressed in a blazer and sunglasses, camped out at the bar for hours at each stop ordering the same order of Space Dust beer, grilled wings, mozzarella sticks, and Jameson, before telling staff he needed to step outside to bring food to his wife and simply never returning. At the chain's Doral location on May 10, he racked up a $260 tab before vanishing; at one location he left a declined credit card on the bar as a parting gesture. It wasn't Rivera's first alleged dine-and-dash — he was accused of pulling the same routine at an Outback Steakhouse in 2024. He was charged with organized scheme to defraud and defrauding an innkeeper and held without bond.",
+      source: "Local 10 News (WPLG)",
+      sourceUrl:
+        "https://www.local10.com/news/local/2025/05/15/sharp-dressed-serial-dine-and-dasher-had-taste-for-sports-grill-wings-beer-staffers-say/",
+    },
   ];
