@@ -2178,4 +2178,24 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-accused-of-attacking-flamingo-at-busch-gardens-tampa-bay/",
     },
+    {
+      id: "key-largo-swatting-bomb-hostage-snapchat",
+      date: "September 6, 2025",
+      year: "2025",
+      month: "September",
+      day: "6",
+      city: "Key Largo",
+      score: 68,
+      rubric: { absurdity: 19, humor: 12, floridaFactor: 11, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man's Fake 911 Call Claims Bomb, Hostages, and Suicidal Gunman — He Just Wanted to Prank a Stranger's House",
+      description:
+        "A hoax 911 caller tells Monroe County dispatchers he's suicidal, armed with a Glock, rigged to detonate a bomb, and holding family hostage in the basement of a Key Largo home — then brags about it on Snapchat.",
+      fullStory:
+        "The Monroe County Sheriff's Office swarmed a home on Third Road in Key Largo on September 6, 2025, after a 911 caller claimed to be inside, suicidal, and armed with a Glock. The caller escalated the hoax further, telling dispatchers that if anyone tried to open the door he would detonate a bomb, and that he had family members tied up in the basement. None of it was true — deputies determined it was a 'swatting' call, a prank meant to draw a massive police response to an address with no real emergency. Detectives traced the call using online communications and digital evidence, eventually identifying 20-year-old Leonardo Javier Barrera of Ruskin as the culprit after he admitted to the stunt on Snapchat. Barrera was arrested in October 2025 and charged with unlawful use of a two-way communication device and giving false information concerning the commission of a felony.",
+      contentNote:
+        "This incident involved a hoax bomb and hostage threat that triggered a real emergency law enforcement response; no one was actually harmed.",
+      source: "Keys Weekly / Keys News",
+      sourceUrl:
+        "https://keysweekly.com/42/florida-man-arrested-in-reported-swatting-incident-in-key-largo/",
+    },
   ];
