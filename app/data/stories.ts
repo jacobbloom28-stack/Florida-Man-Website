@@ -2234,4 +2234,61 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.local10.com/news/local/2025/05/15/sharp-dressed-serial-dine-and-dasher-had-taste-for-sports-grill-wings-beer-staffers-say/",
     },
+    {
+      id: "publix-steak-heist-jealous-boyfriend",
+      date: "January 5, 2026",
+      year: "2026",
+      month: "January",
+      day: "5",
+      city: "Palm Coast",
+      score: 83,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title:
+        "Florida Man Steals $4,000 in Steaks From Two Publix Stores, Then Dumps Them All After Catching Girlfriend Cooking With Another Man",
+      description:
+        "Florida Man allegedly steals thousands of dollars in steaks from two Publix stores, then throws the whole haul away after finding his girlfriend cooking with someone else.",
+      fullStory:
+        "Flagler County deputies say 30-year-old Heannys O. Alvarez Reyna hit two Palm Coast Publix stores within twenty minutes on the evening of January 5, 2026, filling his backpack with premium beef, lamb, and pork before walking out without paying. Surveillance video captured him lifting $1,574.86 in steaks and lamb from the Belle Terre Crossings Publix around 7:43 p.m., then $2,084 more in pork, top sirloin, brisket, and tenderloin from the Island Walk Publix minutes later. Deputies say he told them he'd planned to bring the meat to his girlfriend's house, but when he got there and found her cooking with another man, he dumped the whole haul instead. Alvarez Reyna was booked on felony retail theft charges and held on a $5,000 bond, plus an ICE detainer.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-meat-thief-tosses-4k-stolen-steaks-after-catching-girlfriend-cooking-another-man-fcso",
+    },
+    {
+      id: "corvette-donuts-first-date",
+      date: "January 10, 2026",
+      year: "2026",
+      month: "January",
+      day: "10",
+      city: "Englewood",
+      score: 81,
+      rubric: { absurdity: 20, humor: 22, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
+      title:
+        "Florida Man Does Donuts in Church Parking Lot to Impress First Date, Gets Arrested Instead",
+      description:
+        "A Florida man allegedly spins his Corvette in circles in a church parking lot to impress a first date, and ends the night in handcuffs instead.",
+      fullStory:
+        "Charlotte County deputies arrested 28-year-old Landon Morris on the night of Saturday, January 10, 2026, after witnesses reported a gray Corvette spinning donuts at the Kingdom Hall of Jehovah's Witnesses on Gulf Coast Boulevard in Englewood, sending up thick blue tire smoke and leaving heavy skid marks across the lot. Morris told deputies he'd driven from Orlando to meet a woman from Rotonda West for their first date, and his passenger admitted she'd asked him to do the donuts to impress her, apologizing to deputies for the stunt. Morris was arrested and charged with racing.",
+      source: "Yahoo News",
+      sourceUrl:
+        "https://www.yahoo.com/news/articles/corvette-driver-does-donuts-church-210000836.html",
+    },
+    {
+      id: "dress-for-arrest-jail-uniform",
+      date: "March 20, 2026",
+      year: "2026",
+      month: "March",
+      day: "20",
+      city: "Brevard County",
+      score: 85,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title:
+        "Florida Man Trespassing at Hotel Gets Arrested — While Wearing a Stolen Jail Uniform",
+      description:
+        "Florida Man allegedly refuses to leave his hotel room after his reservation ends, and deputies find him dressed head to toe in a stolen inmate uniform.",
+      fullStory:
+        "Brevard County deputies were called to a hotel on March 20, 2026, after staff reported that 53-year-old Farron Fullerton was refusing to leave his room after his reservation had ended. When deputies arrived, they found Fullerton wearing a full jail uniform — later identified as belonging to the Mitchell County Jail — which investigators determined he'd stolen after a previous jail stay rather than escaped from. Fullerton resisted being handcuffed and was arrested on misdemeanor charges of trespassing and resisting arrest without violence, held on a $1,000 bond. Sheriff Wayne Ivey summed up the scene: 'I've heard of dress for success, but never dress for arrest!'",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",
+    },
   ];
