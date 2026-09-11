@@ -2129,7 +2129,7 @@ export const stories: Story[] = [
       month: "March",
       day: "15",
       city: "Tampa",
-      score: 88,
+      score: 91,
       rubric: { absurdity: 23, humor: 23, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Steals Ambulance, Leads Police on Chase, Then Finishes His Beer Before Getting Out",
       description:
@@ -2292,3 +2292,34 @@ export const stories: Story[] = [
         "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",
     },
   ];
+
+// Dev-time data integrity check — catches two easy mistakes when adding or
+// editing stories by hand: a copy-pasted id, and a `score` that drifts from
+// the literal sum of `rubric` (the type above documents that invariant, but
+// nothing enforced it until now). Runs once per module load, dev only, so
+// it never touches production performance.
+if (process.env.NODE_ENV !== "production") {
+  const seenIds = new Set<string>();
+
+  for (const story of stories) {
+    if (seenIds.has(story.id)) {
+      console.warn(`[stories] duplicate story id: "${story.id}"`);
+    }
+    seenIds.add(story.id);
+
+    const rubricSum =
+      story.rubric.absurdity +
+      story.rubric.humor +
+      story.rubric.floridaFactor +
+      story.rubric.unexpectedness +
+      story.rubric.headlineQuality +
+      story.rubric.sourceQuality;
+
+    if (rubricSum !== story.score) {
+      console.warn(
+        `[stories] "${story.id}" score (${story.score}) does not match rubric sum (${rubricSum})`
+      );
+    }
+  }
+}
+

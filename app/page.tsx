@@ -5,9 +5,8 @@ import { FloridaRail } from "./components/FloridaRail";
 import { stories } from "./data/stories";
 import {
   StoryVisual,
+  ScoreBadge,
   getScoreColor,
-  getScoreLabel,
-  getScoreTextColor,
 } from "./components/StoryVisual";
 import { getStoryOfTheDay } from "./lib/storyOfTheDay";
 import React from "react";
@@ -18,10 +17,10 @@ export const dynamic = "force-dynamic";
 
 const CHIPS = [
   { label: "🐾 Animals", href: "/browse?category=animals" },
-  { label: "🚨 Cop Trouble", href: "/browse?search=police" },
+  { label: "🚨 Cop trouble", href: "/browse?search=police" },
   { label: "💊 Substances", href: "/browse?search=drugs" },
-  { label: "🍑 Bare Necessities", href: "/browse?search=naked" },
-  { label: "💰 Petty Heists", href: "/browse?search=steal" },
+  { label: "🍑 Bare necessities", href: "/browse?search=naked" },
+  { label: "💰 Petty heists", href: "/browse?search=steal" },
   { label: "🎭 Costumes", href: "/browse?search=mask" },
 ];
 
@@ -33,25 +32,36 @@ export default function Home() {
 
   const totalStories = stories.length;
 
-  const avgScore = (
-    stories.reduce((sum, story) => sum + story.score, 0) / totalStories
-  ).toFixed(1);
+  // Single pass over the archive for all three stats below — as the story
+  // count grows this stays O(n) instead of two reduces plus a full sort of
+  // every distinct city just to find the most common one.
+  let scoreSum = 0;
+  let topCity = stories[0].city;
+  let topCityCount = 0;
+  const cityCounts: Record<string, number> = {};
 
-  const cityCounts = stories.reduce<Record<string, number>>((acc, story) => {
-    acc[story.city] = (acc[story.city] ?? 0) + 1;
-    return acc;
-  }, {});
+  for (const story of stories) {
+    scoreSum += story.score;
 
-  const topCity = Object.entries(cityCounts).sort((a, b) => b[1] - a[1])[0][0];
+    const count = (cityCounts[story.city] ?? 0) + 1;
+    cityCounts[story.city] = count;
+
+    if (count > topCityCount) {
+      topCityCount = count;
+      topCity = story.city;
+    }
+  }
+
+  const avgScore = (scoreSum / totalStories).toFixed(1);
 
   return (
-    <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+    <main className="min-h-screen bg-paper text-ink">
       <Header />
       <FloridaRail side="left" />
       <FloridaRail side="right" />
 
-      <section className="mx-auto max-w-6xl px-6 pb-16 pt-12">
-        <div className="relative mb-10 flex min-h-[380px] items-center justify-center overflow-hidden border-4 border-[#171717] px-6 py-16 text-center shadow-[8px_8px_0px_#171717] md:min-h-[460px]">
+      <section className="mx-auto max-w-6xl px-6 pb-20 pt-10">
+        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl px-6 py-16 text-center shadow-xl shadow-ink/15 md:min-h-[460px]">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg"
             alt=""
@@ -60,24 +70,22 @@ export default function Home() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#171717]/60 via-[#171717]/70 to-[#171717]/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/70 to-ink/90" />
 
           <div className="relative z-10">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-[#FFC93C]">
+            <p className="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 ring-1 ring-white/20 backdrop-blur-sm">
               {formattedToday}
             </p>
 
-            <h2 className="text-6xl font-black uppercase leading-none tracking-tight text-white md:text-8xl">
+            <h2 className="text-6xl font-bold leading-[0.95] tracking-tight text-white md:text-8xl">
               Florida Man
               <br />
-              <span className="bg-gradient-to-r from-[#FF6B35] via-[#FFC93C] to-[#00B8A9] bg-clip-text text-transparent">
-                of the Day
+              <span className="bg-gradient-to-r from-[#FF9457] via-[#FFBE3D] to-[#3FE3C7] bg-clip-text text-transparent">
+                of the day
               </span>
             </h2>
 
-            <div className="mx-auto mt-6 h-1.5 w-24 bg-gradient-to-r from-[#FF3E7F] via-[#FFC93C] to-[#00B8A9]" />
-
-            <p className="mx-auto mt-4 max-w-xl text-sm font-semibold text-white/80">
+            <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/75">
               {isOnThisDay
                 ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
                 : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
@@ -86,92 +94,66 @@ export default function Home() {
         </div>
 
         {/* Stat strip */}
-        <div className="mx-auto mb-12 grid max-w-3xl grid-cols-3 divide-x-2 divide-[#171717] border-2 border-[#171717] bg-white text-center">
-          <div className="p-4">
-            <p className="text-3xl font-black text-[#FF6B35]">{totalStories}</p>
-            <p className="text-[10px] font-black uppercase tracking-widest">
-              Verified Stories
+        <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-4">
+          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+            <p className="text-3xl font-bold text-sunset">{totalStories}</p>
+            <p className="mt-1 text-xs font-medium text-ink-soft">
+              Verified stories
             </p>
           </div>
-          <div className="p-4">
-            <p className="text-3xl font-black text-[#FF3E7F]">{avgScore}</p>
-            <p className="text-[10px] font-black uppercase tracking-widest">
-              Avg. Florida Score
+          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+            <p className="text-3xl font-bold text-flamingo">{avgScore}</p>
+            <p className="mt-1 text-xs font-medium text-ink-soft">
+              Avg. Florida score
             </p>
           </div>
-          <div className="p-4">
-            <p className="truncate text-3xl font-black text-[#00B8A9]">
+          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+            <p className="truncate text-3xl font-bold text-lagoon">
               {topCity}
             </p>
-            <p className="text-[10px] font-black uppercase tracking-widest">
-              Most Chaotic City
+            <p className="mt-1 text-xs font-medium text-ink-soft">
+              Most chaotic city
             </p>
           </div>
         </div>
 
-        <article className="mx-auto grid max-w-4xl gap-8 border-4 border-[#171717] bg-white p-6 shadow-[10px_10px_0px_#171717] md:grid-cols-[260px_1fr] md:p-10">
+        <article className="mx-auto grid max-w-4xl gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-ink/10 ring-1 ring-line md:grid-cols-[260px_1fr] md:p-10">
           <div>
             <StoryVisual story={today} size="lg" />
           </div>
 
           <div>
-            <div className="mb-6 flex items-center justify-between border-b-2 border-[#171717] pb-4">
-              <span className="border-2 border-[#171717] bg-[#FFC93C] px-2 py-1 text-xs font-black uppercase tracking-widest">
-                {isOnThisDay ? `On This Day — ${today.year}` : "Featured Story"}
+            <div className="mb-6 flex items-center justify-between gap-3 border-b border-line pb-5">
+              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
+                {isOnThisDay ? `On this day — ${today.year}` : "Featured story"}
               </span>
 
-              <span className="text-sm font-bold text-[#00B8A9]">
-                ✓ Verified Story
+              <span className="flex items-center gap-1.5 text-sm font-medium text-lagoon">
+                <span className="h-1.5 w-1.5 rounded-full bg-lagoon" />
+                Verified story
               </span>
             </div>
 
-            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-[#FF3E7F]">
+            <p className="mb-2 text-sm font-medium text-flamingo">
               {today.city}, Florida
             </p>
 
-            <h3 className="text-4xl font-black leading-tight md:text-5xl">
+            <h3 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl">
               {today.title}
             </h3>
 
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-700">
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-ink-soft">
               {today.description}
             </p>
 
-            <div className="mt-8 flex flex-wrap items-end justify-between gap-6 border-t-2 border-[#171717] pt-6">
-              <div className="flex items-center gap-4">
-                <div
-                  className="flex h-20 w-20 flex-col items-center justify-center rounded-full border-4 border-[#171717]"
-                  style={{ backgroundColor: getScoreColor(today.score) }}
-                >
-                  <p
-                    className="text-2xl font-black leading-none"
-                    style={{ color: getScoreTextColor(today.score) }}
-                  >
-                    {today.score}
-                  </p>
-                  <p
-                    className="text-[9px] font-black uppercase tracking-widest"
-                    style={{ color: getScoreTextColor(today.score) }}
-                  >
-                    /100
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-xs font-black uppercase tracking-widest">
-                    Florida Man Rating
-                  </p>
-                  <p className="text-sm font-bold text-gray-600">
-                    {getScoreLabel(today.score)}
-                  </p>
-                </div>
-              </div>
+            <div className="mt-8 flex flex-wrap items-end justify-between gap-6 border-t border-line pt-6">
+              <ScoreBadge score={today.score} label="Florida Man rating" />
 
               <Link
                 href={`/story/${today.id}`}
-                className="border-2 border-[#171717] bg-gradient-to-r from-[#FF3E7F] to-[#FF6B35] px-6 py-3 text-sm font-black uppercase tracking-wide text-white shadow-[4px_4px_0px_#171717] transition-transform hover:-translate-y-0.5"
+                className="rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sunset/30 transition-transform hover:-translate-y-0.5 hover:bg-sunset-dark"
               >
-                Read Story
+                Read the full story →
               </Link>
             </div>
           </div>
@@ -179,46 +161,44 @@ export default function Home() {
 
         {otherStories.length > 0 && (
           <section className="mx-auto mt-16 max-w-4xl">
-            <div className="mb-6 flex items-end justify-between border-b-4 border-[#171717] pb-3">
-              <h3 className="text-2xl font-black uppercase">
-                Also On This Day
+            <div className="mb-6 flex items-end justify-between">
+              <h3 className="text-2xl font-bold tracking-tight">
+                Also on this day
               </h3>
 
-              <span className="border-2 border-[#171717] bg-[#00B8A9] px-2 py-1 text-sm font-black text-white">
+              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-medium text-lagoon">
                 {otherStories.length} stories
               </span>
             </div>
 
-            <div className="divide-y-2 divide-[#171717] border-b-2 border-[#171717]">
+            <div className="divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
               {otherStories.map((story, index) => (
                 <Link
                   key={story.id}
                   href={`/story/${story.id}`}
-                  className="flex items-center gap-5 py-6 transition-colors hover:bg-white"
+                  className="flex items-center gap-5 px-5 py-5 transition-colors hover:bg-paper-soft"
                 >
-                  <div className="text-3xl font-black text-[#FF3E7F]">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-paper-soft text-sm font-semibold text-ink-soft">
                     {index + 2}
                   </div>
 
                   <StoryVisual story={story} size="sm" />
 
                   <div className="flex-1">
-                    <h4 className="text-xl font-black leading-tight md:text-2xl">
+                    <h4 className="text-lg font-semibold leading-tight md:text-xl">
                       {story.title}
                     </h4>
 
-                    <p className="mt-2 text-sm font-semibold text-gray-600">
+                    <p className="mt-1.5 text-sm text-ink-soft">
                       {story.city}, Florida
                     </p>
                   </div>
 
                   <div className="text-right">
-                    <p className="text-xs font-black uppercase tracking-widest">
-                      Score
-                    </p>
+                    <p className="text-xs font-medium text-ink-soft">Score</p>
 
                     <p
-                      className="text-2xl font-black"
+                      className="text-2xl font-bold"
                       style={{ color: getScoreColor(story.score) }}
                     >
                       {story.score}
@@ -232,45 +212,43 @@ export default function Home() {
 
         {/* Category chips — jump into the archive */}
         <section className="mx-auto mt-16 max-w-4xl">
-          <p className="mb-4 text-xs font-black uppercase tracking-widest text-gray-600">
+          <p className="mb-4 text-sm font-medium text-ink-soft">
             Explore by category
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2.5">
             {CHIPS.map((chip) => (
               <Link
                 key={chip.href}
                 href={chip.href}
-                className="border-2 border-[#171717] bg-white px-4 py-2 text-sm font-black shadow-[3px_3px_0px_#171717] transition-transform hover:-translate-y-0.5 hover:bg-[#FFC93C]"
+                className="rounded-full bg-white px-4 py-2 text-sm font-medium text-ink shadow-sm shadow-ink/5 ring-1 ring-line transition-colors hover:bg-citrus/15"
               >
                 {chip.label}
               </Link>
             ))}
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-4">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/browse"
-              className="border-2 border-[#171717] bg-[#171717] px-6 py-3 text-sm font-black uppercase tracking-wide text-white"
+              className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
             >
-              Browse Full Archive →
+              Browse full archive →
             </Link>
 
             <Link
               href="/calendar"
-              className="border-2 border-[#171717] bg-white px-6 py-3 text-sm font-black uppercase tracking-wide text-[#171717]"
+              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
             >
-              View Calendar →
+              View calendar
             </Link>
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-4xl border-2 border-[#171717] bg-[#e8e1d2] p-6">
-          <p className="text-xs font-black uppercase tracking-widest">
-            About the ranking
-          </p>
+        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-paper-soft p-6">
+          <p className="text-sm font-semibold text-ink">About the ranking</p>
 
-          <p className="mt-3 text-sm leading-relaxed">
+          <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             Stories are ranked using a combination of humor, absurdity,
             Florida relevance, and source reliability. Only verified news
             reports can become Florida Man of the Day.
@@ -278,7 +256,7 @@ export default function Home() {
 
           <Link
             href="/about"
-            className="mt-3 inline-block text-sm font-black uppercase tracking-widest text-[#FF3E7F] hover:underline"
+            className="mt-3 inline-block text-sm font-semibold text-sunset hover:text-sunset-dark"
           >
             See the full scoring breakdown →
           </Link>

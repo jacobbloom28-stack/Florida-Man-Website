@@ -15,6 +15,11 @@ const MONTHS: Record<string, number> = {
   December: 11,
 };
 
+// Calendar-ordered month names, derived from the same map above so any page
+// that needs a month list (e.g. a filter dropdown) can't drift out of sync
+// with the values `getStoryTimestamp`/`getMonthDayOrder` actually recognize.
+export const MONTH_NAMES = Object.keys(MONTHS);
+
 // Story dates are stored as separate, sometimes-incomplete year/month/day
 // text fields (some older stories only have a year). This resolves them to
 // a sortable timestamp, defaulting missing month/day to the start of the

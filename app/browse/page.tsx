@@ -6,18 +6,52 @@ import { useSearchParams } from "next/navigation";
 import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
-import { getStoryTimestamp } from "../lib/storyDate";
+import { getStoryTimestamp, MONTH_NAMES } from "../lib/storyDate";
 import { getAnimalStories } from "../lib/animalStories";
 import React from "react";
 
+const SCORE_FILTERS = ["Any score", "90+ Florida Man", "80+ Florida Man", "65+ Florida Man"];
+const DAY_OPTIONS = Array.from({ length: 31 }, (_, i) => String(i + 1));
+
+const SELECT_CLASSES =
+  "rounded-xl border border-line bg-white p-3 text-sm font-medium text-ink focus:outline-none focus:ring-2 focus:ring-sunset/40";
+
+// A single <select> filter styled consistently with the others. Adding a
+// new filter to the toolbar is now "define its options, render one of
+// these" instead of copy-pasting a whole <select> block.
+function FilterSelect({
+  value,
+  onChange,
+  placeholder,
+  options,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+  placeholder: string;
+  options: string[];
+}) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className={SELECT_CLASSES}
+    >
+      <option>{placeholder}</option>
+      {options.map((option) => (
+        <option key={option}>{option}</option>
+      ))}
+    </select>
+  );
+}
+
 const SORT_OPTIONS = {
-  "Newest First": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
+  "Newest first": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
     getStoryTimestamp(b) - getStoryTimestamp(a),
-  "Oldest First": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
+  "Oldest first": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
     getStoryTimestamp(a) - getStoryTimestamp(b),
-  "Score: High to Low": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
+  "Score: high to low": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
     b.score - a.score,
-  "Score: Low to High": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
+  "Score: low to high": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
     a.score - b.score,
 } as const;
 
@@ -29,12 +63,12 @@ function BrowseContent() {
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
   const [search, setSearch] = useState(() => searchParams.get("search") ?? "");
-  const [year, setYear] = useState("All Years");
-  const [month, setMonth] = useState("All Months");
-  const [day, setDay] = useState("All Days");
-  const [city, setCity] = useState("All Cities");
-  const [score, setScore] = useState("Any Score");
-  const [sort, setSort] = useState<SortOption>("Newest First");
+  const [year, setYear] = useState("All years");
+  const [month, setMonth] = useState("All months");
+  const [day, setDay] = useState("All days");
+  const [city, setCity] = useState("All cities");
+  const [score, setScore] = useState("Any score");
+  const [sort, setSort] = useState<SortOption>("Newest first");
 
   const basePool = useMemo(
     () => (category === "animals" ? getAnimalStories(stories) : stories),
@@ -53,190 +87,140 @@ function BrowseContent() {
     [basePool]
   );
 
-  const filteredStories = basePool
-    .filter((story) => {
-      const term = search.toLowerCase();
+  // Memoized so filtering/sorting only reruns when a filter or the pool
+  // actually changes, rather than on every render (e.g. while another part
+  // of the page re-renders) — matters more as the archive keeps growing.
+  const filteredStories = useMemo(
+    () =>
+      basePool
+        .filter((story) => {
+          const term = search.toLowerCase();
 
-      const searchMatch =
-        search === "" ||
-        story.title.toLowerCase().includes(term) ||
-        story.city.toLowerCase().includes(term) ||
-        story.description.toLowerCase().includes(term);
+          const searchMatch =
+            search === "" ||
+            story.title.toLowerCase().includes(term) ||
+            story.city.toLowerCase().includes(term) ||
+            story.description.toLowerCase().includes(term);
 
-      const yearMatch = year === "All Years" || story.year === year;
-      const monthMatch = month === "All Months" || story.month === month;
-      const dayMatch = day === "All Days" || story.day === day;
-      const cityMatch = city === "All Cities" || story.city === city;
+          const yearMatch = year === "All years" || story.year === year;
+          const monthMatch = month === "All months" || story.month === month;
+          const dayMatch = day === "All days" || story.day === day;
+          const cityMatch = city === "All cities" || story.city === city;
 
-      let scoreMatch = true;
+          let scoreMatch = true;
 
-      if (score === "90+ Florida Man") {
-        scoreMatch = story.score >= 90;
-      } else if (score === "80+ Florida Man") {
-        scoreMatch = story.score >= 80;
-      } else if (score === "65+ Florida Man") {
-        scoreMatch = story.score >= 65;
-      }
+          if (score === "90+ Florida Man") {
+            scoreMatch = story.score >= 90;
+          } else if (score === "80+ Florida Man") {
+            scoreMatch = story.score >= 80;
+          } else if (score === "65+ Florida Man") {
+            scoreMatch = story.score >= 65;
+          }
 
-      return (
-        searchMatch &&
-        yearMatch &&
-        monthMatch &&
-        dayMatch &&
-        cityMatch &&
-        scoreMatch
-      );
-    })
-    .sort(SORT_OPTIONS[sort]);
+          return (
+            searchMatch &&
+            yearMatch &&
+            monthMatch &&
+            dayMatch &&
+            cityMatch &&
+            scoreMatch
+          );
+        })
+        .sort(SORT_OPTIONS[sort]),
+    [basePool, search, year, month, day, city, score, sort]
+  );
+
+  const filtersActive =
+    search ||
+    year !== "All years" ||
+    month !== "All months" ||
+    day !== "All days" ||
+    city !== "All cities" ||
+    score !== "Any score";
 
   return (
-    <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+    <main className="min-h-screen bg-paper text-ink">
       <Header />
 
       <section className="mx-auto max-w-6xl px-6 py-12">
-        <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#FF3E7F]">
-          Florida Man Archive
-        </p>
+        <p className="text-sm font-medium text-flamingo">Florida Man archive</p>
 
-        <h2 className="mt-3 text-6xl font-black uppercase leading-none tracking-tight">
-          {category === "animals" ? "Animal Stories" : "Browse"}
+        <h2 className="mt-2 text-5xl font-bold tracking-tight md:text-6xl">
+          {category === "animals" ? "Animal stories" : "Browse"}
         </h2>
 
         {category === "animals" && (
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="border-2 border-[#171717] bg-[#FFC93C] px-3 py-1 text-xs font-black uppercase tracking-widest">
-              🐾 Filtered to Animal Stories
+            <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
+              🐾 Filtered to animal stories
             </span>
 
             <Link
               href="/browse"
-              className="text-xs font-black uppercase tracking-widest text-[#FF3E7F] hover:underline"
+              className="text-sm font-medium text-sunset hover:text-sunset-dark"
             >
               Clear category →
             </Link>
           </div>
         )}
 
-        <div className="mt-10 grid gap-4 md:grid-cols-6">
-          <input
-            type="text"
-            placeholder="Search stories..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold focus:outline-none focus:ring-2 focus:ring-[#FF3E7F]"
-          />
+        <div className="mt-10 rounded-2xl bg-white p-5 shadow-md shadow-ink/5 ring-1 ring-line">
+          <div className="grid gap-3 md:grid-cols-6">
+            <input
+              type="text"
+              placeholder="Search stories..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="rounded-xl border border-line bg-white p-3 text-sm font-medium placeholder:text-ink-soft/70 focus:outline-none focus:ring-2 focus:ring-sunset/40"
+            />
 
-          <select
-            value={year}
-            onChange={(e) => setYear(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold"
-          >
-            <option>All Years</option>
-            {years.map((y) => (
-              <option key={y}>{y}</option>
-            ))}
-          </select>
+            <FilterSelect value={year} onChange={setYear} placeholder="All years" options={years} />
+            <FilterSelect value={month} onChange={setMonth} placeholder="All months" options={MONTH_NAMES} />
+            <FilterSelect value={day} onChange={setDay} placeholder="All days" options={DAY_OPTIONS} />
+            <FilterSelect value={city} onChange={setCity} placeholder="All cities" options={cities} />
+            <FilterSelect value={score} onChange={setScore} placeholder="Any score" options={SCORE_FILTERS.slice(1)} />
+          </div>
 
-          <select
-            value={month}
-            onChange={(e) => setMonth(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold"
-          >
-            <option>All Months</option>
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-          </select>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-4">
+            <p className="text-sm text-ink-soft">
+              {filteredStories.length} of {basePool.length} stories
+            </p>
 
-          <select
-            value={day}
-            onChange={(e) => setDay(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold"
-          >
-            <option>All Days</option>
-            {Array.from({ length: 31 }, (_, i) => (
-              <option key={i + 1}>{i + 1}</option>
-            ))}
-          </select>
+            <div className="flex items-center gap-3">
+              <label className="text-sm text-ink-soft">Sort</label>
 
-          <select
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold"
-          >
-            <option>All Cities</option>
-            {cities.map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </select>
-
-          <select
-            value={score}
-            onChange={(e) => setScore(e.target.value)}
-            className="border-2 border-[#171717] bg-white p-3 font-bold"
-          >
-            <option>Any Score</option>
-            <option>90+ Florida Man</option>
-            <option>80+ Florida Man</option>
-            <option>65+ Florida Man</option>
-          </select>
-        </div>
-
-        <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
-          <p className="text-xs font-black uppercase tracking-widest text-gray-600">
-            {filteredStories.length} of {basePool.length} stories
-          </p>
-
-          <div className="flex items-center gap-3">
-            <label className="text-xs font-black uppercase tracking-widest text-gray-600">
-              Sort
-            </label>
-
-            <select
-              value={sort}
-              onChange={(e) => setSort(e.target.value as SortOption)}
-              className="border-2 border-[#171717] bg-white p-2 text-sm font-bold"
-            >
-              {Object.keys(SORT_OPTIONS).map((option) => (
-                <option key={option}>{option}</option>
-              ))}
-            </select>
-
-            {(search ||
-              year !== "All Years" ||
-              month !== "All Months" ||
-              day !== "All Days" ||
-              city !== "All Cities" ||
-              score !== "Any Score") && (
-              <button
-                onClick={() => {
-                  setSearch("");
-                  setYear("All Years");
-                  setMonth("All Months");
-                  setDay("All Days");
-                  setCity("All Cities");
-                  setScore("Any Score");
-                }}
-                className="border-2 border-[#171717] bg-[#FFC93C] px-3 py-1 text-xs font-black uppercase tracking-widest"
+              <select
+                value={sort}
+                onChange={(e) => setSort(e.target.value as SortOption)}
+                className="rounded-xl border border-line bg-white p-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-sunset/40"
               >
-                Clear Filters
-              </button>
-            )}
+                {Object.keys(SORT_OPTIONS).map((option) => (
+                  <option key={option}>{option}</option>
+                ))}
+              </select>
+
+              {filtersActive && (
+                <button
+                  onClick={() => {
+                    setSearch("");
+                    setYear("All years");
+                    setMonth("All months");
+                    setDay("All days");
+                    setCity("All cities");
+                    setScore("Any score");
+                  }}
+                  className="rounded-full bg-citrus/25 px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:bg-citrus/40"
+                >
+                  Clear filters
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
-        <div className="mt-4 border-t-4 border-[#171717]">
+        <div className="mt-6 divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
           {filteredStories.length === 0 ? (
-            <p className="py-12 text-center font-bold">
+            <p className="px-6 py-14 text-center font-medium text-ink-soft">
               No Florida Man stories found.
             </p>
           ) : (
@@ -244,16 +228,16 @@ function BrowseContent() {
               <Link
                 href={`/story/${story.id}`}
                 key={story.id}
-                className="flex items-center gap-5 border-b-2 border-[#171717] py-6 transition-colors hover:bg-white"
+                className="flex items-center gap-5 px-5 py-5 transition-colors hover:bg-paper-soft"
               >
                 <StoryVisual story={story} size="sm" />
 
                 <div className="flex-1">
-                  <p className="text-xs font-black uppercase tracking-widest text-[#FF3E7F]">
+                  <p className="text-sm font-medium text-flamingo">
                     {story.date} · {story.city}
                   </p>
 
-                  <h3 className="mt-2 text-2xl font-black hover:underline">
+                  <h3 className="mt-1.5 text-xl font-semibold leading-tight">
                     {story.contentNote && (
                       <span title="Content note">⚠️ </span>
                     )}
@@ -262,12 +246,10 @@ function BrowseContent() {
                 </div>
 
                 <div className="text-right">
-                  <p className="text-xs font-black uppercase tracking-widest">
-                    Score
-                  </p>
+                  <p className="text-xs font-medium text-ink-soft">Score</p>
 
                   <p
-                    className="text-3xl font-black"
+                    className="text-2xl font-bold"
                     style={{ color: getScoreColor(story.score) }}
                   >
                     {story.score}
@@ -284,7 +266,7 @@ function BrowseContent() {
 
 export default function Browse() {
   return (
-    <Suspense fallback={<main className="min-h-screen bg-[#f5f1e8]" />}>
+    <Suspense fallback={<main className="min-h-screen bg-paper" />}>
       <BrowseContent />
     </Suspense>
   );

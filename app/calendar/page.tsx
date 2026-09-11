@@ -42,54 +42,48 @@ export default function Calendar() {
     .sort((a, b) => getMonthDayOrder(a) - getMonthDayOrder(b))
 
   return (
-    <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+    <main className="min-h-screen bg-paper text-ink">
       <Header />
 
       <section className="mx-auto max-w-6xl px-6 py-12">
-        <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#FF3E7F]">
-          Daily Archive
-        </p>
+        <p className="text-sm font-medium text-flamingo">Daily archive</p>
 
-        <h2 className="mt-3 text-6xl font-black uppercase leading-none tracking-tight">
+        <h2 className="mt-2 text-5xl font-bold tracking-tight md:text-6xl">
           Calendar
         </h2>
 
-        <p className="mt-6 max-w-2xl text-gray-700">
+        <p className="mt-5 max-w-2xl text-ink-soft">
           Every day gets one Florida Man of the Day. Browse the archive and
           see which story won.
         </p>
 
-        <div className="mt-12 border-t-4 border-[#171717]">
+        <div className="mt-10 divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
           {days.map((day) => (
             <Link
               href={`/story/${day.id}`}
               key={day.id}
-              className="flex items-center gap-5 border-b-2 border-[#171717] py-6 transition-colors hover:bg-white"
+              className="flex items-center gap-5 px-5 py-5 transition-colors hover:bg-paper-soft"
             >
               <StoryVisual story={day} size="sm" />
 
               <div className="flex-1">
-                <p className="text-xs font-black uppercase tracking-widest text-[#FF3E7F]">
-                  {day.date}
-                </p>
+                <p className="text-sm font-medium text-flamingo">{day.date}</p>
 
-                <h3 className="mt-2 text-xl font-black md:text-2xl">
+                <h3 className="mt-1.5 text-xl font-semibold leading-tight">
                   {day.contentNote && <span title="Content note">⚠️ </span>}
                   {day.title}
                 </h3>
 
-                <p className="mt-2 text-sm font-semibold text-gray-600">
+                <p className="mt-1.5 text-sm text-ink-soft">
                   {day.city}, Florida
                 </p>
               </div>
 
               <div className="text-right">
-                <p className="text-xs font-black uppercase tracking-widest">
-                  Score
-                </p>
+                <p className="text-xs font-medium text-ink-soft">Score</p>
 
                 <p
-                  className="text-3xl font-black"
+                  className="text-2xl font-bold"
                   style={{ color: getScoreColor(day.score) }}
                 >
                   {day.score}

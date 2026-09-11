@@ -3,48 +3,51 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t-4 border-[#171717] bg-[#171717] text-white">
-      <div className="h-2 w-full bg-gradient-to-r from-[#00B8A9] via-[#FFC93C] to-[#FF3E7F]" />
-
-      <div className="mx-auto max-w-6xl px-6 py-10">
-        <div className="flex flex-wrap items-center justify-between gap-6">
+    <footer className="mt-auto bg-ink text-white/90">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="flex flex-wrap items-start justify-between gap-8">
           <div>
-            <p className="text-xl font-black tracking-tight">🐊 FLORIDA MAN</p>
-            <p className="mt-1 text-xs font-bold uppercase tracking-[0.25em] text-white/60">
-              Funny. Verified. Florida.
+            <p className="flex items-center gap-2 text-lg font-semibold text-white">
+              <span>🐊</span> Florida Man
+            </p>
+            <p className="mt-1 max-w-xs text-sm text-white/50">
+              Funny, verified, and unmistakably Florida — a new story every
+              day.
             </p>
           </div>
 
-          <nav className="flex flex-wrap gap-6 text-sm font-bold uppercase tracking-wide">
-            <Link href="/" className="transition-colors hover:text-[#FFC93C]">
+          <nav className="flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-white/70">
+            <Link href="/" className="transition-colors hover:text-citrus">
               Today
             </Link>
-            <Link href="/browse" className="transition-colors hover:text-[#FFC93C]">
+            <Link href="/browse" className="transition-colors hover:text-citrus">
               Browse
             </Link>
-            <Link href="/calendar" className="transition-colors hover:text-[#FFC93C]">
+            <Link href="/calendar" className="transition-colors hover:text-citrus">
               Calendar
             </Link>
-            <Link href="/about" className="transition-colors hover:text-[#FFC93C]">
+            <Link href="/about" className="transition-colors hover:text-citrus">
               About
             </Link>
           </nav>
         </div>
 
-        <p className="mt-8 text-xs text-white/40">
-          Every story is sourced from real news reporting. Not officially
-          affiliated with the State of Florida (thankfully).
-        </p>
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <p className="text-xs leading-relaxed text-white/35">
+            Every story is sourced from real news reporting. Not officially
+            affiliated with the State of Florida (thankfully).
+          </p>
 
-        <p className="mt-2 text-xs text-white/30">
-          Photos via Wikimedia Commons, licensed CC0 / CC BY / CC BY-SA,
-          credited on each image: American Alligator (Postdlf), Horse3
-          (Joshua Ganderson), Handcuffs 1 (SimmeD), Police car with emergency
-          lights on (Scott Davidson), Sunset on coast of Florida (Don
-          Miller), Palm Coast Sunset (Andyrkellergmail), American Flamingo
-          (Charles J. Sharp), Everglades Swamp (Hein Mück), Shopping Cart
-          (Guanaco), Carnival Mask (Heterotrofo).
-        </p>
+          <p className="mt-2 text-xs leading-relaxed text-white/25">
+            Photos via Wikimedia Commons, licensed CC0 / CC BY / CC BY-SA,
+            credited on each image: American Alligator (Postdlf), Horse3
+            (Joshua Ganderson), Handcuffs 1 (SimmeD), Police car with emergency
+            lights on (Scott Davidson), Sunset on coast of Florida (Don
+            Miller), Palm Coast Sunset (Andyrkellergmail), American Flamingo
+            (Charles J. Sharp), Everglades Swamp (Hein Mück), Shopping Cart
+            (Guanaco), Carnival Mask (Heterotrofo).
+          </p>
+        </div>
       </div>
     </footer>
   );

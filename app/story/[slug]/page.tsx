@@ -4,9 +4,8 @@ import Header from "../../components/Header";
 import { stories, RUBRIC, getCategoryBreakdown } from "../../data/stories";
 import {
   StoryVisual,
+  ScoreBadge,
   getScoreColor,
-  getScoreLabel,
-  getScoreTextColor,
 } from "../../components/StoryVisual";
 import { getStoryTimestamp } from "../../lib/storyDate";
 import { SITE_NAME, SITE_URL } from "../../lib/siteConfig";
@@ -60,19 +59,14 @@ export default async function StoryPage({
 
   if (!story) {
     return (
-      <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+      <main className="min-h-screen bg-paper text-ink">
         <Header />
 
         <section className="mx-auto max-w-4xl px-6 py-16">
-          <h1 className="text-4xl font-black">
-            Story not found
-          </h1>
+          <h1 className="text-4xl font-bold">Story not found</h1>
 
-          <Link
-            href="/browse"
-            className="mt-4 block font-bold underline"
-          >
-            Back to Browse
+          <Link href="/browse" className="mt-4 inline-block font-medium text-sunset hover:text-sunset-dark">
+            Back to browse
           </Link>
         </section>
       </main>
@@ -113,7 +107,7 @@ export default async function StoryPage({
   };
 
   return (
-    <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+    <main className="min-h-screen bg-paper text-ink">
       <Header />
 
       <script
@@ -124,74 +118,47 @@ export default async function StoryPage({
       <section className="mx-auto max-w-4xl px-6 py-16">
         <Link
           href="/browse"
-          className="text-sm font-black uppercase tracking-widest hover:underline"
+          className="text-sm font-medium text-ink-soft hover:text-ink"
         >
-          ← Back to Browse
+          ← Back to browse
         </Link>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-[240px_1fr]">
+        <div className="mt-8 grid gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-ink/10 ring-1 ring-line md:grid-cols-[240px_1fr] md:p-8">
           <StoryVisual story={story} size="lg" />
 
           <div>
-            <p className="text-sm font-black uppercase tracking-widest text-[#FF3E7F]">
+            <p className="text-sm font-medium text-flamingo">
               {story.date} · {story.city}, Florida
             </p>
 
-            <h2 className="mt-4 text-4xl font-black uppercase leading-none tracking-tight md:text-5xl">
+            <h2 className="mt-3 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
               {story.title}
             </h2>
 
-            <div className="mt-8 flex items-center gap-4 border-y-2 border-[#171717] py-6">
-              <div
-                className="flex h-20 w-20 shrink-0 flex-col items-center justify-center rounded-full border-4 border-[#171717]"
-                style={{ backgroundColor: getScoreColor(story.score) }}
-              >
-                <p
-                  className="text-2xl font-black leading-none"
-                  style={{ color: getScoreTextColor(story.score) }}
-                >
-                  {story.score}
-                </p>
-                <p
-                  className="text-[9px] font-black uppercase tracking-widest"
-                  style={{ color: getScoreTextColor(story.score) }}
-                >
-                  /100
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs font-black uppercase tracking-widest">
-                  Florida Man Score
-                </p>
-                <p className="text-sm font-bold text-gray-600">
-                  {getScoreLabel(story.score)}
-                </p>
-              </div>
+            <div className="mt-6 border-t border-line pt-6">
+              <ScoreBadge score={story.score} shrink />
             </div>
           </div>
         </div>
 
         <div className="mt-10 text-lg leading-8">
           {story.contentNote && (
-            <div className="mb-6 border-2 border-[#B91C1C] bg-[#FEE2E2] px-4 py-3 text-base text-[#7F1D1D]">
-              <p className="text-xs font-black uppercase tracking-widest">
-                ⚠️ Content Note
+            <div className="mb-6 rounded-2xl bg-flamingo/10 px-5 py-4 ring-1 ring-flamingo/25">
+              <p className="flex items-center gap-2 text-sm font-semibold text-flamingo">
+                ⚠️ Content note
               </p>
-              <p className="mt-1 font-semibold">{story.contentNote}</p>
+              <p className="mt-1.5 text-base text-ink">{story.contentNote}</p>
             </div>
           )}
 
-          <p className="font-semibold">{story.description}</p>
+          <p className="font-medium text-ink">{story.description}</p>
 
           {story.fullStory && (
-            <p className="mt-6 text-gray-700">{story.fullStory}</p>
+            <p className="mt-6 text-ink-soft">{story.fullStory}</p>
           )}
 
-          <div className="mt-10 border-t-2 border-[#171717] pt-6">
-            <p className="text-xs font-black uppercase tracking-widest">
-              Score Breakdown
-            </p>
+          <div className="mt-10 rounded-2xl bg-paper-soft p-6">
+            <p className="text-sm font-semibold text-ink">Score breakdown</p>
 
             <div className="mt-5 space-y-4">
               {RUBRIC.map((row) => {
@@ -200,15 +167,15 @@ export default async function StoryPage({
 
                 return (
                   <div key={row.category}>
-                    <div className="mb-1 flex items-center justify-between gap-3 text-sm font-black uppercase tracking-wide">
+                    <div className="mb-1.5 flex items-center justify-between gap-3 text-sm font-medium">
                       <span>{row.category}</span>
                       <span style={{ color: row.color }}>
                         {value}/{row.points}
                       </span>
                     </div>
-                    <div className="h-3 w-full overflow-hidden border-2 border-[#171717] bg-[#efe7d8]">
+                    <div className="h-2.5 w-full overflow-hidden rounded-full bg-line">
                       <div
-                        className="h-full"
+                        className="h-full rounded-full"
                         style={{
                           width: `${pct}%`,
                           backgroundColor: row.color,
@@ -221,16 +188,14 @@ export default async function StoryPage({
             </div>
           </div>
 
-          <div className="mt-10 border-t-2 border-[#171717] pt-6">
-            <p className="text-xs font-black uppercase tracking-widest">
-              Original Source
-            </p>
+          <div className="mt-10 border-t border-line pt-6">
+            <p className="text-sm font-semibold text-ink">Original source</p>
 
             <a
               href={story.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block font-black text-[#00B8A9] underline hover:no-underline"
+              className="mt-2 inline-block font-semibold text-lagoon hover:underline"
             >
               {story.source} ↗
             </a>
@@ -238,16 +203,14 @@ export default async function StoryPage({
         </div>
 
         {(previousStory || nextStory) && (
-          <div className="mt-12 grid gap-4 border-t-4 border-[#171717] pt-8 sm:grid-cols-2">
+          <div className="mt-12 grid gap-4 pt-8 sm:grid-cols-2">
             {previousStory && (
               <Link
                 href={`/story/${previousStory.id}`}
-                className="border-2 border-[#171717] bg-white p-4 shadow-[4px_4px_0px_#171717] transition-transform hover:-translate-y-0.5"
+                className="rounded-2xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
               >
-                <p className="text-xs font-black uppercase tracking-widest text-[#00B8A9]">
-                  ← Previous
-                </p>
-                <p className="mt-1 font-black leading-snug">
+                <p className="text-xs font-medium text-lagoon">← Previous</p>
+                <p className="mt-1 font-semibold leading-snug">
                   {previousStory.title}
                 </p>
               </Link>
@@ -256,12 +219,10 @@ export default async function StoryPage({
             {nextStory && (
               <Link
                 href={`/story/${nextStory.id}`}
-                className="border-2 border-[#171717] bg-white p-4 text-right shadow-[4px_4px_0px_#171717] transition-transform hover:-translate-y-0.5 sm:col-start-2"
+                className="rounded-2xl bg-white p-4 text-right shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5 sm:col-start-2"
               >
-                <p className="text-xs font-black uppercase tracking-widest text-[#FF3E7F]">
-                  Next →
-                </p>
-                <p className="mt-1 font-black leading-snug">
+                <p className="text-xs font-medium text-flamingo">Next →</p>
+                <p className="mt-1 font-semibold leading-snug">
                   {nextStory.title}
                 </p>
               </Link>
@@ -271,27 +232,27 @@ export default async function StoryPage({
 
         {moreStories.length > 0 && (
           <section className="mt-16">
-            <h3 className="border-b-4 border-[#171717] pb-3 text-2xl font-black uppercase">
-              More Florida Man Stories
+            <h3 className="text-2xl font-bold tracking-tight">
+              More Florida Man stories
             </h3>
 
-            <div className="mt-6 grid gap-6 sm:grid-cols-3">
+            <div className="mt-6 grid gap-5 sm:grid-cols-3">
               {moreStories.map((s) => (
                 <Link
                   key={s.id}
                   href={`/story/${s.id}`}
-                  className="block border-2 border-[#171717] bg-white p-4 shadow-[4px_4px_0px_#171717] transition-transform hover:-translate-y-0.5"
+                  className="block rounded-2xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
                 >
                   <StoryVisual story={s} size="md" />
 
-                  <p className="mt-3 text-xs font-black uppercase tracking-widest text-[#FF3E7F]">
+                  <p className="mt-3 text-xs font-medium text-flamingo">
                     {s.city}
                   </p>
 
-                  <p className="mt-1 font-black leading-snug">{s.title}</p>
+                  <p className="mt-1 font-semibold leading-snug">{s.title}</p>
 
                   <p
-                    className="mt-2 text-sm font-black"
+                    className="mt-2 text-sm font-bold"
                     style={{ color: getScoreColor(s.score) }}
                   >
                     {s.score}/100

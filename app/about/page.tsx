@@ -21,43 +21,41 @@ export default function About() {
   ).toFixed(1);
 
   return (
-    <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
+    <main className="min-h-screen bg-paper text-ink">
       <Header />
       <FloridaRail side="left" />
       <FloridaRail side="right" />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#FF3E7F]">
-          About the Project
-        </p>
+        <p className="text-sm font-medium text-flamingo">About the project</p>
 
-        <h2 className="mt-3 text-6xl font-black uppercase leading-none tracking-tight">
+        <h2 className="mt-3 text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
           Funny.
           <br />
-          <span className="bg-gradient-to-r from-[#FF6B35] via-[#FF3E7F] to-[#7B2FF7] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FF9457] via-[#EF3F7B] to-[#8B5CF6] bg-clip-text text-transparent">
             Verified.
           </span>
           <br />
           Florida.
         </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-2">
-          <div className="border-2 border-[#171717] bg-white p-6 text-center">
-            <p className="text-4xl font-black text-[#FF6B35]">{totalStories}</p>
-            <p className="mt-1 text-xs font-black uppercase tracking-widest">
-              Stories Archived
+        <div className="mt-10 grid grid-cols-2 gap-4">
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+            <p className="text-4xl font-bold text-sunset">{totalStories}</p>
+            <p className="mt-1 text-sm font-medium text-ink-soft">
+              Stories archived
             </p>
           </div>
 
-          <div className="border-2 border-[#171717] bg-white p-6 text-center">
-            <p className="text-4xl font-black text-[#FF3E7F]">{avgScore}</p>
-            <p className="mt-1 text-xs font-black uppercase tracking-widest">
-              Average Florida Score
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+            <p className="text-4xl font-bold text-flamingo">{avgScore}</p>
+            <p className="mt-1 text-sm font-medium text-ink-soft">
+              Average Florida score
             </p>
           </div>
         </div>
 
-        <div className="mt-10 space-y-8 text-lg leading-relaxed">
+        <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink-soft">
           <p>
             Florida Man of the Day finds the strangest and funniest verified
             news stories happening in Florida.
@@ -70,16 +68,14 @@ export default function About() {
           </p>
         </div>
 
-        <div className="mt-12">
-          <p className="text-xs font-black uppercase tracking-widest text-[#FF3E7F]">
-            How Scoring Works
-          </p>
+        <div className="mt-14">
+          <p className="text-sm font-medium text-flamingo">How scoring works</p>
 
-          <h3 className="mt-2 text-3xl font-black uppercase tracking-tight">
-            The Florida Man Score
+          <h3 className="mt-2 text-3xl font-bold tracking-tight">
+            The Florida Man score
           </h3>
 
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-ink-soft">
             Every story is individually scored across six categories, and the
             Florida Man Score shown on each story is the literal sum of
             those six numbers — nothing hidden, nothing derived after the
@@ -88,47 +84,42 @@ export default function About() {
             than boosts it.
           </p>
 
-          <div className="mt-6 overflow-x-auto border-2 border-[#171717] bg-white">
+          <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
             <table className="w-full min-w-[500px] border-collapse text-left">
               <thead>
-                <tr className="border-b-2 border-[#171717] bg-[#e8e1d2] text-xs font-black uppercase tracking-widest">
-                  <th className="px-4 py-3">Category</th>
-                  <th className="px-4 py-3">Points</th>
-                  <th className="px-4 py-3">Weight</th>
-                  <th className="px-4 py-3">What it measures</th>
+                <tr className="border-b border-line bg-paper-soft text-sm font-semibold text-ink">
+                  <th className="px-5 py-3.5">Category</th>
+                  <th className="px-5 py-3.5">Points</th>
+                  <th className="px-5 py-3.5">Weight</th>
+                  <th className="px-5 py-3.5">What it measures</th>
                 </tr>
               </thead>
 
               <tbody>
                 {RUBRIC.map((row) => (
-                  <tr
-                    key={row.category}
-                    className="border-b-2 border-[#171717] last:border-b-0"
-                  >
-                    <td className="px-4 py-3">
+                  <tr key={row.category} className="border-b border-line last:border-b-0">
+                    <td className="px-5 py-3.5">
                       <span
-                        className="mr-2 inline-block h-3 w-3 rounded-full align-middle"
+                        className="mr-2 inline-block h-2.5 w-2.5 rounded-full align-middle"
                         style={{ backgroundColor: row.color }}
                       />
-                      <span className="font-black align-middle">
+                      <span className="font-semibold align-middle">
                         {row.category}
                       </span>
                     </td>
-                    <td className="px-4 py-3 font-bold">/{row.points}</td>
-                    <td className="px-4 py-3 font-bold">{row.weight}</td>
-                    <td className="px-4 py-3 text-gray-700">{row.measures}</td>
+                    <td className="px-5 py-3.5 font-medium text-ink-soft">/{row.points}</td>
+                    <td className="px-5 py-3.5 font-medium text-ink-soft">{row.weight}</td>
+                    <td className="px-5 py-3.5 text-ink-soft">{row.measures}</td>
                   </tr>
                 ))}
               </tbody>
 
               <tfoot>
-                <tr className="border-t-2 border-[#171717] font-black">
-                  <td className="px-4 py-3 uppercase tracking-widest">
-                    Total
-                  </td>
-                  <td className="px-4 py-3">/{RUBRIC_TOTAL}</td>
-                  <td className="px-4 py-3">100%</td>
-                  <td className="px-4 py-3 text-gray-700">
+                <tr className="border-t border-line bg-paper-soft font-semibold">
+                  <td className="px-5 py-3.5">Total</td>
+                  <td className="px-5 py-3.5">/{RUBRIC_TOTAL}</td>
+                  <td className="px-5 py-3.5">100%</td>
+                  <td className="px-5 py-3.5 text-ink-soft">
                     Maximum possible score
                   </td>
                 </tr>
@@ -136,24 +127,20 @@ export default function About() {
             </table>
           </div>
 
-          <div className="mt-6 border-2 border-[#171717] bg-[#e8e1d2] p-6">
-            <p className="text-xs font-black uppercase tracking-widest">
-              Florida Man Score
-            </p>
+          <div className="mt-6 rounded-2xl bg-paper-soft p-6">
+            <p className="text-sm font-semibold text-ink">Florida Man score</p>
 
-            <p className="mt-2 font-bold">
+            <p className="mt-2 text-ink-soft">
               The sum of all six category scores, out of {RUBRIC_TOTAL} — so
               a perfect story earns a {RUBRIC_TOTAL}/{RUBRIC_TOTAL}.
             </p>
           </div>
         </div>
 
-        <div className="mt-12 border-2 border-[#171717] bg-[#e8e1d2] p-6">
-          <p className="text-xs font-black uppercase tracking-widest">
-            Our standard
-          </p>
+        <div className="mt-12 rounded-2xl bg-sunset/10 p-6 ring-1 ring-sunset/20">
+          <p className="text-sm font-semibold text-sunset-dark">Our standard</p>
 
-          <p className="mt-3 font-bold">
+          <p className="mt-2 font-medium text-ink">
             Funny stories are welcome. Fake stories are not.
           </p>
         </div>
