@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import { FloridaRail } from "../components/FloridaRail";
 import { stories, RUBRIC } from "../data/stories";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "How Florida Man of the Day verifies and scores every story — the rubric behind Absurdity, Humor, Florida Factor, Unexpectedness, Headline Quality, and Source Quality.",
+  alternates: { canonical: "/about" },
+};
 
 const RUBRIC_TOTAL = RUBRIC.reduce((sum, row) => sum + row.points, 0);
 

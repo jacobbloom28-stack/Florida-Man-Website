@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "../../components/Header";
 import { stories, RUBRIC, getCategoryBreakdown } from "../../data/stories";
@@ -7,7 +8,45 @@ import {
   getScoreLabel,
   getScoreTextColor,
 } from "../../components/StoryVisual";
+import { getStoryTimestamp } from "../../lib/storyDate";
+import { SITE_NAME, SITE_URL } from "../../lib/siteConfig";
+import { jsonLdScript } from "../../lib/jsonLd";
 import React from "react";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const story = stories.find((s) => s.id === slug);
+
+  if (!story) {
+    return { title: "Story Not Found" };
+  }
+
+  const url = `/story/${story.id}`;
+  const publishedTime = new Date(getStoryTimestamp(story)).toISOString();
+
+  return {
+    title: story.title,
+    description: story.description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: story.title,
+      description: story.description,
+      url,
+      publishedTime,
+      authors: [SITE_NAME],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: story.title,
+      description: story.description,
+    },
+  };
+}
 
 export default async function StoryPage({
   params,
@@ -54,9 +93,33 @@ export default async function StoryPage({
 
   const moreStories = [...relatedStories, ...filler].slice(0, 3);
 
+  const storyUrl = `${SITE_URL}/story/${story.id}`;
+  const publishedTime = new Date(getStoryTimestamp(story)).toISOString();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: story.title,
+    description: story.description,
+    datePublished: publishedTime,
+    dateModified: publishedTime,
+    image: [`${storyUrl}/opengraph-image`],
+    url: storyUrl,
+    mainEntityOfPage: { "@type": "WebPage", "@id": storyUrl },
+    articleSection: story.city,
+    isBasedOn: story.sourceUrl,
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+  };
+
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171717]">
       <Header />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(jsonLd) }}
+      />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <Link

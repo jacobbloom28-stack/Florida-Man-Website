@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "../components/Header";
 import { stories, type Story } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getMonthDayOrder } from "../lib/storyDate";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Calendar",
+  description:
+    "A day-by-day calendar of verified Florida Man incidents — see which absurd story won each day in Florida Man history.",
+  alternates: { canonical: "/calendar" },
+};
 
 export default function Calendar() {
   // Group by calendar day (month + day), ignoring year, so every real day
