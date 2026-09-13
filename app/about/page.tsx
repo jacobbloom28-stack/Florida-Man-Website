@@ -7,7 +7,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "How Florida Man of the Day verifies and scores every story — the rubric behind Absurdity, Humor, Florida Factor, Unexpectedness, Headline Quality, and Source Quality.",
+    "How we check and score every Florida Man story — the six-part rubric behind Absurdity, Humor, Florida Factor, Unexpectedness, Headline Quality, and Source Quality.",
   alternates: { canonical: "/about" },
 };
 
@@ -57,14 +57,16 @@ export default function About() {
 
         <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink-soft">
           <p>
-            Florida Man of the Day finds the strangest and funniest verified
-            news stories happening in Florida.
+            We dig up the strangest, funniest news stories happening in
+            Florida — the ones that make you say &ldquo;there&apos;s no
+            way that&apos;s real&rdquo; right before you find out it is.
           </p>
 
           <p>
-            Stories come from real news organizations. Each story gets checked
-            for its Florida connection, publication date, source reliability,
-            and factual consistency.
+            Every story comes from a real news outlet. Before it makes the
+            cut, we check that it actually happened in Florida, actually
+            happened recently enough to matter, and actually happened the
+            way the headline says.
           </p>
         </div>
 
@@ -76,12 +78,12 @@ export default function About() {
           </h3>
 
           <p className="mt-4 text-ink-soft">
-            Every story is individually scored across six categories, and the
-            Florida Man Score shown on each story is the literal sum of
-            those six numbers — nothing hidden, nothing derived after the
-            fact. Humor and absurdity carry the most weight in the matrix,
-            while serious harm or real victimization lowers a story rather
-            than boosts it.
+            Every story gets scored across six categories, and the number
+            you see is just those six added up — no hidden math, no fudging
+            it after the fact. Humor and absurdity count for the most. And
+            if a story involves someone actually getting hurt, that drags
+            the score down instead of up — we&apos;re here to laugh at bad
+            decisions, not at anyone&apos;s pain.
           </p>
 
           <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">

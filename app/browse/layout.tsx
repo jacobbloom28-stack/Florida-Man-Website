@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Browse",
   description:
-    "Browse the full verified archive of Florida Man stories — filter by category, city, date, and Florida Man score.",
+    "Every verified Florida Man story we've got — filter by category, city, date, or just how wild it scored.",
   alternates: { canonical: "/browse" },
 };
 

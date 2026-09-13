@@ -95,8 +95,8 @@ export default function Home() {
 
             <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)]">
               {isOnThisDay
-                ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
-                : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
+                ? `Yes, this really happened in Florida — on ${todayDate.month} ${todayDate.day}, back in ${today.year}.`
+                : `We don't have a story on record for ${todayDate.month} ${todayDate.day} yet — here's one of our favorites in the meantime.`}
             </p>
           </div>
         </div>
@@ -106,13 +106,13 @@ export default function Home() {
           <div className="rounded-2xl bg-sunset/10 p-5 text-center ring-1 ring-sunset/15">
             <p className="text-3xl font-black text-sunset-dark">{totalStories}</p>
             <p className="mt-1 text-xs font-semibold text-ink-soft">
-              Verified stories
+              Stories so far
             </p>
           </div>
           <div className="rounded-2xl bg-flamingo/10 p-5 text-center ring-1 ring-flamingo/15">
             <p className="text-3xl font-black text-flamingo">{avgScore}</p>
             <p className="mt-1 text-xs font-semibold text-ink-soft">
-              Avg. Florida score
+              Average Florida score
             </p>
           </div>
           <div className="rounded-2xl bg-lagoon/10 p-5 text-center ring-1 ring-lagoon/15">
@@ -138,7 +138,7 @@ export default function Home() {
 
               <span className="flex items-center gap-1.5 text-sm font-semibold text-lagoon">
                 <span className="h-1.5 w-1.5 rounded-full bg-lagoon" />
-                Verified story
+                100% real
               </span>
             </div>
 
@@ -221,7 +221,7 @@ export default function Home() {
         {/* Category chips — jump into the archive */}
         <section className="mx-auto mt-16 max-w-4xl">
           <p className="mb-4 text-sm font-semibold text-ink-soft">
-            Explore by category
+            Or dive into a category
           </p>
 
           <div className="flex flex-wrap gap-2.5">
@@ -241,7 +241,7 @@ export default function Home() {
               href="/browse"
               className="rounded-full bg-gradient-to-r from-ink to-[#3d2f52] px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
             >
-              Browse full archive →
+              See the whole archive →
             </Link>
 
             <Link
@@ -257,9 +257,9 @@ export default function Home() {
           <p className="text-sm font-bold text-sunset-dark">About the ranking</p>
 
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-            Stories are ranked using a combination of humor, absurdity,
-            Florida relevance, and source reliability. Only verified news
-            reports can become Florida Man of the Day.
+            We rank stories on humor, absurdity, how unmistakably Florida
+            they feel, and whether the source actually checks out. If it
+            didn&apos;t really happen, it doesn&apos;t make the cut.
           </p>
 
           <Link

@@ -23,7 +23,7 @@ export default function Header() {
               Florida Man
             </span>
             <span className="block text-xs text-ink-soft">
-              The daily archive of Florida
+              Florida&apos;s daily dose of chaos
             </span>
           </span>
         </Link>

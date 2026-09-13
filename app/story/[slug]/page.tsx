@@ -63,7 +63,11 @@ export default async function StoryPage({
         <Header />
 
         <section className="mx-auto max-w-4xl px-6 py-16">
-          <h1 className="text-4xl font-bold">Story not found</h1>
+          <h1 className="text-4xl font-bold">We couldn&apos;t find that story</h1>
+
+          <p className="mt-3 text-ink-soft">
+            Either the link&apos;s wrong, or this one was too wild even for our archive.
+          </p>
 
           <Link href="/browse" className="mt-4 inline-block font-medium text-sunset hover:text-sunset-dark">
             Back to browse

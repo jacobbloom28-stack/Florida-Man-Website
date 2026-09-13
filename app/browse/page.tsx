@@ -225,7 +225,7 @@ function BrowseContent() {
         <div className="mt-6 divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
           {filteredStories.length === 0 ? (
             <p className="px-6 py-14 text-center font-medium text-ink-soft">
-              No Florida Man stories found.
+              Couldn&apos;t find one that matches. Try loosening a filter.
             </p>
           ) : (
             filteredStories.map((story) => (
