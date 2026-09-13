@@ -24,7 +24,7 @@ export default async function Image({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#17191c",
+            backgroundColor: "#1a1523",
             fontFamily: "sans-serif",
             fontSize: 64,
             fontWeight: 900,
@@ -55,7 +55,7 @@ export default async function Image({
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "#17191c",
+          backgroundColor: "#1a1523",
           padding: "72px 80px",
           fontFamily: "sans-serif",
           color: "#ffffff",
@@ -70,7 +70,7 @@ export default async function Image({
               fontWeight: 900,
               textTransform: "uppercase",
               letterSpacing: 3,
-              color: "#FFBE3D",
+              color: "#FFC400",
             }}
           >
             {visual.label}
@@ -107,7 +107,7 @@ export default async function Image({
                 fontWeight: 800,
                 textTransform: "uppercase",
                 letterSpacing: 2,
-                color: "#EF3F7B",
+                color: "#FF2E7E",
               }}
             >
               {story.city}, Florida
@@ -130,7 +130,7 @@ export default async function Image({
               backgroundColor: scoreColor,
             }}
           >
-            <div style={{ display: "flex", fontSize: 44, fontWeight: 900, color: "#17191c" }}>
+            <div style={{ display: "flex", fontSize: 44, fontWeight: 900, color: "#1a1523" }}>
               {story.score}
             </div>
             <div
@@ -141,7 +141,7 @@ export default async function Image({
                 justifyContent: "center",
                 fontSize: 12,
                 fontWeight: 800,
-                color: "#17191c",
+                color: "#1a1523",
               }}
             >
               {getScoreLabel(story.score).toUpperCase()}

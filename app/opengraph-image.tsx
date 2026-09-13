@@ -15,12 +15,12 @@ export default function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          backgroundColor: "#17191c",
+          backgroundColor: "#1a1523",
           padding: "80px 96px",
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", width: 96, height: 10, borderRadius: 999, backgroundColor: "#FF5A36" }} />
+        <div style={{ display: "flex", width: 96, height: 10, borderRadius: 999, backgroundColor: "#FF5A1F" }} />
 
         <div
           style={{
@@ -36,7 +36,7 @@ export default function Image() {
           }}
         >
           <span>Florida Man</span>
-          <span style={{ color: "#FFBE3D" }}>of the Day</span>
+          <span style={{ color: "#FFC400" }}>of the Day</span>
         </div>
 
         <div
@@ -53,7 +53,7 @@ export default function Image() {
         </div>
 
         <div style={{ display: "flex", marginTop: 56, gap: 12 }}>
-          {["#FF5A36", "#FFBE3D", "#0FA895", "#EF3F7B", "#8B5CF6"].map((color) => (
+          {["#FF5A1F", "#FFC400", "#00C2A8", "#FF2E7E", "#8B5CF6"].map((color) => (
             <div key={color} style={{ display: "flex", width: 64, height: 14, borderRadius: 999, backgroundColor: color }} />
           ))}
         </div>

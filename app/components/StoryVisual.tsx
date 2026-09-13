@@ -1,95 +1,90 @@
-import Image from "next/image";
+import type { CSSProperties } from "react";
 import type { Story } from "../data/stories";
 
-type Photo = {
-  url: string;
-  credit: string;
-};
+type Pattern = "dots" | "rings" | "stripes" | "sunburst";
 
 type Category = {
   test: RegExp;
   emoji: string;
   label: string;
   gradient: string;
-  photo?: Photo;
+  pattern: Pattern;
 };
 
-// Real, CC-licensed photos from Wikimedia Commons — generic scene photography
-// (gators, cruisers, coastline) rather than mugshots of the real people
-// involved, since those aren't ours to republish.
+// Bold illustrated cards instead of stock photography — a saturated,
+// multi-stop Florida-sunset gradient per category plus a light CSS-only
+// texture overlay (no images, no external requests, no per-instance id
+// collisions from repeated <svg><pattern> defs across a list of cards).
 const CATEGORIES: Category[] = [
   {
     test: /\balligators?\b|\bgators?\b|\bcrocs?\b|crocodile/i,
     emoji: "🐊",
     label: "Gator alert",
-    gradient: "from-[#0B8F7E] to-[#14C2A8]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg",
-      credit: "Postdlf / Wikimedia Commons (CC BY-SA 3.0)",
-    },
+    gradient: "from-[#0EA5A0] via-[#00D2A6] to-[#14E8B0]",
+    pattern: "rings",
   },
   {
     test: /horse|snake|hamster wheel/i,
     emoji: "🐴",
     label: "Wild animal",
-    gradient: "from-[#A9782F] to-[#E3A93F]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/3/38/Horse3.jpg",
-      credit: "Joshua Ganderson / Wikimedia Commons (CC BY 2.0)",
-    },
+    gradient: "from-[#D97706] via-[#F59E0B] to-[#FCD34D]",
+    pattern: "dots",
   },
   {
     test: /spider-?man|bunny|tutu|mask|costume/i,
     emoji: "🎭",
     label: "Costume chaos",
-    gradient: "from-[#8B5CF6] to-[#EF3F7B]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Carnival_mask.jpg",
-      credit: "Heterotrofo / Wikimedia Commons (CC0)",
-    },
+    gradient: "from-[#9333EA] via-[#C026D3] to-[#FF2E7E]",
+    pattern: "stripes",
   },
-  { test: /naked|nude|prosthetic/i, emoji: "🍑", label: "Bare necessities", gradient: "from-[#EF3F7B] to-[#FFBE3D]" },
+  {
+    test: /naked|nude|prosthetic/i,
+    emoji: "🍑",
+    label: "Bare necessities",
+    gradient: "from-[#FF2E7E] via-[#FF6B4A] to-[#FFC400]",
+    pattern: "sunburst",
+  },
   {
     test: /gun|machete|knife|armed|weapon/i,
     emoji: "🔪",
     label: "Armed & alarming",
-    gradient: "from-[#C81E3A] to-[#FF5A36]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/1/12/Handcuffs_1.jpg",
-      credit: "SimmeD / Wikimedia Commons (CC BY-SA 4.0)",
-    },
+    gradient: "from-[#B91C1C] via-[#EF4444] to-[#FF5A1F]",
+    pattern: "stripes",
   },
-  { test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i, emoji: "💊", label: "Substance situation", gradient: "from-[#6D28D9] to-[#9333EA]" },
-  { test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i, emoji: "🚗", label: "Vehicular villainy", gradient: "from-[#FF5A36] to-[#FFBE3D]" },
+  {
+    test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i,
+    emoji: "💊",
+    label: "Substance situation",
+    gradient: "from-[#6D28D9] via-[#9333EA] to-[#C026D3]",
+    pattern: "dots",
+  },
+  {
+    test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i,
+    emoji: "🚗",
+    label: "Vehicular villainy",
+    gradient: "from-[#FF5A1F] via-[#FF8A00] to-[#FFC400]",
+    pattern: "sunburst",
+  },
   {
     test: /steal\w*|stolen|theft|burglary|\brob\w*|\bcoins?\b|avocado/i,
     emoji: "💰",
     label: "Petty heist",
-    gradient: "from-[#FFBE3D] to-[#FF8A3D]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Shopping_cart.jpg",
-      credit: "Guanaco / Wikimedia Commons (CC0)",
-    },
+    gradient: "from-[#FFC400] via-[#FF8A00] to-[#FF5A1F]",
+    pattern: "dots",
   },
   {
     test: /police|officers?|deput\w*|\bcops?\b|\b911\b|bomb|carjack/i,
     emoji: "🚨",
     label: "Cop trouble",
-    gradient: "from-[#2563EB] to-[#EF3F7B]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Police_car_with_emergency_lights_on.jpg",
-      credit: "Scott Davidson / Wikimedia Commons (CC BY 2.0)",
-    },
+    gradient: "from-[#0072FF] via-[#3E8EFF] to-[#FF2E7E]",
+    pattern: "sunburst",
   },
   {
     test: /ocean|atlantic|boat|water/i,
     emoji: "🌊",
     label: "High seas",
-    gradient: "from-[#0EA5C7] to-[#0FA895]",
-    photo: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg",
-      credit: "Don Miller / Wikimedia Commons (CC BY 2.0)",
-    },
+    gradient: "from-[#00B4E0] via-[#00C2A8] to-[#0EA5A0]",
+    pattern: "rings",
   },
 ];
 
@@ -97,11 +92,8 @@ const DEFAULT_CATEGORY: Category = {
   test: /.*/,
   emoji: "🌴",
   label: "Florida Man",
-  gradient: "from-[#FF5A36] to-[#EF3F7B]",
-  photo: {
-    url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Palm_Coast_Sunset.jpg",
-    credit: "Andyrkellergmail / Wikimedia Commons (CC BY-SA 4.0)",
-  },
+  gradient: "from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6]",
+  pattern: "sunburst",
 };
 
 type StoryLike = Pick<Story, "title" | "description" | "fullStory">;
@@ -113,15 +105,15 @@ export function getStoryVisual(story: StoryLike) {
 
 // Score is out of 100 — the literal sum of a story's six rubric categories.
 export function getScoreColor(score: number) {
-  if (score >= 90) return "#EF3F7B";
-  if (score >= 80) return "#FF5A36";
-  if (score >= 65) return "#FFBE3D";
-  if (score >= 50) return "#0FA895";
+  if (score >= 90) return "#FF2E7E";
+  if (score >= 80) return "#FF5A1F";
+  if (score >= 65) return "#FFC400";
+  if (score >= 50) return "#00C2A8";
   return "#9AA1A8";
 }
 
 export function getScoreTextColor(score: number) {
-  return score >= 65 && score < 80 ? "#17191c" : "#ffffff";
+  return score >= 65 && score < 80 ? "#1a1523" : "#ffffff";
 }
 
 export function getScoreLabel(score: number) {
@@ -175,10 +167,41 @@ export function ScoreBadge({
   );
 }
 
+// A tiled CSS-only texture (no <svg><pattern> defs, so no id collisions when
+// dozens of these render at once on the browse/calendar list) layered behind
+// the big emoji to give each illustrated card some visual texture instead of
+// a flat gradient.
+function CardTexture({ pattern }: { pattern: Pattern }) {
+  const style: CSSProperties =
+    pattern === "dots"
+      ? {
+          backgroundImage:
+            "radial-gradient(rgba(255,255,255,0.45) 2px, transparent 2.5px)",
+          backgroundSize: "16px 16px",
+        }
+      : pattern === "rings"
+        ? {
+            backgroundImage:
+              "radial-gradient(circle, transparent 52%, rgba(255,255,255,0.3) 53% 58%, transparent 59%)",
+            backgroundSize: "30px 30px",
+          }
+        : pattern === "stripes"
+          ? {
+              backgroundImage:
+                "repeating-linear-gradient(45deg, rgba(255,255,255,0.22) 0px, rgba(255,255,255,0.22) 6px, transparent 6px, transparent 16px)",
+            }
+          : {
+              backgroundImage:
+                "repeating-conic-gradient(rgba(255,255,255,0.25) 0deg 6deg, transparent 6deg 18deg)",
+            };
+
+  return <div aria-hidden="true" className="absolute inset-0" style={style} />;
+}
+
 const SIZES = {
-  sm: { box: "h-16 w-16 rounded-xl", emoji: "text-3xl", label: false, credit: false },
-  md: { box: "aspect-square w-full rounded-2xl", emoji: "text-6xl", label: true, credit: false },
-  lg: { box: "aspect-[4/3] w-full rounded-3xl", emoji: "text-8xl", label: true, credit: true },
+  sm: { box: "h-16 w-16 rounded-xl", emoji: "text-3xl", label: false },
+  md: { box: "aspect-square w-full rounded-2xl", emoji: "text-6xl", label: true },
+  lg: { box: "aspect-[4/3] w-full rounded-3xl", emoji: "text-8xl", label: true },
 } as const;
 
 export function StoryVisual({
@@ -195,35 +218,15 @@ export function StoryVisual({
     <div
       className={`relative flex ${sizing.box} shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br shadow-md shadow-ink/10 ring-1 ring-ink/5 ${visual.gradient}`}
     >
-      {visual.photo ? (
-        <>
-          <Image
-            src={visual.photo.url}
-            alt=""
-            aria-hidden="true"
-            fill
-            sizes="(max-width: 768px) 100vw, 400px"
-            className="object-cover"
-          />
-          <div
-            className={`absolute inset-0 bg-gradient-to-br opacity-35 ${visual.gradient}`}
-          />
-        </>
-      ) : (
-        <span className={`relative ${sizing.emoji} drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]`}>
-          {visual.emoji}
-        </span>
-      )}
+      <CardTexture pattern={visual.pattern} />
+
+      <span className={`relative ${sizing.emoji} drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]`}>
+        {visual.emoji}
+      </span>
 
       {sizing.label && (
-        <span className="absolute bottom-2 left-2 rounded-full bg-ink/70 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-sm">
+        <span className="absolute bottom-2 left-2 rounded-full bg-black/55 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
           {visual.label}
-        </span>
-      )}
-
-      {sizing.credit && visual.photo && (
-        <span className="absolute right-2 top-2 rounded-full bg-ink/50 px-2 py-0.5 text-[10px] text-white/80">
-          📷 {visual.photo.credit}
         </span>
       )}
     </div>

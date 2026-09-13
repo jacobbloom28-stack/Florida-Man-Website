@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
 import { FloridaRail } from "./components/FloridaRail";
@@ -16,12 +15,12 @@ import React from "react";
 export const dynamic = "force-dynamic";
 
 const CHIPS = [
-  { label: "🐾 Animals", href: "/browse?category=animals" },
-  { label: "🚨 Cop trouble", href: "/browse?search=police" },
-  { label: "💊 Substances", href: "/browse?search=drugs" },
-  { label: "🍑 Bare necessities", href: "/browse?search=naked" },
-  { label: "💰 Petty heists", href: "/browse?search=steal" },
-  { label: "🎭 Costumes", href: "/browse?search=mask" },
+  { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm/15 text-palm hover:bg-palm/25" },
+  { label: "🚨 Cop trouble", href: "/browse?search=police", tint: "bg-sky/15 text-sky hover:bg-sky/25" },
+  { label: "💊 Substances", href: "/browse?search=drugs", tint: "bg-grape/15 text-grape hover:bg-grape/25" },
+  { label: "🍑 Bare necessities", href: "/browse?search=naked", tint: "bg-flamingo/15 text-flamingo hover:bg-flamingo/25" },
+  { label: "💰 Petty heists", href: "/browse?search=steal", tint: "bg-citrus/20 text-sunset-dark hover:bg-citrus/30" },
+  { label: "🎭 Costumes", href: "/browse?search=mask", tint: "bg-sunset/15 text-sunset-dark hover:bg-sunset/25" },
 ];
 
 export default function Home() {
@@ -61,31 +60,40 @@ export default function Home() {
       <FloridaRail side="right" />
 
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10">
-        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl px-6 py-16 text-center shadow-xl shadow-ink/15 md:min-h-[460px]">
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
+        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] px-6 py-16 text-center shadow-xl shadow-flamingo/25 md:min-h-[460px]">
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 opacity-25"
+            style={{
+              backgroundImage:
+                "repeating-conic-gradient(rgba(255,255,255,0.3) 0deg 4deg, transparent 4deg 12deg)",
+            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/70 to-ink/90" />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-1/2 text-[240px] leading-none opacity-20 md:text-[340px]"
+          >
+            🌴
+          </div>
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-10 -top-10 text-[160px] leading-none opacity-20 md:text-[220px]"
+          >
+            ☀️
+          </div>
 
           <div className="relative z-10">
-            <p className="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 ring-1 ring-white/20 backdrop-blur-sm">
+            <p className="mb-4 inline-flex items-center rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-sm">
               {formattedToday}
             </p>
 
-            <h2 className="text-6xl font-bold leading-[0.95] tracking-tight text-white md:text-8xl">
+            <h2 className="text-6xl font-black leading-[0.95] tracking-tight text-white drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)] md:text-8xl">
               Florida Man
               <br />
-              <span className="bg-gradient-to-r from-[#FF9457] via-[#FFBE3D] to-[#3FE3C7] bg-clip-text text-transparent">
-                of the day
-              </span>
+              <span className="text-citrus">of the day</span>
             </h2>
 
-            <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/75">
+            <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)]">
               {isOnThisDay
                 ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
                 : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
@@ -95,46 +103,46 @@ export default function Home() {
 
         {/* Stat strip */}
         <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-4">
-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
-            <p className="text-3xl font-bold text-sunset">{totalStories}</p>
-            <p className="mt-1 text-xs font-medium text-ink-soft">
+          <div className="rounded-2xl bg-sunset/10 p-5 text-center ring-1 ring-sunset/15">
+            <p className="text-3xl font-black text-sunset-dark">{totalStories}</p>
+            <p className="mt-1 text-xs font-semibold text-ink-soft">
               Verified stories
             </p>
           </div>
-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
-            <p className="text-3xl font-bold text-flamingo">{avgScore}</p>
-            <p className="mt-1 text-xs font-medium text-ink-soft">
+          <div className="rounded-2xl bg-flamingo/10 p-5 text-center ring-1 ring-flamingo/15">
+            <p className="text-3xl font-black text-flamingo">{avgScore}</p>
+            <p className="mt-1 text-xs font-semibold text-ink-soft">
               Avg. Florida score
             </p>
           </div>
-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
-            <p className="truncate text-3xl font-bold text-lagoon">
+          <div className="rounded-2xl bg-lagoon/10 p-5 text-center ring-1 ring-lagoon/15">
+            <p className="truncate text-3xl font-black text-lagoon">
               {topCity}
             </p>
-            <p className="mt-1 text-xs font-medium text-ink-soft">
+            <p className="mt-1 text-xs font-semibold text-ink-soft">
               Most chaotic city
             </p>
           </div>
         </div>
 
-        <article className="mx-auto grid max-w-4xl gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-ink/10 ring-1 ring-line md:grid-cols-[260px_1fr] md:p-10">
+        <article className="mx-auto grid max-w-4xl gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-flamingo/10 ring-1 ring-line md:grid-cols-[260px_1fr] md:p-10">
           <div>
             <StoryVisual story={today} size="lg" />
           </div>
 
           <div>
             <div className="mb-6 flex items-center justify-between gap-3 border-b border-line pb-5">
-              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
+              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-semibold text-sunset-dark">
                 {isOnThisDay ? `On this day — ${today.year}` : "Featured story"}
               </span>
 
-              <span className="flex items-center gap-1.5 text-sm font-medium text-lagoon">
+              <span className="flex items-center gap-1.5 text-sm font-semibold text-lagoon">
                 <span className="h-1.5 w-1.5 rounded-full bg-lagoon" />
                 Verified story
               </span>
             </div>
 
-            <p className="mb-2 text-sm font-medium text-flamingo">
+            <p className="mb-2 text-sm font-semibold text-flamingo">
               {today.city}, Florida
             </p>
 
@@ -151,7 +159,7 @@ export default function Home() {
 
               <Link
                 href={`/story/${today.id}`}
-                className="rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sunset/30 transition-transform hover:-translate-y-0.5 hover:bg-sunset-dark"
+                className="rounded-full bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-bold text-white shadow-lg shadow-flamingo/30 transition-transform hover:-translate-y-0.5"
               >
                 Read the full story →
               </Link>
@@ -166,7 +174,7 @@ export default function Home() {
                 Also on this day
               </h3>
 
-              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-medium text-lagoon">
+              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-semibold text-lagoon">
                 {otherStories.length} stories
               </span>
             </div>
@@ -178,7 +186,7 @@ export default function Home() {
                   href={`/story/${story.id}`}
                   className="flex items-center gap-5 px-5 py-5 transition-colors hover:bg-paper-soft"
                 >
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-paper-soft text-sm font-semibold text-ink-soft">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-sunset to-flamingo text-sm font-bold text-white">
                     {index + 2}
                   </div>
 
@@ -212,7 +220,7 @@ export default function Home() {
 
         {/* Category chips — jump into the archive */}
         <section className="mx-auto mt-16 max-w-4xl">
-          <p className="mb-4 text-sm font-medium text-ink-soft">
+          <p className="mb-4 text-sm font-semibold text-ink-soft">
             Explore by category
           </p>
 
@@ -221,7 +229,7 @@ export default function Home() {
               <Link
                 key={chip.href}
                 href={chip.href}
-                className="rounded-full bg-white px-4 py-2 text-sm font-medium text-ink shadow-sm shadow-ink/5 ring-1 ring-line transition-colors hover:bg-citrus/15"
+                className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${chip.tint}`}
               >
                 {chip.label}
               </Link>
@@ -231,22 +239,22 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/browse"
-              className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+              className="rounded-full bg-gradient-to-r from-ink to-[#3d2f52] px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
             >
               Browse full archive →
             </Link>
 
             <Link
               href="/calendar"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
+              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
             >
               View calendar
             </Link>
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-paper-soft p-6">
-          <p className="text-sm font-semibold text-ink">About the ranking</p>
+        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-gradient-to-br from-citrus/20 to-sunset/10 p-6 ring-1 ring-citrus/25">
+          <p className="text-sm font-bold text-sunset-dark">About the ranking</p>
 
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             Stories are ranked using a combination of humor, absurdity,
@@ -256,7 +264,7 @@ export default function Home() {
 
           <Link
             href="/about"
-            className="mt-3 inline-block text-sm font-semibold text-sunset hover:text-sunset-dark"
+            className="mt-3 inline-block text-sm font-bold text-sunset hover:text-sunset-dark"
           >
             See the full scoring breakdown →
           </Link>

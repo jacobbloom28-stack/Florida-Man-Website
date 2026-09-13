@@ -37,16 +37,6 @@ export default function Footer() {
             Every story is sourced from real news reporting. Not officially
             affiliated with the State of Florida (thankfully).
           </p>
-
-          <p className="mt-2 text-xs leading-relaxed text-white/25">
-            Photos via Wikimedia Commons, licensed CC0 / CC BY / CC BY-SA,
-            credited on each image: American Alligator (Postdlf), Horse3
-            (Joshua Ganderson), Handcuffs 1 (SimmeD), Police car with emergency
-            lights on (Scott Davidson), Sunset on coast of Florida (Don
-            Miller), Palm Coast Sunset (Andyrkellergmail), American Flamingo
-            (Charles J. Sharp), Everglades Swamp (Hein Mück), Shopping Cart
-            (Guanaco), Carnival Mask (Heterotrofo).
-          </p>
         </div>
       </div>
     </footer>

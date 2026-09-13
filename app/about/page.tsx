@@ -29,10 +29,10 @@ export default function About() {
       <section className="mx-auto max-w-4xl px-6 py-16">
         <p className="text-sm font-medium text-flamingo">About the project</p>
 
-        <h2 className="mt-3 text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
+        <h2 className="mt-3 text-5xl font-black leading-[1.05] tracking-tight md:text-6xl">
           Funny.
           <br />
-          <span className="bg-gradient-to-r from-[#FF9457] via-[#EF3F7B] to-[#8B5CF6] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] bg-clip-text text-transparent">
             Verified.
           </span>
           <br />
@@ -40,16 +40,16 @@ export default function About() {
         </h2>
 
         <div className="mt-10 grid grid-cols-2 gap-4">
-          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
-            <p className="text-4xl font-bold text-sunset">{totalStories}</p>
-            <p className="mt-1 text-sm font-medium text-ink-soft">
+          <div className="rounded-2xl bg-sunset/10 p-6 text-center ring-1 ring-sunset/15">
+            <p className="text-4xl font-black text-sunset-dark">{totalStories}</p>
+            <p className="mt-1 text-sm font-semibold text-ink-soft">
               Stories archived
             </p>
           </div>
 
-          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
-            <p className="text-4xl font-bold text-flamingo">{avgScore}</p>
-            <p className="mt-1 text-sm font-medium text-ink-soft">
+          <div className="rounded-2xl bg-flamingo/10 p-6 text-center ring-1 ring-flamingo/15">
+            <p className="text-4xl font-black text-flamingo">{avgScore}</p>
+            <p className="mt-1 text-sm font-semibold text-ink-soft">
               Average Florida score
             </p>
           </div>

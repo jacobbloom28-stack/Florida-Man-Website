@@ -8,16 +8,19 @@
  * `bg-paper` or `text-sunset` available below.
  */
 @theme {
-  --color-paper: #fffcf7;
-  --color-paper-soft: #f6f0e2;
-  --color-ink: #17191c;
-  --color-ink-soft: #5b5f64;
-  --color-sunset: #ff5a36;
-  --color-sunset-dark: #de4019;
-  --color-lagoon: #0fa895;
-  --color-flamingo: #ef3f7b;
-  --color-citrus: #ffbe3d;
-  --color-line: #eae3d3;
+  --color-paper: #fffbf2;
+  --color-paper-soft: #fff1dc;
+  --color-ink: #1a1523;
+  --color-ink-soft: #5c5568;
+  --color-sunset: #ff5a1f;
+  --color-sunset-dark: #d43e0a;
+  --color-lagoon: #00c2a8;
+  --color-flamingo: #ff2e7e;
+  --color-citrus: #ffc400;
+  --color-grape: #8b5cf6;
+  --color-palm: #16a34a;
+  --color-sky: #00b4e0;
+  --color-line: #f3ddb8;
 
   --font-sans: var(--font-geist-sans);
 }

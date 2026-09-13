@@ -1,39 +1,22 @@
-import Image from "next/image";
-
 type Tile = {
-  url: string;
+  emoji: string;
+  gradient: string;
   rotate: string;
-  credit: string;
 };
 
 const LEFT_TILES: Tile[] = [
-  {
-    url: "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg",
-    rotate: "-rotate-2",
-    credit: "Postdlf (CC BY-SA 3.0)",
-  },
-  {
-    url: "https://upload.wikimedia.org/wikipedia/commons/7/72/American_flamingo_%28Phoenicopterus_ruber%29.JPG",
-    rotate: "rotate-1",
-    credit: "Charles J. Sharp (CC BY-SA 4.0)",
-  },
+  { emoji: "🐊", gradient: "from-[#0EA5A0] to-[#14E8B0]", rotate: "-rotate-6" },
+  { emoji: "🌴", gradient: "from-[#FF5A1F] to-[#FF2E7E]", rotate: "rotate-3" },
 ];
 
 const RIGHT_TILES: Tile[] = [
-  {
-    url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Palm_Coast_Sunset.jpg",
-    rotate: "rotate-2",
-    credit: "Andyrkellergmail (CC BY-SA 4.0)",
-  },
-  {
-    url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Everglades_swamp.JPG",
-    rotate: "-rotate-1",
-    credit: "Hein Mück (CC BY-SA 3.0)",
-  },
+  { emoji: "☀️", gradient: "from-[#FFC400] to-[#FF8A00]", rotate: "rotate-6" },
+  { emoji: "🦩", gradient: "from-[#FF2E7E] to-[#8B5CF6]", rotate: "-rotate-3" },
 ];
 
-// Decorative real-Florida photo strip pinned to the viewport edge on very
-// wide screens only — purely visual flavor, never overlaps main content.
+// Decorative sticker rail pinned to the viewport edge on very wide screens
+// only — bold illustrated tiles (not muted stock photography) matching the
+// rest of the site's "no boring photos" visual language.
 export function FloridaRail({ side }: { side: "left" | "right" }) {
   const tiles = side === "left" ? LEFT_TILES : RIGHT_TILES;
 
@@ -44,18 +27,12 @@ export function FloridaRail({ side }: { side: "left" | "right" }) {
         side === "left" ? "left-8" : "right-8"
       }`}
     >
-      {tiles.map((tile) => (
+      {tiles.map((tile, index) => (
         <div
-          key={tile.url}
-          className={`relative h-28 w-24 overflow-hidden rounded-2xl bg-white shadow-lg shadow-ink/10 ring-1 ring-ink/5 ${tile.rotate}`}
+          key={index}
+          className={`flex h-24 w-24 items-center justify-center rounded-3xl bg-gradient-to-br text-5xl shadow-lg shadow-ink/15 ring-1 ring-white/40 ${tile.gradient} ${tile.rotate}`}
         >
-          <Image
-            src={tile.url}
-            alt=""
-            fill
-            sizes="96px"
-            className="object-cover"
-          />
+          {tile.emoji}
         </div>
       ))}
     </div>
