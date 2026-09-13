@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Header from "./components/Header";
-import { FloridaRail } from "./components/FloridaRail";
 import { stories } from "./data/stories";
 import {
   StoryVisual,
@@ -62,8 +61,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-paper text-ink">
       <Header />
-      <FloridaRail side="left" />
-      <FloridaRail side="right" />
 
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10">
         <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] px-6 py-16 text-center shadow-xl shadow-flamingo/25 md:min-h-[460px]">

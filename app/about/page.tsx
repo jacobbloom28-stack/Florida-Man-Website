@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Header from "../components/Header";
-import { FloridaRail } from "../components/FloridaRail";
 import { stories, RUBRIC } from "../data/stories";
 import React from "react";
 
@@ -23,8 +22,6 @@ export default function About() {
   return (
     <main className="min-h-screen bg-paper text-ink">
       <Header />
-      <FloridaRail side="left" />
-      <FloridaRail side="right" />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <p className="text-sm font-medium text-flamingo">About the project</p>
