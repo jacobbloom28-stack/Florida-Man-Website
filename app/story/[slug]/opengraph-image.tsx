@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { stories } from "../../data/stories";
+import { stories, storyIndexById } from "../../data/stories";
 import { getStoryVisual, getScoreColor, getScoreLabel } from "../../components/StoryVisual";
 
 export const alt = "Florida Man of the Day story preview";
@@ -12,7 +12,8 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const story = stories.find((s) => s.id === slug);
+  const storyIndex = storyIndexById.get(slug);
+  const story = storyIndex !== undefined ? stories[storyIndex] : undefined;
 
   if (!story) {
     return new ImageResponse(

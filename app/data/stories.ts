@@ -2347,6 +2347,13 @@ export const stories: Story[] = [
     },
   ];
 
+// O(1) id -> array-index lookup, built once at module load instead of every
+// story page/metadata/OG-image request doing its own O(n) linear scan over
+// the whole archive to find one story by id.
+export const storyIndexById: ReadonlyMap<string, number> = new Map(
+  stories.map((story, index) => [story.id, index])
+);
+
 // Dev-time data integrity check — catches two easy mistakes when adding or
 // editing stories by hand: a copy-pasted id, and a `score` that drifts from
 // the literal sum of `rubric` (the type above documents that invariant, but

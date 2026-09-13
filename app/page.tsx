@@ -10,9 +10,14 @@ import {
 import { getStoryOfTheDay } from "./lib/storyOfTheDay";
 import React from "react";
 
-// Recompute on every request (in Florida's timezone) instead of freezing
-// "today" at build time, so the featured story actually changes daily.
-export const dynamic = "force-dynamic";
+// Re-render at most every 30 minutes (in Florida's timezone) instead of
+// either freezing "today" at build time or fully recomputing this page
+// (stats over the whole archive, category matching for the card) on every
+// single request via force-dynamic. 30 minutes is far tighter than the
+// once-a-day cadence "today" actually needs, so freshness never suffers,
+// but repeat visitors inside that window get an instant cached response
+// instead of the server redoing the same work.
+export const revalidate = 1800;
 
 const CHIPS = [
   { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm/15 text-palm hover:bg-palm/25" },

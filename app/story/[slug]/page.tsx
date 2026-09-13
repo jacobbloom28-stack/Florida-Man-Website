@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "../../components/Header";
-import { stories, RUBRIC, getCategoryBreakdown } from "../../data/stories";
+import { stories, storyIndexById, RUBRIC, getCategoryBreakdown } from "../../data/stories";
 import {
   StoryVisual,
   ScoreBadge,
@@ -12,13 +12,18 @@ import { SITE_NAME, SITE_URL } from "../../lib/siteConfig";
 import { jsonLdScript } from "../../lib/jsonLd";
 import React from "react";
 
+export function generateStaticParams() {
+  return stories.map((story) => ({ slug: story.id }));
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const story = stories.find((s) => s.id === slug);
+  const storyIndex = storyIndexById.get(slug);
+  const story = storyIndex !== undefined ? stories[storyIndex] : undefined;
 
   if (!story) {
     return { title: "Story Not Found" };
@@ -54,7 +59,7 @@ export default async function StoryPage({
 }) {
   const { slug } = await params;
 
-  const storyIndex = stories.findIndex((story) => story.id === slug);
+  const storyIndex = storyIndexById.get(slug) ?? -1;
   const story = stories[storyIndex];
 
   if (!story) {
@@ -85,7 +90,7 @@ export default async function StoryPage({
     .filter((s) => s.id !== story.id && s.city === story.city)
     .slice(0, 3);
 
-  const filler = [...stories]
+  const filler = stories
     .filter((s) => s.id !== story.id && !relatedStories.includes(s))
     .sort((a, b) => b.score - a.score);
 
