@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
 import { getStoryTimestamp, getMonthDayOrder, MONTH_NAMES } from "../lib/storyDate";
-import { getAnimalStories } from "../lib/animalStories";
+import { getCategoryById } from "../lib/categories";
 import React from "react";
 
 const SCORE_FILTERS = ["Any score", "90+ Florida Man", "80+ Florida Man", "65+ Florida Man"];
@@ -60,10 +60,11 @@ const SORT_OPTIONS = {
 type SortOption = keyof typeof SORT_OPTIONS;
 
 function BrowseContent() {
-  // Pick up a category filter passed in from the homepage chips (?search=gator
-  // or ?category=animals)
+  // Pick up a category filter passed in from the homepage chips
+  // (?category=animals, ?category=fast-food, etc.)
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
+  const activeCategory = getCategoryById(category);
   const [search, setSearch] = useState(() => searchParams.get("search") ?? "");
   const [year, setYear] = useState("All years");
   const [month, setMonth] = useState("All months");
@@ -75,8 +76,8 @@ function BrowseContent() {
   );
 
   const basePool = useMemo(
-    () => (category === "animals" ? getAnimalStories(stories) : stories),
-    [category]
+    () => (activeCategory ? activeCategory.filter(stories) : stories),
+    [activeCategory]
   );
 
   const years = useMemo(
@@ -150,13 +151,13 @@ function BrowseContent() {
         <p className="text-sm font-medium text-flamingo">Florida Man archive</p>
 
         <h2 className="mt-2 text-5xl font-bold tracking-tight md:text-6xl">
-          {category === "animals" ? "Animal stories" : "Browse"}
+          {activeCategory ? activeCategory.label : "Browse"}
         </h2>
 
-        {category === "animals" && (
+        {activeCategory && (
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
-              🐾 Filtered to animal stories
+              {activeCategory.chipLabel} — filtered to {activeCategory.label.toLowerCase()}
             </span>
 
             <Link

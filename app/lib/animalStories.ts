@@ -23,6 +23,8 @@ export const ANIMAL_STORY_IDS = [
   "chihuahua-thrown-off-balcony",
   "pelican-tackling-tourist-key-west",
   "flamingo-pinky-busch-gardens-slam",
+  "snakes-tortoises-in-underwear",
+  "whale-tail-for-soup",
 ];
 
 export function getAnimalStories(stories: Story[]) {

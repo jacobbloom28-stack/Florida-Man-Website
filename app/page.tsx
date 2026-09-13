@@ -16,11 +16,12 @@ export const dynamic = "force-dynamic";
 
 const CHIPS = [
   { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm/15 text-palm hover:bg-palm/25" },
-  { label: "🚨 Cop trouble", href: "/browse?search=police", tint: "bg-sky/15 text-sky hover:bg-sky/25" },
-  { label: "💊 Substances", href: "/browse?search=drugs", tint: "bg-grape/15 text-grape hover:bg-grape/25" },
-  { label: "🍑 Bare necessities", href: "/browse?search=naked", tint: "bg-flamingo/15 text-flamingo hover:bg-flamingo/25" },
-  { label: "💰 Petty heists", href: "/browse?search=steal", tint: "bg-citrus/20 text-sunset-dark hover:bg-citrus/30" },
-  { label: "🎭 Costumes", href: "/browse?search=mask", tint: "bg-sunset/15 text-sunset-dark hover:bg-sunset/25" },
+  { label: "🚨 Cop trouble", href: "/browse?category=cop-trouble", tint: "bg-sky/15 text-sky hover:bg-sky/25" },
+  { label: "💊 Substances", href: "/browse?category=substances", tint: "bg-grape/15 text-grape hover:bg-grape/25" },
+  { label: "🍑 Bare necessities", href: "/browse?category=bare-necessities", tint: "bg-flamingo/15 text-flamingo hover:bg-flamingo/25" },
+  { label: "💰 Petty heists", href: "/browse?category=petty-heists", tint: "bg-citrus/20 text-sunset-dark hover:bg-citrus/30" },
+  { label: "🎭 Costumes", href: "/browse?category=costumes", tint: "bg-sunset/15 text-sunset-dark hover:bg-sunset/25" },
+  { label: "🌮 Fast food", href: "/browse?category=fast-food", tint: "bg-lagoon/15 text-lagoon hover:bg-lagoon/25" },
 ];
 
 export default function Home() {
