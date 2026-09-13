@@ -2291,6 +2291,60 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",
     },
+    {
+      id: "walmart-tiktok-24hr-challenge",
+      date: "January 13, 2026",
+      year: "2026",
+      month: "January",
+      day: "13",
+      city: "Englewood",
+      score: 80,
+      rubric: { absurdity: 22, humor: 22, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Tries to Spend 24 Hours Hiding in a Walmart for a TikTok Challenge",
+      description:
+        "Florida Man allegedly hides inside a closed Walmart overnight to livestream a TikTok challenge.",
+      fullStory:
+        "Charlotte County deputies say 18-year-old Isaac Hurley snuck into an Englewood Walmart around 10:15 p.m. on January 13, 2026, planning to live-stream himself surviving inside the closed store for 24 hours to rack up TikTok views. A viewer of the livestream called in a burglary, and deputies arrived to find Hurley hiding in the dog bed section, where he had also unwrapped an iPhone charger from its packaging. He was arrested and charged with burglary of an occupied structure and petit theft, then bonded out of the Charlotte County Jail for $1,500.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/tiktok-challenge-lands-florida-man-jail-trying-spend-night-walmart-after-closed-ccso",
+    },
+    {
+      id: "ai-deepfake-deputy-prank",
+      date: "March 24, 2026",
+      year: "2026",
+      month: "March",
+      day: "24",
+      city: "Lake Mary",
+      score: 80,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Shows Deputy a Fake AI Video to Make a Bogus Crime Report",
+      description:
+        "Florida Man allegedly shows a deputy an AI-generated deepfake video to file a fabricated crime report.",
+      fullStory:
+        "Seminole County deputies say 22-year-old Alexis Martínez-Arizala approached an off-duty deputy at an Academy Sports in Lake Mary on March 24, 2026, and showed him a three-second AI-generated video claiming to show two men breaking into his patrol car. The deputy grew suspicious after noticing the fake video's patrol car was missing 'Seminole Sheriff' markings and its rear door opened and closed on its own, and store surveillance confirmed no one had actually approached the vehicle. Investigators say Martínez-Arizala fabricated the video and report in an attempt to go viral on social media; he was arrested weeks later in Puerto Rico and charged with fabricating physical evidence, filing a false police report, and giving false information to law enforcement.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/04/08/florida-man-arrested-after-pranking-deputy-with-ai-video-in-lake-mary/",
+    },
+    {
+      id: "lawnmower-target-culvers-tiktok",
+      date: "April 25, 2026",
+      year: "2026",
+      month: "April",
+      day: "25",
+      city: "Ocala",
+      score: 84,
+      rubric: { absurdity: 22, humor: 22, floridaFactor: 15, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Teens Drive a Riding Lawnmower Through Target's Automatic Doors for a TikTok Video",
+      description:
+        "Two Florida teens allegedly ride a lawnmower through a Target's front doors to film a viral TikTok stunt.",
+      fullStory:
+        "Ocala police say 18-year-old Janek Szkaradek drove a riding lawnmower straight through the automatic front doors of a Target on Southwest College Road on April 25, 2026, smashing the entrance while his 18-year-old friend Luke Charske filmed for their TikTok account. The night before, Szkaradek had walked into a nearby Culver's and run a leaf blower through the dining room for another video. Both teens were arrested and released on bond from the Marion County Jail; Szkaradek was charged with criminal mischief and disorderly conduct, and Charske was charged as a principal to disorderly conduct.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/04/26/social-media-stunts-land-two-ocala-teens-in-handcuffs/",
+    },
   ];
 
 // Dev-time data integrity check — catches two easy mistakes when adding or
