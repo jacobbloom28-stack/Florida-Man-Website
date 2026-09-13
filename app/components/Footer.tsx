@@ -23,9 +23,6 @@ export default function Footer() {
             <Link href="/browse" className="transition-colors hover:text-citrus">
               Browse
             </Link>
-            <Link href="/calendar" className="transition-colors hover:text-citrus">
-              Calendar
-            </Link>
             <Link href="/about" className="transition-colors hover:text-citrus">
               About
             </Link>

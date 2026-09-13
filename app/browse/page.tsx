@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
-import { getStoryTimestamp, MONTH_NAMES } from "../lib/storyDate";
+import { getStoryTimestamp, getMonthDayOrder, MONTH_NAMES } from "../lib/storyDate";
 import { getAnimalStories } from "../lib/animalStories";
 import React from "react";
 
@@ -53,6 +53,8 @@ const SORT_OPTIONS = {
     b.score - a.score,
   "Score: low to high": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
     a.score - b.score,
+  "Calendar order": (a: (typeof stories)[number], b: (typeof stories)[number]) =>
+    getMonthDayOrder(a) - getMonthDayOrder(b),
 } as const;
 
 type SortOption = keyof typeof SORT_OPTIONS;
@@ -68,7 +70,9 @@ function BrowseContent() {
   const [day, setDay] = useState("All days");
   const [city, setCity] = useState("All cities");
   const [score, setScore] = useState("Any score");
-  const [sort, setSort] = useState<SortOption>("Newest first");
+  const [sort, setSort] = useState<SortOption>(() =>
+    searchParams.get("sort") === "calendar" ? "Calendar order" : "Newest first"
+  );
 
   const basePool = useMemo(
     () => (category === "animals" ? getAnimalStories(stories) : stories),
@@ -183,7 +187,7 @@ function BrowseContent() {
 
           <div className="mt-4 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-4">
             <p className="text-sm text-ink-soft">
-              {filteredStories.length} of {basePool.length} stories
+              {filteredStories.length} of {stories.length} stories
             </p>
 
             <div className="flex items-center gap-3">

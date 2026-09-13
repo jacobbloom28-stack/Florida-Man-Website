@@ -245,10 +245,10 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/calendar"
+              href="/browse?sort=calendar"
               className="rounded-full bg-white px-6 py-3 text-sm font-bold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
             >
-              View calendar
+              Browse in calendar order
             </Link>
           </div>
         </section>

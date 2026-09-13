@@ -168,7 +168,7 @@ export function ScoreBadge({
 }
 
 // A tiled CSS-only texture (no <svg><pattern> defs, so no id collisions when
-// dozens of these render at once on the browse/calendar list) layered behind
+// dozens of these render at once on the browse list) layered behind
 // the big emoji to give each illustrated card some visual texture instead of
 // a flat gradient.
 function CardTexture({ pattern }: { pattern: Pattern }) {

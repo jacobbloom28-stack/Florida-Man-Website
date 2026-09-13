@@ -7,7 +7,6 @@ import React from "react";
 const NAV_LINKS = [
   { href: "/", label: "Today" },
   { href: "/browse", label: "Browse" },
-  { href: "/calendar", label: "Calendar" },
   { href: "/about", label: "About" },
 ];
 
