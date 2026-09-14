@@ -308,6 +308,7 @@ export const stories: Story[] = [
       source: "CBS Miami / Florida Today",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-man-pool-floats-sex-instead-raping-women-police",
+      photo: { src: "/photos/75-pool-floats.jpg", credit: "CBS Miami" },
     },
     {
       id: "33000-coinstar-coins",
@@ -326,6 +327,7 @@ export const stories: Story[] = [
       source: "WFTV / CBS Miami (AP)",
       sourceUrl:
         "https://www.wftv.com/news/trending-now/florida-man-steals-33000-in-rare-coins-uses-them-in-change-machines/924780854/",
+      photo: { src: "/photos/33000-coinstar-coins.jpg", credit: "WFTV" },
     },
     {
       id: "atlantic-hamster-wheel",
