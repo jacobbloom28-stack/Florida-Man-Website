@@ -401,6 +401,7 @@ export const stories: Story[] = [
         "Deputies said a man walked into a Winn-Dixie Wine & Spirits store in Casselberry unmasked on January 2, left, and then returned wearing a Spider-Man mask. He made off with roughly $150 in liquor and $420 worth of Newport cigarettes. He was identified as Edward Wilburn and arrested later that month.",
         source: "ABC affiliates (ABC13/ABC7)",
         sourceUrl: "https://abc13.com/florida-man-robs-store-as-spiderman/5194105/",
+      photo: { src: "/photos/spiderman-liquor-heist.jpg", credit: "ABC13" },
     },
     {
         id: "gator-convenience-store-beer",
@@ -419,6 +420,7 @@ export const stories: Story[] = [
         source: "First Coast News / Fox News",
         sourceUrl:
         "https://www.foxnews.com/science/florida-man-wielding-live-gator-chases-people-in-convenience-store-video-shows",
+      photo: { src: "/photos/gator-convenience-store-beer.jpg", credit: "Fox News" },
     },
     {
         id: "scooter-screwdriver-cop",
