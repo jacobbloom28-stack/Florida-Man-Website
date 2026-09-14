@@ -346,6 +346,7 @@ export const stories: Story[] = [
       source: "NBC News / NPR / Coast Guard",
       sourceUrl:
         "https://www.nbcnews.com/news/us-news/florida-man-arrested-attempting-cross-atlantic-human-powered-hamster-w-rcna103873",
+      photo: { src: "/photos/atlantic-hamster-wheel.jpg", credit: "NBC News" },
     },
     {
       id: "kindness-machete",
@@ -364,6 +365,7 @@ export const stories: Story[] = [
       source: "Fox News / Pensacola News Journal",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-threatens-to-kill-neighbor-with-kindness-thats-the-name-of-his-machete",
+      photo: { src: "/photos/kindness-machete.jpg", credit: "Fox News" },
     },
     {
         id: "horse-blames-break-in",
