@@ -494,6 +494,7 @@ export const stories: Story[] = [
         source: "Fox News / FOX 13 Tampa Bay",
         sourceUrl:
         "https://www.foxnews.com/outkick-culture/florida-man-arrested-110-mph-tells-deputy-racing-catch-cheating-girlfriend",
+      photo: { src: "/photos/110mph-cheating-girlfriend.jpg", credit: "Fox News" },
     },
     {
       id: "cadillac-sunroof",
@@ -550,6 +551,7 @@ export const stories: Story[] = [
       source: "WTXL / WRAL",
       sourceUrl:
         "https://www.wtxl.com/news/florida-man-breaks-into-home-steals-alcohol-falls-asleep-on/article_cf065d28-6e74-11e8-af5c-33f12860f523.html",
+      photo: { src: "/photos/poops-couch.jpg", credit: "WTXL" },
     },
     {
       id: "400-pounds-avocados",
