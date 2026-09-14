@@ -475,6 +475,7 @@ export const stories: Story[] = [
         source: "FOX 13 Tampa Bay / CBS Miami",
         sourceUrl:
         "https://www.fox13news.com/news/florida-man-dressed-red-lace-bra-accused-hiding-gun-under-prosthetic-silicone-breasts-it-was-ugly",
+      photo: { src: "/photos/prosthetic-breasts-gun.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
         id: "110mph-cheating-girlfriend",
