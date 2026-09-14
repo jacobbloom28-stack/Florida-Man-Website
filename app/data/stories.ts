@@ -570,6 +570,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-allegedly-steals-400-pounds-avocados-buy-christmas-presents-children",
+      photo: { src: "/photos/400-pounds-avocados.jpg", credit: "Fox News" },
     },
     {
       id: "truck-dont-surf",
@@ -588,6 +589,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/not-my-fault-the-truck-dont-surf-florida-man-arrested-after-driving-car-into-the-ocean/",
+      photo: { src: "/photos/truck-dont-surf.jpg", credit: "WFLA" },
     },
     {
       id: "cell-tower-sunset",
