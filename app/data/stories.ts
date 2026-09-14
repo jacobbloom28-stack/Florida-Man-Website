@@ -271,6 +271,7 @@ export const stories: Story[] = [
       source: "Tampa Bay Times",
       sourceUrl:
         "https://www.tampabay.com/florida/2019/07/04/deputies-man-tries-to-steal-26-cars-from-pasco-jail-parking-lot-just-after-being-released/",
+      photo: { src: "/photos/26-cars-jail-parking.jpg", credit: "Tampa Bay Times" },
     },
     {
       id: "naked-basketball-skills",
