@@ -234,6 +234,7 @@ export const stories: Story[] = [
         "A person dressed as the Easter Bunny joined a street fight on Orange Avenue in downtown Orlando on April 21, 2019, repeatedly punching one of the men involved before a bike officer helped break up the fight.",
       source: "Miami Herald",
       sourceUrl: "https://www.miamiherald.com/news/state/florida/article229534964.html",
+    photo: { src: "/photos/easter-bunny-fight.jpg", credit: "Miami Herald" },
     },
     {
       id: "tutu-farmers-market",

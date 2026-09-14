@@ -218,7 +218,7 @@ export function StoryVisual({
   if (story.photo) {
     return (
       <div
-        className={`relative flex ${sizing.box} shrink-0 items-end overflow-hidden bg-ink-soft/20 shadow-md shadow-ink/10 ring-1 ring-ink/5`}
+        className={`relative flex ${sizing.box} shrink-0 overflow-hidden bg-ink-soft/20 shadow-md shadow-ink/10 ring-1 ring-ink/5`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- fixed-size
             photos pulled from many external outlets; not worth Next/Image's
@@ -226,12 +226,8 @@ export function StoryVisual({
         <img
           src={story.photo.src}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
-        <span className="relative w-full px-2.5 py-1.5 text-[10px] font-medium text-white/80">
-          Photo: {story.photo.credit}
-        </span>
       </div>
     );
   }
