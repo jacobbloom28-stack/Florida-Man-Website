@@ -456,6 +456,7 @@ export const stories: Story[] = [
         source: "FOX 13 Tampa Bay / WFLA / News4JAX",
         sourceUrl:
         "https://www.fox13news.com/news/florida-man-tries-steal-medical-helicopter-waiting-transport-patients-after-i-75-crash-fhp",
+      photo: { src: "/photos/anti-christ-helicopter-theft.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
         id: "prosthetic-breasts-gun",
