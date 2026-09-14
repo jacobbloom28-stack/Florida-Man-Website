@@ -608,6 +608,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/hillsborough-county/you-made-all-the-way-to-the-top-man-arrested-after-scaling-cellphone-tower-in-hillsborough-county/",
+      photo: { src: "/photos/cell-tower-sunset.jpg", credit: "WFLA" },
     },
     {
       id: "taylor-swift-security-impersonator",
