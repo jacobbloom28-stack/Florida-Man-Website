@@ -96,7 +96,7 @@ const DEFAULT_CATEGORY: Category = {
   pattern: "sunburst",
 };
 
-type StoryLike = Pick<Story, "title" | "description" | "fullStory">;
+type StoryLike = Pick<Story, "title" | "description" | "fullStory" | "photo">;
 
 export function getStoryVisual(story: StoryLike) {
   const text = `${story.title} ${story.description} ${story.fullStory}`;
@@ -211,8 +211,32 @@ export function StoryVisual({
   story: StoryLike;
   size?: keyof typeof SIZES;
 }) {
-  const visual = getStoryVisual(story);
   const sizing = SIZES[size];
+
+  // A real photo (booking photo or news photo) beats the illustrated card
+  // whenever one was found for this story — see app/data/stories.ts.
+  if (story.photo) {
+    return (
+      <div
+        className={`relative flex ${sizing.box} shrink-0 items-end overflow-hidden bg-ink-soft/20 shadow-md shadow-ink/10 ring-1 ring-ink/5`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element -- fixed-size
+            photos pulled from many external outlets; not worth Next/Image's
+            remote-pattern allowlist churn for a one-time archive fetch. */}
+        <img
+          src={story.photo.src}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
+        <span className="relative w-full px-2.5 py-1.5 text-[10px] font-medium text-white/80">
+          Photo: {story.photo.credit}
+        </span>
+      </div>
+    );
+  }
+
+  const visual = getStoryVisual(story);
 
   return (
     <div

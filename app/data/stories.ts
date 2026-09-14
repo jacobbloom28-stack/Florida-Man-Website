@@ -71,6 +71,16 @@ export type Story = {
   // crime with no comedic angle — shown as a visible warning on the story
   // page rather than silently blending into the "funny" archive.
   contentNote?: string;
+  // A real photo tied to the incident (booking photo where available,
+  // otherwise a news photo), pulled from the original source article and
+  // stored under /public/photos. Omitted when no confident, rights-clear
+  // photo could be found — those stories fall back to the illustrated card.
+  photo?: {
+    src: string;
+    // Who took/released it — shown as a small credit line under the image,
+    // linked back to sourceUrl.
+    credit: string;
+  };
 };
 
 const RUBRIC_KEY_BY_CATEGORY: Record<string, keyof Rubric> = {
@@ -112,6 +122,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/man-arrested-oviedo-smashing-fake-police-flock-camera/DGVJZWV5QNAVDDLGAIFBPUXNGY/",
+      photo: { src: "/photos/flock-camera-decoy.jpg", credit: "WFTV" },
     },
     {
       id: "taco-bell-roof",
@@ -130,6 +141,7 @@ export const stories: Story[] = [
       source: "Local 10",
       sourceUrl:
         "https://www.local10.com/news/local/2026/08/26/man-accused-of-smashing-taco-bell-kiosks-tv-menu-in-hialeah/",
+      photo: { src: "/photos/taco-bell-roof.jpg", credit: "Local 10" },
     },
     {
       id: "alex-boom-bomb-threat",
@@ -148,6 +160,7 @@ export const stories: Story[] = [
       source: "Local 10",
       sourceUrl:
         "https://www.local10.com/news/local/2026/08/20/man-with-phone-registered-under-name-alex-boom-calls-in-bomb-threat-to-salvation-army-cops-say/",
+      photo: { src: "/photos/alex-boom-bomb-threat.jpg", credit: "Local 10" },
     },
     {
       id: "junk-man-carjacker",
@@ -166,6 +179,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/man-nicknamed-junk-man-arrested-after-misuse-911-longwood/STX44MVE3RACBMHZBIJE7AZN3M/",
+      photo: { src: "/photos/junk-man-carjacker.jpg", credit: "WFTV" },
     },
     {
       id: "lawn-mower-meth",
@@ -202,6 +216,7 @@ export const stories: Story[] = [
       source: "The Smoking Gun",
       sourceUrl:
         "https://www.thesmokinggun.com/buster/florida-man/ieatass-sticker-bust-285903",
+      photo: { src: "/photos/i-eat-ass-sticker.jpg", credit: "The Smoking Gun" },
     },
     {
       id: "easter-bunny-fight",
