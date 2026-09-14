@@ -646,6 +646,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/florida-man-binges-junk-food-cigarettes-after-hiding-walgreens-bathroom-roam-store-after-hours",
+      photo: { src: "/photos/walgreens-junk-food-binge.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "manatee-riding",
@@ -682,6 +683,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-allegedly-leads-deputies-2-mph-chase-stolen-electric-walmart-scooter",
+      photo: { src: "/photos/walmart-scooter-chase.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "ronald-mcdonald-clown-arrest",
