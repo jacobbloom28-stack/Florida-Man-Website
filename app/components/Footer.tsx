@@ -23,6 +23,9 @@ export default function Footer() {
             <Link href="/browse" className="transition-colors hover:text-citrus">
               Browse
             </Link>
+            <Link href="/suggest" className="transition-colors hover:text-citrus">
+              Suggest
+            </Link>
             <Link href="/about" className="transition-colors hover:text-citrus">
               About
             </Link>
