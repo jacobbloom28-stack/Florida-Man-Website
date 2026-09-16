@@ -2510,6 +2510,46 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-man-banana-tree-pothole/",
     },
+    {
+      id: "lakeland-swamp-dui-children",
+      date: "September 9, 2026",
+      year: "2026",
+      month: "September",
+      day: "9",
+      city: "Lakeland",
+      score: 73,
+      rubric: { absurdity: 20, humor: 10, floridaFactor: 18, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Flees DUI Crash Into Gator-Infested Swamp Carrying His Two Kids",
+      description:
+        "A Lakeland man fleeing a DUI crash carries his toddler and infant into a swamp at night, dropping them in standing water before a police drone finds him.",
+      fullStory:
+        "Isaac Kinsey, 27, drove through a road-closure sign and sandbags into a construction zone on State Road 33 near North Combee Road in Lakeland early on September 9, then fled on foot into a nearby swamp carrying his 2-year-old and 10-month-old children. A police drone located Kinsey about 30 minutes later stumbling through the dark, marshy area; he fell repeatedly, submerging both children in standing water, and at one point set the toddler down to keep moving through the swamp with the infant. Officers rescued both children, who were treated and released at Lakeland Regional Health. Kinsey, who admitted to drinking and was driving on a suspended license, was arrested and faces eight misdemeanor and three felony charges, including two counts of negligent child abuse with great bodily harm.",
+      contentNote:
+        "This incident involved a real injury: two young children were submerged in swamp water and hospitalized for treatment before being released.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/man-accused-dui-crash-children-swamp",
+    },
+    {
+      id: "kissimmee-debt-bondage-transport",
+      date: "September 14, 2023",
+      year: "2023",
+      month: "September",
+      day: "14",
+      city: "Kissimmee",
+      score: 42,
+      rubric: { absurdity: 10, humor: 3, floridaFactor: 10, unexpectedness: 8, headlineQuality: 6, sourceQuality: 5 },
+      title: "Florida Man Sentenced for Driving Trafficking Victim Cross-Country to Work Off a Debt",
+      description:
+        "A Kissimmee man is sentenced to federal prison for having a man he helped smuggle into the country driven from Wisconsin to Florida against his will to work off a debt.",
+      fullStory:
+        "Gerardo Hernandez Anselmo, 34, of Kissimmee, was sentenced by U.S. District Judge William M. Conley to 30 months in federal prison for illegally transporting an alien. Prosecutors said Hernandez Anselmo and his wife helped a man identified as R.E. enter the country illegally, then had him driven from Abbotsford, Wisconsin to Kissimmee against his will to work off the debt he owed them. The case surfaced after a relative reported R.E. missing from his Wisconsin job in June 2022; R.E. later identified Hernandez Anselmo and a co-defendant as the men who drove him to Florida. Hernandez Anselmo pleaded guilty in June 2023, and the co-defendant, who was in the country illegally, was sentenced separately to time served and deported.",
+      contentNote:
+        "This is a serious federal human-trafficking and debt-bondage case involving a real victim, not a lighthearted incident.",
+      source: "U.S. Department of Justice",
+      sourceUrl:
+        "https://www.justice.gov/usao-wdwi/pr/florida-man-sentenced-30-months-illegally-transporting-alien",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every

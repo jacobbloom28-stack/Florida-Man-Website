@@ -2,16 +2,16 @@
   {
     "id": "396f39eb-1481-47a7-a9d6-c3b5f227ac55",
     "url": "https://www.tmz.com/2026/09/14/florida-dui-suspect-drops-kids-in-swamp-fleeing-cops/",
-    "note": "Rejected: verified real (Isaac Kinsey, Lakeland), but involves real injury to a baby and toddler who were hospitalized. Site policy excludes real harm to bystanders/victims regardless of how absurd the incident is.",
+    "note": "Added as \"lakeland-swamp-dui-children\" per explicit owner override: verified real (Isaac Kinsey, Lakeland), involves real injury to a baby and toddler who were hospitalized, flagged with contentNote.",
     "submittedAt": "2026-09-16T02:45:27.548Z",
-    "status": "rejected"
+    "status": "added"
   },
   {
     "id": "43431a3c-d44b-4710-92ef-d7f0c59536ff",
     "url": "https://www.justice.gov/usao-wdwi/pr/florida-man-sentenced-30-months-illegally-transporting-alien",
-    "note": "Rejected: genuine DOJ case but a serious human-smuggling/coercion conviction with a real victim, not a lighthearted Florida Man incident.",
+    "note": "Added as \"kissimmee-debt-bondage-transport\" per explicit owner override: genuine DOJ case, a serious human-smuggling/debt-bondage conviction with a real victim, flagged with contentNote.",
     "submittedAt": "2026-09-16T02:45:41.924Z",
-    "status": "rejected"
+    "status": "added"
   },
   {
     "id": "f4ab0111-8e02-43fd-b076-b5983f9998f8",
