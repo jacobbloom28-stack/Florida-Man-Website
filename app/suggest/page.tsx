@@ -62,8 +62,8 @@ export default function SuggestPage() {
       setState("success");
       setMessage(
         data?.count > 1
-          ? `Got all ${data.count} links. We check every submission the same way we check everything else — verified ones show up on the site automatically.`
-          : "Got it. We check every submission the same way we check everything else — verified ones show up on the site automatically."
+          ? `Got all ${data.count} links. We check every submission the same way we check everything else. Verified ones show up on the site automatically.`
+          : "Got it. We check every submission the same way we check everything else. Verified ones show up on the site automatically."
       );
       setUrlsText("");
       setNote("");
@@ -90,7 +90,7 @@ export default function SuggestPage() {
           <Link href="/about" className="font-semibold text-sunset-dark underline underline-offset-2">
             verification and scoring
           </Link>{" "}
-          as everything else on this site — real reporting only, nothing
+          as everything else on this site: real reporting only, nothing
           tragic. Stories that pass show up on the site automatically, no
           account or sign-up needed.
         </p>
@@ -101,7 +101,7 @@ export default function SuggestPage() {
               Story link(s)
             </label>
             <p className="mt-1 text-sm text-ink-soft">
-              One per line. News articles only — no aggregator sites.
+              One per line. News articles only, no aggregator sites.
             </p>
             <textarea
               id="urls"
@@ -146,7 +146,7 @@ export default function SuggestPage() {
           <button
             type="submit"
             disabled={state === "loading"}
-            className="rounded-full bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sunset/20 transition-opacity hover:opacity-90 disabled:opacity-60"
+            className="rounded-lg bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sunset/20 transition-opacity hover:opacity-90 disabled:opacity-60"
           >
             {state === "loading" ? "Submitting…" : "Submit"}
           </button>
@@ -165,7 +165,7 @@ export default function SuggestPage() {
 
         <p className="mt-10 text-xs leading-relaxed text-ink-soft/70">
           We don&apos;t contact you about submissions and there&apos;s no way
-          to check status here — verified stories just appear on the site
+          to check status here. Verified stories just appear on the site
           (browse or check back on their date). Unverified ones quietly
           don&apos;t.
         </p>

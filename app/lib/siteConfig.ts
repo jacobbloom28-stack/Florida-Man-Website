@@ -1,7 +1,7 @@
 export const SITE_NAME = "Florida Man of the Day";
 
 export const SITE_DESCRIPTION =
-  "Florida's strangest, funniest news stories — one a day, and every one of them really happened.";
+  "Florida's strangest, funniest news stories: one a day, and every one of them really happened.";
 
 // Prefer an explicit override, then Vercel's stable production domain (not
 // the per-deployment VERCEL_URL, which changes on every preview), then a

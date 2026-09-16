@@ -1,4 +1,13 @@
 import Link from "next/link";
+import {
+  ForkKnifeIcon,
+  HandCoinsIcon,
+  MaskHappyIcon,
+  PawPrintIcon,
+  PillIcon,
+  EyeSlashIcon,
+  SirenIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import Header from "./components/Header";
 import { stories } from "./data/stories";
 import {
@@ -19,13 +28,13 @@ import React from "react";
 export const revalidate = 1800;
 
 const CHIPS = [
-  { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm text-ink" },
-  { label: "🚨 Cop trouble", href: "/browse?category=cop-trouble", tint: "bg-sky text-ink" },
-  { label: "💊 Substances", href: "/browse?category=substances", tint: "bg-grape text-ink" },
-  { label: "🍑 Bare necessities", href: "/browse?category=bare-necessities", tint: "bg-flamingo text-ink" },
-  { label: "💰 Petty heists", href: "/browse?category=petty-heists", tint: "bg-citrus text-ink" },
-  { label: "🎭 Costumes", href: "/browse?category=costumes", tint: "bg-sunset text-ink" },
-  { label: "🌮 Fast food", href: "/browse?category=fast-food", tint: "bg-lagoon text-ink" },
+  { icon: PawPrintIcon, label: "Animals", href: "/browse?category=animals", tint: "bg-palm text-ink" },
+  { icon: SirenIcon, label: "Cop trouble", href: "/browse?category=cop-trouble", tint: "bg-sky text-ink" },
+  { icon: PillIcon, label: "Substances", href: "/browse?category=substances", tint: "bg-cobalt text-ink" },
+  { icon: EyeSlashIcon, label: "Bare necessities", href: "/browse?category=bare-necessities", tint: "bg-flamingo text-ink" },
+  { icon: HandCoinsIcon, label: "Petty heists", href: "/browse?category=petty-heists", tint: "bg-citrus text-ink" },
+  { icon: MaskHappyIcon, label: "Costumes", href: "/browse?category=costumes", tint: "bg-sunset text-ink" },
+  { icon: ForkKnifeIcon, label: "Fast food", href: "/browse?category=fast-food", tint: "bg-lagoon text-ink" },
 ];
 
 export default function Home() {
@@ -63,7 +72,7 @@ export default function Home() {
       <Header />
 
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10">
-        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] px-6 py-16 text-center shadow-xl shadow-flamingo/25 md:min-h-[460px]">
+        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF5A1F] via-[#FF2E7E] to-[#2563EB] px-6 py-16 text-center shadow-xl shadow-flamingo/25 md:min-h-[460px]">
           <div
             aria-hidden="true"
             className="absolute inset-0 opacity-25"
@@ -72,21 +81,8 @@ export default function Home() {
                 "repeating-conic-gradient(rgba(255,255,255,0.3) 0deg 4deg, transparent 4deg 12deg)",
             }}
           />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-1/2 text-[240px] leading-none opacity-20 md:text-[340px]"
-          >
-            🌴
-          </div>
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-10 -top-10 text-[160px] leading-none opacity-20 md:text-[220px]"
-          >
-            ☀️
-          </div>
-
           <div className="relative z-10">
-            <p className="mb-4 inline-flex items-center rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-sm">
+            <p className="mb-4 inline-flex items-center rounded-lg bg-white/15 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-sm">
               {formattedToday}
             </p>
 
@@ -98,8 +94,8 @@ export default function Home() {
 
             <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)]">
               {isOnThisDay
-                ? `Yes, this really happened in Florida — on ${todayDate.month} ${todayDate.day}, back in ${today.year}.`
-                : `We don't have a story on record for ${todayDate.month} ${todayDate.day} yet — here's one of our favorites in the meantime.`}
+                ? `Yes, this really happened in Florida, on ${todayDate.month} ${todayDate.day}, back in ${today.year}.`
+                : `We don't have a story on record for ${todayDate.month} ${todayDate.day} yet. Here's one of our favorites in the meantime.`}
             </p>
           </div>
         </div>
@@ -135,8 +131,8 @@ export default function Home() {
 
           <div>
             <div className="mb-6 flex items-center justify-between gap-3 border-b border-line pb-5">
-              <span className="rounded-full bg-citrus px-3 py-1 text-sm font-bold text-ink">
-                {isOnThisDay ? `On this day — ${today.year}` : "Featured story"}
+              <span className="rounded-lg bg-citrus px-3 py-1 text-sm font-bold text-ink">
+                {isOnThisDay ? `On this day, ${today.year}` : "Featured story"}
               </span>
 
               <span className="flex items-center gap-1.5 text-sm font-semibold text-lagoon">
@@ -162,7 +158,7 @@ export default function Home() {
 
               <Link
                 href={`/story/${today.id}`}
-                className="rounded-full bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-bold text-white shadow-lg shadow-flamingo/30 transition-transform hover:-translate-y-0.5"
+                className="rounded-lg bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-bold text-white shadow-lg shadow-flamingo/30 transition-transform hover:-translate-y-0.5"
               >
                 Read the full story →
               </Link>
@@ -177,7 +173,7 @@ export default function Home() {
                 Also on this day
               </h3>
 
-              <span className="rounded-full bg-lagoon px-3 py-1 text-sm font-bold text-ink">
+              <span className="rounded-lg bg-lagoon px-3 py-1 text-sm font-bold text-ink">
                 {otherStories.length} stories
               </span>
             </div>
@@ -221,7 +217,7 @@ export default function Home() {
           </section>
         )}
 
-        {/* Category chips — jump into the archive */}
+        {/* Category chips: jump into the archive */}
         <section className="mx-auto mt-16 max-w-4xl">
           <p className="mb-4 text-sm font-semibold text-ink-soft">
             Or dive into a category
@@ -232,8 +228,9 @@ export default function Home() {
               <Link
                 key={chip.href}
                 href={chip.href}
-                className={`rounded-full px-4 py-2 text-sm font-semibold transition-transform hover:-translate-y-0.5 ${chip.tint}`}
+                className={`flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold transition-transform hover:-translate-y-0.5 ${chip.tint}`}
               >
+                <chip.icon size={16} weight="bold" />
                 {chip.label}
               </Link>
             ))}
@@ -242,14 +239,14 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/browse"
-              className="rounded-full bg-gradient-to-r from-ink to-[#3d2f52] px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+              className="rounded-lg bg-gradient-to-r from-ink to-[#1e3a8a] px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
             >
               See the whole archive →
             </Link>
 
             <Link
               href="/browse?sort=calendar"
-              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
+              className="rounded-lg bg-white px-6 py-3 text-sm font-bold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
             >
               Browse in calendar order
             </Link>

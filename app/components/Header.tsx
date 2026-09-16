@@ -18,7 +18,6 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="text-2xl">🐊</span>
           <span>
             <span className="block text-lg font-semibold tracking-tight text-ink">
               Florida Man
@@ -37,7 +36,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-2.5 py-2 transition-colors sm:px-3.5 ${
+                className={`rounded-lg px-2.5 py-2 transition-colors sm:px-3.5 ${
                   active
                     ? "bg-sunset text-ink"
                     : "text-ink-soft hover:bg-ink/5 hover:text-ink"

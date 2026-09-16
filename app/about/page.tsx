@@ -6,7 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "How we check and score every Florida Man story — the six-part rubric behind Absurdity, Humor, Florida Factor, Unexpectedness, Headline Quality, and Source Quality.",
+    "How we check and score every Florida Man story: the six-part rubric behind Absurdity, Humor, Florida Factor, Unexpectedness, Headline Quality, and Source Quality.",
   alternates: { canonical: "/about" },
 };
 
@@ -53,7 +53,7 @@ export default function About() {
         <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink-soft">
           <p>
             We dig up the strangest, funniest news stories happening in
-            Florida — the ones that make you say &ldquo;there&apos;s no
+            Florida, the ones that make you say &ldquo;there&apos;s no
             way that&apos;s real&rdquo; right before you find out it is.
           </p>
 
@@ -74,10 +74,10 @@ export default function About() {
 
           <p className="mt-4 text-ink-soft">
             Every story gets scored across six categories, and the number
-            you see is just those six added up — no hidden math, no fudging
+            you see is just those six added up: no hidden math, no fudging
             it after the fact. Humor and absurdity count for the most. And
             if a story involves someone actually getting hurt, that drags
-            the score down instead of up — we&apos;re here to laugh at bad
+            the score down instead of up. We&apos;re here to laugh at bad
             decisions, not at anyone&apos;s pain.
           </p>
 

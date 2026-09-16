@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { WarningIcon } from "@phosphor-icons/react/dist/ssr";
 import Header from "../../components/Header";
 import { stories, storyIndexById, RUBRIC, getCategoryBreakdown } from "../../data/stories";
 import {
@@ -154,7 +155,8 @@ export default async function StoryPage({
           {story.contentNote && (
             <div className="mb-6 rounded-xl bg-flamingo px-5 py-4">
               <p className="flex items-center gap-2 text-sm font-semibold text-ink">
-                ⚠️ Content note
+                <WarningIcon size={16} weight="fill" />
+                Content note
               </p>
               <p className="mt-1.5 text-base text-ink">{story.contentNote}</p>
             </div>

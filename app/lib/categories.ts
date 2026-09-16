@@ -1,7 +1,7 @@
 import type { Story } from "../data/stories";
 import { getAnimalStories } from "./animalStories";
 
-// Shared definitions for every browsable "category" on the site — the
+// Shared definitions for every browsable "category" on the site: the
 // homepage chips and Browse's `?category=` filter both read from this one
 // list, so a category can't drift out of sync between the two places it
 // shows up. Most categories are matched against a story's title, city, and
@@ -33,19 +33,19 @@ export const CATEGORIES: Category[] = [
   {
     id: "animals",
     label: "Animal stories",
-    chipLabel: "🐾 Animals",
+    chipLabel: "Animals",
     filter: getAnimalStories,
   },
   {
     id: "cop-trouble",
     label: "Cop trouble",
-    chipLabel: "🚨 Cop trouble",
+    chipLabel: "Cop trouble",
     filter: byText(/police/i),
   },
   {
     id: "substances",
     label: "Substance situations",
-    chipLabel: "💊 Substances",
+    chipLabel: "Substances",
     // Broader than a single "drugs" keyword — most stories name the actual
     // substance (meth, heroin, fentanyl...) rather than saying "drugs".
     filter: byText(
@@ -55,19 +55,19 @@ export const CATEGORIES: Category[] = [
   {
     id: "bare-necessities",
     label: "Bare necessities",
-    chipLabel: "🍑 Bare necessities",
+    chipLabel: "Bare necessities",
     filter: byText(/naked/i),
   },
   {
     id: "petty-heists",
     label: "Petty heists",
-    chipLabel: "💰 Petty heists",
+    chipLabel: "Petty heists",
     filter: byText(/steal/i),
   },
   {
     id: "costumes",
     label: "Costume chaos",
-    chipLabel: "🎭 Costumes",
+    chipLabel: "Costumes",
     // Broader than a single "mask" keyword — most costume stories describe
     // the actual getup (tutu, clown, mascot...) instead of saying "mask".
     filter: byText(/costume|mask|tutu|spider-?man|clown|mascot|bunny|inmate uniform|jail uniform/i),
@@ -75,7 +75,7 @@ export const CATEGORIES: Category[] = [
   {
     id: "fast-food",
     label: "Fast food fiascos",
-    chipLabel: "🌮 Fast food",
+    chipLabel: "Fast food",
     filter: byText(
       /taco bell|mcdonald|wendy's|wal-?mart|waffle house|dunkin|chuck e\.? cheese|publix|burger king|\bkfc\b|pizza hut|sonic drive|starbucks|denny's/i
     ),

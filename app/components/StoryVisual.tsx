@@ -1,87 +1,101 @@
 import type { CSSProperties } from "react";
+import type { Icon } from "@phosphor-icons/react";
+import {
+  AnchorIcon,
+  CarIcon,
+  EyeSlashIcon,
+  HandCoinsIcon,
+  HorseIcon,
+  KnifeIcon,
+  MaskHappyIcon,
+  PillIcon,
+  SirenIcon,
+  SunIcon,
+  WavesIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import type { Story } from "../data/stories";
 
 type Pattern = "dots" | "rings" | "stripes" | "sunburst";
 
 type Category = {
   test: RegExp;
-  emoji: string;
+  icon: Icon;
   label: string;
   gradient: string;
   pattern: Pattern;
 };
 
-// Bold illustrated cards instead of stock photography — a saturated,
+// Bold illustrated cards instead of stock photography: a saturated,
 // multi-stop Florida-sunset gradient per category plus a light CSS-only
 // texture overlay (no images, no external requests, no per-instance id
 // collisions from repeated <svg><pattern> defs across a list of cards).
 const CATEGORIES: Category[] = [
   {
     test: /\balligators?\b|\bgators?\b|\bcrocs?\b|crocodile/i,
-    emoji: "🐊",
+    icon: WavesIcon,
     label: "Gator alert",
     gradient: "from-[#0EA5A0] via-[#00D2A6] to-[#14E8B0]",
     pattern: "rings",
   },
   {
     test: /horse|snake|hamster wheel/i,
-    emoji: "🐴",
+    icon: HorseIcon,
     label: "Wild animal",
     gradient: "from-[#D97706] via-[#F59E0B] to-[#FCD34D]",
     pattern: "dots",
   },
   {
     test: /spider-?man|bunny|tutu|mask|costume/i,
-    emoji: "🎭",
+    icon: MaskHappyIcon,
     label: "Costume chaos",
-    gradient: "from-[#9333EA] via-[#C026D3] to-[#FF2E7E]",
+    gradient: "from-[#2563EB] via-[#3E8EFF] to-[#00C2A8]",
     pattern: "stripes",
   },
   {
     test: /naked|nude|prosthetic/i,
-    emoji: "🍑",
+    icon: EyeSlashIcon,
     label: "Bare necessities",
     gradient: "from-[#FF2E7E] via-[#FF6B4A] to-[#FFC400]",
     pattern: "sunburst",
   },
   {
     test: /gun|machete|knife|armed|weapon/i,
-    emoji: "🔪",
+    icon: KnifeIcon,
     label: "Armed & alarming",
     gradient: "from-[#B91C1C] via-[#EF4444] to-[#FF5A1F]",
     pattern: "stripes",
   },
   {
     test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i,
-    emoji: "💊",
+    icon: PillIcon,
     label: "Substance situation",
-    gradient: "from-[#6D28D9] via-[#9333EA] to-[#C026D3]",
+    gradient: "from-[#1E3A8A] via-[#2563EB] to-[#00B4E0]",
     pattern: "dots",
   },
   {
     test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i,
-    emoji: "🚗",
+    icon: CarIcon,
     label: "Vehicular villainy",
     gradient: "from-[#FF5A1F] via-[#FF8A00] to-[#FFC400]",
     pattern: "sunburst",
   },
   {
     test: /steal\w*|stolen|theft|burglary|\brob\w*|\bcoins?\b|avocado/i,
-    emoji: "💰",
+    icon: HandCoinsIcon,
     label: "Petty heist",
     gradient: "from-[#FFC400] via-[#FF8A00] to-[#FF5A1F]",
     pattern: "dots",
   },
   {
     test: /police|officers?|deput\w*|\bcops?\b|\b911\b|bomb|carjack/i,
-    emoji: "🚨",
+    icon: SirenIcon,
     label: "Cop trouble",
     gradient: "from-[#0072FF] via-[#3E8EFF] to-[#FF2E7E]",
     pattern: "sunburst",
   },
   {
     test: /ocean|atlantic|boat|water/i,
-    emoji: "🌊",
+    icon: AnchorIcon,
     label: "High seas",
     gradient: "from-[#00B4E0] via-[#00C2A8] to-[#0EA5A0]",
     pattern: "rings",
@@ -90,9 +104,9 @@ const CATEGORIES: Category[] = [
 
 const DEFAULT_CATEGORY: Category = {
   test: /.*/,
-  emoji: "🌴",
+  icon: SunIcon,
   label: "Florida Man",
-  gradient: "from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6]",
+  gradient: "from-[#FF5A1F] via-[#FF2E7E] to-[#2563EB]",
   pattern: "sunburst",
 };
 
@@ -169,7 +183,7 @@ export function ScoreBadge({
 
 // A tiled CSS-only texture (no <svg><pattern> defs, so no id collisions when
 // dozens of these render at once on the browse list) layered behind
-// the big emoji to give each illustrated card some visual texture instead of
+// the big icon to give each illustrated card some visual texture instead of
 // a flat gradient.
 function CardTexture({ pattern }: { pattern: Pattern }) {
   const style: CSSProperties =
@@ -199,9 +213,9 @@ function CardTexture({ pattern }: { pattern: Pattern }) {
 }
 
 const SIZES = {
-  sm: { box: "h-16 w-16 rounded-xl", emoji: "text-3xl", label: false },
-  md: { box: "aspect-square w-full rounded-2xl", emoji: "text-6xl", label: true },
-  lg: { box: "aspect-[4/3] w-full rounded-3xl", emoji: "text-8xl", label: true },
+  sm: { box: "h-16 w-16 rounded-xl", icon: 28, label: false },
+  md: { box: "aspect-square w-full rounded-2xl", icon: 56, label: true },
+  lg: { box: "aspect-[4/3] w-full rounded-3xl", icon: 88, label: true },
 } as const;
 
 export function StoryVisual({
@@ -214,7 +228,7 @@ export function StoryVisual({
   const sizing = SIZES[size];
 
   // A real photo (booking photo or news photo) beats the illustrated card
-  // whenever one was found for this story — see app/data/stories.ts.
+  // whenever one was found for this story: see app/data/stories.ts.
   if (story.photo) {
     return (
       <div
@@ -233,6 +247,7 @@ export function StoryVisual({
   }
 
   const visual = getStoryVisual(story);
+  const VisualIcon = visual.icon;
 
   return (
     <div
@@ -240,12 +255,15 @@ export function StoryVisual({
     >
       <CardTexture pattern={visual.pattern} />
 
-      <span className={`relative ${sizing.emoji} drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]`}>
-        {visual.emoji}
-      </span>
+      <VisualIcon
+        className="relative drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]"
+        size={sizing.icon}
+        weight="fill"
+        color="#ffffff"
+      />
 
       {sizing.label && (
-        <span className="absolute bottom-2 left-2 rounded-full bg-black/55 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
+        <span className="absolute bottom-2 left-2 rounded-lg bg-black/55 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
           {visual.label}
         </span>
       )}

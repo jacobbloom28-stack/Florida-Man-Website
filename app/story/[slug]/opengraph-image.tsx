@@ -63,7 +63,7 @@ export default async function Image({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <div style={{ display: "flex", fontSize: 60 }}>{visual.emoji}</div>
+          <visual.icon size={60} weight="fill" color="#FFC400" />
           <div
             style={{
               display: "flex",

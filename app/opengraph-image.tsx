@@ -53,7 +53,7 @@ export default function Image() {
         </div>
 
         <div style={{ display: "flex", marginTop: 56, gap: 12 }}>
-          {["#FF5A1F", "#FFC400", "#00C2A8", "#FF2E7E", "#8B5CF6"].map((color) => (
+          {["#FF5A1F", "#FFC400", "#00C2A8", "#FF2E7E", "#2563EB"].map((color) => (
             <div key={color} style={{ display: "flex", width: 64, height: 14, borderRadius: 999, backgroundColor: color }} />
           ))}
         </div>

@@ -24,7 +24,7 @@ export const RUBRIC = [
     category: "Unexpectedness",
     points: 15,
     weight: "15%",
-    color: "#7B2FF7",
+    color: "#2563EB",
     measures: "How surprising or bizarre the incident or outcome is",
   },
   {
@@ -323,7 +323,7 @@ export const stories: Story[] = [
       description:
         "Florida Man allegedly steals a friend's rare coin collection, then cashes it in for a fraction of a percent of its value.",
       fullStory:
-        "A 40-year-old Riviera Beach man was charged with grand theft after investigators said he stole a friend's collection of commemorative presidential dollar coins, worth roughly $33,000, along with other items totaling $350,000. He reportedly sold some coins to a pawn shop for a few thousand dollars, then ran the rest through Coinstar change machines at grocery stores, which paid out only face value — leaving him with about $30.",
+        "A 40-year-old Riviera Beach man was charged with grand theft after investigators said he stole a friend's collection of commemorative presidential dollar coins, worth roughly $33,000, along with other items totaling $350,000. He reportedly sold some coins to a pawn shop for a few thousand dollars, then ran the rest through Coinstar change machines at grocery stores, which paid out only face value, leaving him with about $30.",
       source: "WFTV / CBS Miami (AP)",
       sourceUrl:
         "https://www.wftv.com/news/trending-now/florida-man-steals-33000-in-rare-coins-uses-them-in-change-machines/924780854/",
@@ -342,7 +342,7 @@ export const stories: Story[] = [
       description:
         "A Florida marathon runner is intercepted by the Coast Guard while attempting to 'run' to London in a homemade floating hamster wheel.",
       fullStory:
-        "The U.S. Coast Guard found a 44-year-old Florida man about 70 nautical miles off Tybee Island, Georgia, inside a homemade 'hydro-pod' built from wiring and buoys, as Hurricane Franklin approached. He told officers he was trying to run all the way to London. During a three-day standoff he claimed to be armed and threatened to detonate a bomb, which he later admitted did not exist. It was not his first attempt to cross open water in a human-powered vessel — he tried a similar trip toward New York in 2021.",
+        "The U.S. Coast Guard found a 44-year-old Florida man about 70 nautical miles off Tybee Island, Georgia, inside a homemade 'hydro-pod' built from wiring and buoys, as Hurricane Franklin approached. He told officers he was trying to run all the way to London. During a three-day standoff he claimed to be armed and threatened to detonate a bomb, which he later admitted did not exist. It was not his first attempt to cross open water in a human-powered vessel. He tried a similar trip toward New York in 2021.",
       source: "NBC News / NPR / Coast Guard",
       sourceUrl:
         "https://www.nbcnews.com/news/us-news/florida-man-arrested-attempting-cross-atlantic-human-powered-hamster-w-rcna103873",
@@ -357,7 +357,7 @@ export const stories: Story[] = [
       city: "Milton",
       score: 88,
       rubric: { absurdity: 23, humor: 23, floridaFactor: 15, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
-      title: "Florida Man Threatens to 'Kill 'Em With Kindness' — the Name of His Machete",
+      title: "Florida Man Threatens to 'Kill 'Em With Kindness,' the Name of His Machete",
       description:
         "A Florida man takes the phrase 'kill them with kindness' literally, deputies say.",
       fullStory:
@@ -378,9 +378,9 @@ export const stories: Story[] = [
       rubric: { absurdity: 22, humor: 22, floridaFactor: 16, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
         title: "Florida Man Breaks Into Home and Blames the Horse",
         description:
-        "A homeowner catches a man breaking into his vacant house — with a horse in tow.",
+        "A homeowner catches a man breaking into his vacant house, with a horse in tow.",
         fullStory:
-        "Homeowner Steve Ferguson got a security alert showing a man wandering his Pasco County property with a horse beside him. When confronted, 52-year-old Lonnie Maddox, known locally as 'Rooster,' said the horse had broken into the yard and he'd followed it in to retrieve it. Surveillance video told a different story: Maddox tried the padlocked front door before breaking a back window to get inside. He didn't own the horse — it had been borrowed and was later returned to its actual owner. Maddox was charged with burglary of a dwelling.",
+        "Homeowner Steve Ferguson got a security alert showing a man wandering his Pasco County property with a horse beside him. When confronted, 52-year-old Lonnie Maddox, known locally as 'Rooster,' said the horse had broken into the yard and he'd followed it in to retrieve it. Surveillance video told a different story: Maddox tried the padlocked front door before breaking a back window to get inside. He didn't own the horse. It had been borrowed and was later returned to its actual owner. Maddox was charged with burglary of a dwelling.",
         source: "Local10 / Bay News 9",
         sourceUrl:
         "https://www.local10.com/news/florida/florida-man-blames-horse-for-breaking-into-home",
@@ -490,9 +490,9 @@ export const stories: Story[] = [
       rubric: { absurdity: 18, humor: 22, floridaFactor: 12, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
         title: "Florida Man Clocked at 110 MPH Says He Was Racing to Catch His Cheating Girlfriend",
         description:
-        "A deputy pulls a man over for driving nearly double the speed limit — and gets an unusually honest excuse.",
+        "A deputy pulls a man over for driving nearly double the speed limit, and gets an unusually honest excuse.",
         fullStory:
-        "A DeSoto County Sheriff's Office deputy clocked Gavin Ames driving 110 mph in a 60 mph zone around 1 a.m. When asked why he was speeding, Ames didn't make an excuse — he told the deputy he was racing to catch his girlfriend cheating. He was arrested under Florida's 'super speeder' law.",
+        "A DeSoto County Sheriff's Office deputy clocked Gavin Ames driving 110 mph in a 60 mph zone around 1 a.m. When asked why he was speeding, Ames didn't make an excuse. He told the deputy he was racing to catch his girlfriend cheating. He was arrested under Florida's 'super speeder' law.",
         source: "Fox News / FOX 13 Tampa Bay",
         sourceUrl:
         "https://www.foxnews.com/outkick-culture/florida-man-arrested-110-mph-tells-deputy-racing-catch-cheating-girlfriend",
@@ -626,7 +626,7 @@ export const stories: Story[] = [
       description:
         "Florida Man dresses as a security guard to sneak into Taylor Swift's Eras Tour, then gets caught by his own 'clients.'",
       fullStory:
-        "Ivan Mariotti, 44, of Key Biscayne, allegedly wore a blue suit with a gold badge around his neck to pose as security and slip into the Eras Tour show at Hard Rock Stadium on October 18, 2024. When an officer asked about the badge, Mariotti said he'd been hired to escort 'his four clients' to their seats — but those four women told police they'd only hired a driver, not a security guard. He was charged with falsely impersonating an officer and interference with a sporting or entertainment event.",
+        "Ivan Mariotti, 44, of Key Biscayne, allegedly wore a blue suit with a gold badge around his neck to pose as security and slip into the Eras Tour show at Hard Rock Stadium on October 18, 2024. When an officer asked about the badge, Mariotti said he'd been hired to escort 'his four clients' to their seats, but those four women told police they'd only hired a driver, not a security guard. He was charged with falsely impersonating an officer and interference with a sporting or entertainment event.",
       source: "Local 10",
       sourceUrl:
         "https://www.local10.com/news/local/2024/10/21/man-impersonates-security-guard-to-get-into-taylor-swift-concert-police-say/",
@@ -806,7 +806,7 @@ export const stories: Story[] = [
       rubric: { absurdity: 21, humor: 21, floridaFactor: 18, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
       title: "Florida Traffic Stop Turns Up 41 Turtles and a Baby Alligator Hidden in a Passenger's Pants",
       description:
-        "A routine traffic stop uncovers dozens of stolen turtles — and a foot-long alligator tucked into a passenger's yoga pants.",
+        "A routine traffic stop uncovers dozens of stolen turtles, and a foot-long alligator tucked into a passenger's yoga pants.",
       fullStory:
         "A Charlotte County deputy pulled over a pickup truck driven by Michael Clemons, 22, after it ran a stop sign near Punta Gorda. A search turned up 41 three-striped turtles stuffed in a backpack; when asked if she had anything else, passenger Ariel Machan-Le Quire, 25, pulled a foot-long alligator out of her yoga pants. Machan-Le Quire pleaded guilty to four charges and was sentenced to probation.",
       source: "CBS News Miami",
@@ -842,9 +842,9 @@ export const stories: Story[] = [
       rubric: { absurdity: 17, humor: 22, floridaFactor: 12, unexpectedness: 10, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Arrested for DUI While Wearing 'I'm the Reason the Beer's Always Gone' T-Shirt",
       description:
-        "Florida Man is caught driving nearly three times the legal limit — in a shirt that gave the game away.",
+        "Florida Man is caught driving nearly three times the legal limit, in a shirt that gave the game away.",
       fullStory:
-        "A Marion County deputy clocked James Rix Jr., 41, doing 89 mph in a 45 mph zone near Ocala, then watched him flee with his headlights off before catching up. Rix, wearing a shirt reading 'I'm the Reason the Beer's Always Gone,' failed field sobriety tests and blew a .204 and .200 — nearly three times the legal limit. He was charged with DUI, fleeing to elude, unlawful speed, and an open container violation.",
+        "A Marion County deputy clocked James Rix Jr., 41, doing 89 mph in a 45 mph zone near Ocala, then watched him flee with his headlights off before catching up. Rix, wearing a shirt reading 'I'm the Reason the Beer's Always Gone,' failed field sobriety tests and blew a .204 and .200, nearly three times the legal limit. He was charged with DUI, fleeing to elude, unlawful speed, and an open container violation.",
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/james-rix-jr-florida-man-arrested-for-dui-wearing-im-the-reason-the-beers-always-gone-t-shirt-marion-oaks-manor-ocala-marion-county-sheriffs-office-august-23-2023",
@@ -938,7 +938,7 @@ export const stories: Story[] = [
       fullStory:
         "Sherman Lee Brown, 34, was a passenger in his girlfriend's car at a Leesburg McDonald's drive-thru around 3:20 a.m. on July 30, 2019, when he grew angry about the slow-moving line. He yelled at the employee to hurry up, and when she refused to serve him without more respectful language, he got out of the car, threatened her, and struck her in the face when she tried to close the window. He was charged with burglary and battery.",
       contentNote:
-        "This incident involved a real assault — the worker suffered a cut lip and facial injuries.",
+        "This incident involved a real assault: the worker suffered a cut lip and facial injuries.",
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/2019/08/22/florida-man-hits-mcdonalds-drive-thru-worker-for-taking-too-long-police-say/",
@@ -958,7 +958,7 @@ export const stories: Story[] = [
       fullStory:
         "Nicholas Laney allegedly shot a stray cat named Tubby with a BB gun in Lee County after the cat had been killing his chickens. A neighbor heard gunshots and the cat screeching, then found Tubby limping with a broken leg hours later. Tubby survived. Laney was arrested and charged with aggravated animal cruelty.",
       contentNote:
-        "This incident involved real harm to an animal — the cat sustained a broken leg but survived.",
+        "This incident involved real harm to an animal: the cat sustained a broken leg but survived.",
       source: "KSN Local 4",
       sourceUrl:
         "https://www.ksnblocal4.com/2026/08/19/man-accused-shooting-neighbors-cat-with-bb-gun-officials-say/",
@@ -1113,7 +1113,7 @@ export const stories: Story[] = [
       fullStory:
         "Joseph Sireci, 47, was arrested in St. Lucie County in August 2018 after his girlfriend told a deputy he had been drinking and grew belligerent during an outing with her and her daughter. On the way home, she said, Sireci grabbed her arm and stuck his wet finger in her ear, giving her a 'wet willy.' Her daughter corroborated the account. Sireci, who denied being intoxicated and declined to give a statement, was charged with second-degree battery and released on a $2,500 bond.",
       contentNote:
-        "This involved a real domestic battery charge — the act was forced on his girlfriend during an argument, not a lighthearted or consensual encounter.",
+        "This involved a real domestic battery charge: the act was forced on his girlfriend during an argument, not a lighthearted or consensual encounter.",
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-arrested-after-he-allegedly-gave-girlfriend-a-wet-willy-affidavit-says",
@@ -1201,9 +1201,9 @@ export const stories: Story[] = [
       rubric: { absurdity: 19, humor: 20, floridaFactor: 13, unexpectedness: 11, headlineQuality: 9, sourceQuality: 4 },
       title: "Florida Man Steals Forklift Because He Was Tired of Walking",
       description:
-        "Florida Man caught driving a stolen forklift says he took it because he was tired of walking — and it wasn't his first time.",
+        "Florida Man caught driving a stolen forklift says he took it because he was tired of walking, and it wasn't his first time.",
       fullStory:
-        "Port Orange police approached 43-year-old Bradley Barefoot — who was, fittingly, barefoot — after spotting him driving a stolen forklift worth roughly $38,000. He initially claimed he thought it was equipment stolen from his boss in Alabama, then admitted he took it because he noticed the keys left in the ignition and was tired of walking. He was found parked in a handicap spot with a mattress loaded on the forklift. It was Barefoot's second forklift theft with the same excuse — he'd taken one from behind a Daytona Beach Best Buy the year before. He was charged with grand theft.",
+        "Port Orange police approached 43-year-old Bradley Barefoot (who was, fittingly, barefoot) after spotting him driving a stolen forklift worth roughly $38,000. He initially claimed he thought it was equipment stolen from his boss in Alabama, then admitted he took it because he noticed the keys left in the ignition and was tired of walking. He was found parked in a handicap spot with a mattress loaded on the forklift. It was Barefoot's second forklift theft with the same excuse. He'd taken one from behind a Daytona Beach Best Buy the year before. He was charged with grand theft.",
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/strange-florida/2017/06/29/florida-man-tired-of-walking-steals-forklift-police-say/",
@@ -1237,7 +1237,7 @@ export const stories: Story[] = [
       rubric: { absurdity: 23, humor: 22, floridaFactor: 15, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Drives Stolen Car into Ditch with Diaper-Wearing Monkey Attached to Him",
       description:
-        "A man is arrested for driving a stolen car into a ditch — with a diaper-wearing pet monkey clinging to his shirt the whole time.",
+        "A man is arrested for driving a stolen car into a ditch, with a diaper-wearing pet monkey clinging to his shirt the whole time.",
       fullStory:
         "Pasco County deputies arrested 24-year-old Cody Blake Hesson in Holiday after he drove a stolen vehicle into a ditch and tried to run. When deputies caught up to him, his pet capuchin monkey, named Monk and wearing a diaper, was still clinging to his shirt. Hesson had no permit for the animal and faced additional charges on top of auto theft; deputies had to separate him from Monk, who was confiscated, before the two shared a goodbye hug.",
       source: "WFTV",
@@ -1293,7 +1293,7 @@ export const stories: Story[] = [
       description:
         "A disorderly man standing on chairs and cursing at diners tells the deputies who arrive to instead go get Dunkin' Donuts.",
       fullStory:
-        "The manager of Latino America Restaurant in Naples told Collier County deputies that 55-year-old John Toddy slammed the outdoor menu sign, then went inside, stood on chairs, and stuck his middle finger up at patrons while shouting and cursing. When deputies arrived, Toddy — described as having bloodshot, watery eyes and slurred speech — told them to 'get back in your car and go to Dunkin' Donuts.' He was charged with disorderly intoxication.",
+        "The manager of Latino America Restaurant in Naples told Collier County deputies that 55-year-old John Toddy slammed the outdoor menu sign, then went inside, stood on chairs, and stuck his middle finger up at patrons while shouting and cursing. When deputies arrived, Toddy, described as having bloodshot, watery eyes and slurred speech, told them to 'get back in your car and go to Dunkin' Donuts.' He was charged with disorderly intoxication.",
       source: "WINK News",
       sourceUrl:
         "https://www.winknews.com/2019/06/09/florida-man-disrupts-restaurant-tells-officers-go-to-dunkin-donuts/",
@@ -1439,7 +1439,7 @@ export const stories: Story[] = [
       fullStory:
         "Delray Beach police found 28-year-old Edward Tuttle lying naked and unconscious, face-down in the grass of an intersection. As an officer shook him awake, Tuttle stood up and, without warning, punched the officer in the nose. He was tased and taken into custody, still naked, and later admitted he had been drunk.",
       contentNote:
-        "This incident involved a real injury — a police officer was punched in the face.",
+        "This incident involved a real injury: a police officer was punched in the face.",
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/edward-tuttle-naked-drunk-man-punched-cop-intoxicated-lying-face-down-battery-delray-beach-police-department-officer-florida-october-24-2023",
@@ -1459,7 +1459,7 @@ export const stories: Story[] = [
       fullStory:
         "Escambia County deputies responded to a report of an armed disturbance near tents by a La Quinta Inn on North Davis Highway. Deputies said 56-year-old Danny Tharp accused another man of spilling his beer inside Tharp's tent, then grabbed a hatchet and swung it wildly at him, striking him several times. The victim escaped bleeding from his eye and mouth and found deputies nearby. Tharp was arrested and charged with attempted homicide.",
       contentNote:
-        "This incident involved a real injury — the victim was struck in the head with a hatchet and left bleeding.",
+        "This incident involved a real injury: the victim was struck in the head with a hatchet and left bleeding.",
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/florida-man-hits-another-in-the-face-with-a-hatchet-over-spilled-beer-deputies/",
@@ -1495,7 +1495,7 @@ export const stories: Story[] = [
       description:
         "A man fleeing deputies at high speed crashes through a fence, headbutts his own car window open, and flops out onto the ground.",
       fullStory:
-        "The Marion County Sheriff's Office said 24-year-old Tyler Fayconsolo led deputies on a chase reaching speeds up to 100 mph after leaving a Circle K, until spike strips deflated his tires and a concrete fence stopped the car. Dashcam video showed Fayconsolo headbutt the passenger window open and come 'flying out like a dolphin' before running from a K-9 officer, who caught him. At the hospital, Fayconsolo told deputies he was 'high as f—' before being booked on charges including DUI and aggravated fleeing.",
+        "The Marion County Sheriff's Office said 24-year-old Tyler Fayconsolo led deputies on a chase reaching speeds up to 100 mph after leaving a Circle K, until spike strips deflated his tires and a concrete fence stopped the car. Dashcam video showed Fayconsolo headbutt the passenger window open and come 'flying out like a dolphin' before running from a K-9 officer, who caught him. At the hospital, Fayconsolo told deputies he was 'high as f***' before being booked on charges including DUI and aggravated fleeing.",
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/high-as-f-dash-cam-video-shows-florida-man-head-butt-car-window-flop-out-of-car-during-high-speed-chase",
@@ -1531,9 +1531,9 @@ export const stories: Story[] = [
       description:
         "A man dressed as an FBI agent visiting a free haunted house strikes the host in the face with an airsoft handgun, then says he thought he was a statue.",
       fullStory:
-        "Deputies said 20-year-old Ingus Schusser, wearing an FBI jacket and body armor and carrying an airsoft handgun resembling a Glock, visited a free haunted house at a Seminole home on Halloween night. Rounding a corner, he struck the 47-year-old host — who was in costume but not actively performing — in the face with the gun's handle, causing significant injury. Schusser reportedly laughed afterward and was unapologetic. He was arrested and charged with aggravated battery and possession of body armor during commission of a felony.",
+        "Deputies said 20-year-old Ingus Schusser, wearing an FBI jacket and body armor and carrying an airsoft handgun resembling a Glock, visited a free haunted house at a Seminole home on Halloween night. Rounding a corner, he struck the 47-year-old host (who was in costume but not actively performing) in the face with the gun's handle, causing significant injury. Schusser reportedly laughed afterward and was unapologetic. He was arrested and charged with aggravated battery and possession of body armor during commission of a felony.",
       contentNote:
-        "This incident involved a real injury — the victim was struck in the face and sustained significant injury.",
+        "This incident involved a real injury: the victim was struck in the face and sustained significant injury.",
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-hits-haunted-house-host-in-eye-with-toy-gun-after-mistaken-them-for-statue-deputies",
@@ -1569,7 +1569,7 @@ export const stories: Story[] = [
       description:
         "A man is caught on home security cameras slashing tires throughout a neighborhood, then claims in court he was targeted by the government.",
       fullStory:
-        "Home security cameras captured 41-year-old Juan Pablo Ramos-Nieto walking through the Villas Del Campos community in southwest Miami-Dade County with a knife around 5 a.m., slashing tires on 17 vehicles — including a marked Homestead police cruiser — for a total of 27 slashed tires and about $6,000 in damage. In bond court, Ramos-Nieto claimed he had been exposed to 'secret government information' and was being 'demonized' by the CIA. He was charged with 27 counts of criminal mischief.",
+        "Home security cameras captured 41-year-old Juan Pablo Ramos-Nieto walking through the Villas Del Campos community in southwest Miami-Dade County with a knife around 5 a.m., slashing tires on 17 vehicles (including a marked Homestead police cruiser) for a total of 27 slashed tires and about $6,000 in damage. In bond court, Ramos-Nieto claimed he had been exposed to 'secret government information' and was being 'demonized' by the CIA. He was charged with 27 counts of criminal mischief.",
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/florida-man-charged-with-27-counts-for-slashing-tires-claims-hes-being-demonized-and-was-exposed-to-government-info/3151606/",
@@ -1585,7 +1585,7 @@ export const stories: Story[] = [
       rubric: { absurdity: 19, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man in Police Chase on Motorcycle with Fake MCLOVIN License Plate",
       description:
-        "A motorcyclist with a fake Hawaiian 'MCLOVIN' plate — a reference to Superbad — leads troopers on a 110 mph chase across the Gandy Bridge.",
+        "A motorcyclist with a fake Hawaiian 'MCLOVIN' plate, a reference to Superbad, leads troopers on a 110 mph chase across the Gandy Bridge.",
       fullStory:
         "A Florida Highway Patrol trooper spotted 30-year-old Jessie Rivera, of Plant City, swerving between vehicles at high speed on a motorcycle displaying a fake Hawaiian tag reading 'MCLOVIN.' Rivera hit 110 mph in a posted 45 mph zone and fled from the trooper, a St. Petersburg police officer, and a Pinellas deputy before getting onto the Gandy Bridge. The chase ended when the trooper pulled Rivera off the bike, which fell on both of them and broke Rivera's foot. He was booked on a charge of fleeing law enforcement at high speed.",
       source: "WFLA",
@@ -1625,7 +1625,7 @@ export const stories: Story[] = [
       fullStory:
         "Pasco County deputies said William L. Harrell Jr., 47, entered a New Port Richey Walmart and asked an employee for a phone, claiming his wife was trying to kill him. He then went behind the service desk, threw a stool, barricaded himself in a communications closet, and climbed into the ceiling crawl space, prompting the store's evacuation. Deputies used a stun gun, bean bag gun, and pepper spray to get him down. At the hospital for medical clearance, Harrell punched a nurse in the face, knocked him down, and continued beating him. He was charged with aggravated assault on a law enforcement officer, business burglary, criminal mischief, disorderly conduct, resisting arrest, and battery on a nurse.",
       contentNote:
-        "This incident involved a real injury — a nurse was punched, knocked down, and beaten while treating the suspect.",
+        "This incident involved a real injury: a nurse was punched, knocked down, and beaten while treating the suspect.",
       source: "Newsweek",
       sourceUrl:
         "https://www.newsweek.com/florida-man-tased-out-ceiling-walmart-1472865",
@@ -1659,7 +1659,7 @@ export const stories: Story[] = [
       rubric: { absurdity: 22, humor: 21, floridaFactor: 15, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
       title: "Florida Man Impersonating Police Tries to Pull Over an Undercover Sheriff's Deputy",
       description:
-        "A man flashing red and blue lights from his SUV tries to pull over an unmarked car on the highway — which turns out to be an undercover deputy.",
+        "A man flashing red and blue lights from his SUV tries to pull over an unmarked car on the highway, which turns out to be an undercover deputy.",
       fullStory:
         "Hillsborough County deputies said 46-year-old Nadi Jabari activated red and blue emergency lights on his black Chevrolet Suburban while following an undercover HCSO vehicle on U.S. Highway 301 North in Thonotosassa, appearing to try to pull it over. The undercover deputy alerted other units, who quickly stopped Jabari's SUV. A search turned up the active light setup, a spare light bar, and a handgun. Jabari was charged with false personation, unlawful use of a blue light, and possession of a firearm during the commission of a felony.",
       source: "FOX 13 Tampa Bay",
@@ -1717,7 +1717,7 @@ export const stories: Story[] = [
       fullStory:
         "Pasco County deputies arrested 61-year-old Craig Vogt of Hudson after he admitted to killing two pet peacocks by cutting their necks with a knife, bleeding them out, and cooking them in a frying pan. Vogt had been in an ongoing dispute with a neighbor over the neighbor feeding the birds, and left a letter in the neighbor's mailbox confessing to the killings and explaining he'd done it 'out of spite' to make his point. While being taken to jail, Vogt told deputies he planned to kill his remaining peacocks too, so no one else could take them. He was charged with aggravated animal cruelty, a third-degree felony.",
       contentNote:
-        "This incident involved real harm to animals — two peacocks were killed.",
+        "This incident involved real harm to animals: two peacocks were killed.",
       source: "WFTV / NBC 6 South Florida / KCBY",
       sourceUrl:
         "https://www.wftv.com/news/local/florida-man-arrested-killing-pet-peacocks-neighbor-dispute-admits-cooking-them/KHOIIW3TCVBZTPXVNCPLBO2NBQ/",
@@ -1737,7 +1737,7 @@ export const stories: Story[] = [
       fullStory:
         "Tina Ballard, 56, kept a pet spider monkey named Spanky who twice got loose and attacked employees at a Home Depot in Okeechobee County. In May, the monkey jumped from a shopping cart and grabbed a cashier's shirt, leaving marks on her shoulder and back. The following month, Spanky attacked cashier Marilyn Howard, biting her arm, grabbing her hair, and scratching her face, leaving her bloodied. When Florida Fish and Wildlife Conservation Commission investigators went looking for Ballard, they learned she had fled to Linville Land Harbor, North Carolina, with Spanky in tow; she was arrested there and held for extradition. She faced charges including allowing a wild animal to escape, lacking required wildlife permits, failing to immunize the monkey, and felony tampering with evidence.",
       contentNote:
-        "This incident involved real injury to a person — a Home Depot employee sustained bite wounds and scratches.",
+        "This incident involved real injury to a person: a Home Depot employee sustained bite wounds and scratches.",
       source: "Fox News / Inside Edition",
       sourceUrl:
         "https://www.foxnews.com/us/florida-woman-arrested-after-pet-spider-monkey-allegedly-attacks-home-depot-employees.amp",
@@ -1755,7 +1755,7 @@ export const stories: Story[] = [
       description:
         "A 20-mile interstate chase ends with deputies and suspects fighting through the woods together, only for both sides to get swarmed by wild bees.",
       fullStory:
-        "A Florida Highway Patrol trooper tried to pull over a silver Acura in St. Lucie County; the car fled onto I-95 and into Indian River County, with a sheriff's helicopter and Sebastian police joining a roughly 20-mile pursuit. The three occupants — Joel N. Brown, 20, Markaveli J. Butler, 20, and a 15-year-old boy — abandoned the car and ran into the woods along State Road 60, where K-9 Mako and deputies found them hiding under palmetto bushes. As deputies moved in to make the arrests, a large swarm of bees descended on the area, stinging deputies, the K-9, and the suspects alike as everyone struggled back through chest-deep mud to the road. No one suffered serious injuries from the stings, and all three were booked on felony charges of fleeing and eluding and resisting arrest without violence; Butler also had an active felony warrant and an ICE detainer.",
+        "A Florida Highway Patrol trooper tried to pull over a silver Acura in St. Lucie County; the car fled onto I-95 and into Indian River County, with a sheriff's helicopter and Sebastian police joining a roughly 20-mile pursuit. The three occupants (Joel N. Brown, 20, Markaveli J. Butler, 20, and a 15-year-old boy) abandoned the car and ran into the woods along State Road 60, where K-9 Mako and deputies found them hiding under palmetto bushes. As deputies moved in to make the arrests, a large swarm of bees descended on the area, stinging deputies, the K-9, and the suspects alike as everyone struggled back through chest-deep mud to the road. No one suffered serious injuries from the stings, and all three were booked on felony charges of fleeing and eluding and resisting arrest without violence; Butler also had an active felony warrant and an ICE detainer.",
       source: "WPTV",
       sourceUrl:
         "https://www.wptv.com/news/treasure-coast/region-indian-river-county/bees-attack-deputies-k-9s-3-suspects-during-pursuit",
@@ -1773,7 +1773,7 @@ export const stories: Story[] = [
       description:
         "A late-night bike stop over a missing headlight turns up a meth pipe and a week-old raccoon riding along in the woman's backpack.",
       fullStory:
-        "Clearwater police stopped 43-year-old Lindsay Rodewald around midnight for riding her bicycle without a headlight. During the stop, officers found a broken glass pipe with methamphetamine residue in her backpack — along with a chittering baby raccoon, believed to be about a week old, tucked inside alongside it. Rodewald told officers she'd 'forgotten' the raccoon was in there. She was charged with possession of drug paraphernalia, while the raccoon was taken to a Tampa veterinary emergency clinic to be cared for alongside other orphaned raccoons before an eventual release into the wild.",
+        "Clearwater police stopped 43-year-old Lindsay Rodewald around midnight for riding her bicycle without a headlight. During the stop, officers found a broken glass pipe with methamphetamine residue in her backpack, along with a chittering baby raccoon, believed to be about a week old, tucked inside alongside it. Rodewald told officers she'd 'forgotten' the raccoon was in there. She was charged with possession of drug paraphernalia, while the raccoon was taken to a Tampa veterinary emergency clinic to be cared for alongside other orphaned raccoons before an eventual release into the wild.",
       source: "Fox News / WSVN",
       sourceUrl:
         "https://www.foxnews.com/us/florida-woman-arrested-police-allegedly-find-meth-baby-raccoon-backpack",
@@ -1811,7 +1811,7 @@ export const stories: Story[] = [
       description:
         "A veteran deputy chases down an escaped pet emu running loose on a Florida road and cuffs its legs to keep it from kicking.",
       fullStory:
-        "St. Johns County deputies responded to calls about a large bird running loose on County Road 13 on January 9, 2026, and found an emu that had wandered more than a mile from its owner's property. Corporal Tommy Keisler, a 25-year veteran of the sheriff's office, cornered the bird, which kicked at him repeatedly with its powerful talons and tried to flee before he lassoed it and cuffed its legs together to keep it under control. 'In my 25 years, I've never handcuffed an emu — this is definitely a new one,' Keisler said afterward, joking that all charges against the bird had been dropped. The emu was uninjured and reunited with its owners; bodycam footage of the chase went viral.",
+        "St. Johns County deputies responded to calls about a large bird running loose on County Road 13 on January 9, 2026, and found an emu that had wandered more than a mile from its owner's property. Corporal Tommy Keisler, a 25-year veteran of the sheriff's office, cornered the bird, which kicked at him repeatedly with its powerful talons and tried to flee before he lassoed it and cuffed its legs together to keep it under control. 'In my 25 years, I've never handcuffed an emu. This is definitely a new one,' Keisler said afterward, joking that all charges against the bird had been dropped. The emu was uninjured and reunited with its owners; bodycam footage of the chase went viral.",
       source: "CBS 12 / First Coast News",
       sourceUrl:
         "https://cbs12.com/news/local/never-handcuffed-an-emu-florida-deputies-chase-down-feathered-fugitive-bodycam-funny-bodycam-watch-st-johns-county-florida-news-video-january-14-2026",
@@ -1829,7 +1829,7 @@ export const stories: Story[] = [
       description:
         "A man is caught squatting over a dead possum in the middle of a busy intersection, in full view of rush-hour traffic.",
       fullStory:
-        "A Clearwater police officer patrolling near Belcher Road and Willow Tree Trail around 5:20 p.m. on November 17, 2023, spotted 45-year-old Rudy Wilcox, who had no listed address, defecating on a dead possum with his pants down in full view of passing rush-hour traffic. When questioned after being read his Miranda rights, Wilcox denied it, telling the officer he 'doesn't see straight' — but police said physical evidence at the scene corroborated what they'd witnessed. Wilcox was arrested and booked into the Pinellas County Jail on a charge of exposure of sexual organs.",
+        "A Clearwater police officer patrolling near Belcher Road and Willow Tree Trail around 5:20 p.m. on November 17, 2023, spotted 45-year-old Rudy Wilcox, who had no listed address, defecating on a dead possum with his pants down in full view of passing rush-hour traffic. When questioned after being read his Miranda rights, Wilcox denied it, telling the officer he 'doesn't see straight,' but police said physical evidence at the scene corroborated what they'd witnessed. Wilcox was arrested and booked into the Pinellas County Jail on a charge of exposure of sexual organs.",
       source: "FOX 35 Orlando / Law & Crime",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-for-pooping-on-dead-possum-on-street-during-rush-hour-police-say",
@@ -1883,7 +1883,7 @@ export const stories: Story[] = [
       description:
         "TSA officers at Miami International Airport find live baby snakes and tortoises hidden in a traveler's underwear.",
       fullStory:
-        "Simon Turola Borges, a 30-year-old Brazilian national, was pulled aside by TSA officers at Miami International Airport on August 25, 2011, after a body scanner flagged him ahead of a flight home. Officers found two hatchling pythons wrapped in pantyhose in his cargo pants pockets, and when he pulled back the waistband of his underwear, more nylon-wrapped snakes and tortoises fell out. In total, agents recovered three ball pythons, three carpet pythons, one children's python, one Indian star tortoise, and two leopard tortoises — all several-week-old hatchlings protected under international wildlife trade law. Borges pleaded guilty to smuggling and was sentenced to time served, two years of supervised release, and a $400 fine paid to the Miami Science Museum.",
+        "Simon Turola Borges, a 30-year-old Brazilian national, was pulled aside by TSA officers at Miami International Airport on August 25, 2011, after a body scanner flagged him ahead of a flight home. Officers found two hatchling pythons wrapped in pantyhose in his cargo pants pockets, and when he pulled back the waistband of his underwear, more nylon-wrapped snakes and tortoises fell out. In total, agents recovered three ball pythons, three carpet pythons, one children's python, one Indian star tortoise, and two leopard tortoises, all several-week-old hatchlings protected under international wildlife trade law. Borges pleaded guilty to smuggling and was sentenced to time served, two years of supervised release, and a $400 fine paid to the Miami Science Museum.",
       source: "U.S. Department of Justice",
       sourceUrl:
         "https://www.justice.gov/archive/usao/fls/PressReleases/2011/110914-04.html",
@@ -1901,7 +1901,7 @@ export const stories: Story[] = [
       description:
         "A man fishing at dawn finds a dead whale washed ashore and cuts off its tail to take home and cook.",
       fullStory:
-        "Chris Hogan, 60, was fishing for blue crabs at dawn on September 2, 2010, when an 8-to-12-foot pygmy sperm whale washed ashore in Delray Beach. Hogan pulled out a knife and cut off the whale's tail, planning to take it home to broil or fry. A lifeguard told him that mutilating a dead whale — a federally protected marine mammal — is a crime even though the animal was already deceased, and Florida Fish and Wildlife agents took him in for questioning. 'I didn't know it was illegal,' Hogan said, adding, 'I apologize to the state of Florida.'",
+        "Chris Hogan, 60, was fishing for blue crabs at dawn on September 2, 2010, when an 8-to-12-foot pygmy sperm whale washed ashore in Delray Beach. Hogan pulled out a knife and cut off the whale's tail, planning to take it home to broil or fry. A lifeguard told him that mutilating a dead whale (a federally protected marine mammal) is a crime even though the animal was already deceased, and Florida Fish and Wildlife agents took him in for questioning. 'I didn't know it was illegal,' Hogan said, adding, 'I apologize to the state of Florida.'",
       source: "WFLX / NBC Miami",
       sourceUrl:
         "https://www.wflx.com/story/13089170/whale-cut-in-half-after-washing-ashore-in-delray/",
@@ -1919,7 +1919,7 @@ export const stories: Story[] = [
       description:
         "Two Domino's Pizza managers are accused of torching a rival Papa John's to drum up business for their own store.",
       fullStory:
-        "Lake City police said Bryan David Sullivan, 22, a general manager at a local Domino's Pizza, and Sean Everett Davidson, 23, set fire to a nearby Papa John's on October 20, 2011, causing roughly $500,000 in damage. Investigators said Sullivan was tired of watching Papa John's delivery cars drive past his store and believed that with the new competitor out of the way, business — and a bonus he stood to split with Davidson — would improve. Police said the pair built a homemade timed ignition device out of a clock, a nine-volt battery, and a golf-ball-sized amount of black powder. Both men were arrested and each charged with one count of arson.",
+        "Lake City police said Bryan David Sullivan, 22, a general manager at a local Domino's Pizza, and Sean Everett Davidson, 23, set fire to a nearby Papa John's on October 20, 2011, causing roughly $500,000 in damage. Investigators said Sullivan was tired of watching Papa John's delivery cars drive past his store and believed that with the new competitor out of the way, business (and a bonus he stood to split with Davidson) would improve. Police said the pair built a homemade timed ignition device out of a clock, a nine-volt battery, and a golf-ball-sized amount of black powder. Both men were arrested and each charged with one count of arson.",
       source: "NBC News",
       sourceUrl:
         "https://www.nbcnews.com/id/wbna45091289",
@@ -1939,7 +1939,7 @@ export const stories: Story[] = [
       fullStory:
         "Panama City Beach police said Charles Patrick O'Bryan called the Waffle House where his wife, Danielle Gibbons, worked on the evening of August 15, 2011, and told an employee he was going to 'run his truck through the building and kill everyone.' He then drove his pickup through the restaurant's wall, striking Gibbons, before getting out of the truck and brandishing a knife. A bystander subdued him using a broken piece of the building. Gibbons was hospitalized with injuries described as non-life-threatening. O'Bryan was charged with attempted murder and felony criminal mischief.",
       contentNote:
-        "This incident involved a real injury and an attempted-murder charge — the man's wife was struck by his truck and hospitalized.",
+        "This incident involved a real injury and an attempted-murder charge: the man's wife was struck by his truck and hospitalized.",
       source: "HuffPost",
       sourceUrl:
         "https://www.huffpost.com/2011/08/16/charles-patrick-o-bryan-waffle-house_n_928310.html",
@@ -1957,7 +1957,7 @@ export const stories: Story[] = [
       description:
         "A Florida man allegedly punched a stranger in the face after the man told him he liked his car.",
       fullStory:
-        "Polk County deputies say John Sturgeon, 53, stopped his black Dodge Charger on Tindel Camp Road near Dundee on the evening of September 1, 2024, got out, and punched another driver in the face — after that driver had simply told him, 'Nice car, bro! I like your car!' Dashcam video of the unprovoked punch went viral locally. The Polk County Sheriff's Office issued a warrant for Sturgeon's arrest on a battery charge, and he turned himself in after the footage spread online.",
+        "Polk County deputies say John Sturgeon, 53, stopped his black Dodge Charger on Tindel Camp Road near Dundee on the evening of September 1, 2024, got out, and punched another driver in the face, after that driver had simply told him, 'Nice car, bro! I like your car!' Dashcam video of the unprovoked punch went viral locally. The Polk County Sheriff's Office issued a warrant for Sturgeon's arrest on a battery charge, and he turned himself in after the footage spread online.",
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/driver-allegedly-punched-in-face-after-complimenting-mans-car-black-dodge-charger-polk-county-sheriffs-office-florida-september-3-2024",
@@ -1977,7 +1977,7 @@ export const stories: Story[] = [
       fullStory:
         "Nathaniel Clay, 28, walked into a Melbourne Fire Department station on September 4, 2020, and told firefighters his 16-month-old daughter may have swallowed drugs. She was rushed to a hospital and given three doses of Narcan after a brown substance found on her clothing tested positive for heroin. Clay told investigators the girl had been exposed to the drug while visiting an acquaintance elsewhere in the city, then admitted he had pulled a gun on that person and threatened to shoot him if he told anyone what happened. Melbourne police arrested Clay and charged him with child neglect.",
       contentNote:
-        "This incident involved a real child ingesting heroin and requiring emergency medical treatment — there is no comedic angle here.",
+        "This incident involved a real child ingesting heroin and requiring emergency medical treatment: there is no comedic angle here.",
       source: "Action News Jax",
       sourceUrl:
         "https://www.actionnewsjax.com/news/trending/florida-man-charged-after-toddler-daughter-accidentally-swallows-heroin-police-say/SEHUYIKZYBB6NPJZH4VRZJM6VA/",
@@ -2071,7 +2071,7 @@ export const stories: Story[] = [
       fullStory:
         "Palm Beach police were stationed at a closed Secret Service security checkpoint near Mar-a-Lago around 6 p.m. on August 25, 2026, when an officer saw a woman exit a gray Hyundai SUV, walk to a hose and sprinkler system in the closed lot, and turn it on. When an agent approached and questioned her, the woman, identified as Alexa Rae Scharf, 29, of Loxahatchee, allegedly said, 'I'm here for the car wash.' Scharf then fled in her SUV, driving toward officers at the checkpoint, before becoming involved in a standoff several blocks away. During her arrest, police shot and killed her pit bull after it attacked and bit an officer. Scharf faces charges including two counts of aggravated assault with a vehicle, fleeing and eluding police, and resisting an officer without violence, and was held on $16,000 bond.",
       contentNote:
-        "This incident ended with police shooting and killing the woman's dog after it bit an officer — there is a real animal death here.",
+        "This incident ended with police shooting and killing the woman's dog after it bit an officer: there is a real animal death here.",
       source: "WPTV",
       sourceUrl:
         "https://www.wptv.com/news/region-c-palm-beach-county/palm-beach/here-for-the-car-wash-woman-arrested-after-high-speed-chase-near-mar-a-lago-security-checkpoint",
@@ -2091,7 +2091,7 @@ export const stories: Story[] = [
       fullStory:
         "About a half-mile east of Fisher Island shortly after 7 a.m. on July 29, 2026, during Florida's annual lobster mini season, a boat allegedly driven by Michael Joseph Simpson, 51, approached another vessel at a high rate of speed and circled it several times before anchoring about 10 feet away. An argument broke out over the diving spot, and Simpson allegedly threatened to turn off the surface-supplied air system feeding an 18-year-old diver below, then jumped into the water and did exactly that. The diver's boat owner jumped in and pulled him to the surface gasping for air and disoriented, though he was not physically injured. Simpson surrendered to the Turner Guilford Knight Correctional Center and was initially charged with attempted felony murder; a judge later agreed with his defense that the charge should be reduced to second-degree attempted murder.",
       contentNote:
-        "This incident involved a real attempted-murder charge and put an 18-year-old diver's life in danger underwater — there is no comedic angle to the near-drowning itself.",
+        "This incident involved a real attempted-murder charge and put an 18-year-old diver's life in danger underwater: there is no comedic angle to the near-drowning itself.",
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/man-cut-off-divers-air-supply-after-dispute-over-lobster-fishing-spot-in-miami-report-says/3842234/",
@@ -2111,7 +2111,7 @@ export const stories: Story[] = [
       fullStory:
         "Samantha Adams, 39, of Orlando, met a 69-year-old man from Haines City on a dating app while using the pseudonym 'Nala,' authorities said. After the two got into an argument about a car he had apparently purchased for her, Adams allegedly intentionally laced his drink with benzodiazepine. The victim later passed out and was hospitalized, where medical staff determined he had nearly overdosed on benzodiazepine, a drug he had not been prescribed. Adams was arrested on August 27, 2026, at the Posner Park Shopping Center in Davenport and charged with second-degree attempted murder, tampering with evidence, and possession of oxycodone, hydrocodone, and alprazolam.",
       contentNote:
-        "This incident involved a real near-fatal drug overdose — there is no comedic angle here.",
+        "This incident involved a real near-fatal drug overdose: there is no comedic angle here.",
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/trending/florida-woman-accused-drugging-man-she-met-through-dating-app/TVYF2WY63BCJLA5T6GDNSJAFBQ/",
@@ -2131,7 +2131,7 @@ export const stories: Story[] = [
       fullStory:
         "Elmoncy Sercle, 28, connected with a woman through Seeking.com and arranged to meet her at the Serena Hotel in Aventura on August 29, 2025. Once inside his room, Sercle asked to smell her feet and offered to buy her worn sneakers; she explained she was a professional foot model and quoted her standard rate of $1,000. When she stepped into the bathroom, Sercle fled the room, and believing he had taken something of hers, she chased him into the hotel's parking garage. Police said Sercle drove past her in a red Mercedes SUV before making a three-point turn and striking her with the vehicle, leaving her with bruises and abrasions across her chest, arms, and back that required immediate treatment. Sercle fled the scene but was arrested days later, on Thursday, August 29, when he returned to book another hotel room, and was charged with aggravated battery.",
       contentNote:
-        "This incident involved the victim being struck by a car and suffering real injuries requiring treatment — there is no comedic angle to the assault itself.",
+        "This incident involved the victim being struck by a car and suffering real injuries requiring treatment: there is no comedic angle to the assault itself.",
       source: "Complex",
       sourceUrl:
         "https://www.complex.com/life/a/bernadette-giacomazzo/florida-man-arrested-after-assaulting-a-woman-smell-feet",
@@ -2207,7 +2207,7 @@ export const stories: Story[] = [
       fullStory:
         "Around 6:45 p.m. on August 3, 2016, Joseph Carrao, 45, was visiting Busch Gardens Tampa Bay's Jambo Junction animal viewing area with his family when witnesses say he reached into the pen, picked up a Chilean flamingo named Pinky, and slammed her into the ground in a rage. Pinky suffered severe injuries, and park veterinarians made the decision to humanely euthanize her because of the extent of the harm. Carrao was arrested and charged with felony animal cruelty.",
       contentNote:
-        "This incident involved a real, fatal animal cruelty attack — the flamingo, named Pinky, did not survive her injuries.",
+        "This incident involved a real, fatal animal cruelty attack: the flamingo, named Pinky, did not survive her injuries.",
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-accused-of-attacking-flamingo-at-busch-gardens-tampa-bay/",
@@ -2221,11 +2221,11 @@ export const stories: Story[] = [
       city: "Key Largo",
       score: 68,
       rubric: { absurdity: 19, humor: 12, floridaFactor: 11, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
-      title: "Florida Man's Fake 911 Call Claims Bomb, Hostages, and Suicidal Gunman — He Just Wanted to Prank a Stranger's House",
+      title: "Florida Man's Fake 911 Call Claims Bomb, Hostages, and Suicidal Gunman: He Just Wanted to Prank a Stranger's House",
       description:
-        "A hoax 911 caller tells Monroe County dispatchers he's suicidal, armed with a Glock, rigged to detonate a bomb, and holding family hostage in the basement of a Key Largo home — then brags about it on Snapchat.",
+        "A hoax 911 caller tells Monroe County dispatchers he's suicidal, armed with a Glock, rigged to detonate a bomb, and holding family hostage in the basement of a Key Largo home, then brags about it on Snapchat.",
       fullStory:
-        "The Monroe County Sheriff's Office swarmed a home on Third Road in Key Largo on September 6, 2025, after a 911 caller claimed to be inside, suicidal, and armed with a Glock. The caller escalated the hoax further, telling dispatchers that if anyone tried to open the door he would detonate a bomb, and that he had family members tied up in the basement. None of it was true — deputies determined it was a 'swatting' call, a prank meant to draw a massive police response to an address with no real emergency. Detectives traced the call using online communications and digital evidence, eventually identifying 20-year-old Leonardo Javier Barrera of Ruskin as the culprit after he admitted to the stunt on Snapchat. Barrera was arrested in October 2025 and charged with unlawful use of a two-way communication device and giving false information concerning the commission of a felony.",
+        "The Monroe County Sheriff's Office swarmed a home on Third Road in Key Largo on September 6, 2025, after a 911 caller claimed to be inside, suicidal, and armed with a Glock. The caller escalated the hoax further, telling dispatchers that if anyone tried to open the door he would detonate a bomb, and that he had family members tied up in the basement. None of it was true. Deputies determined it was a 'swatting' call, a prank meant to draw a massive police response to an address with no real emergency. Detectives traced the call using online communications and digital evidence, eventually identifying 20-year-old Leonardo Javier Barrera of Ruskin as the culprit after he admitted to the stunt on Snapchat. Barrera was arrested in October 2025 and charged with unlawful use of a two-way communication device and giving false information concerning the commission of a felony.",
       contentNote:
         "This incident involved a hoax bomb and hostage threat that triggered a real emergency law enforcement response; no one was actually harmed.",
       source: "Keys Weekly / Keys News",
@@ -2263,7 +2263,7 @@ export const stories: Story[] = [
       description:
         "Dressed to impress, a Miami-Dade man orders wings and top-shelf liquor at five different Sports Grill locations, then tells staff he's stepping out to deliver food to his wife and never comes back.",
       fullStory:
-        "Doral police arrested 40-year-old Juan Carlos Rivera on the night of Wednesday, May 14, 2025, identifying him as a serial 'dine-and-dasher' who'd hit five different Sports Grill locations across Miami-Dade County over the previous two weeks, racking up roughly $650 in unpaid tabs. Surveillance video showed Rivera, dressed in a blazer and sunglasses, camped out at the bar for hours at each stop ordering the same order of Space Dust beer, grilled wings, mozzarella sticks, and Jameson, before telling staff he needed to step outside to bring food to his wife and simply never returning. At the chain's Doral location on May 10, he racked up a $260 tab before vanishing; at one location he left a declined credit card on the bar as a parting gesture. It wasn't Rivera's first alleged dine-and-dash — he was accused of pulling the same routine at an Outback Steakhouse in 2024. He was charged with organized scheme to defraud and defrauding an innkeeper and held without bond.",
+        "Doral police arrested 40-year-old Juan Carlos Rivera on the night of Wednesday, May 14, 2025, identifying him as a serial 'dine-and-dasher' who'd hit five different Sports Grill locations across Miami-Dade County over the previous two weeks, racking up roughly $650 in unpaid tabs. Surveillance video showed Rivera, dressed in a blazer and sunglasses, camped out at the bar for hours at each stop ordering the same order of Space Dust beer, grilled wings, mozzarella sticks, and Jameson, before telling staff he needed to step outside to bring food to his wife and simply never returning. At the chain's Doral location on May 10, he racked up a $260 tab before vanishing; at one location he left a declined credit card on the bar as a parting gesture. It wasn't Rivera's first alleged dine-and-dash. He was accused of pulling the same routine at an Outback Steakhouse in 2024. He was charged with organized scheme to defraud and defrauding an innkeeper and held without bond.",
       source: "Local 10 News (WPLG)",
       sourceUrl:
         "https://www.local10.com/news/local/2025/05/15/sharp-dressed-serial-dine-and-dasher-had-taste-for-sports-grill-wings-beer-staffers-say/",
@@ -2316,11 +2316,11 @@ export const stories: Story[] = [
       score: 85,
       rubric: { absurdity: 23, humor: 22, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
       title:
-        "Florida Man Trespassing at Hotel Gets Arrested — While Wearing a Stolen Jail Uniform",
+        "Florida Man Trespassing at Hotel Gets Arrested While Wearing a Stolen Jail Uniform",
       description:
         "Florida Man allegedly refuses to leave his hotel room after his reservation ends, and deputies find him dressed head to toe in a stolen inmate uniform.",
       fullStory:
-        "Brevard County deputies were called to a hotel on March 20, 2026, after staff reported that 53-year-old Farron Fullerton was refusing to leave his room after his reservation had ended. When deputies arrived, they found Fullerton wearing a full jail uniform — later identified as belonging to the Mitchell County Jail — which investigators determined he'd stolen after a previous jail stay rather than escaped from. Fullerton resisted being handcuffed and was arrested on misdemeanor charges of trespassing and resisting arrest without violence, held on a $1,000 bond. Sheriff Wayne Ivey summed up the scene: 'I've heard of dress for success, but never dress for arrest!'",
+        "Brevard County deputies were called to a hotel on March 20, 2026, after staff reported that 53-year-old Farron Fullerton was refusing to leave his room after his reservation had ended. When deputies arrived, they found Fullerton wearing a full jail uniform, later identified as belonging to the Mitchell County Jail, which investigators determined he'd stolen after a previous jail stay rather than escaped from. Fullerton resisted being handcuffed and was arrested on misdemeanor charges of trespassing and resisting arrest without violence, held on a $1,000 bond. Sheriff Wayne Ivey summed up the scene: 'I've heard of dress for success, but never dress for arrest!'",
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",

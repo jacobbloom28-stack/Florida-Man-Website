@@ -48,7 +48,7 @@ export async function POST(req: Request) {
   if (!token) {
     console.error("[suggest] GITHUB_TOKEN is not configured");
     return NextResponse.json(
-      { error: "Submissions aren't being accepted right now — try again soon." },
+      { error: "Submissions aren't being accepted right now. Try again soon." },
       { status: 503 }
     );
   }
@@ -116,7 +116,7 @@ export async function POST(req: Request) {
 
     if (existing.length >= MAX_PENDING_QUEUE) {
       return NextResponse.json(
-        { error: "The suggestion queue is full right now — try again later." },
+        { error: "The suggestion queue is full right now. Try again later." },
         { status: 429 }
       );
     }

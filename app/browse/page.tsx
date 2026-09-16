@@ -3,6 +3,7 @@
 import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { WarningIcon } from "@phosphor-icons/react/dist/ssr";
 import Header from "../components/Header";
 import { stories } from "../data/stories";
 import { StoryVisual, getScoreColor } from "../components/StoryVisual";
@@ -175,8 +176,8 @@ function BrowseContent() {
 
         {activeCategory && (
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="rounded-full bg-citrus px-3 py-1 text-sm font-semibold text-ink">
-              {activeCategory.chipLabel} — filtered to {activeCategory.label.toLowerCase()}
+            <span className="rounded-lg bg-citrus px-3 py-1 text-sm font-semibold text-ink">
+              {activeCategory.chipLabel}, filtered to {activeCategory.label.toLowerCase()}
             </span>
 
             <Link
@@ -233,7 +234,7 @@ function BrowseContent() {
                     setCity("All cities");
                     setScore("Any score");
                   }}
-                  className="rounded-full bg-citrus px-3.5 py-2 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
+                  className="rounded-lg bg-citrus px-3.5 py-2 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
                 >
                   Clear filters
                 </button>
@@ -263,7 +264,13 @@ function BrowseContent() {
 
                   <h3 className="mt-1.5 text-xl font-semibold leading-tight">
                     {story.contentNote && (
-                      <span title="Content note">⚠️ </span>
+                      <WarningIcon
+                        aria-label="Content note"
+                        className="mr-1 inline-block"
+                        size={18}
+                        weight="fill"
+                        color="var(--color-flamingo)"
+                      />
                     )}
                     {story.title}
                   </h3>
@@ -288,7 +295,7 @@ function BrowseContent() {
           <div className="mt-6 flex justify-center">
             <button
               onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
-              className="rounded-full bg-ink px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+              className="rounded-lg bg-ink px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
             >
               Load {Math.min(PAGE_SIZE, remaining)} more
             </button>
