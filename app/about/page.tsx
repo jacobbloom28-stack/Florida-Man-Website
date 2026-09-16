@@ -121,8 +121,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-12 border-l-4 border-sunset bg-paper-soft p-6">
-          <p className="text-sm font-semibold text-sunset-dark">Our standard</p>
+        <div className="mt-12 rounded-xl bg-sunset p-6">
+          <p className="text-sm font-semibold text-ink">Our standard</p>
 
           <p className="mt-2 font-medium text-ink">
             Funny stories are welcome. Fake stories are not.

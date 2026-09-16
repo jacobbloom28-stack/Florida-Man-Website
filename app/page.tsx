@@ -256,10 +256,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-4xl border-l-4 border-citrus bg-paper-soft p-6">
-          <p className="text-sm font-bold text-sunset-dark">About the ranking</p>
+        <section className="mx-auto mt-16 max-w-4xl rounded-xl bg-citrus p-6">
+          <p className="text-sm font-bold text-ink">About the ranking</p>
 
-          <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+          <p className="mt-2 text-sm leading-relaxed text-ink/70">
             We rank stories on humor, absurdity, how unmistakably Florida
             they feel, and whether the source actually checks out. If it
             didn&apos;t really happen, it doesn&apos;t make the cut.
@@ -267,7 +267,7 @@ export default function Home() {
 
           <Link
             href="/about"
-            className="mt-3 inline-block text-sm font-bold text-sunset hover:text-sunset-dark"
+            className="mt-3 inline-block text-sm font-bold text-ink underline underline-offset-2"
           >
             See the full scoring breakdown →
           </Link>

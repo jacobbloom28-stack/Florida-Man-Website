@@ -152,8 +152,8 @@ export default async function StoryPage({
 
         <div className="mt-10 text-lg leading-8">
           {story.contentNote && (
-            <div className="mb-6 border-l-4 border-flamingo bg-paper-soft px-5 py-4">
-              <p className="flex items-center gap-2 text-sm font-semibold text-flamingo">
+            <div className="mb-6 rounded-xl bg-flamingo px-5 py-4">
+              <p className="flex items-center gap-2 text-sm font-semibold text-ink">
                 ⚠️ Content note
               </p>
               <p className="mt-1.5 text-base text-ink">{story.contentNote}</p>
