@@ -2347,24 +2347,6 @@ export const stories: Story[] = [
         "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",
     },
     {
-      id: "walmart-tiktok-24hr-challenge",
-      date: "January 13, 2026",
-      year: "2026",
-      month: "January",
-      day: "13",
-      city: "Englewood",
-      score: 80,
-      rubric: { absurdity: 22, humor: 22, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
-      title: "Florida Man Tries to Spend 24 Hours Hiding in a Walmart for a TikTok Challenge",
-      description:
-        "Florida Man allegedly hides inside a closed Walmart overnight to livestream a TikTok challenge.",
-      fullStory:
-        "Charlotte County deputies say 18-year-old Isaac Hurley snuck into an Englewood Walmart around 10:15 p.m. on January 13, 2026, planning to live-stream himself surviving inside the closed store for 24 hours to rack up TikTok views. A viewer of the livestream called in a burglary, and deputies arrived to find Hurley hiding in the dog bed section, where he had also unwrapped an iPhone charger from its packaging. He was arrested and charged with burglary of an occupied structure and petit theft, then bonded out of the Charlotte County Jail for $1,500.",
-      source: "FOX 13 Tampa Bay",
-      sourceUrl:
-        "https://www.fox13news.com/news/tiktok-challenge-lands-florida-man-jail-trying-spend-night-walmart-after-closed-ccso",
-    },
-    {
       id: "ai-deepfake-deputy-prank",
       date: "March 24, 2026",
       year: "2026",
