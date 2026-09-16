@@ -105,21 +105,21 @@ export default function Home() {
         </div>
 
         {/* Stat strip */}
-        <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-4">
-          <div className="rounded-2xl bg-sunset/10 p-5 text-center ring-1 ring-sunset/15">
-            <p className="text-3xl font-black text-sunset-dark">{totalStories}</p>
+        <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-2 sm:gap-4">
+          <div className="rounded-2xl bg-sunset/10 p-3 text-center ring-1 ring-sunset/15 sm:p-5">
+            <p className="text-2xl font-black text-sunset-dark sm:text-3xl">{totalStories}</p>
             <p className="mt-1 text-xs font-semibold text-ink-soft">
               Stories so far
             </p>
           </div>
-          <div className="rounded-2xl bg-flamingo/10 p-5 text-center ring-1 ring-flamingo/15">
-            <p className="text-3xl font-black text-flamingo">{avgScore}</p>
+          <div className="rounded-2xl bg-flamingo/10 p-3 text-center ring-1 ring-flamingo/15 sm:p-5">
+            <p className="text-2xl font-black text-flamingo sm:text-3xl">{avgScore}</p>
             <p className="mt-1 text-xs font-semibold text-ink-soft">
               Average Florida score
             </p>
           </div>
-          <div className="rounded-2xl bg-lagoon/10 p-5 text-center ring-1 ring-lagoon/15">
-            <p className="truncate text-3xl font-black text-lagoon">
+          <div className="rounded-2xl bg-lagoon/10 p-3 text-center ring-1 ring-lagoon/15 sm:p-5">
+            <p className="truncate text-2xl font-black text-lagoon sm:text-3xl">
               {topCity}
             </p>
             <p className="mt-1 text-xs font-semibold text-ink-soft">

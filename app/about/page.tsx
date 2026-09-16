@@ -29,9 +29,7 @@ export default function About() {
         <h2 className="mt-3 text-5xl font-black leading-[1.05] tracking-tight md:text-6xl">
           Funny.
           <br />
-          <span className="bg-gradient-to-r from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] bg-clip-text text-transparent">
-            Verified.
-          </span>
+          <span className="text-flamingo">Verified.</span>
           <br />
           Florida.
         </h2>

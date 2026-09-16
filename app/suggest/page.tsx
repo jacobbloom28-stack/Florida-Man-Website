@@ -4,7 +4,6 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import Link from "next/link";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import React from "react";
 
 type SubmitState = "idle" | "loading" | "success" | "error";
@@ -171,8 +170,6 @@ export default function SuggestPage() {
           don&apos;t.
         </p>
       </section>
-
-      <Footer />
     </main>
   );
 }
