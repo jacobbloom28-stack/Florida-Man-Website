@@ -1678,6 +1678,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/fake-law-enforcement-officer-pulls-over-undercover-hillsborough-county-deputy-hcso",
+      photo: { src: "/photos/fake-cop-pulls-over-undercover-deputy.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "key-west-conch-train-birthday-joyride",
@@ -1696,6 +1697,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/florida-man-accused-taking-key-west-conch-tour-train-joyride-having-meth",
+      photo: { src: "/photos/key-west-conch-train-birthday-joyride.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "vodka-spritzer-police-chase",
@@ -1734,6 +1736,7 @@ export const stories: Story[] = [
       source: "WFTV / NBC 6 South Florida / KCBY",
       sourceUrl:
         "https://www.wftv.com/news/local/florida-man-arrested-killing-pet-peacocks-neighbor-dispute-admits-cooking-them/KHOIIW3TCVBZTPXVNCPLBO2NBQ/",
+      photo: { src: "/photos/peacocks-killed-cooked-spite.jpg", credit: "Fox News" },
     },
     {
       id: "spider-monkey-home-depot-attack",
@@ -1846,6 +1849,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando / Law & Crime",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-for-pooping-on-dead-possum-on-street-during-rush-hour-police-say",
+      photo: { src: "/photos/poops-on-dead-possum-rush-hour.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "kiss-refusal-shooting-granny",
@@ -2032,6 +2036,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-accused-animal-cruelty-after-throwing-chihuahua-off-balcony-like-football",
+      photo: { src: "/photos/chihuahua-thrown-off-balcony.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "wendys-break-in-sandwich",
@@ -2128,6 +2133,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/trending/florida-woman-accused-drugging-man-she-met-through-dating-app/TVYF2WY63BCJLA5T6GDNSJAFBQ/",
+      photo: { src: "/photos/dating-app-drugging-black-widow.jpg", credit: "WFTV" },
     },
     {
       id: "foot-fetish-hotel-hit-and-run",
