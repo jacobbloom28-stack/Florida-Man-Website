@@ -2,36 +2,36 @@
   {
     "id": "396f39eb-1481-47a7-a9d6-c3b5f227ac55",
     "url": "https://www.tmz.com/2026/09/14/florida-dui-suspect-drops-kids-in-swamp-fleeing-cops/",
-    "note": "",
+    "note": "Rejected: verified real (Isaac Kinsey, Lakeland), but involves real injury to a baby and toddler who were hospitalized. Site policy excludes real harm to bystanders/victims regardless of how absurd the incident is.",
     "submittedAt": "2026-09-16T02:45:27.548Z",
-    "status": "pending"
+    "status": "rejected"
   },
   {
     "id": "43431a3c-d44b-4710-92ef-d7f0c59536ff",
     "url": "https://www.justice.gov/usao-wdwi/pr/florida-man-sentenced-30-months-illegally-transporting-alien",
-    "note": "",
+    "note": "Rejected: genuine DOJ case but a serious human-smuggling/coercion conviction with a real victim, not a lighthearted Florida Man incident.",
     "submittedAt": "2026-09-16T02:45:41.924Z",
-    "status": "pending"
+    "status": "rejected"
   },
   {
     "id": "f4ab0111-8e02-43fd-b076-b5983f9998f8",
     "url": "https://www.fox35orlando.com/news/suspect-plows-through-florida-walmart-with-stolen-excavator-police",
-    "note": "",
+    "note": "Rejected: duplicate of existing entry \"excavator-walmart-crash\" (same sourceUrl already in stories.ts).",
     "submittedAt": "2026-09-16T02:45:55.105Z",
-    "status": "pending"
+    "status": "rejected"
   },
   {
     "id": "4e72ead1-1f8f-4219-a9ca-8b1fad5792e8",
     "url": "https://www.clickorlando.com/news/local/2021/09/10/florida-man-twerks-for-officers-during-traffic-stop-gets-tased-report-says/",
-    "note": "",
+    "note": "Rejected: duplicate of existing entry \"twerking-traffic-stop-rain\" (same sourceUrl already in stories.ts).",
     "submittedAt": "2026-09-16T02:46:14.188Z",
-    "status": "pending"
+    "status": "rejected"
   },
   {
     "id": "03bf6f3c-e3ae-496b-891c-fc409b4c7be8",
     "url": "https://www.cbsnews.com/amp/miami/news/florida-man-banana-tree-pothole/",
-    "note": "",
+    "note": "Added as \"banana-tree-pothole-protest\": verified real (Bryan Raymond, Fort Myers, Sept 2021), corroborated by multiple outlets, no harm involved.",
     "submittedAt": "2026-09-16T02:46:32.303Z",
-    "status": "pending"
+    "status": "added"
   }
 ]

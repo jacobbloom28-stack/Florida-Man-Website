@@ -2492,6 +2492,24 @@ export const stories: Story[] = [
         "https://www.fox13news.com/news/st-pete-woman-wearing-hot-dog-costume-arrested-after-putting-toilet-paper-neighbors-vehicle",
       photo: { src: "/photos/hot-dog-costume-toilet-paper.jpg", credit: "FOX 13 Tampa Bay" },
     },
+    {
+      id: "banana-tree-pothole-protest",
+      date: "September 9, 2021",
+      year: "2021",
+      month: "September",
+      day: "9",
+      city: "Fort Myers",
+      score: 77,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 16, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Plants Banana Tree in Pothole to Protest Road Conditions",
+      description:
+        "A Fort Myers business owner plants a banana tree in a stubborn pothole on a private street after growing tired of patching it with cement.",
+      fullStory:
+        "Bryan Raymond, owner of Progress and Pride Fitness Group in Fort Myers, said he was fed up with a deep pothole on Honda Drive that kept damaging cars and flooding the street. After repeatedly filling the hole with cement with no luck, Raymond planted a banana tree directly in it as an impossible-to-miss warning to drivers. Because Honda Drive is a private street, Lee County said maintenance was the business owners' responsibility, not the county's. Raymond explained, 'If we have to maintain it and make sure nobody gets hurt, we are going to put something obvious there to make sure nobody gets in the hole.'",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/florida-man-banana-tree-pothole/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
