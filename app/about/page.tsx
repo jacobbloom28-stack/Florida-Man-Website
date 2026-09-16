@@ -35,16 +35,16 @@ export default function About() {
         </h2>
 
         <div className="mt-10 grid grid-cols-2 gap-4">
-          <div className="rounded-2xl bg-sunset/10 p-6 text-center ring-1 ring-sunset/15">
-            <p className="text-4xl font-black text-sunset-dark">{totalStories}</p>
-            <p className="mt-1 text-sm font-semibold text-ink-soft">
+          <div className="rounded-xl bg-sunset p-6 text-center">
+            <p className="text-4xl font-black text-ink">{totalStories}</p>
+            <p className="mt-1 text-sm font-semibold text-ink/70">
               Stories archived
             </p>
           </div>
 
-          <div className="rounded-2xl bg-flamingo/10 p-6 text-center ring-1 ring-flamingo/15">
-            <p className="text-4xl font-black text-flamingo">{avgScore}</p>
-            <p className="mt-1 text-sm font-semibold text-ink-soft">
+          <div className="rounded-xl bg-flamingo p-6 text-center">
+            <p className="text-4xl font-black text-ink">{avgScore}</p>
+            <p className="mt-1 text-sm font-semibold text-ink/70">
               Average Florida score
             </p>
           </div>
@@ -81,60 +81,47 @@ export default function About() {
             decisions, not at anyone&apos;s pain.
           </p>
 
-          <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
-            <table className="w-full min-w-[500px] border-collapse text-left">
-              <thead>
-                <tr className="border-b border-line bg-paper-soft text-sm font-semibold text-ink">
-                  <th className="px-5 py-3.5">Category</th>
-                  <th className="px-5 py-3.5">Points</th>
-                  <th className="px-5 py-3.5">Weight</th>
-                  <th className="px-5 py-3.5">What it measures</th>
-                </tr>
-              </thead>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {RUBRIC.map((row) => (
+              <div
+                key={row.category}
+                className="rounded-xl bg-white p-5 shadow-md shadow-ink/5 ring-1 ring-line"
+              >
+                <div className="flex items-center gap-2">
+                  <span
+                    className="inline-block h-2.5 w-2.5 shrink-0 rounded-full"
+                    style={{ backgroundColor: row.color }}
+                  />
+                  <p className="font-semibold text-ink">{row.category}</p>
+                </div>
 
-              <tbody>
-                {RUBRIC.map((row) => (
-                  <tr key={row.category} className="border-b border-line last:border-b-0">
-                    <td className="px-5 py-3.5">
-                      <span
-                        className="mr-2 inline-block h-2.5 w-2.5 rounded-full align-middle"
-                        style={{ backgroundColor: row.color }}
-                      />
-                      <span className="font-semibold align-middle">
-                        {row.category}
-                      </span>
-                    </td>
-                    <td className="px-5 py-3.5 font-medium text-ink-soft">/{row.points}</td>
-                    <td className="px-5 py-3.5 font-medium text-ink-soft">{row.weight}</td>
-                    <td className="px-5 py-3.5 text-ink-soft">{row.measures}</td>
-                  </tr>
-                ))}
-              </tbody>
+                <div className="mt-3 flex items-baseline gap-2">
+                  <p className="text-3xl font-black" style={{ color: row.color }}>
+                    /{row.points}
+                  </p>
+                  <p className="text-xs font-semibold text-ink-soft">
+                    {row.weight} of total
+                  </p>
+                </div>
 
-              <tfoot>
-                <tr className="border-t border-line bg-paper-soft font-semibold">
-                  <td className="px-5 py-3.5">Total</td>
-                  <td className="px-5 py-3.5">/{RUBRIC_TOTAL}</td>
-                  <td className="px-5 py-3.5">100%</td>
-                  <td className="px-5 py-3.5 text-ink-soft">
-                    Maximum possible score
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+                <p className="mt-2 text-sm text-ink-soft">{row.measures}</p>
+              </div>
+            ))}
           </div>
 
-          <div className="mt-6 rounded-2xl bg-paper-soft p-6">
-            <p className="text-sm font-semibold text-ink">Florida Man score</p>
-
-            <p className="mt-2 text-ink-soft">
-              The sum of all six category scores, out of {RUBRIC_TOTAL} — so
-              a perfect story earns a {RUBRIC_TOTAL}/{RUBRIC_TOTAL}.
-            </p>
+          <div className="mt-4 flex items-center justify-between rounded-xl bg-ink px-6 py-5 text-white">
+            <div>
+              <p className="text-sm font-semibold text-white/70">Florida Man score</p>
+              <p className="mt-1 max-w-md text-sm text-white/70">
+                Add up all six categories and that&apos;s the number you see
+                on every story.
+              </p>
+            </div>
+            <p className="shrink-0 pl-4 text-4xl font-black">/{RUBRIC_TOTAL}</p>
           </div>
         </div>
 
-        <div className="mt-12 rounded-2xl bg-sunset/10 p-6 ring-1 ring-sunset/20">
+        <div className="mt-12 border-l-4 border-sunset bg-paper-soft p-6">
           <p className="text-sm font-semibold text-sunset-dark">Our standard</p>
 
           <p className="mt-2 font-medium text-ink">

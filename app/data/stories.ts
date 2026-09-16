@@ -420,7 +420,9 @@ export const stories: Story[] = [
         source: "First Coast News / Fox News",
         sourceUrl:
         "https://www.foxnews.com/science/florida-man-wielding-live-gator-chases-people-in-convenience-store-video-shows",
-      photo: { src: "/photos/gator-convenience-store-beer.jpg", credit: "Fox News" },
+      // No photo: the only available frame grab is a blurry crop of a store
+      // sign with no gator, beer, or person in it — the illustrated card
+      // (see StoryVisual.tsx) represents the story better than that photo did.
     },
     {
         id: "scooter-screwdriver-cop",

@@ -19,13 +19,13 @@ import React from "react";
 export const revalidate = 1800;
 
 const CHIPS = [
-  { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm/15 text-palm hover:bg-palm/25" },
-  { label: "🚨 Cop trouble", href: "/browse?category=cop-trouble", tint: "bg-sky/15 text-sky hover:bg-sky/25" },
-  { label: "💊 Substances", href: "/browse?category=substances", tint: "bg-grape/15 text-grape hover:bg-grape/25" },
-  { label: "🍑 Bare necessities", href: "/browse?category=bare-necessities", tint: "bg-flamingo/15 text-flamingo hover:bg-flamingo/25" },
-  { label: "💰 Petty heists", href: "/browse?category=petty-heists", tint: "bg-citrus/20 text-sunset-dark hover:bg-citrus/30" },
-  { label: "🎭 Costumes", href: "/browse?category=costumes", tint: "bg-sunset/15 text-sunset-dark hover:bg-sunset/25" },
-  { label: "🌮 Fast food", href: "/browse?category=fast-food", tint: "bg-lagoon/15 text-lagoon hover:bg-lagoon/25" },
+  { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm text-ink" },
+  { label: "🚨 Cop trouble", href: "/browse?category=cop-trouble", tint: "bg-sky text-ink" },
+  { label: "💊 Substances", href: "/browse?category=substances", tint: "bg-grape text-ink" },
+  { label: "🍑 Bare necessities", href: "/browse?category=bare-necessities", tint: "bg-flamingo text-ink" },
+  { label: "💰 Petty heists", href: "/browse?category=petty-heists", tint: "bg-citrus text-ink" },
+  { label: "🎭 Costumes", href: "/browse?category=costumes", tint: "bg-sunset text-ink" },
+  { label: "🌮 Fast food", href: "/browse?category=fast-food", tint: "bg-lagoon text-ink" },
 ];
 
 export default function Home() {
@@ -106,23 +106,23 @@ export default function Home() {
 
         {/* Stat strip */}
         <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-2 sm:gap-4">
-          <div className="rounded-2xl bg-sunset/10 p-3 text-center ring-1 ring-sunset/15 sm:p-5">
-            <p className="text-2xl font-black text-sunset-dark sm:text-3xl">{totalStories}</p>
-            <p className="mt-1 text-xs font-semibold text-ink-soft">
+          <div className="rounded-xl bg-sunset p-3 text-center sm:p-5">
+            <p className="text-2xl font-black text-ink sm:text-3xl">{totalStories}</p>
+            <p className="mt-1 text-xs font-semibold text-ink/70">
               Stories so far
             </p>
           </div>
-          <div className="rounded-2xl bg-flamingo/10 p-3 text-center ring-1 ring-flamingo/15 sm:p-5">
-            <p className="text-2xl font-black text-flamingo sm:text-3xl">{avgScore}</p>
-            <p className="mt-1 text-xs font-semibold text-ink-soft">
+          <div className="rounded-xl bg-flamingo p-3 text-center sm:p-5">
+            <p className="text-2xl font-black text-ink sm:text-3xl">{avgScore}</p>
+            <p className="mt-1 text-xs font-semibold text-ink/70">
               Average Florida score
             </p>
           </div>
-          <div className="rounded-2xl bg-lagoon/10 p-3 text-center ring-1 ring-lagoon/15 sm:p-5">
-            <p className="truncate text-2xl font-black text-lagoon sm:text-3xl">
+          <div className="rounded-xl bg-lagoon p-3 text-center sm:p-5">
+            <p className="truncate text-2xl font-black text-ink sm:text-3xl">
               {topCity}
             </p>
-            <p className="mt-1 text-xs font-semibold text-ink-soft">
+            <p className="mt-1 text-xs font-semibold text-ink/70">
               Most chaotic city
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
 
           <div>
             <div className="mb-6 flex items-center justify-between gap-3 border-b border-line pb-5">
-              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-semibold text-sunset-dark">
+              <span className="rounded-full bg-citrus px-3 py-1 text-sm font-bold text-ink">
                 {isOnThisDay ? `On this day — ${today.year}` : "Featured story"}
               </span>
 
@@ -177,12 +177,12 @@ export default function Home() {
                 Also on this day
               </h3>
 
-              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-semibold text-lagoon">
+              <span className="rounded-full bg-lagoon px-3 py-1 text-sm font-bold text-ink">
                 {otherStories.length} stories
               </span>
             </div>
 
-            <div className="divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
+            <div className="divide-y divide-line rounded-xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
               {otherStories.map((story, index) => (
                 <Link
                   key={story.id}
@@ -232,7 +232,7 @@ export default function Home() {
               <Link
                 key={chip.href}
                 href={chip.href}
-                className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${chip.tint}`}
+                className={`rounded-full px-4 py-2 text-sm font-semibold transition-transform hover:-translate-y-0.5 ${chip.tint}`}
               >
                 {chip.label}
               </Link>
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-gradient-to-br from-citrus/20 to-sunset/10 p-6 ring-1 ring-citrus/25">
+        <section className="mx-auto mt-16 max-w-4xl border-l-4 border-citrus bg-paper-soft p-6">
           <p className="text-sm font-bold text-sunset-dark">About the ranking</p>
 
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">

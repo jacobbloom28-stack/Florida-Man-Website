@@ -152,7 +152,7 @@ export default async function StoryPage({
 
         <div className="mt-10 text-lg leading-8">
           {story.contentNote && (
-            <div className="mb-6 rounded-2xl bg-flamingo/10 px-5 py-4 ring-1 ring-flamingo/25">
+            <div className="mb-6 border-l-4 border-flamingo bg-paper-soft px-5 py-4">
               <p className="flex items-center gap-2 text-sm font-semibold text-flamingo">
                 ⚠️ Content note
               </p>
@@ -166,7 +166,7 @@ export default async function StoryPage({
             <p className="mt-6 text-ink-soft">{story.fullStory}</p>
           )}
 
-          <div className="mt-10 rounded-2xl bg-paper-soft p-6">
+          <div className="mt-10 rounded-xl bg-paper-soft p-6">
             <p className="text-sm font-semibold text-ink">Score breakdown</p>
 
             <div className="mt-5 space-y-4">
@@ -216,7 +216,7 @@ export default async function StoryPage({
             {previousStory && (
               <Link
                 href={`/story/${previousStory.id}`}
-                className="rounded-2xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
+                className="rounded-xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
               >
                 <p className="text-xs font-medium text-lagoon">← Previous</p>
                 <p className="mt-1 font-semibold leading-snug">
@@ -228,7 +228,7 @@ export default async function StoryPage({
             {nextStory && (
               <Link
                 href={`/story/${nextStory.id}`}
-                className="rounded-2xl bg-white p-4 text-right shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5 sm:col-start-2"
+                className="rounded-xl bg-white p-4 text-right shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5 sm:col-start-2"
               >
                 <p className="text-xs font-medium text-flamingo">Next →</p>
                 <p className="mt-1 font-semibold leading-snug">
@@ -250,7 +250,7 @@ export default async function StoryPage({
                 <Link
                   key={s.id}
                   href={`/story/${s.id}`}
-                  className="block rounded-2xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
+                  className="block rounded-xl bg-white p-4 shadow-md shadow-ink/5 ring-1 ring-line transition-transform hover:-translate-y-0.5"
                 >
                   <StoryVisual story={s} size="md" />
 

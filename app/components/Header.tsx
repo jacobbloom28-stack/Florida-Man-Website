@@ -39,7 +39,7 @@ export default function Header() {
                 href={link.href}
                 className={`rounded-full px-2.5 py-2 transition-colors sm:px-3.5 ${
                   active
-                    ? "bg-gradient-to-r from-sunset/15 to-flamingo/15 text-sunset-dark"
+                    ? "bg-sunset text-ink"
                     : "text-ink-soft hover:bg-ink/5 hover:text-ink"
                 }`}
               >

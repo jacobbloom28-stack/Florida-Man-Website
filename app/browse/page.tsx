@@ -59,6 +59,8 @@ const SORT_OPTIONS = {
 
 type SortOption = keyof typeof SORT_OPTIONS;
 
+const PAGE_SIZE = 24;
+
 function BrowseContent() {
   // Pick up a category filter passed in from the homepage chips
   // (?category=animals, ?category=fast-food, etc.)
@@ -143,6 +145,23 @@ function BrowseContent() {
     city !== "All cities" ||
     score !== "Any score";
 
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  // Filters/sort produce a new result set, so a stale page count would
+  // otherwise leave the list stuck mid-scroll or hide results that used
+  // to be on "page 2" of the previous, larger set. Adjusted during render
+  // (React's documented pattern for resetting state when inputs change)
+  // rather than in an effect, so it takes effect in the same render pass.
+  const filterKey = `${category ?? ""}|${search}|${year}|${month}|${day}|${city}|${score}|${sort}`;
+  const [trackedFilterKey, setTrackedFilterKey] = useState(filterKey);
+  if (filterKey !== trackedFilterKey) {
+    setTrackedFilterKey(filterKey);
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  const visibleStories = filteredStories.slice(0, visibleCount);
+  const remaining = filteredStories.length - visibleStories.length;
+
   return (
     <main className="min-h-screen bg-paper text-ink">
       <Header />
@@ -156,7 +175,7 @@ function BrowseContent() {
 
         {activeCategory && (
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
+            <span className="rounded-full bg-citrus px-3 py-1 text-sm font-semibold text-ink">
               {activeCategory.chipLabel} — filtered to {activeCategory.label.toLowerCase()}
             </span>
 
@@ -169,7 +188,7 @@ function BrowseContent() {
           </div>
         )}
 
-        <div className="mt-10 rounded-2xl bg-white p-5 shadow-md shadow-ink/5 ring-1 ring-line">
+        <div className="mt-10 rounded-xl bg-white p-5 shadow-md shadow-ink/5 ring-1 ring-line">
           <div className="grid gap-3 md:grid-cols-6">
             <input
               type="text"
@@ -188,7 +207,7 @@ function BrowseContent() {
 
           <div className="mt-4 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-4">
             <p className="text-sm text-ink-soft">
-              {filteredStories.length} of {stories.length} stories
+              Showing {visibleStories.length} of {filteredStories.length} stories
             </p>
 
             <div className="flex items-center gap-3">
@@ -214,7 +233,7 @@ function BrowseContent() {
                     setCity("All cities");
                     setScore("Any score");
                   }}
-                  className="rounded-full bg-citrus/25 px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:bg-citrus/40"
+                  className="rounded-full bg-citrus px-3.5 py-2 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
                 >
                   Clear filters
                 </button>
@@ -223,13 +242,13 @@ function BrowseContent() {
           </div>
         </div>
 
-        <div className="mt-6 divide-y divide-line rounded-2xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
+        <div className="mt-6 divide-y divide-line rounded-xl bg-white shadow-md shadow-ink/5 ring-1 ring-line">
           {filteredStories.length === 0 ? (
             <p className="px-6 py-14 text-center font-medium text-ink-soft">
               Couldn&apos;t find one that matches. Try loosening a filter.
             </p>
           ) : (
-            filteredStories.map((story) => (
+            visibleStories.map((story) => (
               <Link
                 href={`/story/${story.id}`}
                 key={story.id}
@@ -264,6 +283,17 @@ function BrowseContent() {
             ))
           )}
         </div>
+
+        {remaining > 0 && (
+          <div className="mt-6 flex justify-center">
+            <button
+              onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+              className="rounded-full bg-ink px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+            >
+              Load {Math.min(PAGE_SIZE, remaining)} more
+            </button>
+          </div>
+        )}
       </section>
     </main>
   );
