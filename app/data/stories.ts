@@ -2379,6 +2379,114 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/04/26/social-media-stunts-land-two-ocala-teens-in-handcuffs/",
     },
+    {
+      id: "dirty-bomb-soil-gauge",
+      date: "December 5, 2025",
+      year: "2025",
+      month: "December",
+      day: "5",
+      city: "Davenport",
+      score: 86,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 17, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Crashes Into Publix, Claims He Has a 'Dirty Bomb' in His Truck",
+      description:
+        "Florida Man allegedly tells officers he has a 'dirty bomb' in his truck after crashing into a Publix, triggering a bomb squad response.",
+      fullStory:
+        "Benjamin Donald Johnson, 43, crashed his truck into a Publix on U.S. 27 in Davenport on the night of December 5, 2025, then refused commands to get out, forcing deputies to physically remove him as multiple firearms sat in plain view inside. While detained in the back of a patrol car, Johnson told officers he had a 'dirty bomb' in the truck, prompting a lockdown and a response from the FBI, ATF, and a bomb squad. The chained, radioactive-warning-labeled container turned out to be a soil-testing moisture density gauge with less radioactivity than a medical X-ray. Johnson was charged with hoax weapon of mass destruction, false report concerning a bomb, and unlawful possession of a controlled substance.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/publix-crash-sparks-dirty-bomb-scare-polk-county/VU6PMMIU6RFLHCPJOOGUITQUYQ/",
+    },
+    {
+      id: "superman-boat-burglary",
+      date: "July 25, 2026",
+      year: "2026",
+      month: "July",
+      day: "25",
+      city: "Ruskin",
+      score: 84,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 15, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in Superman Costume Confesses to Boat Burglary Mid-Interview",
+      description:
+        "Florida Man dressed as Superman allegedly admits to breaking into a boat cabin and stealing power tools when deputies catch up with him.",
+      fullStory:
+        "A Ruskin boat owner discovered someone had broken into the cabin of their vessel, anchored just behind their home, and made off with several power tools on July 25, 2026. Investigators quickly identified 57-year-old James Tidwell, a convicted felon, and found him wearing a red-and-blue Superman-themed beach coverup, cape included, when they arrived. Body camera video shows Tidwell gesturing toward a nearby boat and admitting he 'only took three items' when deputies mentioned the burglary. He was charged with burglary of an unoccupied conveyance and first-degree petit theft, and was released after posting a $5,500 bond.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/video-superman-busted-ruskin-boat-burglary",
+    },
+    {
+      id: "fake-attorney-traffic-stop",
+      date: "April 25, 2026",
+      year: "2026",
+      month: "April",
+      day: "25",
+      city: "West Melbourne",
+      score: 86,
+      rubric: { absurdity: 22, humor: 23, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in a Suit Shows Up to a Traffic Stop Claiming to Be a Lawyer",
+      description:
+        "Florida Man allegedly poses as an attorney at a stranger's traffic stop, using a real lawyer's name and website to try to talk officers out of an arrest.",
+      fullStory:
+        "Derek Zachery Schaufus, 30, of Palm Bay, showed up in a suit and tie to a traffic stop on Interstate 95 in West Melbourne on April 25, 2026, where officers were arresting a woman he didn't know after finding drugs in her car. Schaufus introduced himself as attorney 'Johnathan Mills' and tried to negotiate on her behalf; when officers asked for proof, he pulled up the real Mills's law firm website and claimed he was the firm's secretary using that name. The phone number he gave traced back to his own cellphone, and the actual attorney told investigators he had never heard of Schaufus. The Florida Bar confirmed Schaufus is not a licensed attorney, and he was charged with misrepresenting himself as qualified to practice law, obstruction by a disguised person, and resisting an officer without violence.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-accused-posing-attorney-during-traffic-stop",
+    },
+    {
+      id: "doughnuts-7-eleven-wallet",
+      date: "September 12, 2026",
+      year: "2026",
+      month: "September",
+      day: "12",
+      city: "Lehigh Acres",
+      score: 76,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Does Doughnuts in 7-Eleven Parking Lot, Ditches His Own Wallet Fleeing Troopers",
+      description:
+        "Florida Man allegedly does doughnuts in a convenience store parking lot, then throws his own wallet under a tree while fleeing troopers.",
+      fullStory:
+        "Florida Highway Patrol troopers tried to stop a driver performing doughnuts in a 7-Eleven parking lot near State Road 82 and Sunshine Boulevard in Lehigh Acres just before midnight on September 12, 2026. Instead of pulling over, the driver fled on foot within the lot and tossed his wallet under a nearby tree in an apparent attempt to hide his identity; troopers recovered it and identified him as 30-year-old Robins Wilky Alexandre. A search turned up cocaine concealed in his boot. Alexandre was charged with fleeing and eluding, resisting without violence, street racing and stunt driving, tampering with evidence, cocaine possession, habitual driving with a revoked license, and reckless driving.",
+      source: "Tampa Free Press",
+      sourceUrl:
+        "https://www.tampafp.com/late-night-doughnuts-at-lee-county-7-eleven-lead-to-arrest-cocaine-found-in-drivers-boot/",
+    },
+    {
+      id: "bb-gun-sheriff-drone",
+      date: "June 13, 2026",
+      year: "2026",
+      month: "June",
+      day: "13",
+      city: "Lehigh Acres",
+      score: 76,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Shoots BB Gun at Sheriff's Drone, Gets Caught on Its Own Camera",
+      description:
+        "Florida Man allegedly fires a BB rifle at a sheriff's office drone, which records the entire encounter.",
+      fullStory:
+        "The Lee County Sheriff's Office was flying a drone as a first responder over a call near Todd Avenue South in Lehigh Acres on June 13, 2026, when a man on the ground pointed a BB rifle loaded with steel projectiles at it and fired twice. The drone's camera captured the whole encounter, and deputies identified the shooter as Elvin Antonio Callejas-Serrato. He was arrested and charged with shooting or throwing a deadly missile into an aircraft.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/aflorida-man-arrested-after-allegedly-shooting-at-sheriffs-office-first-responder-drone-florida-man-lee-county-lehigh-acres-lee-county-sheriffs-office-drone-as-first-responder-drone-shooting-sheriff-drone-elvin-antonio-callejas-serrato-bb-rifle",
+    },
+    {
+      id: "hot-dog-costume-toilet-paper",
+      date: "August 25, 2025",
+      year: "2025",
+      month: "August",
+      day: "25",
+      city: "St. Petersburg",
+      score: 85,
+      rubric: { absurdity: 21, humor: 24, floridaFactor: 14, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman in Hot Dog Costume Arrested for Toilet-Papering Neighbor's Car",
+      description:
+        "Florida Woman allegedly throws on a hot dog costume to toilet-paper a neighbor's car in a dispute over parking.",
+      fullStory:
+        "St. Petersburg police say 58-year-old Marcia Morgan was upset that a neighbor kept parking near her yard, so on the afternoon of August 25, 2025, she put on a full hot dog costume, leaned against the neighbor's vehicle, and wrapped it in toilet paper. Officers said Morgan was intoxicated and uncooperative when they arrived, and her reason for wearing the costume was never explained. She was arrested on charges of disorderly conduct and resisting an officer without violence, and pleaded no contest the next day, paying a $550 fine.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/st-pete-woman-wearing-hot-dog-costume-arrested-after-putting-toilet-paper-neighbors-vehicle",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
