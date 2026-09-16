@@ -290,6 +290,7 @@ export const stories: Story[] = [
       source: "FOX 51 Gainesville",
       sourceUrl:
         "https://www.wogx.com/news/florida-man-accused-of-playing-basketball-in-the-nude",
+      photo: { src: "/photos/naked-basketball-skills.jpg", credit: "FOX 51 Gainesville" },
     },
     {
       id: "75-pool-floats",
@@ -740,6 +741,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/florida-man-took-forklift-steal-atm-police-say/IQULQRELMNFLHOTIRVVXUCUGOI/",
+      photo: { src: "/photos/forklift-atm-joyride.jpg", credit: "WFTV" },
     },
     {
       id: "god-18th-birthday-arrest",
@@ -758,6 +760,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/trending/man-accused-stealing-cigarettes-gas-station-tells-deputies-he-is-god/NO63NIPYAJEJLA5UTEZAX35S6I/",
+      photo: { src: "/photos/god-18th-birthday-arrest.jpg", credit: "WFTV" },
     },
     {
       id: "chuck-e-cheese-mascot-fraud",
