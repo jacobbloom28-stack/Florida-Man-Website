@@ -1062,6 +1062,7 @@ export const stories: Story[] = [
       source: "Charlotte County Sheriff's Office / FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/tiktok-challenge-lands-florida-man-jail-trying-spend-night-walmart-after-closed-ccso",
+      photo: { src: "/photos/walmart-tiktok-dog-bed.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "prison-costume-dui-halloween",
@@ -1120,6 +1121,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-arrested-after-he-allegedly-gave-girlfriend-a-wet-willy-affidavit-says",
+      photo: { src: "/photos/wet-willy-battery-charge.jpg", credit: "Fox News" },
     },
     {
       id: "covid-relief-lamborghini",
@@ -1264,6 +1266,7 @@ export const stories: Story[] = [
       source: "News4Jax",
       sourceUrl:
         "https://www.news4jax.com/news/2019/05/29/police-burglar-dressed-as-woman-took-her-cadillac-drove-to-walmart/",
+      photo: { src: "/photos/wears-womans-clothes-asks-drink.jpg", credit: "News4Jax" },
     },
     {
       id: "mcdonalds-railing-dance",
@@ -1336,6 +1339,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/suspect-plows-through-florida-walmart-with-stolen-excavator-police",
+      photo: { src: "/photos/excavator-walmart-crash.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "street-sweeper-theft",
@@ -1354,6 +1358,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-for-borrowing-ex-employers-street-sweeper-to-do-a-job-with-competing-company-deputies",
+      photo: { src: "/photos/street-sweeper-theft.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "trump-trillion-dollars",
@@ -1372,6 +1377,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-smashed-windows-trump-trillion-dollars",
+      photo: { src: "/photos/trump-trillion-dollars.jpg", credit: "Fox News" },
     },
     {
       id: "breakfast-break-in",
@@ -1408,6 +1414,7 @@ export const stories: Story[] = [
       source: "NBC News",
       sourceUrl:
         "https://www.nbcnews.com/news/us-news/driver-booty-patrol-truck-resembled-border-patrol-cited-florida-rcna123262",
+      photo: { src: "/photos/booty-patrol-truck.jpg", credit: "NBC News" },
     },
     {
       id: "rental-car-uber",
@@ -1484,6 +1491,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/tampa-sumter-county-police-officer-impersonator-buccaneers-jersey-interstate",
+      photo: { src: "/photos/bucs-jersey-police-impersonator.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "dolphin-headbutt-window",
@@ -1520,6 +1528,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/video-florida-man-with-all-gas-no-brakes-neck-tattoo-crashes-after-fleeing-polk-county-crime-scene",
+      photo: { src: "/photos/all-gas-no-brakes-tattoo.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "fbi-haunted-house-bb-gun",
@@ -1540,6 +1549,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-hits-haunted-house-host-in-eye-with-toy-gun-after-mistaken-them-for-statue-deputies",
+      photo: { src: "/photos/fbi-haunted-house-bb-gun.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "dollar-general-voices",
