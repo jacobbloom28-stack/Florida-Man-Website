@@ -2250,6 +2250,7 @@ export const stories: Story[] = [
       source: "Keys Weekly / Keys News",
       sourceUrl:
         "https://keysweekly.com/42/florida-man-arrested-in-reported-swatting-incident-in-key-largo/",
+      photo: { src: "/photos/key-largo-swatting-bomb-hostage-snapchat.jpg", credit: "Keys Weekly" },
     },
     {
       id: "smart-car-parked-in-kitchen-dorian",
@@ -2305,6 +2306,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/florida-meat-thief-tosses-4k-stolen-steaks-after-catching-girlfriend-cooking-another-man-fcso",
+      photo: { src: "/photos/publix-steak-heist-jealous-boyfriend.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "corvette-donuts-first-date",
@@ -2433,6 +2435,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/video-superman-busted-ruskin-boat-burglary",
+      photo: { src: "/photos/superman-boat-burglary.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "fake-attorney-traffic-stop",
@@ -2505,6 +2508,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/st-pete-woman-wearing-hot-dog-costume-arrested-after-putting-toilet-paper-neighbors-vehicle",
+      photo: { src: "/photos/hot-dog-costume-toilet-paper.jpg", credit: "FOX 13 Tampa Bay" },
     },
   ];
 
