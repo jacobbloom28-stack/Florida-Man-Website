@@ -30,11 +30,20 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6">
           <p className="text-xs leading-relaxed text-white/35">
             Every story is sourced from real news reporting. Not officially
             affiliated with the State of Florida (thankfully).
           </p>
+
+          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-white/40">
+            <Link href="/privacy" className="transition-colors hover:text-white/70">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-white/70">
+              Terms &amp; Conditions
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
