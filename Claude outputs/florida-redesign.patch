@@ -1,0 +1,793 @@
+diff --git a/app/about/page.tsx b/app/about/page.tsx
+index d4f31bb..67dca7e 100644
+--- a/app/about/page.tsx
++++ b/app/about/page.tsx
+@@ -29,10 +29,10 @@ export default function About() {
+       <section className="mx-auto max-w-4xl px-6 py-16">
+         <p className="text-sm font-medium text-flamingo">About the project</p>
+ 
+-        <h2 className="mt-3 text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
++        <h2 className="mt-3 text-5xl font-black leading-[1.05] tracking-tight md:text-6xl">
+           Funny.
+           <br />
+-          <span className="bg-gradient-to-r from-[#FF9457] via-[#EF3F7B] to-[#8B5CF6] bg-clip-text text-transparent">
++          <span className="bg-gradient-to-r from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] bg-clip-text text-transparent">
+             Verified.
+           </span>
+           <br />
+@@ -40,16 +40,16 @@ export default function About() {
+         </h2>
+ 
+         <div className="mt-10 grid grid-cols-2 gap-4">
+-          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+-            <p className="text-4xl font-bold text-sunset">{totalStories}</p>
+-            <p className="mt-1 text-sm font-medium text-ink-soft">
++          <div className="rounded-2xl bg-sunset/10 p-6 text-center ring-1 ring-sunset/15">
++            <p className="text-4xl font-black text-sunset-dark">{totalStories}</p>
++            <p className="mt-1 text-sm font-semibold text-ink-soft">
+               Stories archived
+             </p>
+           </div>
+ 
+-          <div className="rounded-2xl bg-white p-6 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+-            <p className="text-4xl font-bold text-flamingo">{avgScore}</p>
+-            <p className="mt-1 text-sm font-medium text-ink-soft">
++          <div className="rounded-2xl bg-flamingo/10 p-6 text-center ring-1 ring-flamingo/15">
++            <p className="text-4xl font-black text-flamingo">{avgScore}</p>
++            <p className="mt-1 text-sm font-semibold text-ink-soft">
+               Average Florida score
+             </p>
+           </div>
+diff --git a/app/components/FloridaRail.tsx b/app/components/FloridaRail.tsx
+index 1ed8a10..a27c5e6 100644
+--- a/app/components/FloridaRail.tsx
++++ b/app/components/FloridaRail.tsx
+@@ -1,39 +1,22 @@
+-import Image from "next/image";
+-
+ type Tile = {
+-  url: string;
++  emoji: string;
++  gradient: string;
+   rotate: string;
+-  credit: string;
+ };
+ 
+ const LEFT_TILES: Tile[] = [
+-  {
+-    url: "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg",
+-    rotate: "-rotate-2",
+-    credit: "Postdlf (CC BY-SA 3.0)",
+-  },
+-  {
+-    url: "https://upload.wikimedia.org/wikipedia/commons/7/72/American_flamingo_%28Phoenicopterus_ruber%29.JPG",
+-    rotate: "rotate-1",
+-    credit: "Charles J. Sharp (CC BY-SA 4.0)",
+-  },
++  { emoji: "🐊", gradient: "from-[#0EA5A0] to-[#14E8B0]", rotate: "-rotate-6" },
++  { emoji: "🌴", gradient: "from-[#FF5A1F] to-[#FF2E7E]", rotate: "rotate-3" },
+ ];
+ 
+ const RIGHT_TILES: Tile[] = [
+-  {
+-    url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Palm_Coast_Sunset.jpg",
+-    rotate: "rotate-2",
+-    credit: "Andyrkellergmail (CC BY-SA 4.0)",
+-  },
+-  {
+-    url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Everglades_swamp.JPG",
+-    rotate: "-rotate-1",
+-    credit: "Hein Mück (CC BY-SA 3.0)",
+-  },
++  { emoji: "☀️", gradient: "from-[#FFC400] to-[#FF8A00]", rotate: "rotate-6" },
++  { emoji: "🦩", gradient: "from-[#FF2E7E] to-[#8B5CF6]", rotate: "-rotate-3" },
+ ];
+ 
+-// Decorative real-Florida photo strip pinned to the viewport edge on very
+-// wide screens only — purely visual flavor, never overlaps main content.
++// Decorative sticker rail pinned to the viewport edge on very wide screens
++// only — bold illustrated tiles (not muted stock photography) matching the
++// rest of the site's "no boring photos" visual language.
+ export function FloridaRail({ side }: { side: "left" | "right" }) {
+   const tiles = side === "left" ? LEFT_TILES : RIGHT_TILES;
+ 
+@@ -44,18 +27,12 @@ export function FloridaRail({ side }: { side: "left" | "right" }) {
+         side === "left" ? "left-8" : "right-8"
+       }`}
+     >
+-      {tiles.map((tile) => (
++      {tiles.map((tile, index) => (
+         <div
+-          key={tile.url}
+-          className={`relative h-28 w-24 overflow-hidden rounded-2xl bg-white shadow-lg shadow-ink/10 ring-1 ring-ink/5 ${tile.rotate}`}
++          key={index}
++          className={`flex h-24 w-24 items-center justify-center rounded-3xl bg-gradient-to-br text-5xl shadow-lg shadow-ink/15 ring-1 ring-white/40 ${tile.gradient} ${tile.rotate}`}
+         >
+-          <Image
+-            src={tile.url}
+-            alt=""
+-            fill
+-            sizes="96px"
+-            className="object-cover"
+-          />
++          {tile.emoji}
+         </div>
+       ))}
+     </div>
+diff --git a/app/components/Footer.tsx b/app/components/Footer.tsx
+index 417034b..50c19d8 100644
+--- a/app/components/Footer.tsx
++++ b/app/components/Footer.tsx
+@@ -37,16 +37,6 @@ export default function Footer() {
+             Every story is sourced from real news reporting. Not officially
+             affiliated with the State of Florida (thankfully).
+           </p>
+-
+-          <p className="mt-2 text-xs leading-relaxed text-white/25">
+-            Photos via Wikimedia Commons, licensed CC0 / CC BY / CC BY-SA,
+-            credited on each image: American Alligator (Postdlf), Horse3
+-            (Joshua Ganderson), Handcuffs 1 (SimmeD), Police car with emergency
+-            lights on (Scott Davidson), Sunset on coast of Florida (Don
+-            Miller), Palm Coast Sunset (Andyrkellergmail), American Flamingo
+-            (Charles J. Sharp), Everglades Swamp (Hein Mück), Shopping Cart
+-            (Guanaco), Carnival Mask (Heterotrofo).
+-          </p>
+         </div>
+       </div>
+     </footer>
+diff --git a/app/components/Header.tsx b/app/components/Header.tsx
+index 0861e8b..a99efb4 100644
+--- a/app/components/Header.tsx
++++ b/app/components/Header.tsx
+@@ -39,7 +39,7 @@ export default function Header() {
+                 href={link.href}
+                 className={`rounded-full px-3.5 py-2 transition-colors ${
+                   active
+-                    ? "bg-sunset/10 text-sunset-dark"
++                    ? "bg-gradient-to-r from-sunset/15 to-flamingo/15 text-sunset-dark"
+                     : "text-ink-soft hover:bg-ink/5 hover:text-ink"
+                 }`}
+               >
+diff --git a/app/components/StoryVisual.tsx b/app/components/StoryVisual.tsx
+index 4981da3..aab4bbf 100644
+--- a/app/components/StoryVisual.tsx
++++ b/app/components/StoryVisual.tsx
+@@ -1,95 +1,90 @@
+-import Image from "next/image";
++import type { CSSProperties } from "react";
+ import type { Story } from "../data/stories";
+ 
+-type Photo = {
+-  url: string;
+-  credit: string;
+-};
++type Pattern = "dots" | "rings" | "stripes" | "sunburst";
+ 
+ type Category = {
+   test: RegExp;
+   emoji: string;
+   label: string;
+   gradient: string;
+-  photo?: Photo;
++  pattern: Pattern;
+ };
+ 
+-// Real, CC-licensed photos from Wikimedia Commons — generic scene photography
+-// (gators, cruisers, coastline) rather than mugshots of the real people
+-// involved, since those aren't ours to republish.
++// Bold illustrated cards instead of stock photography — a saturated,
++// multi-stop Florida-sunset gradient per category plus a light CSS-only
++// texture overlay (no images, no external requests, no per-instance id
++// collisions from repeated <svg><pattern> defs across a list of cards).
+ const CATEGORIES: Category[] = [
+   {
+     test: /\balligators?\b|\bgators?\b|\bcrocs?\b|crocodile/i,
+     emoji: "🐊",
+     label: "Gator alert",
+-    gradient: "from-[#0B8F7E] to-[#14C2A8]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg",
+-      credit: "Postdlf / Wikimedia Commons (CC BY-SA 3.0)",
+-    },
++    gradient: "from-[#0EA5A0] via-[#00D2A6] to-[#14E8B0]",
++    pattern: "rings",
+   },
+   {
+     test: /horse|snake|hamster wheel/i,
+     emoji: "🐴",
+     label: "Wild animal",
+-    gradient: "from-[#A9782F] to-[#E3A93F]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/3/38/Horse3.jpg",
+-      credit: "Joshua Ganderson / Wikimedia Commons (CC BY 2.0)",
+-    },
++    gradient: "from-[#D97706] via-[#F59E0B] to-[#FCD34D]",
++    pattern: "dots",
+   },
+   {
+     test: /spider-?man|bunny|tutu|mask|costume/i,
+     emoji: "🎭",
+     label: "Costume chaos",
+-    gradient: "from-[#8B5CF6] to-[#EF3F7B]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Carnival_mask.jpg",
+-      credit: "Heterotrofo / Wikimedia Commons (CC0)",
+-    },
++    gradient: "from-[#9333EA] via-[#C026D3] to-[#FF2E7E]",
++    pattern: "stripes",
++  },
++  {
++    test: /naked|nude|prosthetic/i,
++    emoji: "🍑",
++    label: "Bare necessities",
++    gradient: "from-[#FF2E7E] via-[#FF6B4A] to-[#FFC400]",
++    pattern: "sunburst",
+   },
+-  { test: /naked|nude|prosthetic/i, emoji: "🍑", label: "Bare necessities", gradient: "from-[#EF3F7B] to-[#FFBE3D]" },
+   {
+     test: /gun|machete|knife|armed|weapon/i,
+     emoji: "🔪",
+     label: "Armed & alarming",
+-    gradient: "from-[#C81E3A] to-[#FF5A36]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/1/12/Handcuffs_1.jpg",
+-      credit: "SimmeD / Wikimedia Commons (CC BY-SA 4.0)",
+-    },
++    gradient: "from-[#B91C1C] via-[#EF4444] to-[#FF5A1F]",
++    pattern: "stripes",
++  },
++  {
++    test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i,
++    emoji: "💊",
++    label: "Substance situation",
++    gradient: "from-[#6D28D9] via-[#9333EA] to-[#C026D3]",
++    pattern: "dots",
++  },
++  {
++    test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i,
++    emoji: "🚗",
++    label: "Vehicular villainy",
++    gradient: "from-[#FF5A1F] via-[#FF8A00] to-[#FFC400]",
++    pattern: "sunburst",
+   },
+-  { test: /\bmeth\b|marijuana|\bdrugs?\b|clonazepam/i, emoji: "💊", label: "Substance situation", gradient: "from-[#6D28D9] to-[#9333EA]" },
+-  { test: /lawn mower|scooter|helicopter|\btrucks?\b|\bmph\b|\bcars?\b|vehicle/i, emoji: "🚗", label: "Vehicular villainy", gradient: "from-[#FF5A36] to-[#FFBE3D]" },
+   {
+     test: /steal\w*|stolen|theft|burglary|\brob\w*|\bcoins?\b|avocado/i,
+     emoji: "💰",
+     label: "Petty heist",
+-    gradient: "from-[#FFBE3D] to-[#FF8A3D]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Shopping_cart.jpg",
+-      credit: "Guanaco / Wikimedia Commons (CC0)",
+-    },
++    gradient: "from-[#FFC400] via-[#FF8A00] to-[#FF5A1F]",
++    pattern: "dots",
+   },
+   {
+     test: /police|officers?|deput\w*|\bcops?\b|\b911\b|bomb|carjack/i,
+     emoji: "🚨",
+     label: "Cop trouble",
+-    gradient: "from-[#2563EB] to-[#EF3F7B]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Police_car_with_emergency_lights_on.jpg",
+-      credit: "Scott Davidson / Wikimedia Commons (CC BY 2.0)",
+-    },
++    gradient: "from-[#0072FF] via-[#3E8EFF] to-[#FF2E7E]",
++    pattern: "sunburst",
+   },
+   {
+     test: /ocean|atlantic|boat|water/i,
+     emoji: "🌊",
+     label: "High seas",
+-    gradient: "from-[#0EA5C7] to-[#0FA895]",
+-    photo: {
+-      url: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg",
+-      credit: "Don Miller / Wikimedia Commons (CC BY 2.0)",
+-    },
++    gradient: "from-[#00B4E0] via-[#00C2A8] to-[#0EA5A0]",
++    pattern: "rings",
+   },
+ ];
+ 
+@@ -97,11 +92,8 @@ const DEFAULT_CATEGORY: Category = {
+   test: /.*/,
+   emoji: "🌴",
+   label: "Florida Man",
+-  gradient: "from-[#FF5A36] to-[#EF3F7B]",
+-  photo: {
+-    url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Palm_Coast_Sunset.jpg",
+-    credit: "Andyrkellergmail / Wikimedia Commons (CC BY-SA 4.0)",
+-  },
++  gradient: "from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6]",
++  pattern: "sunburst",
+ };
+ 
+ type StoryLike = Pick<Story, "title" | "description" | "fullStory">;
+@@ -113,15 +105,15 @@ export function getStoryVisual(story: StoryLike) {
+ 
+ // Score is out of 100 — the literal sum of a story's six rubric categories.
+ export function getScoreColor(score: number) {
+-  if (score >= 90) return "#EF3F7B";
+-  if (score >= 80) return "#FF5A36";
+-  if (score >= 65) return "#FFBE3D";
+-  if (score >= 50) return "#0FA895";
++  if (score >= 90) return "#FF2E7E";
++  if (score >= 80) return "#FF5A1F";
++  if (score >= 65) return "#FFC400";
++  if (score >= 50) return "#00C2A8";
+   return "#9AA1A8";
+ }
+ 
+ export function getScoreTextColor(score: number) {
+-  return score >= 65 && score < 80 ? "#17191c" : "#ffffff";
++  return score >= 65 && score < 80 ? "#1a1523" : "#ffffff";
+ }
+ 
+ export function getScoreLabel(score: number) {
+@@ -175,10 +167,41 @@ export function ScoreBadge({
+   );
+ }
+ 
++// A tiled CSS-only texture (no <svg><pattern> defs, so no id collisions when
++// dozens of these render at once on the browse/calendar list) layered behind
++// the big emoji to give each illustrated card some visual texture instead of
++// a flat gradient.
++function CardTexture({ pattern }: { pattern: Pattern }) {
++  const style: CSSProperties =
++    pattern === "dots"
++      ? {
++          backgroundImage:
++            "radial-gradient(rgba(255,255,255,0.45) 2px, transparent 2.5px)",
++          backgroundSize: "16px 16px",
++        }
++      : pattern === "rings"
++        ? {
++            backgroundImage:
++              "radial-gradient(circle, transparent 52%, rgba(255,255,255,0.3) 53% 58%, transparent 59%)",
++            backgroundSize: "30px 30px",
++          }
++        : pattern === "stripes"
++          ? {
++              backgroundImage:
++                "repeating-linear-gradient(45deg, rgba(255,255,255,0.22) 0px, rgba(255,255,255,0.22) 6px, transparent 6px, transparent 16px)",
++            }
++          : {
++              backgroundImage:
++                "repeating-conic-gradient(rgba(255,255,255,0.25) 0deg 6deg, transparent 6deg 18deg)",
++            };
++
++  return <div aria-hidden="true" className="absolute inset-0" style={style} />;
++}
++
+ const SIZES = {
+-  sm: { box: "h-16 w-16 rounded-xl", emoji: "text-3xl", label: false, credit: false },
+-  md: { box: "aspect-square w-full rounded-2xl", emoji: "text-6xl", label: true, credit: false },
+-  lg: { box: "aspect-[4/3] w-full rounded-3xl", emoji: "text-8xl", label: true, credit: true },
++  sm: { box: "h-16 w-16 rounded-xl", emoji: "text-3xl", label: false },
++  md: { box: "aspect-square w-full rounded-2xl", emoji: "text-6xl", label: true },
++  lg: { box: "aspect-[4/3] w-full rounded-3xl", emoji: "text-8xl", label: true },
+ } as const;
+ 
+ export function StoryVisual({
+@@ -195,37 +218,17 @@ export function StoryVisual({
+     <div
+       className={`relative flex ${sizing.box} shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br shadow-md shadow-ink/10 ring-1 ring-ink/5 ${visual.gradient}`}
+     >
+-      {visual.photo ? (
+-        <>
+-          <Image
+-            src={visual.photo.url}
+-            alt=""
+-            aria-hidden="true"
+-            fill
+-            sizes="(max-width: 768px) 100vw, 400px"
+-            className="object-cover"
+-          />
+-          <div
+-            className={`absolute inset-0 bg-gradient-to-br opacity-35 ${visual.gradient}`}
+-          />
+-        </>
+-      ) : (
+-        <span className={`relative ${sizing.emoji} drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]`}>
+-          {visual.emoji}
+-        </span>
+-      )}
++      <CardTexture pattern={visual.pattern} />
++
++      <span className={`relative ${sizing.emoji} drop-shadow-[0_3px_10px_rgba(0,0,0,0.35)]`}>
++        {visual.emoji}
++      </span>
+ 
+       {sizing.label && (
+-        <span className="absolute bottom-2 left-2 rounded-full bg-ink/70 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-sm">
++        <span className="absolute bottom-2 left-2 rounded-full bg-black/55 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white backdrop-blur-sm">
+           {visual.label}
+         </span>
+       )}
+-
+-      {sizing.credit && visual.photo && (
+-        <span className="absolute right-2 top-2 rounded-full bg-ink/50 px-2 py-0.5 text-[10px] text-white/80">
+-          📷 {visual.photo.credit}
+-        </span>
+-      )}
+     </div>
+   );
+ }
+diff --git a/app/globals.css b/app/globals.css
+index e40a116..af67010 100644
+--- a/app/globals.css
++++ b/app/globals.css
+@@ -8,16 +8,19 @@
+  * `bg-paper` or `text-sunset` available below.
+  */
+ @theme {
+-  --color-paper: #fffcf7;
+-  --color-paper-soft: #f6f0e2;
+-  --color-ink: #17191c;
+-  --color-ink-soft: #5b5f64;
+-  --color-sunset: #ff5a36;
+-  --color-sunset-dark: #de4019;
+-  --color-lagoon: #0fa895;
+-  --color-flamingo: #ef3f7b;
+-  --color-citrus: #ffbe3d;
+-  --color-line: #eae3d3;
++  --color-paper: #fffbf2;
++  --color-paper-soft: #fff1dc;
++  --color-ink: #1a1523;
++  --color-ink-soft: #5c5568;
++  --color-sunset: #ff5a1f;
++  --color-sunset-dark: #d43e0a;
++  --color-lagoon: #00c2a8;
++  --color-flamingo: #ff2e7e;
++  --color-citrus: #ffc400;
++  --color-grape: #8b5cf6;
++  --color-palm: #16a34a;
++  --color-sky: #00b4e0;
++  --color-line: #f3ddb8;
+ 
+   --font-sans: var(--font-geist-sans);
+ }
+diff --git a/app/opengraph-image.tsx b/app/opengraph-image.tsx
+index abea0af..18e723a 100644
+--- a/app/opengraph-image.tsx
++++ b/app/opengraph-image.tsx
+@@ -15,12 +15,12 @@ export default function Image() {
+           display: "flex",
+           flexDirection: "column",
+           justifyContent: "center",
+-          backgroundColor: "#17191c",
++          backgroundColor: "#1a1523",
+           padding: "80px 96px",
+           fontFamily: "sans-serif",
+         }}
+       >
+-        <div style={{ display: "flex", width: 96, height: 10, borderRadius: 999, backgroundColor: "#FF5A36" }} />
++        <div style={{ display: "flex", width: 96, height: 10, borderRadius: 999, backgroundColor: "#FF5A1F" }} />
+ 
+         <div
+           style={{
+@@ -36,7 +36,7 @@ export default function Image() {
+           }}
+         >
+           <span>Florida Man</span>
+-          <span style={{ color: "#FFBE3D" }}>of the Day</span>
++          <span style={{ color: "#FFC400" }}>of the Day</span>
+         </div>
+ 
+         <div
+@@ -53,7 +53,7 @@ export default function Image() {
+         </div>
+ 
+         <div style={{ display: "flex", marginTop: 56, gap: 12 }}>
+-          {["#FF5A36", "#FFBE3D", "#0FA895", "#EF3F7B", "#8B5CF6"].map((color) => (
++          {["#FF5A1F", "#FFC400", "#00C2A8", "#FF2E7E", "#8B5CF6"].map((color) => (
+             <div key={color} style={{ display: "flex", width: 64, height: 14, borderRadius: 999, backgroundColor: color }} />
+           ))}
+         </div>
+diff --git a/app/page.tsx b/app/page.tsx
+index b03a83c..a2c51b9 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -1,4 +1,3 @@
+-import Image from "next/image";
+ import Link from "next/link";
+ import Header from "./components/Header";
+ import { FloridaRail } from "./components/FloridaRail";
+@@ -16,12 +15,12 @@ import React from "react";
+ export const dynamic = "force-dynamic";
+ 
+ const CHIPS = [
+-  { label: "🐾 Animals", href: "/browse?category=animals" },
+-  { label: "🚨 Cop trouble", href: "/browse?search=police" },
+-  { label: "💊 Substances", href: "/browse?search=drugs" },
+-  { label: "🍑 Bare necessities", href: "/browse?search=naked" },
+-  { label: "💰 Petty heists", href: "/browse?search=steal" },
+-  { label: "🎭 Costumes", href: "/browse?search=mask" },
++  { label: "🐾 Animals", href: "/browse?category=animals", tint: "bg-palm/15 text-palm hover:bg-palm/25" },
++  { label: "🚨 Cop trouble", href: "/browse?search=police", tint: "bg-sky/15 text-sky hover:bg-sky/25" },
++  { label: "💊 Substances", href: "/browse?search=drugs", tint: "bg-grape/15 text-grape hover:bg-grape/25" },
++  { label: "🍑 Bare necessities", href: "/browse?search=naked", tint: "bg-flamingo/15 text-flamingo hover:bg-flamingo/25" },
++  { label: "💰 Petty heists", href: "/browse?search=steal", tint: "bg-citrus/20 text-sunset-dark hover:bg-citrus/30" },
++  { label: "🎭 Costumes", href: "/browse?search=mask", tint: "bg-sunset/15 text-sunset-dark hover:bg-sunset/25" },
+ ];
+ 
+ export default function Home() {
+@@ -61,31 +60,40 @@ export default function Home() {
+       <FloridaRail side="right" />
+ 
+       <section className="mx-auto max-w-6xl px-6 pb-20 pt-10">
+-        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl px-6 py-16 text-center shadow-xl shadow-ink/15 md:min-h-[460px]">
+-          <Image
+-            src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Sunset_on_coast_of_Florida.jpg"
+-            alt=""
+-            fill
+-            priority
+-            sizes="100vw"
+-            className="object-cover"
++        <div className="relative mb-12 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF5A1F] via-[#FF2E7E] to-[#8B5CF6] px-6 py-16 text-center shadow-xl shadow-flamingo/25 md:min-h-[460px]">
++          <div
++            aria-hidden="true"
++            className="absolute inset-0 opacity-25"
++            style={{
++              backgroundImage:
++                "repeating-conic-gradient(rgba(255,255,255,0.3) 0deg 4deg, transparent 4deg 12deg)",
++            }}
+           />
+-          <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/70 to-ink/90" />
++          <div
++            aria-hidden="true"
++            className="pointer-events-none absolute -bottom-16 left-1/2 -translate-x-1/2 text-[240px] leading-none opacity-20 md:text-[340px]"
++          >
++            🌴
++          </div>
++          <div
++            aria-hidden="true"
++            className="pointer-events-none absolute -right-10 -top-10 text-[160px] leading-none opacity-20 md:text-[220px]"
++          >
++            ☀️
++          </div>
+ 
+           <div className="relative z-10">
+-            <p className="mb-4 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 ring-1 ring-white/20 backdrop-blur-sm">
++            <p className="mb-4 inline-flex items-center rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur-sm">
+               {formattedToday}
+             </p>
+ 
+-            <h2 className="text-6xl font-bold leading-[0.95] tracking-tight text-white md:text-8xl">
++            <h2 className="text-6xl font-black leading-[0.95] tracking-tight text-white drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)] md:text-8xl">
+               Florida Man
+               <br />
+-              <span className="bg-gradient-to-r from-[#FF9457] via-[#FFBE3D] to-[#3FE3C7] bg-clip-text text-transparent">
+-                of the day
+-              </span>
++              <span className="text-citrus">of the day</span>
+             </h2>
+ 
+-            <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/75">
++            <p className="mx-auto mt-6 max-w-xl text-base font-medium text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.3)]">
+               {isOnThisDay
+                 ? `An actual Florida Man incident on record for ${todayDate.month} ${todayDate.day} — this one happened in ${today.year}.`
+                 : `No verified Florida Man incident on record for ${todayDate.month} ${todayDate.day} yet — here's a featured pick while the archive grows.`}
+@@ -95,46 +103,46 @@ export default function Home() {
+ 
+         {/* Stat strip */}
+         <div className="mx-auto mb-14 grid max-w-3xl grid-cols-3 gap-4">
+-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+-            <p className="text-3xl font-bold text-sunset">{totalStories}</p>
+-            <p className="mt-1 text-xs font-medium text-ink-soft">
++          <div className="rounded-2xl bg-sunset/10 p-5 text-center ring-1 ring-sunset/15">
++            <p className="text-3xl font-black text-sunset-dark">{totalStories}</p>
++            <p className="mt-1 text-xs font-semibold text-ink-soft">
+               Verified stories
+             </p>
+           </div>
+-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+-            <p className="text-3xl font-bold text-flamingo">{avgScore}</p>
+-            <p className="mt-1 text-xs font-medium text-ink-soft">
++          <div className="rounded-2xl bg-flamingo/10 p-5 text-center ring-1 ring-flamingo/15">
++            <p className="text-3xl font-black text-flamingo">{avgScore}</p>
++            <p className="mt-1 text-xs font-semibold text-ink-soft">
+               Avg. Florida score
+             </p>
+           </div>
+-          <div className="rounded-2xl bg-white p-5 text-center shadow-md shadow-ink/5 ring-1 ring-line">
+-            <p className="truncate text-3xl font-bold text-lagoon">
++          <div className="rounded-2xl bg-lagoon/10 p-5 text-center ring-1 ring-lagoon/15">
++            <p className="truncate text-3xl font-black text-lagoon">
+               {topCity}
+             </p>
+-            <p className="mt-1 text-xs font-medium text-ink-soft">
++            <p className="mt-1 text-xs font-semibold text-ink-soft">
+               Most chaotic city
+             </p>
+           </div>
+         </div>
+ 
+-        <article className="mx-auto grid max-w-4xl gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-ink/10 ring-1 ring-line md:grid-cols-[260px_1fr] md:p-10">
++        <article className="mx-auto grid max-w-4xl gap-8 rounded-3xl bg-white p-6 shadow-xl shadow-flamingo/10 ring-1 ring-line md:grid-cols-[260px_1fr] md:p-10">
+           <div>
+             <StoryVisual story={today} size="lg" />
+           </div>
+ 
+           <div>
+             <div className="mb-6 flex items-center justify-between gap-3 border-b border-line pb-5">
+-              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-medium text-ink">
++              <span className="rounded-full bg-citrus/25 px-3 py-1 text-sm font-semibold text-sunset-dark">
+                 {isOnThisDay ? `On this day — ${today.year}` : "Featured story"}
+               </span>
+ 
+-              <span className="flex items-center gap-1.5 text-sm font-medium text-lagoon">
++              <span className="flex items-center gap-1.5 text-sm font-semibold text-lagoon">
+                 <span className="h-1.5 w-1.5 rounded-full bg-lagoon" />
+                 Verified story
+               </span>
+             </div>
+ 
+-            <p className="mb-2 text-sm font-medium text-flamingo">
++            <p className="mb-2 text-sm font-semibold text-flamingo">
+               {today.city}, Florida
+             </p>
+ 
+@@ -151,7 +159,7 @@ export default function Home() {
+ 
+               <Link
+                 href={`/story/${today.id}`}
+-                className="rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sunset/30 transition-transform hover:-translate-y-0.5 hover:bg-sunset-dark"
++                className="rounded-full bg-gradient-to-r from-sunset to-flamingo px-6 py-3 text-sm font-bold text-white shadow-lg shadow-flamingo/30 transition-transform hover:-translate-y-0.5"
+               >
+                 Read the full story →
+               </Link>
+@@ -166,7 +174,7 @@ export default function Home() {
+                 Also on this day
+               </h3>
+ 
+-              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-medium text-lagoon">
++              <span className="rounded-full bg-lagoon/15 px-3 py-1 text-sm font-semibold text-lagoon">
+                 {otherStories.length} stories
+               </span>
+             </div>
+@@ -178,7 +186,7 @@ export default function Home() {
+                   href={`/story/${story.id}`}
+                   className="flex items-center gap-5 px-5 py-5 transition-colors hover:bg-paper-soft"
+                 >
+-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-paper-soft text-sm font-semibold text-ink-soft">
++                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-sunset to-flamingo text-sm font-bold text-white">
+                     {index + 2}
+                   </div>
+ 
+@@ -212,7 +220,7 @@ export default function Home() {
+ 
+         {/* Category chips — jump into the archive */}
+         <section className="mx-auto mt-16 max-w-4xl">
+-          <p className="mb-4 text-sm font-medium text-ink-soft">
++          <p className="mb-4 text-sm font-semibold text-ink-soft">
+             Explore by category
+           </p>
+ 
+@@ -221,7 +229,7 @@ export default function Home() {
+               <Link
+                 key={chip.href}
+                 href={chip.href}
+-                className="rounded-full bg-white px-4 py-2 text-sm font-medium text-ink shadow-sm shadow-ink/5 ring-1 ring-line transition-colors hover:bg-citrus/15"
++                className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${chip.tint}`}
+               >
+                 {chip.label}
+               </Link>
+@@ -231,22 +239,22 @@ export default function Home() {
+           <div className="mt-6 flex flex-wrap gap-3">
+             <Link
+               href="/browse"
+-              className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
++              className="rounded-full bg-gradient-to-r from-ink to-[#3d2f52] px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+             >
+               Browse full archive →
+             </Link>
+ 
+             <Link
+               href="/calendar"
+-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
++              className="rounded-full bg-white px-6 py-3 text-sm font-bold text-ink ring-1 ring-line transition-colors hover:bg-paper-soft"
+             >
+               View calendar
+             </Link>
+           </div>
+         </section>
+ 
+-        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-paper-soft p-6">
+-          <p className="text-sm font-semibold text-ink">About the ranking</p>
++        <section className="mx-auto mt-16 max-w-4xl rounded-2xl bg-gradient-to-br from-citrus/20 to-sunset/10 p-6 ring-1 ring-citrus/25">
++          <p className="text-sm font-bold text-sunset-dark">About the ranking</p>
+ 
+           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+             Stories are ranked using a combination of humor, absurdity,
+@@ -256,7 +264,7 @@ export default function Home() {
+ 
+           <Link
+             href="/about"
+-            className="mt-3 inline-block text-sm font-semibold text-sunset hover:text-sunset-dark"
++            className="mt-3 inline-block text-sm font-bold text-sunset hover:text-sunset-dark"
+           >
+             See the full scoring breakdown →
+           </Link>
+diff --git a/app/story/[slug]/opengraph-image.tsx b/app/story/[slug]/opengraph-image.tsx
+index b630117..fcf500f 100644
+--- a/app/story/[slug]/opengraph-image.tsx
++++ b/app/story/[slug]/opengraph-image.tsx
+@@ -24,7 +24,7 @@ export default async function Image({
+             display: "flex",
+             alignItems: "center",
+             justifyContent: "center",
+-            backgroundColor: "#17191c",
++            backgroundColor: "#1a1523",
+             fontFamily: "sans-serif",
+             fontSize: 64,
+             fontWeight: 900,
+@@ -55,7 +55,7 @@ export default async function Image({
+           height: "100%",
+           display: "flex",
+           flexDirection: "column",
+-          backgroundColor: "#17191c",
++          backgroundColor: "#1a1523",
+           padding: "72px 80px",
+           fontFamily: "sans-serif",
+           color: "#ffffff",
+@@ -70,7 +70,7 @@ export default async function Image({
+               fontWeight: 900,
+               textTransform: "uppercase",
+               letterSpacing: 3,
+-              color: "#FFBE3D",
++              color: "#FFC400",
+             }}
+           >
+             {visual.label}
+@@ -107,7 +107,7 @@ export default async function Image({
+                 fontWeight: 800,
+                 textTransform: "uppercase",
+                 letterSpacing: 2,
+-                color: "#EF3F7B",
++                color: "#FF2E7E",
+               }}
+             >
+               {story.city}, Florida
+@@ -130,7 +130,7 @@ export default async function Image({
+               backgroundColor: scoreColor,
+             }}
+           >
+-            <div style={{ display: "flex", fontSize: 44, fontWeight: 900, color: "#17191c" }}>
++            <div style={{ display: "flex", fontSize: 44, fontWeight: 900, color: "#1a1523" }}>
+               {story.score}
+             </div>
+             <div
+@@ -141,7 +141,7 @@ export default async function Image({
+                 justifyContent: "center",
+                 fontSize: 12,
+                 fontWeight: 800,
+-                color: "#17191c",
++                color: "#1a1523",
+               }}
+             >
+               {getScoreLabel(story.score).toUpperCase()}
+diff --git a/next.config.ts b/next.config.ts
+index 8b62bd0..247eed0 100644
+--- a/next.config.ts
++++ b/next.config.ts
+@@ -1,14 +1,8 @@
+ import type { NextConfig } from "next";
+ 
+-const nextConfig: NextConfig = {
+-  images: {
+-    remotePatterns: [
+-      {
+-        protocol: "https",
+-        hostname: "upload.wikimedia.org",
+-      },
+-    ],
+-  },
+-};
++// No remote image domains needed — the site uses illustrated CSS/emoji
++// cards instead of stock photography, so next/image's remote loader isn't
++// used anywhere.
++const nextConfig: NextConfig = {};
+ 
+ export default nextConfig;
