@@ -1,0 +1,42 @@
+name: Story Agents
+
+on:
+  schedule:
+    # Every 2 hours
+    - cron: "0 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  run-story-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run story agent (finds new stories + reviews submissions)
+        id: agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/story-agent.mjs
+
+      - name: Open pull request
+        if: steps.agent.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: story-agent/${{ github.run_id }}
+          commit-message: "Story agent: new stories + submission review"
+          title: "🐊 Story agent: new stories + submission review"
+          body: ${{ steps.agent.outputs.summary }}
+          add-paths: |
+            app/data/stories.ts
+            app/data/submissions.json
