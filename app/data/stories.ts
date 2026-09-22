@@ -3381,6 +3381,60 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.fdle.state.fl.us/news/2024/november/fdle-arrests-st-lucie-man-for-impersonating-a-law-enforcement-officer",
     },
+    {
+      id: "palm-coast-circle-k-lottery-theft",
+      date: "September 17, 2026",
+      year: "2026",
+      month: "September",
+      day: "17",
+      city: "Palm Coast",
+      score: 72,
+      rubric: { absurdity: 17, humor: 19, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Steals $6,500 in Misprinted Lottery Tickets, Sheriff Says She Only Won a Trip to Jail",
+      description:
+        "A Palm Coast convenience store manager scans and cashes in over $6,500 worth of lottery tickets a coworker printed by mistake, spending some of the winnings on more scratch-offs.",
+      fullStory:
+        "Leandra Tarpley, 31, an assistant manager at a Palm Coast Circle K, allegedly kept a batch of ten lottery tickets a coworker had accidentally printed instead of turning them in, scanning them herself, collecting the winnings, and using part of the payout to buy more scratch-off tickets while pocketing the rest. Flagler County deputies said surveillance video and lottery records contradicted her initial claim that she had only received free tickets, and she was arrested on September 17, 2026 on a grand theft charge after taking more than $6,500 total. Sheriff Rick Staly summed up her outcome: 'Now, the only thing she won was a trip to the Green Roof Inn.'",
+      source: "ClickOrlando.com / WKMG News 6",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/09/18/circle-k-worker-jailed-after-cashing-stolen-florida-lottery-tickets-sheriff-says/",
+    },
+    {
+      id: "lakeland-facebook-taunt-grady-judd",
+      date: "June 19, 2025",
+      year: "2025",
+      month: "June",
+      day: "19",
+      city: "Lakeland",
+      score: 75,
+      rubric: { absurdity: 16, humor: 22, floridaFactor: 12, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Taunts Sheriff on Facebook, Gets Arrested the Same Day",
+      description:
+        "A wanted Lakeland man posts on Facebook daring the Polk County Sheriff's Office to catch him, and officers arrest him within hours of seeing it.",
+      fullStory:
+        "Aaron Johnson, who had multiple outstanding felony warrants, posted on Facebook taunting the Polk County Sheriff's Office and Sheriff Grady Judd, writing 'Ya'll too busy fishing' and 'I done out ran yall several time' under the hashtag '#GradyCan'tFindMe.' The Lakeland Police Department responded publicly with 'Challenge accepted,' tracked Johnson down, and arrested him on June 19, 2025 for violating his pretrial release and on his outstanding warrants. The Polk County Sheriff's Office capped it off online with, 'You done messed up A-aron!'",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/wanted-florida-man-arrested-after-taunting-polk-county-sheriff-grady-judd-online-challenge-accepted",
+    },
+    {
+      id: "dundee-vending-machine-smackdown",
+      date: "April 25, 2022",
+      year: "2022",
+      month: "April",
+      day: "25",
+      city: "Dundee",
+      score: 68,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 11, unexpectedness: 9, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Punches Hole in Vending Machine After It Dispenses the Wrong Soda",
+      description:
+        "A Dundee man repeatedly punches a motel vending machine that gave him the wrong drink and kept his money, causing over $1,500 in damage.",
+      fullStory:
+        "Cory Layne, 33, was staying at the Economy Motor Lodge in Dundee when a Coca-Cola vending machine dispensed the wrong drink and failed to return his money, and he responded by repeatedly punching the machine until he put a hole in it, causing an estimated $1,500 in damage. A motel guest witnessed the outburst and called police, who later found Layne hiding in a wooded area behind a nearby Winn-Dixie and arrested him on a felony criminal mischief charge. An officer noted in the report that it was 'better to hit a machine than hit a person.'",
+      source: "Newsweek",
+      sourceUrl:
+        "https://www.newsweek.com/florida-man-jailed-after-alleged-vending-machine-smackdown-over-soda-1707835",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
