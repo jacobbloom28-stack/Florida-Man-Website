@@ -3435,6 +3435,26 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.newsweek.com/florida-man-jailed-after-alleged-vending-machine-smackdown-over-soda-1707835",
     },
+    {
+      id: "jacksonville-fentanyl-manifestation-letter",
+      date: "August 28, 2026",
+      year: "2026",
+      month: "August",
+      day: "28",
+      city: "Jacksonville",
+      score: 67,
+      rubric: { absurdity: 20, humor: 12, floridaFactor: 10, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Writes Himself a 'Manifestation' Letter Saying Police Will Never Catch Him, Gets Raided Days Later",
+      description:
+        "A Jacksonville man keeps a handwritten note declaring that he 'can't be stopped' and that no police will find him, and JSO's SWAT team raids his house and finds hundreds of thousands of doses worth of fentanyl.",
+      fullStory:
+        "Jacksonville Sheriff's Office detectives searched a home in the Westside's Biltmore neighborhood on August 28, 2026 and arrested Christopher Herndon, 41, after finding 849.2 grams of fentanyl, more than 400,000 potentially lethal doses, along with 1.33 kilograms of methamphetamine, 1.25 kilograms of powder cocaine, 57.3 grams of crack cocaine, marijuana, nearly $12,000 in cash, and drug-packaging equipment. Detectives also found a handwritten note in which Herndon had written himself a manifestation declaring, 'I will meet a powerful plug on fentanyl an every other drug I deal with. I can't be stopped' and 'Everything I touch will succeed.' Herndon was charged with ten counts including drug trafficking and maintaining a drug house, and was released on $300,000 bond.",
+      contentNote:
+        "This is a serious drug-trafficking case involving a large quantity of fentanyl, not a lighthearted incident.",
+      source: "Action News Jax (WJAX)",
+      sourceUrl:
+        "https://www.actionnewsjax.com/news/local/accused-drug-dealers-manifestation-letter-found-during-jso-fentanyl-bust-i-cant-be-stopped/EQHLAYYZQJCOFKYKGNZ6JNKPM4/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
