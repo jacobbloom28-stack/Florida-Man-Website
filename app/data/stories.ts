@@ -385,6 +385,7 @@ export const stories: Story[] = [
         source: "Local10 / Bay News 9",
         sourceUrl:
         "https://www.local10.com/news/florida/florida-man-blames-horse-for-breaking-into-home",
+      photo: { src: "/photos/horse-blames-break-in.jpg", credit: "Pasco County Sheriff's Office" },
     },
     {
         id: "spiderman-liquor-heist",
@@ -535,6 +536,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/pasco-county/hudson-man-pours-salt-on-feet-to-ward-off-evil-spirits-at-walmart/2050229439/",
+      photo: { src: "/photos/salt-walmart-evil-spirits.jpg", credit: "Patch" },
     },
     {
       id: "poops-couch",
@@ -631,6 +633,7 @@ export const stories: Story[] = [
       source: "Local 10",
       sourceUrl:
         "https://www.local10.com/news/local/2024/10/21/man-impersonates-security-guard-to-get-into-taylor-swift-concert-police-say/",
+      photo: { src: "/photos/taylor-swift-security-impersonator.jpg", credit: "Local 10" },
     },
     {
       id: "walgreens-junk-food-binge",
@@ -668,6 +671,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/manhandling-a-manatee-lands-man-in-jail/",
+      photo: { src: "/photos/manatee-riding.jpg", credit: "WSVN" },
     },
     {
       id: "walmart-scooter-chase",
@@ -705,6 +709,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/bodycam-shows-clown-tussling-with-officer-calling-him-stupid-in-palm-bay-arrest/3578100/",
+      photo: { src: "/photos/ronald-mcdonald-clown-arrest.jpg", credit: "NBC 6 South Florida" },
     },
     {
       id: "lego-booster-target-theft",
@@ -779,6 +784,7 @@ export const stories: Story[] = [
       source: "WCTV",
       sourceUrl:
         "https://www.wctv.tv/2025/07/25/tallahassee-police-cuff-arrest-florida-man-dressed-chuck-e-cheese-while-kids-watch/",
+      photo: { src: "/photos/chuck-e-cheese-mascot-fraud.jpg", credit: "Fox News" },
     },
     {
       id: "hookah-caterpillar-liquor-store",
@@ -851,6 +857,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/james-rix-jr-florida-man-arrested-for-dui-wearing-im-the-reason-the-beers-always-gone-t-shirt-marion-oaks-manor-ocala-marion-county-sheriffs-office-august-23-2023",
+      photo: { src: "/photos/beers-always-gone-dui-shirt.jpg", credit: "CBS12" },
     },
     {
       id: "fake-flight-attendant-free-flights",
@@ -905,6 +912,7 @@ export const stories: Story[] = [
       source: "ABC News",
       sourceUrl:
         "https://abcnews.com/US/florida-man-wearing-batman-pajamas-thwarts-burglary-detains/story?id=125059192",
+      photo: { src: "/photos/batman-pajamas-burglary-bust.jpg", credit: "ABC News" },
     },
     {
       id: "roach-spray-nunchucks-noise-complaint",
@@ -925,6 +933,7 @@ export const stories: Story[] = [
       source: "WSOC-TV",
       sourceUrl:
         "https://www.wsoctv.com/news/deep-viral/police-florida-man-sprays-women-with-roach-spray-break-out-nunchucks-over-loud-music/976378849/",
+      photo: { src: "/photos/roach-spray-nunchucks-noise-complaint.jpg", credit: "WSOC-TV" },
     },
     {
       id: "mcdonalds-drive-thru-worker-punched",
@@ -945,6 +954,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/2019/08/22/florida-man-hits-mcdonalds-drive-thru-worker-for-taking-too-long-police-say/",
+      photo: { src: "/photos/mcdonalds-drive-thru-worker-punched.jpg", credit: "ClickOrlando" },
     },
     {
       id: "cat-shot-bb-gun-chickens",
@@ -965,6 +975,7 @@ export const stories: Story[] = [
       source: "KSN Local 4",
       sourceUrl:
         "https://www.ksnblocal4.com/2026/08/19/man-accused-shooting-neighbors-cat-with-bb-gun-officials-say/",
+      photo: { src: "/photos/cat-shot-bb-gun-chickens.jpg", credit: "Lee County Sheriff's Office" },
     },
     {
       id: "dog-slam-headbutt-patrol-car",
@@ -984,6 +995,7 @@ export const stories: Story[] = [
       source: "KATV",
       sourceUrl:
         "https://katv.com/news/nation-world/bodycam-florida-man-accused-of-slamming-dog-headbutting-patrol-car-tiki-bar-brevard-county-sheriffs-office-jail-august-30-2025",
+      photo: { src: "/photos/dog-slam-headbutt-patrol-car.jpg", credit: "KATV" },
     },
     {
       id: "counterfeit-passport-check-fraud",
@@ -1043,6 +1055,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2025/08/19/florida-man-arrested-after-using-sprinklers-to-spray-disabled-children-deputies-say/",
+      photo: { src: "/photos/sprinklers-disabled-children-bus-stop.jpg", credit: "Marion County Sheriff's Office" },
     },
     {
       id: "walmart-tiktok-dog-bed",
@@ -1081,6 +1094,7 @@ export const stories: Story[] = [
       source: "Port St. Lucie Police Department / WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/florida-man-wearing-inmate-halloween-costume-charged-with-dui/",
+      photo: { src: "/photos/prison-costume-dui-halloween.jpg", credit: "WFLA" },
     },
     {
       id: "greased-up-naked-debary-burglar",
@@ -1101,6 +1115,7 @@ export const stories: Story[] = [
       source: "WFTV / Volusia County Sheriff's Office",
       sourceUrl:
         "https://www.wftv.com/news/local/man-covered-grease-blood-peppermint-oil-breaks-into-homes-jumps-into-pool-onto-trampoline/E2DIP5F45NESHDHBG3G3RWEPEA/",
+      photo: { src: "/photos/greased-up-naked-debary-burglar.jpg", credit: "WFTV" },
     },
     {
       id: "wet-willy-battery-charge",
@@ -1158,6 +1173,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/pasco-county/naked-florida-man-wearing-bra-burglarizes-several-cars-in-new-port-richey-parking-lot/",
+      photo: { src: "/photos/bra-hat-car-burglar.jpg", credit: "WFLA" },
     },
     {
       id: "carjacker-cant-drive-stick",
@@ -1176,6 +1192,7 @@ export const stories: Story[] = [
       source: "CNN",
       sourceUrl:
         "https://www.cnn.com/2019/07/18/us/florida-man-arrested-carjacking-stick-shift-trnd",
+      photo: { src: "/photos/carjacker-cant-drive-stick.jpg", credit: "CNN" },
     },
     {
       id: "dog-was-driving",
@@ -1212,6 +1229,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/strange-florida/2017/06/29/florida-man-tired-of-walking-steals-forklift-police-say/",
+      photo: { src: "/photos/forklift-tired-of-walking.jpg", credit: "ClickOrlando" },
     },
     {
       id: "naked-school-vandal-24hrs",
@@ -1230,6 +1248,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/trending/naked-florida-man-spent-24-hours-vandalizing-school-police-say/O22V4K6C7VDLBJZFQ6YCROB5GY/",
+      photo: { src: "/photos/naked-school-vandal-24hrs.jpg", credit: "WFTV" },
     },
     {
       id: "diaper-monkey-car-theft",
@@ -1248,6 +1267,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/monkey-in-diaper-found-clinging-to-florida-man-in-stolen-car-police-say/765770525/",
+      photo: { src: "/photos/diaper-monkey-car-theft.jpg", credit: "WFTV" },
     },
     {
       id: "wears-womans-clothes-asks-drink",
@@ -1285,6 +1305,7 @@ export const stories: Story[] = [
       source: "Newsweek",
       sourceUrl:
         "https://www.newsweek.com/florida-man-naked-strange-dance-mcdonalds-sex-railing-1443522",
+      photo: { src: "/photos/mcdonalds-railing-dance.jpg", credit: "Newsweek" },
     },
     {
       id: "dunkin-donuts-restaurant-chairs",
@@ -1303,6 +1324,7 @@ export const stories: Story[] = [
       source: "WINK News",
       sourceUrl:
         "https://www.winknews.com/2019/06/09/florida-man-disrupts-restaurant-tells-officers-go-to-dunkin-donuts/",
+      photo: { src: "/photos/dunkin-donuts-restaurant-chairs.jpg", credit: "WINK News" },
     },
     {
       id: "cocaine-on-nose",
@@ -1321,6 +1343,7 @@ export const stories: Story[] = [
       source: "Newsweek",
       sourceUrl:
         "https://www.newsweek.com/florida-man-tells-deputies-cocaine-his-nose-not-his-police-say-1443272",
+      photo: { src: "/photos/cocaine-on-nose.jpg", credit: "Newsweek" },
     },
     {
       id: "excavator-walmart-crash",
@@ -1396,6 +1419,7 @@ export const stories: Story[] = [
       source: "Tampa Bay Times",
       sourceUrl:
         "https://www.tampabay.com/news/florida/2019/09/09/florida-man-breaks-into-home-cooks-meal-tells-owner-go-back-to-sleep/",
+      photo: { src: "/photos/breakfast-break-in.jpg", credit: "Tampa Bay Times" },
     },
     {
       id: "booty-patrol-truck",
@@ -1433,6 +1457,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2023/10/26/florida-uber-driver-kept-stolen-rental-car-running-for-3-weeks-to-avoid-payments-deputies-say/",
+      photo: { src: "/photos/rental-car-uber.jpg", credit: "ClickOrlando" },
     },
     {
       id: "naked-asleep-punches-cop",
@@ -1453,6 +1478,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/edward-tuttle-naked-drunk-man-punched-cop-intoxicated-lying-face-down-battery-delray-beach-police-department-officer-florida-october-24-2023",
+      photo: { src: "/photos/naked-asleep-punches-cop.jpg", credit: "CBS12" },
     },
     {
       id: "hatchet-spilled-beer",
@@ -1473,6 +1499,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/florida-man-hits-another-in-the-face-with-a-hatchet-over-spilled-beer-deputies/",
+      photo: { src: "/photos/hatchet-spilled-beer.jpg", credit: "WFLA" },
     },
     {
       id: "bucs-jersey-police-impersonator",
@@ -1510,6 +1537,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/high-as-f-dash-cam-video-shows-florida-man-head-butt-car-window-flop-out-of-car-during-high-speed-chase",
+      photo: { src: "/photos/dolphin-headbutt-window.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "all-gas-no-brakes-tattoo",
@@ -1568,6 +1596,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-claims-voices-made-him-rob-dollar-general-twice-2-days-deputies",
+      photo: { src: "/photos/dollar-general-voices.jpg", credit: "Fox News" },
     },
     {
       id: "27-tires-secret-government",
@@ -1586,6 +1615,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/florida-man-charged-with-27-counts-for-slashing-tires-claims-hes-being-demonized-and-was-exposed-to-government-info/3151606/",
+      photo: { src: "/photos/27-tires-secret-government.jpg", credit: "NBC 6 South Florida" },
     },
     {
       id: "mclovin-motorcycle",
@@ -1604,6 +1634,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/hillsborough-county/plant-city-motorcyclist-with-mclovin-plate-flees-from-officers-at-over-110-mph-fhp/",
+      photo: { src: "/photos/mclovin-motorcycle.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "school-feces-frosting",
@@ -1622,6 +1653,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/2019/11/25/mostly-naked-florida-man-accused-of-spreading-feces-during-school-break-in/",
+      photo: { src: "/photos/school-feces-frosting.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "walmart-ceiling-nurse",
@@ -1660,6 +1692,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/strange-florida/2019/11/27/florida-man-stashes-meth-deep-in-belly-button-police-say/",
+      photo: { src: "/photos/meth-belly-button.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "fake-cop-pulls-over-undercover-deputy",
@@ -1716,6 +1749,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-steals-alcohol-offers-deputies-vodka-spritzer-during-police-chase-officials",
+      photo: { src: "/photos/vodka-spritzer-police-chase.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "peacocks-killed-cooked-spite",
@@ -1757,6 +1791,7 @@ export const stories: Story[] = [
       source: "Fox News / Inside Edition",
       sourceUrl:
         "https://www.foxnews.com/us/florida-woman-arrested-after-pet-spider-monkey-allegedly-attacks-home-depot-employees.amp",
+      photo: { src: "/photos/spider-monkey-home-depot-attack.jpg", credit: "Fox News" },
     },
     {
       id: "bees-swarm-police-chase",
@@ -1775,6 +1810,7 @@ export const stories: Story[] = [
       source: "WPTV",
       sourceUrl:
         "https://www.wptv.com/news/treasure-coast/region-indian-river-county/bees-attack-deputies-k-9s-3-suspects-during-pursuit",
+      photo: { src: "/photos/bees-swarm-police-chase.jpg", credit: "WPTV" },
     },
     {
       id: "raccoon-in-backpack-bike-stop",
@@ -1793,6 +1829,7 @@ export const stories: Story[] = [
       source: "Fox News / WSVN",
       sourceUrl:
         "https://www.foxnews.com/us/florida-woman-arrested-police-allegedly-find-meth-baby-raccoon-backpack",
+      photo: { src: "/photos/raccoon-in-backpack-bike-stop.jpg", credit: "Fox News" },
     },
     {
       id: "deer-run-over-tiktok-video",
@@ -1813,6 +1850,7 @@ export const stories: Story[] = [
       source: "Fox News / Newsweek",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-arrested-deliberately-hitting-deer-filming-tiktok-police",
+      photo: { src: "/photos/deer-run-over-tiktok-video.jpg", credit: "Fox News" },
     },
     {
       id: "emu-handcuffed-highway-chase",
@@ -1831,6 +1869,7 @@ export const stories: Story[] = [
       source: "CBS 12 / First Coast News",
       sourceUrl:
         "https://cbs12.com/news/local/never-handcuffed-an-emu-florida-deputies-chase-down-feathered-fugitive-bodycam-funny-bodycam-watch-st-johns-county-florida-news-video-january-14-2026",
+      photo: { src: "/photos/emu-handcuffed-highway-chase.jpg", credit: "CBS12" },
     },
     {
       id: "poops-on-dead-possum-rush-hour",
@@ -1886,6 +1925,7 @@ export const stories: Story[] = [
       source: "NBC News (AP)",
       sourceUrl:
         "https://www.nbcnews.com/id/wbna29498350",
+      photo: { src: "/photos/mcnuggets-911-call.jpg", credit: "St. Lucie County Sheriff's Office" },
     },
     {
       id: "snakes-tortoises-in-underwear",
@@ -1940,6 +1980,7 @@ export const stories: Story[] = [
       source: "NBC News",
       sourceUrl:
         "https://www.nbcnews.com/id/wbna45091289",
+      photo: { src: "/photos/dominos-burns-papa-johns.jpg", credit: "News4Jax" },
     },
     {
       id: "waffle-house-truck-through-wall",
@@ -1978,6 +2019,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/driver-allegedly-punched-in-face-after-complimenting-mans-car-black-dodge-charger-polk-county-sheriffs-office-florida-september-3-2024",
+      photo: { src: "/photos/nice-car-bro-punch.jpg", credit: "CBS12" },
     },
     {
       id: "toddler-swallows-heroin-melbourne",
@@ -2055,6 +2097,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/armed-burglar-shatters-wendys-window-makes-sandwich-before-arrest-woolbright-road-taser-boynton-beach-police-department-september-19-2025",
+      photo: { src: "/photos/wendys-break-in-sandwich.jpg", credit: "CBS12" },
     },
     {
       id: "chimichanga-out-taco-bell-fish",
@@ -2073,6 +2116,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/his-chimichanga-out-man-arrested-after-lewd-incident-outside-central-florida-taco-bell/L5X6PVN7URG4BCERLUJ5RXC4N4/",
+      photo: { src: "/photos/chimichanga-out-taco-bell-fish.jpg", credit: "CBS12" },
     },
     {
       id: "mar-a-lago-car-wash-checkpoint",
@@ -2093,6 +2137,7 @@ export const stories: Story[] = [
       source: "WPTV",
       sourceUrl:
         "https://www.wptv.com/news/region-c-palm-beach-county/palm-beach/here-for-the-car-wash-woman-arrested-after-high-speed-chase-near-mar-a-lago-security-checkpoint",
+      photo: { src: "/photos/mar-a-lago-car-wash-checkpoint.jpg", credit: "CBS12" },
     },
     {
       id: "lobster-spot-air-supply-cutoff",
@@ -2113,6 +2158,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/man-cut-off-divers-air-supply-after-dispute-over-lobster-fishing-spot-in-miami-report-says/3842234/",
+      photo: { src: "/photos/lobster-spot-air-supply-cutoff.jpg", credit: "CBS12" },
     },
     {
       id: "dating-app-drugging-black-widow",
@@ -2174,6 +2220,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-jumping-on-pelican-florida-keys-arrested-maryland",
+      photo: { src: "/photos/pelican-tackling-tourist-key-west.jpg", credit: "CBS News Miami" },
     },
     {
       id: "stolen-ambulance-drunken-joyride-beer",
@@ -2192,6 +2239,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/tampa-man-accused-taking-stolen-ambulance-drunken-joyride-makes-first-court-appearance",
+      photo: { src: "/photos/stolen-ambulance-drunken-joyride-beer.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "just-take-me-away-golf-cart-dui",
@@ -2210,6 +2258,7 @@ export const stories: Story[] = [
       source: "KMPH / NBC affiliate wire",
       sourceUrl:
         "https://kmph.com/news/nation-world/just-take-me-away-dui-stop-florida-driving-under-influence-david-roach-golf-cart-lady-lake-arrest-sumter-county-emergency-lights-sheriff-office-deputy",
+      photo: { src: "/photos/just-take-me-away-golf-cart-dui.jpg", credit: "KMPH" },
     },
     {
       id: "flamingo-pinky-busch-gardens-slam",
@@ -2230,6 +2279,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-accused-of-attacking-flamingo-at-busch-gardens-tampa-bay/",
+      photo: { src: "/photos/flamingo-pinky-busch-gardens-slam.jpg", credit: "Tampa Bay Times" },
     },
     {
       id: "key-largo-swatting-bomb-hostage-snapchat",
@@ -2269,6 +2319,7 @@ export const stories: Story[] = [
       source: "Associated Press",
       sourceUrl:
         "https://calgary.citynews.ca/2019/09/04/florida-man-parks-smart-car-in-kitchen-so-it-wont-blow-away/",
+      photo: { src: "/photos/smart-car-parked-in-kitchen-dorian.jpg", credit: "The Drive" },
     },
     {
       id: "sports-grill-dine-and-dash-blazer",
@@ -2287,6 +2338,7 @@ export const stories: Story[] = [
       source: "Local 10 News (WPLG)",
       sourceUrl:
         "https://www.local10.com/news/local/2025/05/15/sharp-dressed-serial-dine-and-dasher-had-taste-for-sports-grill-wings-beer-staffers-say/",
+      photo: { src: "/photos/sports-grill-dine-and-dash-blazer.jpg", credit: "Hoodline" },
     },
     {
       id: "publix-steak-heist-jealous-boyfriend",
@@ -2326,6 +2378,7 @@ export const stories: Story[] = [
       source: "Yahoo News",
       sourceUrl:
         "https://www.yahoo.com/news/articles/corvette-driver-does-donuts-church-210000836.html",
+      photo: { src: "/photos/corvette-donuts-first-date.jpg", credit: "Gulf Coast News" },
     },
     {
       id: "dress-for-arrest-jail-uniform",
@@ -2345,6 +2398,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/brevard-county/man-arrested-trespassing-stolen-inmate-uniform/IHFBBFIZKVANTKWFWCKPSHJXKM/",
+      photo: { src: "/photos/dress-for-arrest-jail-uniform.jpg", credit: "WFTV" },
     },
     {
       id: "ai-deepfake-deputy-prank",
@@ -2363,6 +2417,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/04/08/florida-man-arrested-after-pranking-deputy-with-ai-video-in-lake-mary/",
+      photo: { src: "/photos/ai-deepfake-deputy-prank.jpg", credit: "ClickOrlando" },
     },
     {
       id: "lawnmower-target-culvers-tiktok",
@@ -2381,6 +2436,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/04/26/social-media-stunts-land-two-ocala-teens-in-handcuffs/",
+      photo: { src: "/photos/lawnmower-target-culvers-tiktok.jpg", credit: "WCJB" },
     },
     {
       id: "dirty-bomb-soil-gauge",
@@ -2399,6 +2455,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/publix-crash-sparks-dirty-bomb-scare-polk-county/VU6PMMIU6RFLHCPJOOGUITQUYQ/",
+      photo: { src: "/photos/dirty-bomb-soil-gauge.jpg", credit: "WFTV" },
     },
     {
       id: "superman-boat-burglary",
@@ -2436,6 +2493,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-accused-posing-attorney-during-traffic-stop",
+      photo: { src: "/photos/fake-attorney-traffic-stop.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "doughnuts-7-eleven-wallet",
@@ -2454,6 +2512,7 @@ export const stories: Story[] = [
       source: "Tampa Free Press",
       sourceUrl:
         "https://www.tampafp.com/late-night-doughnuts-at-lee-county-7-eleven-lead-to-arrest-cocaine-found-in-drivers-boot/",
+      photo: { src: "/photos/doughnuts-7-eleven-wallet.jpg", credit: "Tampa Free Press" },
     },
     {
       id: "bb-gun-sheriff-drone",
@@ -2472,6 +2531,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/aflorida-man-arrested-after-allegedly-shooting-at-sheriffs-office-first-responder-drone-florida-man-lee-county-lehigh-acres-lee-county-sheriffs-office-drone-as-first-responder-drone-shooting-sheriff-drone-elvin-antonio-callejas-serrato-bb-rifle",
+      photo: { src: "/photos/bb-gun-sheriff-drone.jpg", credit: "CBS12" },
     },
     {
       id: "hot-dog-costume-toilet-paper",
@@ -2529,6 +2589,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/man-accused-dui-crash-children-swamp",
+      photo: { src: "/photos/lakeland-swamp-dui-children.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "kissimmee-debt-bondage-transport",
@@ -2567,6 +2628,7 @@ export const stories: Story[] = [
       source: "TMZ",
       sourceUrl:
         "https://www.tmz.com/2026/09/14/florida-man-arrested-for-burglary-after-hiding-under-couples-bed/",
+      photo: { src: "/photos/hides-under-hotel-bed-doral.jpg", credit: "TMZ" },
     },
     {
       id: "marshal-badge-grouper-potatoes",
@@ -2585,6 +2647,7 @@ export const stories: Story[] = [
       source: "ClickOrlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2020/03/09/man-impersonating-us-marshal-flashes-fake-badge-in-shoplifting-attempt-deputies-say/",
+      photo: { src: "/photos/marshal-badge-grouper-potatoes.jpg", credit: "WWSB" },
     },
     {
       id: "whizzinator-patrol-car",
@@ -2603,6 +2666,7 @@ export const stories: Story[] = [
       source: "ClickOrlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/07/15/florida-man-caught-with-whizzinator-in-back-seat-of-patrol-car-video-shows/",
+      photo: { src: "/photos/whizzinator-patrol-car.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "homegoods-clothes-smoking",
@@ -2621,6 +2685,7 @@ export const stories: Story[] = [
       source: "Tampa Free Press",
       sourceUrl:
         "https://www.tampafp.com/floirida-man-arrested-after-allegedly-stripping-naked-inside-homegoods/",
+      photo: { src: "/photos/homegoods-clothes-smoking.jpg", credit: "Tampa Free Press" },
     },
     {
       id: "underwear-boat-joyride-ankle-monitor",
@@ -2639,6 +2704,7 @@ export const stories: Story[] = [
       source: "Action News Jax",
       sourceUrl:
         "https://www.actionnewsjax.com/news/local/man-arrested-joyriding-around-vilano-beach-crashing-stolen-100000-boat/QWVLQAHEM5AYDDO5RWWFVAU3VE/",
+      photo: { src: "/photos/underwear-boat-joyride-ankle-monitor.jpg", credit: "Action News Jax" },
     },
     {
       id: "waffle-house-beef-stick-barrage",
@@ -2657,6 +2723,7 @@ export const stories: Story[] = [
       source: "The Smoking Gun",
       sourceUrl:
         "https://thesmokinggun.com/buster/disorderly-conduct/beef-stick-barrage-285096",
+      photo: { src: "/photos/waffle-house-beef-stick-barrage.jpg", credit: "The Smoking Gun" },
     },
     {
       id: "palm-coast-duplex-wall-hammer",
@@ -2675,6 +2742,7 @@ export const stories: Story[] = [
       source: "ClickOrlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/08/neighbor-from-hell-caught-breaking-through-wall-of-florida-duplex-sheriff-says/",
+      photo: { src: "/photos/palm-coast-duplex-wall-hammer.jpg", credit: "Tampa Free Press" },
     },
     {
       id: "lady-lake-mercedes-cyclist-tormentor",
@@ -2693,6 +2761,7 @@ export const stories: Story[] = [
       source: "ClickOrlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/07/body-camera-video-shows-arrest-of-lady-lake-woman-accused-of-threatening-bicyclists-with-car/",
+      photo: { src: "/photos/lady-lake-mercedes-cyclist-tormentor.jpg", credit: "Villages-News" },
     },
     {
       id: "pokemon-cards-taco-seasoning-heist",
@@ -2711,6 +2780,7 @@ export const stories: Story[] = [
       source: "The Floridian",
       sourceUrl:
         "https://floridianpress.com/2026/02/james-uthmeier-arrests-palm-beach-man-in-10k-organized-retail-theft-scheme/",
+      photo: { src: "/photos/pokemon-cards-taco-seasoning-heist.jpg", credit: "Oxygen" },
     },
     {
       id: "karaoke-machete-encore",
@@ -2729,6 +2799,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-pulls-machete-bar-request-another-karaoke-song-denied-deputies-say",
+      photo: { src: "/photos/karaoke-machete-encore.jpg", credit: "Fox News" },
     },
     {
       id: "wawa-handicap-parking-911-meltdown",
@@ -2747,6 +2818,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/florida-man-arrested-causing-scene-handicap-parking-space-responding-officers",
+      photo: { src: "/photos/wawa-handicap-parking-911-meltdown.jpg", credit: "Fox News" },
     },
     {
       id: "st-petersburg-jester-dagger-landscaper",
@@ -2765,6 +2837,7 @@ export const stories: Story[] = [
       source: "The Smoking Gun",
       sourceUrl:
         "https://www.thesmokinggun.com/documents/crime/jester-arrest-815092",
+      photo: { src: "/photos/st-petersburg-jester-dagger-landscaper.jpg", credit: "The Smoking Gun" },
     },
     {
       id: "cape-coral-sword-neighbor-showdown",
@@ -2783,6 +2856,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-man-sword-threat-cape-coral/",
+      photo: { src: "/photos/cape-coral-sword-neighbor-showdown.jpg", credit: "CBS News Miami" },
     },
     {
       id: "stuart-seafood-clams-911-complaint",
@@ -2819,6 +2893,7 @@ export const stories: Story[] = [
       source: "WSVN",
       sourceUrl:
         "https://wsvn.com/news/local/florida/florida-man-steals-over-a-dozen-garden-gnomes-in-lee-county/",
+      photo: { src: "/photos/north-fort-myers-tricycle-gnome-heist.jpg", credit: "WSVN" },
     },
     {
       id: "lady-lake-penny-bank-robbery",
@@ -2837,6 +2912,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-after-allegedly-trying-withdraw-1-cent-from-bank",
+      photo: { src: "/photos/lady-lake-penny-bank-robbery.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "waffle-house-finger-gun-napkin-robbery",
@@ -2855,6 +2931,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/florida-man-tries-robbing-waffle-house-with-finger-guns-sheriff-says/",
+      photo: { src: "/photos/waffle-house-finger-gun-napkin-robbery.jpg", credit: "WFLA" },
     },
     {
       id: "boat-thief-wig-dress-disguise",
@@ -2873,6 +2950,7 @@ export const stories: Story[] = [
       source: "CBS12",
       sourceUrl:
         "https://cbs12.com/news/local/stolen-boat-suspect-joshua-kolotka-dons-dress-and-wig-in-poor-attempt-to-disguise-himself-glades-county-okeechobee-county-sheriffs-office-florida-news-april-26-2024",
+      photo: { src: "/photos/boat-thief-wig-dress-disguise.jpg", credit: "CBS12" },
     },
     {
       id: "wedding-crasher-first-dance-arrest",
@@ -2891,6 +2969,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://fox13news.com/news/local-news/pasco-co-man-arrested-after-crashing-st-pete-beach-wedding",
+      photo: { src: "/photos/wedding-crasher-first-dance-arrest.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "onlyfans-park-exposure-st-pete",
@@ -2909,6 +2988,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/st-pete-man-accused-onlyfans-sawgrass-lake-park",
+      photo: { src: "/photos/onlyfans-park-exposure-st-pete.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "checkers-lettuce-meltdown-largo",
@@ -2927,6 +3007,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/food-drink/florida-man-drive-thru-lettuce",
+      photo: { src: "/photos/checkers-lettuce-meltdown-largo.jpg", credit: "Fox News" },
     },
     {
       id: "naked-pool-bite-deputy-marathon",
@@ -2965,6 +3046,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/man-who-vowed-ride-out-florida-hurricanes-his-boat-is-arrested-tampa",
+      photo: { src: "/photos/lieutenant-dan-hurricane-boat-arrest.jpg", credit: "WWSB" },
     },
     {
       id: "walmart-trash-can-shoe-theft-ocala",
@@ -2984,6 +3066,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-did-not-know-why-he-stole-from-walmart-deputies-say-that-was-stupid-me.amp",
+      photo: { src: "/photos/walmart-trash-can-shoe-theft-ocala.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "naked-tiktok-freezing-walk-lakeland",
@@ -3003,6 +3086,7 @@ export const stories: Story[] = [
       source: "ClickOrlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2025/11/21/tiktok-prank-gone-wrong-florida-man-takes-chilly-nighttime-stroll-buck-naked-sheriff-says/",
+      photo: { src: "/photos/naked-tiktok-freezing-walk-lakeland.jpg", credit: "ClickOrlando" },
     },
     {
       id: "dunkin-donuts-fake-badge-discount",
@@ -3060,6 +3144,7 @@ export const stories: Story[] = [
       source: "ABC News",
       sourceUrl:
         "https://abcnews.com/US/florida-man-arrested-allegedly-tossing-alligator-wendys-drive/story?id=36815270",
+      photo: { src: "/photos/alligator-wendys-drive-thru.jpg", credit: "NBC News" },
     },
     {
       id: "box-head-phone-store-robbery",
@@ -3079,6 +3164,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/man-arrested-after-video-shows-him-robbing-miami-gardens-phone-repair-store-with-box-on-his-head/3046964/",
+      photo: { src: "/photos/box-head-phone-store-robbery.jpg", credit: "NBC 6 South Florida" },
     },
     {
       id: "dixie-county-lawnmower-meth",
@@ -3115,6 +3201,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/naked-florida-man-accused-robbing-meat-market-left-trail-clothing-leading-his-location",
+      photo: { src: "/photos/lake-city-naked-meat-market-robbery.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "new-smyrna-golf-course-donut-joyride",
@@ -3133,6 +3220,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-golf-course-hit-100k-damages-over-donut-joyride-police-say",
+      photo: { src: "/photos/new-smyrna-golf-course-donut-joyride.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "fort-myers-tanning-bed-gym-arson",
@@ -3151,6 +3239,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/naked-florida-man-hides-tanning-bed-after-trying-set-gym-fire-closing-time-lcso",
+      photo: { src: "/photos/fort-myers-tanning-bed-gym-arson.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "palm-coast-ups-truck-shoplifter",
@@ -3169,6 +3258,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-rides-back-ups-truck-avoid-deputies-after-trying-shoplift-from-lowes-officials",
+      photo: { src: "/photos/palm-coast-ups-truck-shoplifter.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "auburndale-deodorant-crash",
@@ -3187,6 +3277,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-man-applying-deodorant-crashes-truck-on-highway-fhp-says/",
+      photo: { src: "/photos/auburndale-deodorant-crash.jpg", credit: "CBS News Miami" },
     },
   ];
 
