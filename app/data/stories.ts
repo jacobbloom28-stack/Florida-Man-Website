@@ -3460,6 +3460,78 @@ export const stories: Story[] = [
         "https://www.actionnewsjax.com/news/local/accused-drug-dealers-manifestation-letter-found-during-jso-fentanyl-bust-i-cant-be-stopped/EQHLAYYZQJCOFKYKGNZ6JNKPM4/",
       photo: { src: "/photos/jacksonville-fentanyl-manifestation-letter.jpg", credit: "Action News Jax" },
     },
+    {
+      id: "g-string-target-parking-lot",
+      date: "September 6, 2026",
+      year: "2026",
+      month: "September",
+      day: "6",
+      city: "Oviedo",
+      score: 78,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Wearing Only a G-String and Sneakers Arrested in Target Parking Lot",
+      description:
+        "A Florida man is arrested for indecent exposure after being found wearing only a teal G-string and sneakers in a Target parking lot.",
+      fullStory:
+        "Nicholas Lydic, 41, of Longwood, was confronted by a Seminole County deputy after a caller reported a man touching himself while wearing only a teal G-string and white tennis shoes outside his car in the parking lot of a Target on Oviedo Mall Boulevard. Lydic told the deputy he was 'outside his car changing because he got wet' and denied the other allegations, but was charged with indecent exposure of sexual organs. A search of his vehicle turned up a backpack containing women's underwear and multiple sex toys, and records showed a prior indecent exposure conviction from the previous year in Volusia County.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/09/09/man-in-g-string-accused-of-indecent-exposure-at-oviedo-target-parking-lot/",
+    },
+    {
+      id: "winn-dixie-self-checkout-loyalty-card",
+      date: "February 27, 2026",
+      year: "2026",
+      month: "February",
+      day: "27",
+      city: "Riverview",
+      score: 75,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 12, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals Nearly $10,000 in Groceries at Self-Checkout, Gets Caught Using His Own Loyalty Card Every Time",
+      description:
+        "A Riverview man allegedly steals almost $10,000 in groceries from Winn-Dixie self-checkout lanes over eight months while scanning his own loyalty card on every visit.",
+      fullStory:
+        "Julian Mitchell, 44, of Riverview, is accused of manipulating self-checkout registers at four Hillsborough County Winn-Dixie stores between March 2025 and February 2026, making off with nearly $10,000 worth of steaks, chicken wings, laundry detergent, diapers, and toilet paper. Detectives say Mitchell visited the same stores more than 100 times and used the same loyalty number on every trip, which let them trace the pattern of thefts back to him. Mitchell, who was on probation for prior drug charges, was arrested and booked into the Hillsborough County jail, with Sheriff Chad Chronister saying the arrest 'sends a clear message that organized retail theft will not be tolerated in Hillsborough County.'",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-accused-manipulating-winn-dixie-self-checkouts-taking-nearly-10k-groceries-over-8-months",
+    },
+    {
+      id: "john-publix-steals-from-publix",
+      date: "May 27, 2025",
+      year: "2025",
+      month: "May",
+      day: "27",
+      city: "Hollywood",
+      score: 94,
+      rubric: { absurdity: 23, humor: 24, floridaFactor: 18, unexpectedness: 14, headlineQuality: 10, sourceQuality: 5 },
+      title: "Florida Man Named John Publix Arrested for Shoplifting From a Publix",
+      description:
+        "A Hollywood man named John Publix is arrested after stealing about $25 worth of groceries from a Publix supermarket while wearing a dress and a mask.",
+      fullStory:
+        "A 26-year-old man identified in police and court records as John Publix walked into a Publix on Polk Street in Hollywood wearing a black and pink dress, a black wrap, and a mask, filled a store bag with bananas, water, Coke Zero, coffee, and fried shrimp totaling $25.27, and walked out without paying. Officers found him a few blocks away after he had ditched the dress and mask, and he was booked on petit theft, resisting without violence, and battery on a law enforcement officer. The arresting officer noted that Publix was 'detained wearing only black tight pants, no shirt and gray socks' and that he 'slipped my hand several times' while being taken into custody.",
+      source: "Local 10 (WPLG)",
+      sourceUrl:
+        "https://www.local10.com/news/local/2025/05/30/south-florida-man-named-john-publix-arrested-after-stealing-from-publix-records-say/",
+    },
+    {
+      id: "walmart-delivery-drone-shot-clermont",
+      date: "June 27, 2024",
+      year: "2024",
+      month: "June",
+      day: "27",
+      city: "Clermont",
+      score: 73,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "72-Year-Old Florida Man Shoots Down Walmart Delivery Drone He Thought Was Spying on Him",
+      description:
+        "A 72-year-old Clermont man shoots a Walmart delivery drone out of the sky, convinced it was surveilling his home.",
+      fullStory:
+        "Dennis Winn, 72, spotted a drone flying over his Clermont home during a Walmart marketing campaign testing mock deliveries in the area and, believing it was watching his property as he suspected other drones had before, grabbed a gun and fired at it, causing about $2,500 in damage to its payload system. Lake County deputies arrested Winn and charged him with shooting at an aircraft, criminal mischief with damage over $1,000, and discharging a firearm on residential property.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-arrested-after-shooting-walmart-delivery-drone-out-sky-deputies-say",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
