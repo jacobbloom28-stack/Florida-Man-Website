@@ -3291,6 +3291,96 @@ export const stories: Story[] = [
         "https://www.cbsnews.com/miami/news/florida-man-applying-deodorant-crashes-truck-on-highway-fhp-says/",
       photo: { src: "/photos/auburndale-deodorant-crash.jpg", credit: "CBS News Miami" },
     },
+    {
+      id: "st-johns-911-brag-about-fleeing",
+      date: "May 4, 2019",
+      year: "2019",
+      month: "May",
+      day: "4",
+      city: "St. Johns County",
+      score: 79,
+      rubric: { absurdity: 18, humor: 22, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Calls 911 to Brag About Fleeing a Traffic Stop, Gets Arrested the Next Day",
+      description:
+        "A St. Johns County teenager evades a deputy's traffic stop by doing a donut around his car, then calls 911 about an hour later to brag about the getaway.",
+      fullStory:
+        "Nicholas Jones, 19, sped off after a St. Johns County deputy tried to pull him over on May 4, 2019, then called 911 roughly an hour later and told dispatchers, 'I like ran from a cop like 30 minutes to an hour ago. Like what do we pay you guys for.' Jones described spinning a donut around the deputy's car as he fled and bragged that no cop could catch him in his Hyundai Elantra. Deputies traced the call and arrested him the next day at a Ross clothing store, charging him with fleeing, drug possession, and a probation violation from a prior car theft case.",
+      source: "CBS Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/deputies-man-calls-911-brag-after-fleeing-traffic-stop/",
+    },
+    {
+      id: "port-charlotte-skinny-dipping-trespass",
+      date: "July 20, 2021",
+      year: "2021",
+      month: "July",
+      day: "20",
+      city: "Port Charlotte",
+      score: 68,
+      rubric: { absurdity: 15, humor: 17, floridaFactor: 15, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Woman Refuses to Leave Stranger's Pool After Skinny-Dipping Uninvited",
+      description:
+        "A Port Charlotte woman strips down and goes swimming in a homeowner's pool without permission, then refuses to get out when deputies arrive.",
+      fullStory:
+        "Heather Kennedy, 42, was found floating nude in a homeowner's backyard pool in Port Charlotte on July 20, 2021, after neighbors reported her wandering the property and trying to get into a screened pool enclosure. The homeowner, Jim Clark, said Kennedy was 'basically just lying down, head on the bricks on the side of the pool, just totally incoherent,' and she refused to identify herself or leave the water when deputies showed up. She was arrested on charges of trespassing in a structure or conveyance and resisting an officer without violence.",
+      source: "FOX13 Memphis",
+      sourceUrl:
+        "https://www.fox13memphis.com/news/trending/deputies-florida-woman-arrested-after-skinny-dipping-in-man-s-pool/article_508a7329-1e37-59c0-90f8-8c04f39b205d.html",
+    },
+    {
+      id: "naples-port-a-potty-fentanyl",
+      date: "March 20, 2022",
+      year: "2022",
+      month: "March",
+      day: "20",
+      city: "Naples",
+      score: 71,
+      rubric: { absurdity: 17, humor: 18, floridaFactor: 13, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Trapped Inside a Port-a-Potty Found With Fentanyl When Deputies Free Him",
+      description:
+        "A Naples man gets his foot stuck closing a port-a-potty door and is heard screaming for help, and the deputies who free him find fentanyl and a syringe inside.",
+      fullStory:
+        "James Gousse, 34, was stuck inside a portable toilet on Seagrape Avenue in Naples on the evening of March 20, 2022, after his foot became lodged in the door, and nearby residents called deputies when they heard him shouting for help. Once Collier County deputies pried the door open and got Gousse out, they found a baggie of powder that tested positive for fentanyl, along with a syringe and several smaller bags inside the toilet. He was arrested on two drug possession charges.",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/florida/florida-man-found-with-drugs-after-getting-trapped-in-port-a-potty/",
+    },
+    {
+      id: "port-charlotte-pumpkin-evidence-fraud",
+      date: "October 31, 2023",
+      year: "2023",
+      month: "October",
+      day: "31",
+      city: "Port Charlotte",
+      score: 68,
+      rubric: { absurdity: 16, humor: 18, floridaFactor: 12, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Steals Coworker's Credit Card, Buys a Pumpkin and Beer, Gets Arrested on Halloween",
+      description:
+        "A Port Charlotte man uses a coworker's stolen credit card to buy beer and a pumpkin at Publix, and deputies seize the carved pumpkin as evidence.",
+      fullStory:
+        "Edward Atwood, 39, was identified from surveillance footage wearing a Chili's hat after a coworker's wallet went missing from the restaurant where they both worked, and deputies say he used her credit card to buy beer and a pumpkin at a nearby Publix. Charlotte County deputies arrested Atwood on Halloween, October 31, 2023, on a charge of unauthorized use of a credit card, and collected the carved pumpkin from his home as evidence. Sheriff Bill Prummell said, 'All jokes aside, it is sad that an individual would do this to anyone, but especially someone with whom they work.'",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.wfla.com/news/florida/florida-man-arrested-on-halloween-for-credit-card-fraud-pumpkin-seized-as-evidence-deputies-say/",
+    },
+    {
+      id: "port-st-lucie-off-grid-fdle-letter",
+      date: "November 13, 2024",
+      year: "2024",
+      month: "November",
+      day: "13",
+      city: "Port St. Lucie",
+      score: 79,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 12, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Forges Letter Claiming to Be an 'Off-Grid' Undercover Agent to Dodge an Apartment Background Check",
+      description:
+        "A Port St. Lucie man submits a typo-riddled forged letter claiming he is a secret FDLE agent who cannot be background-checked, all to lease an apartment.",
+      fullStory:
+        "William Dennis Milstead, 64, gave a real estate agency a falsified letter claiming he had worked undercover for the Florida Department of Law Enforcement since 2006 as part of a fictional 'Off Grid Command Unit' that exempted him from a routine rental background check, according to FDLE. Investigators said the letter was riddled with grammar and spelling errors, and Milstead already had 13 prior felony arrests, including two earlier convictions for impersonating a police officer in 2002 and 2016. He was arrested on November 13, 2024, on charges of falsely impersonating a police officer, making a false statement to obtain property, and using a two-way communication device to commit a felony, then released after posting an $11,000 bond.",
+      source: "Florida Department of Law Enforcement",
+      sourceUrl:
+        "https://www.fdle.state.fl.us/news/2024/november/fdle-arrests-st-lucie-man-for-impersonating-a-law-enforcement-officer",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
