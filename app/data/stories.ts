@@ -253,6 +253,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/strange-florida/2016/11/02/tutu-wearing-florida-man-breaks-into-farmers-market/",
+      photo: { src: "/photos/tutu-farmers-market.jpg", credit: "ABC Action News" },
     },
     {
       id: "26-cars-jail-parking",
@@ -728,6 +729,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/2019/12/03/lego-thief-charged-with-grand-theft-deputies-say/",
+      photo: { src: "/photos/lego-booster-target-theft.jpg", credit: "FOX 35 Orlando" },
     },
     {
       id: "forklift-atm-joyride",
@@ -821,6 +823,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-woman-gator-pants-traffic-stop/",
+      photo: { src: "/photos/gator-in-yoga-pants-traffic-stop.jpg", credit: "Charlotte County Sheriff's Office" },
     },
     {
       id: "mcdonalds-ice-cream-machine-gun",
@@ -839,6 +842,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/florida-man-displayed-gun-after-learning-delray-beach-mcdonalds-had-broken-ice-cream-machine/21862/",
+      photo: { src: "/photos/mcdonalds-ice-cream-machine-gun.jpg", credit: "CBS12" },
     },
     {
       id: "beers-always-gone-dui-shirt",
@@ -1155,6 +1159,7 @@ export const stories: Story[] = [
       source: "U.S. Secret Service",
       sourceUrl:
         "https://www.secretservice.gov/newsroom/releases/2022/01/south-florida-man-charged-covid-19-relief-fraud-buying-lamborghini-rolex",
+      photo: { src: "/photos/covid-relief-lamborghini.jpg", credit: "Instagram" },
     },
     {
       id: "bra-hat-car-burglar",
@@ -1211,6 +1216,7 @@ export const stories: Story[] = [
       source: "HuffPost",
       sourceUrl:
         "https://www.huffingtonpost.com/entry/reliford-cooper-dog-driving-car_us_561bbe80e4b0e66ad4c87505",
+      photo: { src: "/photos/dog-was-driving.jpg", credit: "Manatee County Sheriff's Office" },
     },
     {
       id: "forklift-tired-of-walking",
@@ -1962,6 +1968,7 @@ export const stories: Story[] = [
       source: "WFLX / NBC Miami",
       sourceUrl:
         "https://www.wflx.com/story/13089170/whale-cut-in-half-after-washing-ashore-in-delray/",
+      photo: { src: "/photos/whale-tail-for-soup.jpg", credit: "WFLX" },
     },
     {
       id: "dominos-burns-papa-johns",
@@ -2001,6 +2008,7 @@ export const stories: Story[] = [
       source: "HuffPost",
       sourceUrl:
         "https://www.huffpost.com/2011/08/16/charles-patrick-o-bryan-waffle-house_n_928310.html",
+      photo: { src: "/photos/waffle-house-truck-through-wall.jpg", credit: "WFLX" },
     },
     {
       id: "nice-car-bro-punch",
@@ -2200,6 +2208,7 @@ export const stories: Story[] = [
       source: "Complex",
       sourceUrl:
         "https://www.complex.com/life/a/bernadette-giacomazzo/florida-man-arrested-after-assaulting-a-woman-smell-feet",
+      photo: { src: "/photos/foot-fetish-hotel-hit-and-run.jpg", credit: "Local 10" },
     },
     {
       id: "pelican-tackling-tourist-key-west",
@@ -2569,6 +2578,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/florida-man-banana-tree-pothole/",
+      photo: { src: "/photos/banana-tree-pothole-protest.jpg", credit: "Local 10" },
     },
     {
       id: "lakeland-swamp-dui-children",
@@ -3027,6 +3037,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/naked-florida-man-bites-deputy-september-2026/",
+      photo: { src: "/photos/naked-pool-bite-deputy-marathon.jpg", credit: "Monroe County Sheriff's Office" },
     },
     {
       id: "lieutenant-dan-hurricane-boat-arrest",
@@ -3106,6 +3117,7 @@ export const stories: Story[] = [
       source: "Fox News",
       sourceUrl:
         "https://www.foxnews.com/us/man-accused-of-impersonating-cop-to-get-dunkin-donuts-discounts",
+      photo: { src: "/photos/dunkin-donuts-fake-badge-discount.jpg", credit: "Pasco County Sheriff's Office" },
     },
     {
       id: "onions-potatoes-produce-heist",
