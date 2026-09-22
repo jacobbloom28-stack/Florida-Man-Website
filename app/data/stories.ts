@@ -3362,6 +3362,7 @@ export const stories: Story[] = [
       source: "WFLA",
       sourceUrl:
         "https://www.wfla.com/news/florida/florida-man-arrested-on-halloween-for-credit-card-fraud-pumpkin-seized-as-evidence-deputies-say/",
+      photo: { src: "/photos/port-charlotte-pumpkin-evidence-fraud.jpg", credit: "Charlotte County Sheriff's Office" },
     },
     {
       id: "port-st-lucie-off-grid-fdle-letter",
@@ -3380,6 +3381,7 @@ export const stories: Story[] = [
       source: "Florida Department of Law Enforcement",
       sourceUrl:
         "https://www.fdle.state.fl.us/news/2024/november/fdle-arrests-st-lucie-man-for-impersonating-a-law-enforcement-officer",
+      photo: { src: "/photos/port-st-lucie-off-grid-fdle-letter.jpg", credit: "Florida Department of Law Enforcement" },
     },
     {
       id: "palm-coast-circle-k-lottery-theft",
@@ -3398,6 +3400,7 @@ export const stories: Story[] = [
       source: "ClickOrlando.com / WKMG News 6",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/18/circle-k-worker-jailed-after-cashing-stolen-florida-lottery-tickets-sheriff-says/",
+      photo: { src: "/photos/palm-coast-circle-k-lottery-theft.jpg", credit: "ClickOrlando" },
     },
     {
       id: "lakeland-facebook-taunt-grady-judd",
@@ -3416,6 +3419,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/wanted-florida-man-arrested-after-taunting-polk-county-sheriff-grady-judd-online-challenge-accepted",
+      photo: { src: "/photos/lakeland-facebook-taunt-grady-judd.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "dundee-vending-machine-smackdown",
@@ -3454,6 +3458,7 @@ export const stories: Story[] = [
       source: "Action News Jax (WJAX)",
       sourceUrl:
         "https://www.actionnewsjax.com/news/local/accused-drug-dealers-manifestation-letter-found-during-jso-fentanyl-bust-i-cant-be-stopped/EQHLAYYZQJCOFKYKGNZ6JNKPM4/",
+      photo: { src: "/photos/jacksonville-fentanyl-manifestation-letter.jpg", credit: "Action News Jax" },
     },
   ];
 
