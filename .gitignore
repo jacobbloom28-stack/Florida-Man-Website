@@ -41,3 +41,11 @@ yarn-error.log*
 next-env.d.ts
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
+
+# local debug/scratch artifacts
+/.next-*/
+*.bak
+*.bundle
+*.bundle.old
+*.used-*
+*.unused

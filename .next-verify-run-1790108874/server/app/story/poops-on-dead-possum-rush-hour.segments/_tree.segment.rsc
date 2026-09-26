@@ -1,6 +1,0 @@
-:HL["/_next/static/chunks/19oq95zc9jqi7.css","style"]
-:HL["/photos/poops-on-dead-possum-rush-hour.jpg","image"]
-:HL["/photos/meth-belly-button.jpg","image"]
-:HL["/photos/raccoon-in-backpack-bike-stop.jpg","image"]
-:HL["/photos/atlantic-hamster-wheel.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"story","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"poops-on-dead-possum-rush-hour","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"RyI2ONQDeA3YOEdIHw_e3"}
