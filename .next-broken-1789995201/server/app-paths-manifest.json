@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/api/suggest/route": "app/api/suggest/route.js",
+  "/browse/page": "app/browse/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/opengraph-image/route": "app/opengraph-image/route.js",
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/story/[slug]/opengraph-image/route": "app/story/[slug]/opengraph-image/route.js",
+  "/story/[slug]/page": "app/story/[slug]/page.js",
+  "/suggest/page": "app/suggest/page.js",
+  "/terms/page": "app/terms/page.js"
+}
