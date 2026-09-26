@@ -3532,6 +3532,60 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-after-shooting-walmart-delivery-drone-out-sky-deputies-say",
     },
+    {
+      id: "bso-cruiser-ballistic-vest",
+      date: "September 23, 2026",
+      year: "2026",
+      month: "September",
+      day: "23",
+      city: "Fort Lauderdale",
+      score: 85,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 17, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Steals a Marked Sheriff's Cruiser, Drives It 100 Miles, and Is Found Wearing a Deputy's Ballistic Vest",
+      description:
+        "A Fort Lauderdale woman allegedly steals a marked Broward Sheriff's Office cruiser, drives it nearly 100 miles, and is caught in the woods wearing an agency ballistic vest.",
+      fullStory:
+        "Shannon Marie Dillon, 42, of Fort Lauderdale, allegedly took a marked Broward Sheriff's Office Dodge Charger from the Public Safety Building parking lot shortly after 9 p.m. on September 23, 2026, then drove it about 100 miles north before abandoning it on the Gatlin Boulevard off-ramp in St. Lucie County. Deputies found her hiding in a nearby wooded area wearing an outer ballistic vest bearing Broward Sheriff's Office insignia. She was charged with grand theft of law enforcement equipment, unlawful use of a police badge or vehicle, possession of a weapon by a convicted felon, drug paraphernalia possession, driving with a suspended license, and resisting without violence. At a bizarre bond court appearance where she smiled and laughed, Dillon told the judge, 'Thank you very much judge, and I will not disappoint you.'",
+      source: "NBC 6 South Florida",
+      sourceUrl:
+        "https://www.nbcmiami.com/news/local/woman-accused-of-stealing-marked-bso-car-makes-bizarre-bond-court-appearance/3863060/",
+    },
+    {
+      id: "canoe-fugitive-flagler",
+      date: "September 18, 2026",
+      year: "2026",
+      month: "September",
+      day: "18",
+      city: "Flagler County",
+      score: 77,
+      rubric: { absurdity: 18, humor: 19, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Fugitive Flees Into the Woods, Gets Stranded, and Is Rescued by a Neighbor's Canoe",
+      description:
+        "A wanted Florida woman flees deputies into the woods, becomes stranded on a peninsula across a canal, and has to be retrieved by a borrowed canoe.",
+      fullStory:
+        "Tiffani Driggers, 28, ran into a wooded area on September 18, 2026 after Flagler County deputies responded to a trespassing complaint at a self-storage facility, prompting a search that included a K-9 unit, a drone, and a helicopter. Hours later a resident heard her calling for help from a wooded peninsula surrounded by a canal, and deputies borrowed a neighbor's canoe to paddle out and retrieve the exhausted, stranded fugitive. Driggers, who had an active felony violation-of-probation warrant, was evaluated by fire rescue and then booked and held without bond. Sheriff Rick Staly said, 'Whether it takes a patrol car, K-9, drone, helicopter, or canoe, our deputies will find a way to get the job done.'",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/fugitive-rescued-by-canoe-after-fleeing-deputies-flagler-county/RZNU7X7NQJDHLDJGTXTYLNCNMQ/",
+    },
+    {
+      id: "trading-cards-target-deputies",
+      date: "September 21, 2026",
+      year: "2026",
+      month: "September",
+      day: "21",
+      city: "Palm Coast",
+      score: 82,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 15, unexpectedness: 13, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Pair Tries to Steal $2,500 in Trading Cards From a Target Where Deputies Were Already Standing",
+      description:
+        "Two fugitives allegedly try to steal more than $2,500 in trading cards from a Palm Coast Target while deputies happen to be inside investigating another theft.",
+      fullStory:
+        "Andrew Simmons, 27, and Madeline Whaley, 35, both of Jacksonville, allegedly tried to walk out of a Palm Coast Target with more than $2,500 worth of sports trading cards on September 21, 2026, not realizing Flagler County deputies were already inside the store working an unrelated theft case. Deputies stopped the pair and reported finding methamphetamine, fentanyl, a stolen handgun, and multiple outstanding warrants between them. Simmons was booked on grand theft, drug possession, and four warrants, while Whaley faced charges including accessory after the fact, grand theft of a firearm, and possession of a weapon by a convicted felon. Sheriff Rick Staly said, 'They picked the wrong store in the wrong county at the wrong time, as unfortunately for them, deputies were literally waiting.'",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/09/24/shoplifting-scheme-backfires-for-two-fugitives-caught-at-palm-coast-target-with-drugs-stolen-gun/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
