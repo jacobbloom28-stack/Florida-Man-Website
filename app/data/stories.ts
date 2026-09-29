@@ -1759,10 +1759,10 @@ export const stories: Story[] = [
     },
     {
       id: "peacocks-killed-cooked-spite",
-      date: "September 23, 2025",
+      date: "September 29, 2025",
       year: "2025",
       month: "September",
-      day: "23",
+      day: "29",
       city: "Hudson",
       score: 67,
       rubric: { absurdity: 19, humor: 8, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
