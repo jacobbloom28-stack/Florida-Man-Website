@@ -3549,6 +3549,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://www.nbcmiami.com/news/local/woman-accused-of-stealing-marked-bso-car-makes-bizarre-bond-court-appearance/3863060/",
+      photo: { src: "/photos/bso-cruiser-ballistic-vest.jpg", credit: "St. Lucie County Sheriff's Office" },
     },
     {
       id: "canoe-fugitive-flagler",
@@ -3567,6 +3568,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/fugitive-rescued-by-canoe-after-fleeing-deputies-flagler-county/RZNU7X7NQJDHLDJGTXTYLNCNMQ/",
+      photo: { src: "/photos/canoe-fugitive-flagler.jpg", credit: "WFTV" },
     },
     {
       id: "trading-cards-target-deputies",
@@ -3585,6 +3587,7 @@ export const stories: Story[] = [
       source: "Click Orlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/24/shoplifting-scheme-backfires-for-two-fugitives-caught-at-palm-coast-target-with-drugs-stolen-gun/",
+      photo: { src: "/photos/trading-cards-target-deputies.jpg", credit: "Flagler County Sheriff's Office" },
     },
   ];
 
