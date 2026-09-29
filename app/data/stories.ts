@@ -386,7 +386,7 @@ export const stories: Story[] = [
         source: "Local10 / Bay News 9",
         sourceUrl:
         "https://www.local10.com/news/florida/florida-man-blames-horse-for-breaking-into-home",
-      photo: { src: "/photos/horse-blames-break-in.jpg", credit: "Pasco County Sheriff's Office" },
+      photo: { src: "/photos/horse-blames-break-in.jpg", credit: "WPTV" },
     },
     {
         id: "spiderman-liquor-heist",
@@ -426,6 +426,7 @@ export const stories: Story[] = [
       // No photo: the only available frame grab is a blurry crop of a store
       // sign with no gator, beer, or person in it — the illustrated card
       // (see StoryVisual.tsx) represents the story better than that photo did.
+      photo: { src: "/photos/gator-convenience-store-beer.jpg", credit: "First Coast News" },
     },
     {
         id: "scooter-screwdriver-cop",
@@ -519,6 +520,7 @@ export const stories: Story[] = [
       source: "NBC 6 South Florida",
       sourceUrl:
         "https://nbcmiami.com/news/local/Florida-Man-Stands-Through-Sunroof-While-Driving-on-Highway-509857101.html",
+      photo: { src: "/photos/cadillac-sunroof.jpg", credit: "Florida Highway Patrol" },
     },
     {
       id: "salt-walmart-evil-spirits",
@@ -748,7 +750,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/florida-man-took-forklift-steal-atm-police-say/IQULQRELMNFLHOTIRVVXUCUGOI/",
-      photo: { src: "/photos/forklift-atm-joyride.jpg", credit: "WFTV" },
+      photo: { src: "/photos/forklift-atm-joyride.jpg", credit: "Tallahassee Police Department" },
     },
     {
       id: "god-18th-birthday-arrest",
@@ -805,6 +807,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/2017/08/14/florida-man-blames-hookah-smoking-caterpillar-for-wrecking-liquor-store-police-say/",
+      photo: { src: "/photos/hookah-caterpillar-liquor-store.jpg", credit: "Crestview Police Department" },
     },
     {
       id: "gator-in-yoga-pants-traffic-stop",
@@ -979,7 +982,7 @@ export const stories: Story[] = [
       source: "KSN Local 4",
       sourceUrl:
         "https://www.ksnblocal4.com/2026/08/19/man-accused-shooting-neighbors-cat-with-bb-gun-officials-say/",
-      photo: { src: "/photos/cat-shot-bb-gun-chickens.jpg", credit: "Lee County Sheriff's Office" },
+      photo: { src: "/photos/cat-shot-bb-gun-chickens.jpg", credit: "WBBH" },
     },
     {
       id: "dog-slam-headbutt-patrol-car",
@@ -1680,6 +1683,7 @@ export const stories: Story[] = [
       source: "Newsweek",
       sourceUrl:
         "https://www.newsweek.com/florida-man-tased-out-ceiling-walmart-1472865",
+      photo: { src: "/photos/walmart-ceiling-nurse.jpg", credit: "FOX 13 Tampa Bay" },
     },
     {
       id: "meth-belly-button",
@@ -1797,7 +1801,7 @@ export const stories: Story[] = [
       source: "Fox News / Inside Edition",
       sourceUrl:
         "https://www.foxnews.com/us/florida-woman-arrested-after-pet-spider-monkey-allegedly-attacks-home-depot-employees.amp",
-      photo: { src: "/photos/spider-monkey-home-depot-attack.jpg", credit: "Fox News" },
+      photo: { src: "/photos/spider-monkey-home-depot-attack.jpg", credit: "WPTV" },
     },
     {
       id: "bees-swarm-police-chase",
@@ -1950,6 +1954,7 @@ export const stories: Story[] = [
       source: "U.S. Department of Justice",
       sourceUrl:
         "https://www.justice.gov/archive/usao/fls/PressReleases/2011/110914-04.html",
+      photo: { src: "/photos/snakes-tortoises-in-underwear.jpg", credit: "TSA" },
     },
     {
       id: "whale-tail-for-soup",
@@ -2066,6 +2071,7 @@ export const stories: Story[] = [
       source: "ClickOrlando",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2021/09/10/florida-man-twerks-for-officers-during-traffic-stop-gets-tased-report-says/",
+      photo: { src: "/photos/twerking-traffic-stop-rain.jpg", credit: "Citrus County Sheriff's Office" },
     },
     {
       id: "chihuahua-thrown-off-balcony",
@@ -2086,7 +2092,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-accused-animal-cruelty-after-throwing-chihuahua-off-balcony-like-football",
-      photo: { src: "/photos/chihuahua-thrown-off-balcony.jpg", credit: "FOX 35 Orlando" },
+      photo: { src: "/photos/chihuahua-thrown-off-balcony.jpg", credit: "Lee County Sheriff's Office" },
     },
     {
       id: "wendys-break-in-sandwich",
@@ -2288,7 +2294,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-accused-of-attacking-flamingo-at-busch-gardens-tampa-bay/",
-      photo: { src: "/photos/flamingo-pinky-busch-gardens-slam.jpg", credit: "Tampa Bay Times" },
+      photo: { src: "/photos/flamingo-pinky-busch-gardens-slam.jpg", credit: "Busch Gardens" },
     },
     {
       id: "key-largo-swatting-bomb-hostage-snapchat",
@@ -3326,6 +3332,7 @@ export const stories: Story[] = [
       source: "FOX13 Memphis",
       sourceUrl:
         "https://www.fox13memphis.com/news/trending/deputies-florida-woman-arrested-after-skinny-dipping-in-man-s-pool/article_508a7329-1e37-59c0-90f8-8c04f39b205d.html",
+      photo: { src: "/photos/port-charlotte-skinny-dipping-trespass.jpg", credit: "Charlotte County Sheriff's Office" },
     },
     {
       id: "naples-port-a-potty-fentanyl",
@@ -3495,6 +3502,7 @@ export const stories: Story[] = [
       source: "FOX 13 Tampa Bay",
       sourceUrl:
         "https://www.fox13news.com/news/florida-man-accused-manipulating-winn-dixie-self-checkouts-taking-nearly-10k-groceries-over-8-months",
+      photo: { src: "/photos/winn-dixie-self-checkout-loyalty-card.jpg", credit: "Hillsborough County Sheriff's Office" },
     },
     {
       id: "john-publix-steals-from-publix",
@@ -3531,6 +3539,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/florida-man-arrested-after-shooting-walmart-delivery-drone-out-sky-deputies-say",
+      photo: { src: "/photos/walmart-delivery-drone-shot-clermont.jpg", credit: "Lake County Sheriff's Office" },
     },
     {
       id: "bso-cruiser-ballistic-vest",
@@ -3606,6 +3615,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/man-arrested-after-stealing-septic-tank-marion-county-deputies-say/VCY3APP3NZALHKLRNB42PQDHGU",
+      photo: { src: "/photos/septic-tank-uhaul-theft.jpg", credit: "Marion County Sheriff's Office" },
     },
     {
       id: "zip-tied-iguanas-truck-bed",
@@ -3624,6 +3634,7 @@ export const stories: Story[] = [
       source: "FOX 35 Orlando",
       sourceUrl:
         "https://www.fox35orlando.com/news/polk-county-driver-caught-thirteen-live-iguanas-tied-up-truck-fhp",
+      photo: { src: "/photos/zip-tied-iguanas-truck-bed.jpg", credit: "Florida Highway Patrol" },
     },
     {
       id: "85-year-old-viral-racing-arrest",
@@ -3642,6 +3653,7 @@ export const stories: Story[] = [
       source: "Click Orlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/28/85-year-old-florida-man-whose-110-mph-racing-arrest-went-viral-speaks-out/",
+      photo: { src: "/photos/85-year-old-viral-racing-arrest.jpg", credit: "WKMG News 6" },
     },
     {
       id: "70-year-old-dismantles-stolen-trailer",
@@ -3660,6 +3672,7 @@ export const stories: Story[] = [
       source: "Click Orlando (WKMG)",
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/09/04/license-plate-reader-data-helps-nab-palm-coast-man-accused-of-stealing-trailer-from-boat-ramp-sheriff-says/",
+      photo: { src: "/photos/70-year-old-dismantles-stolen-trailer.jpg", credit: "Flagler County Sheriff's Office" },
     },
     {
       id: "hammer-wrong-suv-revenge-publix",
@@ -3678,6 +3691,7 @@ export const stories: Story[] = [
       source: "WFTV",
       sourceUrl:
         "https://www.wftv.com/news/local/man-accused-smashing-suv-with-hammer-publix-parking-lot/ZKQFL2JERBAB5JPFC7X5UHEYAA/",
+      photo: { src: "/photos/hammer-wrong-suv-revenge-publix.jpg", credit: "Volusia Sheriff's Office" },
     },
     {
       id: "taped-together-lottery-ticket",
@@ -3696,6 +3710,7 @@ export const stories: Story[] = [
       source: "WEAR ABC 3",
       sourceUrl:
         "https://weartv.com/news/local/couple-faces-charges-for-allegedly-altering-florida-lottery-ticket-into-1-million-winner",
+      photo: { src: "/photos/taped-together-lottery-ticket.jpg", credit: "Escambia County Sheriff's Office" },
     },
   ];
 
