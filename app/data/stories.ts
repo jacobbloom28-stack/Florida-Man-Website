@@ -3589,6 +3589,114 @@ export const stories: Story[] = [
         "https://www.clickorlando.com/news/local/2026/09/24/shoplifting-scheme-backfires-for-two-fugitives-caught-at-palm-coast-target-with-drugs-stolen-gun/",
       photo: { src: "/photos/trading-cards-target-deputies.jpg", credit: "Flagler County Sheriff's Office" },
     },
+    {
+      id: "septic-tank-uhaul-theft",
+      date: "February 23, 2026",
+      year: "2026",
+      month: "February",
+      day: "23",
+      city: "Dunnellon",
+      score: 74,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 13, unexpectedness: 11, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Fails to Steal a Septic Tank With a Corolla, Returns Next Day With a U-Haul",
+      description:
+        "A Florida man's failed attempt to steal a septic tank in a sedan is followed by a successful one in a rented U-Haul truck the very next day.",
+      fullStory:
+        "Alfio Nocifora allegedly tried to steal a septic tank from a Dunnellon construction site using his 2013 Toyota Corolla on February 22, 2026, but fled when a Jeep Cherokee pulled up to the site. He returned the next day with a rented U-Haul truck, loaded up the septic tank along with about $2,500 worth of electrical pipe, and covered the truck's license plate and U-Haul ID number with tape. Marion County deputies said surveillance video from both days led them straight to him, and he was charged with grand theft, unlawful use of a two-way device, and intentionally obscuring a license plate during the commission of a crime.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/man-arrested-after-stealing-septic-tank-marion-county-deputies-say/VCY3APP3NZALHKLRNB42PQDHGU",
+    },
+    {
+      id: "zip-tied-iguanas-truck-bed",
+      date: "April 30, 2026",
+      year: "2026",
+      month: "April",
+      day: "30",
+      city: "Winter Haven",
+      score: 87,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 19, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Traffic Stop Turns Up 13 Live Iguanas With Their Feet Zip-Tied Together",
+      description:
+        "A routine traffic stop for a broken tag light leads Florida troopers to a truck bed full of live iguanas with their feet bound in zip ties.",
+      fullStory:
+        "Florida Highway Patrol troopers pulled over Rendon Casildo-Acdiel, 32, near Winter Lake Road and Thornhill Road in Winter Haven on April 30, 2026, for a missing trailer tag light, then found 13 live iguanas with their feet zip-tied together in the truck bed alongside five coolers of iced tilapia. Casildo-Acdiel told troopers he had driven from Miami for coconuts and then to Polk County for the fish before heading back to North Carolina. He was arrested on a suspended Georgia driver's license and three outstanding warrants, and the Florida Fish and Wildlife Conservation Commission took over investigating the iguanas.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/polk-county-driver-caught-thirteen-live-iguanas-tied-up-truck-fhp",
+    },
+    {
+      id: "85-year-old-viral-racing-arrest",
+      date: "June 13, 2026",
+      year: "2026",
+      month: "June",
+      day: "13",
+      city: "Leesburg",
+      score: 79,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "85-Year-Old Florida Man Hits 110 MPH Trying to Escape a Racing Corvette",
+      description:
+        "An 85-year-old Florida man is charged with racing after deputies clock him at 110 miles per hour on U.S. 27 alongside a Corvette.",
+      fullStory:
+        "Lake County sheriff's deputies stopped William Bosworth, then 85, on U.S. 27 near Leesburg on June 13, 2026, after clocking his Nissan 350Z at 110 mph in a 55 mph zone alongside a Corvette driven by Philip Signorino, 57, who was allegedly going 125 mph. Bosworth insisted he wasn't racing and was only speeding up to get away after the Corvette swerved into his lane, but he was charged with racing and violating Florida's 'super speeder' dangerous excessive speeding law. He was sentenced to a year of probation, a $500 fine, a driver improvement course, and a one-year license suspension, and later said the viral attention over the arrest left him 'devastated,' adding, 'I'm not a street racer.'",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/09/28/85-year-old-florida-man-whose-110-mph-racing-arrest-went-viral-speaks-out/",
+    },
+    {
+      id: "70-year-old-dismantles-stolen-trailer",
+      date: "August 28, 2026",
+      year: "2026",
+      month: "August",
+      day: "28",
+      city: "Palm Coast",
+      score: 72,
+      rubric: { absurdity: 17, humor: 17, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "70-Year-Old Florida Man Steals a Boat Trailer and Dismantles It in His Backyard",
+      description:
+        "A 70-year-old Florida man is arrested after license plate readers help deputies trace a stolen boat trailer to his backyard, where he had already taken it apart.",
+      fullStory:
+        "Jonah Depeters, 70, of Palm Coast, allegedly loaded a disabled personal watercraft trailer into his Jeep pickup from Herschel King Park's boat ramp on August 26, 2026, after the owner had left it there with permission from Flagler County Parks and Recreation while its axle was repaired. Automatic license plate reader technology and the Real Time Crime Center helped deputies identify Depeters within 72 hours, and when they arrived at his home they found the trailer already dismantled in his backyard. Depeters claimed he thought the trailer was abandoned because its license plate had been removed, and he was charged with grand theft and criminal mischief. Sheriff Rick Staly said, 'We solved this case and arrested the thief in less than 72 hours.'",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/09/04/license-plate-reader-data-helps-nab-palm-coast-man-accused-of-stealing-trailer-from-boat-ramp-sheriff-says/",
+    },
+    {
+      id: "hammer-wrong-suv-revenge-publix",
+      date: "February 17, 2026",
+      year: "2026",
+      month: "February",
+      day: "17",
+      city: "Ormond-by-the-Sea",
+      score: 74,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Breaks Into a Publix Parking Lot SUV With a Hammer, Realizes It's the Wrong Car",
+      description:
+        "A Florida man allegedly smashes a stranger's SUV with a hammer in a Publix parking lot, believing it belonged to his ex-girlfriend.",
+      fullStory:
+        "Justin Allen, 37, allegedly broke into an SUV in a Publix parking lot in Ormond-by-the-Sea on February 17, 2026, and was found by deputies sitting in the passenger seat hitting the in-car radio with a hammer. Body camera footage showed Allen explaining he was trying to collect items he believed belonged to his ex-girlfriend, but the SUV actually belonged to a Publix employee working inside the store at the time, and the damage totaled around $17,000. Allen was charged with burglary, criminal mischief, and cocaine possession, then posted a $10,500 bond and was released the same night.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/man-accused-smashing-suv-with-hammer-publix-parking-lot/ZKQFL2JERBAB5JPFC7X5UHEYAA/",
+    },
+    {
+      id: "taped-together-lottery-ticket",
+      date: "April 17, 2024",
+      year: "2024",
+      month: "April",
+      day: "17",
+      city: "Pensacola",
+      score: 79,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Tapes Two Losing Lottery Tickets Together, Tries to Claim $1 Million Prize",
+      description:
+        "A Florida woman staples together two losing scratch-off lottery tickets and submits the spliced result as a winning $1 million ticket.",
+      fullStory:
+        "Kira Lee Enders, 36, of DeFuniak Springs, brought a laminated scratch-off ticket to the Florida Lottery's claims office in Pensacola on March 1, 2024, claiming it was a $1 million winner in the '500X The Cash' game, with Dakota Jones, 32, accompanying her. Investigators found the ticket had been pieced together from the top half of one losing ticket and the bottom half of another, taped and laminated to hide the seam, and that Enders had written her own name and address directly on it. When investigators called her back in for more paperwork, both were arrested at the lottery office on April 17, 2024. Escambia County Sheriff Chip Simmons said, 'You're not a lottery winner, you're a criminal,' and Enders was charged with grand theft over $100,000 and presenting and altering a lottery ticket with intent to defraud, while Jones was charged as a principal to the same offenses.",
+      source: "WEAR ABC 3",
+      sourceUrl:
+        "https://weartv.com/news/local/couple-faces-charges-for-allegedly-altering-florida-lottery-ticket-into-1-million-winner",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
