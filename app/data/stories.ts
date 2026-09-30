@@ -2235,7 +2235,7 @@ export const stories: Story[] = [
       source: "CBS News Miami",
       sourceUrl:
         "https://www.cbsnews.com/miami/news/man-jumping-on-pelican-florida-keys-arrested-maryland",
-      photo: { src: "/photos/pelican-tackling-tourist-key-west.jpg", credit: "CBS News Miami" },
+      photo: { src: "/photos/pelican-tackling-tourist-key-west.jpg", credit: "Chesapeake Bay Magazine" },
     },
     {
       id: "stolen-ambulance-drunken-joyride-beer",
@@ -3162,7 +3162,7 @@ export const stories: Story[] = [
       source: "ABC News",
       sourceUrl:
         "https://abcnews.com/US/florida-man-arrested-allegedly-tossing-alligator-wendys-drive/story?id=36815270",
-      photo: { src: "/photos/alligator-wendys-drive-thru.jpg", credit: "NBC News" },
+      photo: { src: "/photos/alligator-wendys-drive-thru.jpg", credit: "Florida Fish and Wildlife Conservation Commission" },
     },
     {
       id: "box-head-phone-store-robbery",
