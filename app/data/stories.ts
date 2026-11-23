@@ -3712,6 +3712,113 @@ export const stories: Story[] = [
         "https://weartv.com/news/local/couple-faces-charges-for-allegedly-altering-florida-lottery-ticket-into-1-million-winner",
       photo: { src: "/photos/taped-together-lottery-ticket.jpg", credit: "Escambia County Sheriff's Office" },
     },
+    {
+      id: "dealership-heist-candy-cologne-break",
+      date: "November 15, 2026",
+      year: "2026",
+      month: "November",
+      day: "15",
+      city: "Hialeah Gardens",
+      score: 76,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals $200,000 in Cars From a Dealership, Stops to Eat Candy and Try On the Owner's Cologne",
+      description:
+        "A Florida man allegedly steals five cars from a used-car lot, pausing mid-heist to eat the owner's candy, spray his cologne, and change clothes.",
+      fullStory:
+        "Police say Michael Guevara, 35, broke into Cabrera's Auto in Hialeah Gardens early on Sunday, November 15, 2026, using a crowbar and claw hammer he picked up behind the business, then drove off five vehicles worth more than $200,000. Surveillance video showed him going through bags, changing his outfit, eating candy, and spraying on the owner's cologne before taking the key fobs. Police tracked one of the cars, a BMW that still had a 'For Sale' decal on the windshield, to his home and arrested him at gunpoint as he walked up to it, and all five cars were recovered undamaged. 'He actually ate a lot of candy, and later the wrappers were found inside the BMW, and he sprayed on some of my cologne!' owner Ramon Cabrera said; Guevara faces burglary, grand theft, and burglary tools charges, and a judge denied him house arrest.",
+      source: "WSVN 7News",
+      sourceUrl: "https://wsvn.com/news/local/miami-dade/hialeah-gardens-car-heist-arrest/",
+    },
+    {
+      id: "deputy-gator-patrol-car-ride",
+      date: "October 31, 2026",
+      year: "2026",
+      month: "October",
+      day: "31",
+      city: "Kissimmee",
+      score: 78,
+      rubric: { absurdity: 17, humor: 18, floridaFactor: 19, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Deputy Catches Alligator With His Bare Hands, Gives It a Ride in the Back of His Patrol Car",
+      description:
+        "An Osceola County deputy grabs a wandering alligator in a tourist-area parking lot, duct-tapes its snout, and drives it to a lake in his back seat.",
+      fullStory:
+        "On October 31, 2026, Osceola County Deputy Nicholas Pippin responded to a report of an alligator wandering a parking lot on Blake Boulevard in Kissimmee, near the Celebration Hardware Company. Pippin caught the gator with his bare hands, secured its mouth with duct tape, and loaded it into the back seat of his patrol car like any other passenger. He then drove it to Lake Cecile and released it, and the sheriff's office shared the body camera footage of the whole operation.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/watch-osceola-deputy-wrangles-alligator-with-bare-hands-gives-it-ride-patrol-car/HAQ66KAHJFEFTFUMRVS2A34P6M/",
+    },
+    {
+      id: "drunk-driver-tractor-tow-crashed-truck",
+      date: "June 24, 2026",
+      year: "2026",
+      month: "June",
+      day: "24",
+      city: "Callahan",
+      score: 78,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Crashes His Truck Into a Ditch, Comes Back on a Tractor to Tow It Out, Gets a DUI",
+      description:
+        "A Florida man who crashes his pickup into a ditch returns to the scene driving a tractor to pull it out, in front of the deputies investigating the crash.",
+      fullStory:
+        "Nassau County deputies responding to a single-vehicle crash near Callahan on June 24, 2026, were told the driver had walked off to a nearby home, and while they were still on scene he came back driving a tractor, explaining on bodycam, 'I'm going to hook a tractor to it and pull it out.' Deputies watched him trip and fall over the tractor, and he told them he had been on the phone with a friend and had no idea how the crash happened. Inside the crashed truck they found a 15-pack of cold beer and several open containers, and after a field sobriety exercise he was arrested for DUI, telling a deputy he did not know the law covered any motor vehicle. The sheriff's office summed it up online: 'DUI laws apply to ALL motor vehicles...yes, including tractors.'",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/video-drunk-florida-man-drives-tractor-retrieve-pickup-truck-he-crashed-earlier-ditch-ncso",
+    },
+    {
+      id: "villages-tailgate-rum-dui-alphabet",
+      date: "November 11, 2026",
+      year: "2026",
+      month: "November",
+      day: "11",
+      city: "The Villages",
+      score: 68,
+      rubric: { absurdity: 16, humor: 18, floridaFactor: 13, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Found Balancing on His Truck's Tailgate After Morning Rum and Cokes Recites the Alphabet as 'O, P, X, Y, Z'",
+      description:
+        "A 66-year-old Florida man is found standing on his pickup's tailgate at 10 a.m. trying to load a utility vehicle and is arrested for DUI after three rum and Cokes.",
+      fullStory:
+        "Sumter County deputies answering a drunk driver complaint around 10 a.m. on Wednesday, November 11, 2026, found Jon E.S. Reiwoldt, 66, of Lady Lake, standing on the tailgate of a red Toyota Tundra near the Morse Gate in The Villages, trying to load a small utility vehicle with the keys still in the ignition. He first blamed his eyes on diabetes, but paramedics found his blood sugar normal and smelled alcohol, and he admitted to three rum and Coca-Colas. He missed all nine heel-to-toe steps, recited the alphabet as 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, X, Y, Z,' and blew .186 and .184. He was charged with DUI and held on $1,000 bond.",
+      source: "Villages-News.com",
+      sourceUrl:
+        "https://www.villages-news.com/2026/11/12/tailgate-balancing-morning-rum-drinker-busted-for-dui-near-morse-gate/",
+    },
+    {
+      id: "stolen-boat-motor-golf-cart-spray-paint",
+      date: "November 13, 2026",
+      year: "2026",
+      month: "November",
+      day: "13",
+      city: "Wildwood",
+      score: 67,
+      rubric: { absurdity: 16, humor: 15, floridaFactor: 15, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Steals a Boat Motor, Hauls It Away Strapped to a Golf Cart, and Spray-Paints It to Match His Own Boat",
+      description:
+        "A Wildwood man allegedly straps a stolen mud motor to a golf cart, drives it home, and repaints it to match his own Jon boat.",
+      fullStory:
+        "Brandon Martinez Chavez, 21, was arrested on Friday, November 13, 2026, after investigators say he led a group onto a neighbor's property in Wildwood on a golf cart, removed a 212cc Predator mud motor, Swamp Runner kit, and custom throttle grip worth about $1,000 from a 12-foot Jon boat, and strapped the motor to the golf cart to haul it home. Investigators say he then spray-painted the motor to match his own Jon boat, but on October 4 the owner spotted his motor mounted on another boat at a Wildwood home anyway. Chavez claimed he had bought the used motor for $400, and he was charged with felony grand theft and released on $2,500 bond.",
+      source: "Villages-News.com",
+      sourceUrl:
+        "https://www.villages-news.com/2026/11/16/wildwood-man-arrested-after-allegedly-strapping-stolen-boat-motor-to-golf-cart/",
+    },
+    {
+      id: "walking-dead-comic-deceased-friend",
+      date: "September 30, 2026",
+      year: "2026",
+      month: "September",
+      day: "30",
+      city: "Merritt Island",
+      score: 61,
+      rubric: { absurdity: 14, humor: 14, floridaFactor: 11, unexpectedness: 10, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Pawns a Stolen First-Edition 'Walking Dead' Comic the Same Day It Vanished, Says a Dead Friend Left It to Him",
+      description:
+        "A Merritt Island man allegedly pawns a stolen $2,000 'Walking Dead' comic hours after it disappears from a comic shop, then blames a deceased friend.",
+      fullStory:
+        "A graded first-edition 'Walking Dead' comic book valued at $2,000 disappeared from Defender Comics in Cape Canaveral on June 19, 2026, and the same day it turned up at a Port Orange pawn shop, where staff and security footage identified the seller as John Anthony Higgins, 63, of Merritt Island. When a Brevard County deputy reached him on September 30, 2026, Higgins said he had gotten the comic from a friend who had since died. 'He advised he obtained the comic book from a deceased friend in March of 2026,' the affidavit states, noting the dates did not add up, and Higgins, who also had an active warrant in a separate petit theft case, was charged with dealing in stolen property and giving false verification of ownership to a pawnbroker, with bond set at $26,000.",
+      source: "WKMG News 6",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/10/02/rare-comic-book-lands-central-florida-man-in-jail-deputies-say/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
