@@ -4737,6 +4737,686 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.news4jax.com/news/local/2024/01/06/another-one-nassau-county-deputy-completes-doordash-delivery-after-arresting-driver/",
     },
+    {
+      id: "jet-ski-slow-speed-zone-months-later-chase",
+      date: "July 12, 2026",
+      year: "2026",
+      month: "July",
+      day: "12",
+      city: "Hillsborough County",
+      score: 70,
+      rubric: { absurdity: 15, humor: 14, floridaFactor: 17, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Men Ignore FWC Order to Stop and Jet Ski Away Through a Slow Speed Zone, Get Arrested Three Months Later",
+      description:
+        "Two Florida men on jet skis ignore a wildlife officer's order to stop and speed off through the same slow speed zone they were reported for, then get tracked down months later through surveillance video and cellphone data.",
+      fullStory:
+        "On July 12, 2026, an FWC officer responding to a call about jet skis running through a designated slow speed zone in Hillsborough County identified himself and ordered two riders to stop, but both took off at high speed straight through the zone. Investigators used surveillance recordings, witness statements and cellphone data to identify Michell Herrera, 25, and Richer Carmenate, 23, both of Tampa, and officers served arrest warrants in late October 2026 and impounded one of the jet skis. The pair face charges including fleeing to elude, resisting without violence, interference with an FWC officer, violating a slow speed zone and operating a vessel with an expired registration. FWC Capt. Mathew Dallarosa called it 'a reckless decision that endangers the boating public.'",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/tampa-jet-ski-chase-fwc-arrests-2-men-after-slow-speed-zone-escape",
+    },
+    {
+      id: "no-lithium-batteries-but-a-bomb-mia",
+      date: "August 31, 2026",
+      year: "2026",
+      month: "August",
+      day: "31",
+      city: "Miami",
+      score: 73,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Asked About Lithium Batteries at Airport Gate Says No, but He Has a Bomb",
+      description:
+        "A passenger asked the routine lithium battery question at a Miami International Airport gate says he has none but does have a bomb, then insists he was joking.",
+      fullStory:
+        "Yoel Guevara-Crespo, 33, was boarding American Airlines Flight 1319 from Miami International Airport to Camagüey, Cuba, on the morning of August 31, 2026, when an airline employee asked the standard security questions about lithium batteries or incendiary devices, according to an arrest report. He said he had neither but claimed he had a bomb, and when he was told he would not be allowed to fly and that a supervisor would be contacted, he said he was joking. A K-9 swept his luggage and found nothing suspicious, and he was arrested on a second-degree felony charge of making a false report about placing a bomb or explosive, with a judge setting his bond at $2,500.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/miami-international-airport-mia-bomb-joke-threat-passenger-arrested-after-bomb-claim-delays-miami-flight-to-cuba-american-airlines-miami-dade-sheriffs-office-",
+    },
+    {
+      id: "doordash-hit-and-run-fwc-truck",
+      date: "October 28, 2026",
+      year: "2026",
+      month: "October",
+      day: "28",
+      city: "Citrus Springs",
+      score: 68,
+      rubric: { absurdity: 15, humor: 16, floridaFactor: 13, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Hits a Parked FWC Truck During a DoorDash Run, Finishes the Delivery, Then Drives Off",
+      description:
+        "A DoorDash driver who crashes into a marked wildlife officer's truck parked in a driveway completes the delivery anyway and leaves without telling anyone.",
+      fullStory:
+        "Around 12:30 p.m. on October 28, 2026, a DoorDash driver in a dark-colored SUV struck a marked FWC Ford F-150 patrol truck parked in a driveway on Dragonis Drive in Citrus Springs, then finished the delivery and left without notifying anyone, according to the Florida Highway Patrol. Home surveillance video captured the driver and the vehicle, and after the crash drew attention on social media and in the news, Joshua Beauvois, 39, of Dunnellon, contacted FHP on November 8, 2026, and admitted to the allegations. He was charged with careless driving and failing to report a traffic crash.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/doordash-hit-and-run-driver-charged-hitting-fwc-vehicle-citrus-county-fhp",
+    },
+    {
+      id: "school-bus-joyride-miami-gardens",
+      date: "November 5, 2026",
+      year: "2026",
+      month: "November",
+      day: "5",
+      city: "Gladeview",
+      score: 73,
+      rubric: { absurdity: 18, humor: 17, floridaFactor: 12, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals a School Bus, Drives It Around for a Full Day Because He Thought He Could Get Away With It",
+      description:
+        "A Florida man takes a yellow school bus from a bus company's gated lot and keeps it moving for about a day before leading deputies into a dead end.",
+      fullStory:
+        "Erick Moore, 23, of Miami Gardens, was arrested on the morning of November 5, 2026, after a 2001 yellow International school bus was taken from the gated yard of Little Angels Bus Service in unincorporated Gladeview, whose owner identified him on surveillance video and said he had taken a bus from the same lot before. Miami-Dade deputies spotted the bus around 6:45 a.m., and Moore kept driving through two attempted stops before turning into a dead end on NW 73rd Terrace, where he was surrounded and arrested. He first claimed a man had threatened to kill his family unless he stole the bus for parts, then admitted he took it because 'he thought he could get away with it.' He faces charges including grand theft of a vehicle, burglary of an unoccupied structure, fleeing and eluding, reckless driving and driving with a suspended license.",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/miami-gardens-man-arrested-stolen-school-bus-chase-northwest-miami-dade/",
+    },
+    {
+      id: "stuck-in-sand-federal-agent-daytona",
+      date: "June 30, 2025",
+      year: "2025",
+      month: "June",
+      day: "30",
+      city: "Daytona Beach",
+      score: 82,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 17, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Steals a Car Off Daytona Beach, Gets It Stuck in the Sand, Tells Deputies He Is an Undercover Federal Agent",
+      description:
+        "A Florida man drives off in a beachgoer's Mercedes on Daytona Beach, gets it stuck in the sand two blocks away, and tells deputies he is a federal agent on an undercover mission.",
+      fullStory:
+        "On the morning of June 30, 2025, a beachgoer who had parked a blue Mercedes-Benz on Daytona Beach with the keys in the cupholder was sitting in a beach chair nearby when, as the owner put it, 'I turned around and saw my car driving away.' Volusia County deputies found the car stuck in the sand two blocks away, and Robert Joshua Stinson, 27, told them he was a federal agent on an undercover mission who had been instructed to take the vehicle, that he 'messed up' by heading north instead of south, and after telling them 'I'm a federal agent,' asked them not to say it out loud. Deputies found nothing to support the claim, and Stinson, who said he was sober, was charged with grand theft of a motor vehicle.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/man-accused-stealing-car-daytona-beach-claimed-be-federal-again-deputies-say",
+    },
+    {
+      id: "porsche-museum-ankle-monitor-fugitive",
+      date: "December 30, 2025",
+      year: "2025",
+      month: "December",
+      day: "30",
+      city: "Sarasota",
+      score: 66,
+      rubric: { absurdity: 15, humor: 13, floridaFactor: 12, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Accused of Stealing a $250,000 Porsche From a Car Museum Cuts Off His Ankle Monitor, Turns Up in the Panhandle",
+      description:
+        "A Florida man charged with burglarizing a classic car museum for a $250,000 Porsche cuts off his court-ordered ankle monitor and skips town, until troopers find him in the Panhandle.",
+      fullStory:
+        "Sarasota police say Daniel Boyce, 38, of Sarasota, burglarized the former Sarasota Classic Car Museum on North Tamiami Trail on June 14, 2023, taking a brown 1977 Porsche 930 Turbo valued at $250,000, which police later recovered with a fraudulently obtained title and tag. Ordered to wear an ankle monitor while out on bond after his 2023 arrest, Boyce cut it off and 'skipped town,' according to police. Florida Highway Patrol troopers found him in the Florida Panhandle on December 30, 2025, and took him into custody without incident, and he was held without bond in the Taylor County Jail facing multiple felony charges tied to the Porsche theft plus new drug charges.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/sarasota-man-accused-stealing-250k-classic-porsche-cuts-off-ankle-monitor-flees-panhandle-police",
+    },
+    {
+      id: "pitchfork-whip-teddy-bears-publix",
+      date: "July 19, 2022",
+      year: "2022",
+      month: "July",
+      day: "19",
+      city: "Minneola",
+      score: 82,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 16, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman Armed With a Pitchfork and a Whip Tries to Sell Teddy Bears Behind a Publix",
+      description:
+        "A Florida woman carrying a pitchfork and a whip tries to sell teddy bears behind a Publix and stabs a stranger's minivan with the pitchfork.",
+      fullStory:
+        "On July 19, 2022, the manager of a Publix in Minneola told authorities that Lisa Anne Slone, 56, had been trying to sell teddy bears behind the store and had used a pitchfork to stab a minivan, whose owner chose to fix the damage rather than involve police. When Florida Highway Patrol troopers ordered her to stop, she refused to put the weapon down and walked away, and once in a patrol car she unbuckled her seatbelt and kicked at the window. Troopers said she appeared highly intoxicated on a stimulant, and when asked about her cuts and bruises she said she 'felt no pain anymore and that God was in control.' She was charged with aggravated assault with a deadly weapon and held on a $5,000 bond.",
+      contentNote:
+        "This story involves an aggravated assault charge and apparent drug intoxication.",
+      source: "WKMG News 6",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2022/07/20/woman-with-pitchfork-whip-tries-to-sell-teddy-bears-at-lake-county-publix-florida-highway-patrol-says/",
+    },
+    {
+      id: "drug-dealer-occupation-arrest-report",
+      date: "February 3, 2015",
+      year: "2015",
+      month: "February",
+      day: "3",
+      city: "Palm Beach County",
+      score: 67,
+      rubric: { absurdity: 15, humor: 17, floridaFactor: 10, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Nearly Crashes Into an Unmarked Deputy Car in a Stolen Vehicle, Lists His Occupation as Drug Dealer",
+      description:
+        "A Florida man who cuts off an unmarked sheriff's car while driving a stolen vehicle flees deputies at high speed and then lists 'drug dealer' as his job on the arrest report.",
+      fullStory:
+        "Palm Beach County deputies say Robert Phillips, 25, of West Palm Beach, cut in front of an unmarked sheriff's car and nearly caused a crash on February 3, 2015, and a records check showed he was driving a stolen car. A detective followed him and watched him complete a drug transaction, and when marked patrol cars caught up he fled at high speed before being arrested with about 22 grams of heroin and $2,316 in cash, plus 5.3 grams of crack cocaine in the car. On his arrest report, Phillips listed his occupation as 'drug dealer,' and he was held on a $242,000 bond on multiple drug charges.",
+      contentNote:
+        "This story involves heroin and crack cocaine dealing and a high-speed flight from deputies.",
+      source: "WTXL ABC 27",
+      sourceUrl:
+        "https://www.wtxl.com/news/florida-man-lists-drug-dealer-as-occupation-on-arrest-report/article_4eb827de-adff-11e4-8f85-af1bde301082.html",
+    },
+    {
+      id: "boxers-apron-little-caesars-break-in",
+      date: "August 27, 2022",
+      year: "2022",
+      month: "August",
+      day: "27",
+      city: "Pensacola",
+      score: 82,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 15, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in Boxers Breaks Into a Little Caesars, Ties On an Apron, Falls Through the Ceiling and Answers the Phone",
+      description:
+        "A Florida man wearing only boxers and tube socks breaks into a Little Caesars, puts on an employee apron, falls through the ceiling trying to escape, and answers the store phone before climbing out the drive-thru window to waiting deputies.",
+      fullStory:
+        "Escambia County deputies said Chad Everett Corn, 35, of Milton, walked into a Little Caesars near Pensacola through an unsecured front door on August 27, 2022, wearing only boxer shorts and tube socks, grabbed water bottles and a brownie, and wrapped an employee's apron around his waist. When the front door locked behind him he removed ceiling tiles, crawled into the ceiling and fell through, setting off an alarm, and when the restaurant phone rang, likely a security company checking on the building, he allegedly answered it. He finally climbed out the drive-thru window, where deputies arrested him on burglary and larceny charges, and the sheriff's office wrote on Facebook: 'At this point, he has been in the store long enough to qualify for employee of the month and he is dressed for it.'",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/trending/florida-man-wearing-only-apron-boxers-socks-breaks-into-little-caesars/L6MJ64C72BEMRCA5K5IMIF7VWQ/",
+    },
+    {
+      id: "naples-tricycle-god-mail-robbery",
+      date: "December 22, 2018",
+      year: "2018",
+      month: "December",
+      day: "22",
+      city: "Naples",
+      score: 80,
+      rubric: { absurdity: 21, humor: 17, floridaFactor: 16, unexpectedness: 13, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Woman Robs a Mail Carrier With a Toy Gun, Flees on a Tricycle and Yells That She Is God",
+      description:
+        "A Florida woman points a plastic gun at a jogger and a mail carrier, takes a single package, and pedals away on a tricycle, then yells that she is God when deputies catch her.",
+      fullStory:
+        "Collier County deputies said Leida Crisostomo, 52, of Naples, pointed a gun at a jogger on December 22, 2018, then approached a stopped U.S. Postal Service truck, where the mail carrier said she pointed the gun at him, took a package and rode away on a tricycle. A deputy spotted her riding on a sidewalk and took her into custody, and the gun turned out to be plastic. During the arrest she yelled that she was God and said 'voices were telling her to do things,' and she was charged with armed robbery and aggravated assault and held on $25,000 bond.",
+      contentNote:
+        "This incident involved an armed robbery charge after a gun, later found to be fake, was pointed at people.",
+      source: "Local 10",
+      sourceUrl:
+        "https://www.local10.com/news/2018/12/27/woman-who-claimed-to-be-god-robs-mail-truck-flees-on-tricycle-deputies-say",
+    },
+    {
+      id: "dalmatian-onesie-police-chase",
+      date: "January 27, 2025",
+      year: "2025",
+      month: "January",
+      day: "27",
+      city: "Pasco County",
+      score: 82,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 16, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man in a Dalmatian Onesie Flees Troopers, Escapes With One Handcuff On, Gets Tracked Home by a K-9",
+      description:
+        "A Florida man wearing a Dalmatian onesie crashes into a tree while fleeing troopers, slips away with one handcuff still on after being stunned twice, and is tracked to his nearby home by a police dog.",
+      fullStory:
+        "Florida Highway Patrol troopers tried to pull over Dylan Keith Devereaux, 36, for reckless driving at high speed shortly after midnight on January 27, 2025, in Pasco County, and after a chase he crashed into a tree and took off running in a Dalmatian onesie. A trooper hit him with a stun gun, and when a fight broke out during handcuffing he was stunned again, but he still 'escaped once more and took off running toward the woods with one handcuff on,' troopers noted. A 3-year-old K-9 tracked him to his nearby home, where his girlfriend told troopers she did not want them near it because there were drugs inside; authorities allegedly found drugs and arrested the couple, and Devereaux faces charges including fleeing to elude, escape, battery on a law enforcement officer and possession of methamphetamine.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/watch-florida-man-dalmatian-onesie-arrested-after-wild-chase-troopers-fhp-says",
+    },
+    {
+      id: "birthday-suit-bandit-knife-door",
+      date: "April 26, 2025",
+      year: "2025",
+      month: "April",
+      day: "26",
+      city: "Palm Coast",
+      score: 76,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 15, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Tries to Break Into a Neighbor's Home Naked After Midnight, Earns the Title Birthday Suit Bandit",
+      description:
+        "A naked Florida man is caught walking away from a neighbor's home after the woman inside hears what sounds like a knife cutting through her front door lock.",
+      fullStory:
+        "Shortly after midnight on April 26, 2025, a woman on Foxhall Lane in Palm Coast called 911 after hearing what sounded like a knife cutting through her front door lock, and Flagler County deputies found her neighbor, Matthew Hunter, 63, walking away naked, with gouge marks left on the door frame and molding. According to the arrest affidavit, he had yelled that he would come inside and demanded she open the door, and his wife told deputies he had been drinking heavily. Deputies, who dubbed him a 'birthday suit bandit,' charged him with attempted burglary, criminal mischief and exposure of sex organs.",
+      contentNote:
+        "This incident involved an attempted break-in at an occupied home.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/naked-florida-man-tries-break-home-knife-deputies-say-birthday-suit-bandit",
+    },
+    {
+      id: "gas-station-roof-cut-pond-escape",
+      date: "June 24, 2026",
+      year: "2026",
+      month: "June",
+      day: "24",
+      city: "Lee County",
+      score: 76,
+      rubric: { absurdity: 18, humor: 17, floridaFactor: 16, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Cuts a Hole in a Gas Station Roof to Steal Lottery Tickets, Jumps Into a Pond When a Drone Finds Him",
+      description:
+        "A Florida man burglarizes a gas station through a hole in its roof, hides on the roof from a sheriff's drone, then jumps off and runs into a nearby pond.",
+      fullStory:
+        "Lee County deputies responding to a burglary call at around 3 a.m. on June 24, 2026, at the Super America gas station on Alico Road said Leonardo Cruz Pena, 30, had cut a hole in the store's ceiling, taken money, lottery tickets and cigarettes, and climbed on a drink cooler to escape back through the roof. Deputies launched a drone and found him hiding behind an air conditioning unit on the roof, and he ignored their commands, jumped from the roof and ran into a nearby pond. Deputies pulled him out with cash, cigarettes and a blade in his pockets, recovered a bag of cash, cigarettes and lottery tickets from the roof, and charged him with burglary, grand theft, criminal mischief, petit theft and resisting an officer without violence.",
+      source: "Gulf Coast News",
+      sourceUrl:
+        "https://www.gulfcoastnewsnow.com/article/gas-station-roof-break-in-pond-arrest-lee-county/71725934",
+    },
+    {
+      id: "club-911-no-services",
+      date: "June 8, 2025",
+      year: "2025",
+      month: "June",
+      day: "8",
+      city: "Clearwater",
+      score: 79,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 13, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Calls 911 to Complain He Paid $300 for Sex at a Strip Club and Never Got the Services",
+      description:
+        "A man at a strip club near Clearwater calls 911 to report that he paid for sex and did not receive the services, and is charged with misusing 911.",
+      fullStory:
+        "Shortly after midnight on June 8, 2025, Sultan Alnofaie, 21, of Miramar, called 911 from OZ Gentlemen's Club near Clearwater, telling dispatchers to 'come take him to jail' and saying he had paid for sex but didn't receive 'services.' Club staff told Pinellas County deputies he had asked for a private room and sex and called 911 when he was refused, and deputies said he paid a club worker $300, appeared intoxicated and smelled of alcohol. He was charged with misuse of the wireless 911 system and has since bonded out.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/man-pays-sex-florida-club-calls-911-complain-about-not-receiving-services-pcso",
+    },
+    {
+      id: "eagle-lake-feces-meth-breakin",
+      date: "May 21, 2026",
+      year: "2026",
+      month: "May",
+      day: "21",
+      city: "Eagle Lake",
+      score: 77,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Breaks Into a Vacant Home to Change After Soiling Himself, Leaves Feces on the Walls and Floor",
+      description:
+        "A Florida man caught at a vacant Eagle Lake home tells deputies he went inside to change clothes after soiling himself, and deputies find feces on the walls and floor.",
+      fullStory:
+        "Polk County deputies checking a trespassing report from a New York property owner first visited his Eagle Lake property on May 20, 2026, and found signs someone had been inside, then returned the next day and saw more signs the intruder was back. Later that day a passing deputy noticed something looked different, and Todd Michael Lebouton, 35, came out and told deputies he went inside because he had soiled himself and needed to change clothes. The sheriff's office reported: 'Inside the property, deputies found that Todd didn't just do it to himself. He did it to the walls and floor.' Deputies also found methamphetamine on him, and he was charged with burglary of a structure, creating a nuisance injurious to health, possession of methamphetamine and possession of drug paraphernalia.",
+      source: "The National Desk",
+      sourceUrl:
+        "https://thenationaldesk.com/news/americas-news-now/sht-himself-florida-man-allegedly-breaks-into-home-soils-his-pants-smears-feces-poop-pooped-his-pants-excrement-trespassing-drugs-meth-methamphetamine-burglary-possession-of-drug-paraphernalia",
+    },
+    {
+      id: "car-theft-vape-pool-deck-chase",
+      date: "October 10, 2026",
+      year: "2026",
+      month: "October",
+      day: "10",
+      city: "Plant City",
+      score: 71,
+      rubric: { absurdity: 17, humor: 16, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals a Car, Swipes a Vape Through a Gas Station Window, Gets Caught Hiding on a Pool Deck",
+      description:
+        "A Florida man accused of taking a car from an occupied home stops at a gas station to grab a vape through the sales window before deputies and a sheriff's aircraft track him to a backyard pool deck.",
+      fullStory:
+        "Hillsborough County deputies say Zachary Brooks, 26, took a set of keys and a vehicle from an occupied home on Alafia Hills Drive in the Plant City area around 8 a.m. on October 10, 2026, then drove to a gas station on Paul Buchman Highway, where he 'reached through the sales window and stole a vape before fleeing.' Patrol units spotted the stolen vehicle and, with help from the sheriff's aviation unit, followed it until it stopped on East Trapnell Road, where Brooks got out and ran. Deputies found him hiding on the rear pool deck of a nearby home and charged him with grand theft motor vehicle and petit theft.",
+      source: "Tampa Bay 28",
+      sourceUrl:
+        "https://www.tampabay28.com/news/region-hillsborough/man-arrested-after-stealing-vehicle-vape-and-leading-hillsborough-deputies-on-chase-hcso",
+    },
+    {
+      id: "del-taco-midnight-tacos-smash",
+      date: "May 18, 2025",
+      year: "2025",
+      month: "May",
+      day: "18",
+      city: "Port Charlotte",
+      score: 73,
+      rubric: { absurdity: 18, humor: 18, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Denied Four Tacos at Closing Time Smashes Del Taco Drive-Thru Window With a Pipe Wrench",
+      description:
+        "A Florida man in a Cadillac convertible who is told the Del Taco kitchen is closed pulls up to the drive-thru window and cracks it with a pipe wrench.",
+      fullStory:
+        "Around midnight on May 18, 2025, Anthony Izzo pulled his Cadillac convertible into the drive-thru of the Del Taco on Murdock Circle in Port Charlotte and asked for four tacos, but an employee told him the store was closed and he could not be served. Workers then heard loud popping noises, and surveillance video showed him striking the drive-thru window four times with a pipe wrench, cracking it, before driving off. Charlotte County deputies traced the car to his home using license plate reader technology, found the wrench inside, and arrested him on a felony criminal mischief charge after he admitted to smashing the window.",
+      source: "WWSB ABC7",
+      sourceUrl:
+        "https://www.mysuncoast.com/2025/05/19/port-charlotte-man-allegedly-smashes-drive-thru-after-not-being-able-get-tacos/",
+    },
+    {
+      id: "lady-lake-golf-clubs-body-911",
+      date: "December 9, 2023",
+      year: "2023",
+      month: "December",
+      day: "9",
+      city: "Lady Lake",
+      score: 77,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Reports a Possible Body at His Front Door, Deputies Find a Bag of Golf Clubs",
+      description:
+        "A Florida man tells deputies there may be a dead body in front of his door after a fight, but the only thing there is a duffle bag full of golf clubs.",
+      fullStory:
+        "Timothy Henry, 51, called deputies to his Lady Lake home on the night of December 9, 2023, saying he had 'knocked out an intruder,' and dispatchers noted he also described a dog theft and 'a woman and child inside of his trees.' Once inside, Henry told deputies there was a 'body' in front of his front door and he did not know if the person was dead, but all they found was a large duffle bag holding a set of golf clubs. Deputies did find a glass jar of marijuana on the kitchen counter, a THC vape pen, and other drugs and paraphernalia, and Henry was arrested on four drug-related charges and taken to the Sumter County Detention Center.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/not-making-sense-florida-mans-report-of-possible-dead-body-in-home-leads-to-bizarre-find-deputies-say",
+    },
+    {
+      id: "fort-myers-beach-underwear-mini-golf-burglary",
+      date: "September 13, 2024",
+      year: "2024",
+      month: "September",
+      day: "13",
+      city: "Fort Myers Beach",
+      score: 73,
+      rubric: { absurdity: 18, humor: 16, floridaFactor: 16, unexpectedness: 11, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Strips to His Underwear and Trashes a Mini Golf Course Before Dawn",
+      description:
+        "A Florida man breaks into a Fort Myers Beach mini golf course in the early morning, strips down to his underwear, and tears down signs and breaks a window and gate.",
+      fullStory:
+        "Lee County deputies responding to an alarm at Smuggler's Cove Adventure Golf on Fort Myers Beach shortly after 4:30 a.m. on September 13, 2024, heard loud banging and found Francisco Fortin Mayorga, 38, wearing only his underwear, sweating and 'in an altered mental state.' Surveillance video showed him arriving clothed, later stripped to his underwear, tearing down signs, breaking a window and a gate, and ripping off a motion detector, and deputies also found a broken fire extinguisher with two more missing from their cases. He was charged with counts including burglary and criminal mischief and taken to the Lee County jail.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/video-florida-man-underwear-accused-burglarizing-damaging-items-mini-golf-course",
+    },
+    {
+      id: "key-west-banana-costume-urination-arrest",
+      date: "October 29, 2023",
+      year: "2023",
+      month: "October",
+      day: "29",
+      city: "Key West",
+      score: 74,
+      rubric: { absurdity: 17, humor: 19, floridaFactor: 16, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man in a Banana Costume Caught Peeing on a Key West Sidewalk Zig Zags Away From Police",
+      description:
+        "A college student dressed as a banana is caught urinating on a Key West sidewalk across from a portable bathroom and then fights being handcuffed.",
+      fullStory:
+        "Key West police say they saw Kyle Mortimer, 20, a University of Miami student wearing a banana costume, urinating on a sidewalk across the street from a portable bathroom at about 1:15 a.m. on October 29, 2023. When officers told him to stop, he began 'zig zagging' to avoid arrest, kept pulling away after an officer grabbed his arm, and 'interlaced his fingers and held them tightly together' so he could not be handcuffed. He was charged with disorderly conduct and resisting arrest and released after posting bond.",
+      source: "Fox News",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-college-student-arrested-banana-costume-allegedly-urinating-sidewalk",
+    },
+    {
+      id: "ormond-beach-teleported-stolen-bmw-crash",
+      date: "December 8, 2025",
+      year: "2025",
+      month: "December",
+      day: "8",
+      city: "Ormond Beach",
+      score: 85,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 16, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Crashes a Stolen BMW at Over 130 MPH, Tells Deputies He Teleported Into It",
+      description:
+        "A Florida man who takes a BMW convertible from a park while its owner is walking his dog crashes it at high speed and tells deputies he teleported into the car.",
+      fullStory:
+        "Volusia County deputies say Calvin Curtis Johnson, 36, took a BMW convertible from Bicentennial Park in Ormond Beach on December 8, 2025, after its owner left the keys inside while walking his dog, then crashed it at Old Dixie Highway and Plantation Oaks Boulevard after reaching more than 130 mph. Body camera video shows deputies pulling a bloody-faced Johnson from the driver's seat as the car burned, and when told to put his hands on the patrol car he replied, 'Yes, sir. I teleported.' He later told a deputy, 'You saved me from the aliens,' and was charged with grand theft and driving while license canceled, suspended or revoked.",
+      contentNote:
+        "This incident involved a high-speed crash in which the driver was injured.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/man-claims-he-teleported-stolen-bmw-before-130-mph-crash-deputies-say",
+    },
+    {
+      id: "ocala-naked-thrift-store-tshirt-theft",
+      date: "January 24, 2024",
+      year: "2024",
+      month: "January",
+      day: "24",
+      city: "Ocala",
+      score: 80,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 16, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Runs Naked Into a Church Thrift Shop, Gets Handed Shorts, Steals a $5 T-Shirt on the Way Out",
+      description:
+        "A naked Florida man walks into an Ocala thrift store looking for clothes, is given a pair of shorts, and leaves still unclothed with a $5 T-shirt he did not pay for.",
+      fullStory:
+        "Marion County deputies say Michael Da Costa, 38, entered the Wings of Faith Thrift Store in Ocala completely nude on January 24, 2024, as witnesses reported a 'naked man running around everywhere.' A clerk handed him a pair of shorts and told him to leave, but on his way out he took a T-shirt worth $5 and left still without clothing, later telling deputies 'he ran away from somewhere naked and went to the thrift store to gather some clothes.' He was charged with retail theft and indecent exposure and held in the Marion County Jail on a $6,000 bond.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/completely-naked-florida-man-barges-into-church-thrift-shop-and-steals-t-shirt-deputies-say",
+    },
+    {
+      id: "stuart-salvation-army-kettle-tripod",
+      date: "December 23, 2025",
+      year: "2025",
+      month: "December",
+      day: "23",
+      city: "Stuart",
+      score: 80,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Working as a Salvation Army Bell Ringer Allegedly Tries to Impale a Publix Manager With the Donation Kettle Tripod",
+      description:
+        "A Salvation Army bell ringer outside a Stuart Publix allegedly gets drunk on duty and goes after the store manager with his donation kettle tripod.",
+      fullStory:
+        "Steven Scott Pavlik, 63, was working as a Salvation Army bell ringer outside the Publix on Kanner Highway in Stuart on December 23, 2025, when, according to the Martin County Sheriff's Office, he became intoxicated on duty and began aggressively confronting people walking by. When the store manager came outside to talk to him, Pavlik allegedly became violent and 'attempted to impale the manager with the donation kettle tripod,' though the manager was not injured. Pavlik fled but was found at his home and arrested on charges of aggravated assault and resisting arrest, and the sheriff's office summed it up: 'Instead of spreading holiday cheer, Pavlik acted more like bad santa.'",
+      source: "WPTV NewsChannel 5",
+      sourceUrl:
+        "https://www.wptv.com/news/region-martin-county/stuart/santas-helper-arrested-for-attacking-store-manager-with-donation-stand",
+    },
+    {
+      id: "new-smyrna-beach-ebike-middle-finger-chase",
+      date: "November 13, 2026",
+      year: "2026",
+      month: "November",
+      day: "13",
+      city: "New Smyrna Beach",
+      score: 82,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 17, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man, 75, Flips Off a Deputy and Leads Him on a 15 MPH E-Bike Chase Off the Beach, Ends It Clinging to a Golf Cart",
+      description:
+        "A 75-year-old e-bike rider caught speeding on New Smyrna Beach flips off the deputy trying to stop him and flees into a nearby garage, where he clings to a golf cart.",
+      fullStory:
+        "Robert Joseph Mitchell, 75, was riding an e-bike on the beach near 1500 N. The Beach in New Smyrna Beach around 3 p.m. on November 13, 2026, going about 15 mph in a 10 mph zone and, according to a Volusia Sheriff's Office affidavit, 'swerving around individuals on the beach, including children.' When a deputy tried to pull him over, he raised his middle finger, yelled profanities and fled about half a mile, leaving the beach at the Flagler Avenue Approach and heading down Buenos Aires Street. Deputies caught up near Cedar Avenue, where he ducked into a nearby home through an open garage door and 'actively resisted by maintaining a strong grip on a golf cart located in the garage.' He was charged with fleeing or eluding, resisting an officer without violence, speeding on the beach and driving outside the beach driving area.",
+      source: "WKMG News 6",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/11/17/vso-senior-citizen-flips-off-cop-leads-volusia-deputy-on-beachside-e-bike-chase/",
+    },
+    {
+      id: "hypoluxo-saw-palmetto-berry-poacher",
+      date: "September 3, 2026",
+      year: "2026",
+      month: "September",
+      day: "3",
+      city: "Hypoluxo",
+      score: 67,
+      rubric: { absurdity: 14, humor: 12, floridaFactor: 18, unexpectedness: 11, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Man Caught Poaching 500 Pounds of Saw Palmetto Berries From a Protected Nature Trail",
+      description:
+        "A Palm Beach County deputy catches a man harvesting saw palmetto berries along an ADA trail inside the Hypoluxo Scrub Natural Area, and about 500 pounds of berries are recovered.",
+      fullStory:
+        "Alejandro Raymundo Lucas, 22, of Boynton Beach, was spotted by a patrolling Palm Beach County deputy around 4:45 p.m. on September 3, 2026, harvesting berries along an ADA trail in the Hypoluxo Scrub Natural Area, wearing gloves and long clothing and carrying a red berry bucket and a heavy-duty harvesting bag. A site manager had reported possible berry picking there earlier that week, and after detaining Lucas, deputies searched the area where he had been picking and collected about 500 pounds of saw palmetto berries. He was charged with harvesting saw palmetto berries without permission, a felony, along with grand theft and a county ordinance violation, and was booked into the Palm Beach County jail on a $10,250 bond.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/boynton-beach-man-latest-charged-saw-palmetto-berry-crackdown-after-500-pounds-found-hypoluxo-scrub-natural-area-pbso-illigal-picker-public-land-",
+    },
+    {
+      id: "burrito-birthday-battery-st-pete",
+      date: "August 3, 2024",
+      year: "2024",
+      month: "August",
+      day: "3",
+      city: "St. Petersburg",
+      score: 77,
+      rubric: { absurdity: 18, humor: 21, floridaFactor: 12, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman Buys Her Husband Taco Bell and McDonald's for His Birthday, Then Allegedly Throws the Burrito at His Face",
+      description:
+        "A St. Petersburg woman who buys her husband a fast food birthday meal allegedly hits him with a burrito and a taco during the argument that follows.",
+      fullStory:
+        "Esha Persad, 34, and her husband of five years got into an argument at their St. Petersburg home just after midnight on August 3, 2024, after she bought him Taco Bell and McDonald's for his birthday, according to a police affidavit. Police said she struck him with food, with the affidavit naming a burrito and a soft shell taco, and when officers arrived 'a burrito was still on the man's face.' Persad told police she threw the burrito because he had thrown a bag at her, which he denied; he was not injured, and she was charged with battery, booked into the Pinellas County jail and released later that day.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://fox35orlando.com/news/florida-woman-strikes-husband-burrito-after-argument-over-taco-bell-mcdonalds-birthday-meal-police",
+    },
+    {
+      id: "villages-golf-cart-hot-wiring-facebook",
+      date: "November 10, 2026",
+      year: "2026",
+      month: "November",
+      day: "10",
+      city: "The Villages",
+      score: 70,
+      rubric: { absurdity: 15, humor: 13, floridaFactor: 18, unexpectedness: 12, headlineQuality: 7, sourceQuality: 5 },
+      title: "Florida Men Allegedly Hot-Wire and Rekey Golf Carts in The Villages, Then Try to Sell Them on Facebook Marketplace",
+      description:
+        "Two men allegedly hot-wire and rekey golf carts taken from The Villages and try to sell them on Facebook Marketplace, until a victim tracks his stolen cart by GPS.",
+      fullStory:
+        "Starting in late October 2026, a crew allegedly hot-wired and rekeyed golf carts around Lake Sumter Landing in The Villages, including a $10,000 Yamaha taken from a couple at Lighthouse Point Bar and Grille, hid them overnight at local businesses and tried to sell them on Facebook Marketplace, where Steven Santiago, 54, allegedly went by the name 'Seven Santiago.' On November 10, 2026, a victim used GPS to track his stolen cart to Glenview Country Club, and Sumter County deputies stopped Santiago and David Timothy Andrews, 39, in a red Nissan Altima with an expired New Jersey tag, finding fentanyl wrapped in tin foil in Andrews' wallet. Santiago was charged with four counts of grand theft and Andrews with three counts of grand theft, drug possession and a probation violation, and a third suspect, Jeffery Vincent Woods, 47, was later taken into custody in Lake County.",
+      source: "Villages-News.com",
+      sourceUrl:
+        "https://www.villages-news.com/2026/11/20/third-suspect-apprehended-in-golf-cart-theft-ring-in-the-villages/",
+    },
+    {
+      id: "marion-county-drunk-lawnmower-dui",
+      date: "November 12, 2026",
+      year: "2026",
+      month: "November",
+      day: "12",
+      city: "Marion County",
+      score: 61,
+      rubric: { absurdity: 14, humor: 13, floridaFactor: 15, unexpectedness: 8, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Arrested for Driving Drunk on a Lawnmower Down a Public Road",
+      description:
+        "Marion County deputies stop a 60-year-old man riding his lawnmower on the road and arrest him for DUI after he admits he has been drinking.",
+      fullStory:
+        "Marion County Sheriff's deputies arrested Wilson Brower, 60, on the night of November 12, 2026, after he was 'spotted riding around on the road with his lawnmower' and pulled over. Brower admitted to drinking and was charged with misdemeanor driving under the influence and driving without a license. He had not posted bond and was still being held in the Marion County Jail days later.",
+      source: "WCJB TV20",
+      sourceUrl:
+        "https://www.wcjb.com/2026/11/17/marion-county-man-arrested-drunk-driving-lawnmower/",
+    },
+    {
+      id: "masked-prowler-uses-deputys-name-dodge-arrest",
+      date: "July 27, 2026",
+      year: "2026",
+      month: "July",
+      day: "27",
+      city: "Davenport",
+      score: 74,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 11, unexpectedness: 13, headlineQuality: 9, sourceQuality: 3 },
+      title: "Masked Florida Man Caught Prowling a Car Lot Reads the Deputy's Name Tag and Gives It as His Own Name",
+      description:
+        "A masked man caught peering into vehicles at a Davenport car dealership tells deputies his name is James, then reads the arresting deputy's name tag and upgrades it to James Davis.",
+      fullStory:
+        "Polk County deputies were called around 10 a.m. on July 27, 2026, to Posner Chrysler Jeep on US 27 in Davenport, where witnesses reported a man in black clothing and a black mask looking through the windows of parked vehicles, and they stopped Tyrell Laron Dixon, 29, of Winter Haven, nearby with a backpack and a screwdriver sticking out of his pocket. Asked for his name, he first said 'James,' then looked at the nametag on Deputy Davis's uniform and offered 'James Davis' before giving his real name. Dixon, who was on probation for burglary, was charged with possession of burglary tools, loitering and prowling, giving a false identification to law enforcement, resisting an officer without violence and violation of probation, with a mask enhancement.",
+      source: "Tampa Free Press",
+      sourceUrl:
+        "https://www.tampafp.com/my-name-is-deputy-davis-masked-winter-haven-prowler-tries-deputys-name-to-dodge-arrest/",
+    },
+    {
+      id: "man-spits-mcdonalds-drive-thru-employee-key-west",
+      date: "March 17, 2026",
+      year: "2026",
+      month: "March",
+      day: "17",
+      city: "Marathon",
+      score: 51,
+      rubric: { absurdity: 12, humor: 10, floridaFactor: 12, unexpectedness: 8, headlineQuality: 6, sourceQuality: 3 },
+      title: "Florida Man Spits in a McDonald's Drive-Thru Worker's Face, Gets Arrested Weeks Later",
+      description:
+        "A Key West man grabs his food at a Marathon McDonald's drive-through window, makes a comment to the worker, and spits directly in the employee's face.",
+      fullStory:
+        "Fredrick Gartenmayer, 46, of Key West, pulled up to the drive-through window of a McDonald's in Marathon around 10:14 p.m. on March 17, 2026, and, according to the victim, grabbed his bag of food, made a comment to the worker and spat 'directly into the employee's face.' Deputies spent a few weeks investigating, obtained a warrant and arrested him on April 9, 2026, on a battery charge.",
+      source: "Tampa Free Press",
+      sourceUrl:
+        "https://www.tampafp.com/mcspit-take-florida-man-jailed-after-drive-through-disgrace/",
+    },
+    {
+      id: "woman-brings-publix-bags-shoplift-groceries",
+      date: "November 13, 2023",
+      year: "2023",
+      month: "November",
+      day: "13",
+      city: "Lady Lake",
+      score: 70,
+      rubric: { absurdity: 15, humor: 16, floridaFactor: 16, unexpectedness: 12, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Woman, 74, Uses Plastic Publix Bags to Shoplift $201 in Groceries From Publix",
+      description:
+        "A 74-year-old Lady Lake woman loads $201.90 worth of unpaid Publix groceries into plastic Publix bags and her very large purse, then walks right past the registers.",
+      fullStory:
+        "Marsha Yanofsky, 74, was stopped by an assistant store manager on November 13, 2023, as she walked out of the Lady Lake Publix past the registers with $201.90 in vitamins, deli food, produce and meat, after the manager watched her 'place all items she grabbed into plastic Publix bags and within her purse.' She told the officer her mind was foggy due to a mobility issue, though he wrote that she answered his mental status questions correctly and 'Marsha further stated she knew what she did was wrong.' Charged with petit theft, second offense, after the arrest report noted a 1969 theft conviction in Honolulu, she later took a plea deal that included a $200 fine, a shoplifter's course and a ban from that Publix.",
+      source: "The National Desk",
+      sourceUrl:
+        "https://thenationaldesk.com/news/americas-news-now/woman-florida-marsha-yanofsky-purse-plastic-publix-bags-manager-theft-steal-supermarket-banned-shoplift-groceries-lady-lake-county-police-department",
+    },
+    {
+      id: "kicked-officer-groin-twice-hospital",
+      date: "November 12, 2026",
+      year: "2026",
+      month: "November",
+      day: "12",
+      city: "West Palm Beach",
+      score: 70,
+      rubric: { absurdity: 16, humor: 17, floridaFactor: 11, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Kicks Officer in the Groin During Traffic Stop, Then Does It Again at the Hospital",
+      description:
+        "A West Palm Beach driver stopped for speeding refuses to get out of his car, fights officers and kicks one in the groin, then kicks an officer in the groin again in a hospital room.",
+      fullStory:
+        "West Palm Beach police stopped Thomas James Dembroski, 45, around 11:38 p.m. on November 12, 2026, near 20th Street and North Tamarind Avenue after he allegedly drove 30 to 35 mph in a 15 mph zone and braked so hard his tires screeched, and found his driver license had been indefinitely suspended since November 2. Police said he refused to get out, 'repeatedly questioning why he had to exit,' then punched one officer in the face and grabbed and kicked another in the groin during the struggle. Taken to St. Mary's Medical Center for medical clearance, he allegedly 'kicked an officer in the groin again while inside a hospital room,' and he was charged with three counts of battery on a law enforcement officer, resisting an officer with violence and driving with a suspended license.",
+      contentNote:
+        "This story involves alleged battery on law enforcement officers.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/florida-man-accused-of-kicking-officer-in-groin-then-doing-it-again-at-hospital-license-revoked-speeding-refused-to-get-out-of-car-punched-west-palm-beach",
+    },
+    {
+      id: "largo-target-80-pumpkins-smashed",
+      date: "October 21, 2025",
+      year: "2025",
+      month: "October",
+      day: "21",
+      city: "Largo",
+      score: 76,
+      rubric: { absurdity: 18, humor: 19, floridaFactor: 12, unexpectedness: 14, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Smashes Nearly 80 Pumpkins at Target Because Someone Was Messing With Him on Facebook",
+      description:
+        "A Largo man smashes about 80 pumpkins outside a Target in the middle of the night, then returns to the store days later and identifies himself on the surveillance video.",
+      fullStory:
+        "Surveillance video showed Aaron Thompson, 31, of Largo, picking pumpkins out of the display boxes outside the Target on Ulmerton Road around 1:15 a.m. on October 21, 2025, and smashing about 80 of them, worth $472.14, on the ground. When he came back to the store days later, a deputy sent him to the loss prevention office to view the footage, where he said, 'That's me,' and explained that 'someone was messing with him on Facebook and it made him mad.' He was arrested October 25 on a felony criminal mischief charge and booked into the Pinellas County Jail on a $5,000 bond.",
+      source: "WFLA",
+      sourceUrl:
+        "https://www.aol.com/articles/largo-man-charged-smashing-nearly-202631895.html",
+    },
+    {
+      id: "jupiter-alligator-shot-hammer",
+      date: "October 18, 2026",
+      year: "2026",
+      month: "October",
+      day: "18",
+      city: "Jupiter",
+      score: 71,
+      rubric: { absurdity: 17, humor: 10, floridaFactor: 19, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Shoots an Alligator, Then Hits It With a Hammer and Leaves the Hammer in Its Head",
+      description:
+        "Wildlife officers responding to an anonymous tip in Jupiter find a dead alligator with a hammer protruding from its head, and the man responsible admits he shot it and then hit it with the hammer.",
+      fullStory:
+        "Florida Fish and Wildlife Conservation Commission officers got an anonymous call on October 18, 2026, about a dead alligator in Jupiter and arrived to find the animal with a hammer in its forehead. Desmond Keogh admitted to 'shooting the alligator once in the head and then striking it several times with a hammer,' and investigators determined he had no active alligator tags and had illegally fired his gun in a public area. He was arrested and charged with killing, injuring or possessing an alligator without authorization, discharging a firearm on public or residential property, and using or displaying a firearm during the commission of a felony.",
+      contentNote:
+        "This incident involved real harm to an animal.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/dead-alligator-found-shot-hammer-in-forehead-arrested-florida-fish-and-wildlife-conservation-commission-florida-news",
+    },
+    {
+      id: "dinosaur-costume-airsoft-flash-mob",
+      date: "August 28, 2016",
+      year: "2016",
+      month: "August",
+      day: "28",
+      city: "Cocoa",
+      score: 78,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 13, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man in a Dinosaur Costume and Ski Mask Is Arrested With an Airsoft Rifle, Says He Was Joining a Flash Mob",
+      description:
+        "A 19-year-old walks around a Cocoa park in a dinosaur costume, a tactical police-style vest and a black ski mask while carrying an airsoft rifle, and tells police he wanted to join a flash mob.",
+      fullStory:
+        "Police found Anthony Berden, 19, walking around a park in Cocoa on August 28, 2016, in a 'gamer dinosaur-type costume,' a tactical police-style vest and a black ski mask, carrying an airsoft rifle and several magazines for it. He told officers he was 'part of a gaming group' and 'wanted to participate in a flash mob.' He was arrested on suspicion of disorderly conduct and wearing a mask while committing an offense.",
+      source: "KIRO 7",
+      sourceUrl:
+        "https://www.kiro7.com/news/trending-now/police-florida-man-dressed-as-dinosaur-arrested-with-airsoft-rifle/432915529/",
+    },
+    {
+      id: "grady-judd-hat-christmas-fire-station",
+      date: "December 25, 2025",
+      year: "2025",
+      month: "December",
+      day: "25",
+      city: "Winter Haven",
+      score: 83,
+      rubric: { absurdity: 19, humor: 19, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Breaks Into a Fire Station on Christmas, Takes a Shower, and Gets Caught With a Stolen Grady Judd Cowboy Hat",
+      description:
+        "A Haines City man breaks into a closed Winter Haven fire station on Christmas morning, showers, takes candy and a recruit shirt, and is found carrying a Grady Judd cowboy hat stolen from a nearby truck.",
+      fullStory:
+        "Security video showed Daniel Puga, 22, of Haines City, entering a Winter Haven fire station administrative building that was closed for the holidays around 5 a.m. on December 25, 2025, where police said he took a shower, rummaged through offices and took candy from desks and a Winter Haven Fire Department recruit uniform shirt. Officers found him wearing the recruit shirt and carrying a PCSO Grady Judd cowboy hat, which turned out to be the only item missing from a truck at JC's Customs whose owner described it as 'one of a kind.' He was charged with two felony counts of burglary and two misdemeanor counts of petit theft.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/haines-city-man-accused-fire-station-break-in-christmas-stealing-grady-judd-cowboy-hat",
+    },
+    {
+      id: "woman-bites-fishing-line-steals-lure",
+      date: "August 15, 2017",
+      year: "2017",
+      month: "August",
+      day: "15",
+      city: "St. Augustine",
+      score: 84,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 16, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman Swims Up to a Fisherman, Bites His Line, and Swims Off With the Lure",
+      description:
+        "A woman swimming near a St. Augustine pier swims up to a man's fishing line, insults him, bites the line and swims away with the end of it.",
+      fullStory:
+        "A man fishing from a pier in St. Augustine told St. Johns County deputies on August 15, 2017, that Alexandra Turner, 22, swam up to him, insulted him, bit his fishing line and swam off with the end of it. Deputies said she appeared intoxicated, became combative and stopped following orders, and when they tried to handcuff her she repeatedly screamed, 'I'm (expletive) naked!' She was arrested on suspicion of disorderly intoxication and resisting arrest without violence.",
+      source: "WSVN 7News",
+      sourceUrl:
+        "https://wsvn.com/news/local/deputies-fla-woman-bites-mans-fishing-line-swims-away-with-lure/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
