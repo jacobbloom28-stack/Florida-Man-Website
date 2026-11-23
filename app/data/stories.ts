@@ -3819,6 +3819,924 @@ export const stories: Story[] = [
       sourceUrl:
         "https://www.clickorlando.com/news/local/2026/10/02/rare-comic-book-lands-central-florida-man-in-jail-deputies-say/",
     },
+    {
+      id: "flare-gun-pantless-deputy-marion",
+      date: "July 8, 2025",
+      year: "2025",
+      month: "July",
+      day: "8",
+      city: "Marion County",
+      score: 81,
+      rubric: { absurdity: 20, humor: 22, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Fires Flare Gun at Deputy, Then Drops His Pants and Throws Money at Him",
+      description:
+        "A Florida man fires a flare gun toward a sheriff's deputy, then removes his pants and throws money at the deputy before being tased and arrested.",
+      fullStory:
+        "A Marion County sheriff's deputy stopped along Highway 19 before dawn on July 8, 2025, to check on Jacob Caldwell, who responded by firing a flare gun toward the deputy's patrol vehicle. The deputy radioed, 'He just shot a flare gun at me,' as Caldwell walked away and ignored orders to get on the ground. According to the sheriff's office, Caldwell continued with odd behavior by removing his pants, throwing money at the deputy and refusing to comply. Deputies used a Taser to take him into custody, and he was charged with aggravated assault on a law enforcement officer among other charges.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2025/07/09/man-fires-flare-gun-at-marion-county-deputy-video-shows",
+    },
+    {
+      id: "road-rage-missile-sword-ocala",
+      date: "December 8, 2023",
+      year: "2023",
+      month: "December",
+      day: "8",
+      city: "Ocala",
+      score: 76,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Throws Object at Car During Road Rage Dispute, Then Pulls Out a Sword",
+      description:
+        "A Florida man revs his engine at another driver, throws an object that dents the man's car, then pulls a sword from his own vehicle and lunges at him.",
+      fullStory:
+        "Gervacio Aranca Jr., 65, revved his engine at another driver stopped at a red light on Highway 200 in Ocala on December 8, 2023, then drove off when the man tried to talk to him. The two kept yelling at each other from their cars until Aranca allegedly threw an object that struck the other man's car door, causing about $1,000 in damage. Both pulled over, and Aranca got out holding a sword, came within a few feet of the other driver, and thrust the blade toward him before the man escaped and called 911. Deputies identified Aranca through his license plate from video the victim recorded, and he was charged with aggravated assault with a deadly weapon without intent to kill, criminal mischief, and throwing a missile into an occupied vehicle.",
+      source: "Fox News",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-arrested-bizarre-road-rage-incident-involving-sword-deputies",
+    },
+    {
+      id: "bank-drive-thru-mistaken-taco-bell-burrito",
+      date: "January 17, 2018",
+      year: "2018",
+      month: "January",
+      day: "17",
+      city: "Spring Hill",
+      score: 81,
+      rubric: { absurdity: 19, humor: 22, floridaFactor: 14, unexpectedness: 13, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Passed Out in Bank Drive-Thru Wakes Up and Tries to Order a Burrito",
+      description:
+        "A Spring Hill man found asleep behind the wheel in a Bank of America drive-thru lane wakes up and tries to order a burrito, mistaking the bank for a Taco Bell.",
+      fullStory:
+        "Douglas Jon Francisco, 38, was found passed out in the driver's seat with the engine running in a Bank of America drive-thru lane in Spring Hill on January 17, 2018, blocking access to the ATM. When employees finally got his attention, he tried to order a burrito before someone told him he was at a bank, not a Taco Bell. Hernando County deputies arrested him for DUI after he failed a field sobriety test, and he was released on $500 bond.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/deputies-dui-suspect-mistook-bank-drive-thru-for-taco-bell",
+    },
+    {
+      id: "naples-chimney-burglary-stuck",
+      date: "November 6, 2013",
+      year: "2013",
+      month: "November",
+      day: "6",
+      city: "Naples",
+      score: 75,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 11, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Gets Stuck in a Chimney for Nearly Two Hours While Trying to Burglarize a House",
+      description:
+        "A Florida man trying to break into a house through its chimney gets stuck partway down and has to be rescued by firefighters after running out of drinking money.",
+      fullStory:
+        "Richard Tyler Brandon, 25, and a friend ran out of cash while drinking at a Naples bar, so Brandon decided to climb down the chimney of a nearby unoccupied home early on November 6, 2013. He got stuck partway down and yelled for help, and his friend called police rather than leaving him there. Firefighters needed nearly two hours to free him from the chimney. Homeowner Mike Whitley called it a 'reverse kind of Santa,' and Brandon was charged with two counts of burglary.",
+      source: "Associated Press (via Fox News)",
+      sourceUrl:
+        "https://www.foxnews.com/us/florida-man-stuck-in-chimney-while-trying-to-burglarize-home-police-say.amp",
+    },
+    {
+      id: "stolen-grady-judd-portrait",
+      date: "September 15, 2025",
+      year: "2025",
+      month: "September",
+      day: "15",
+      city: "Polk City",
+      score: 84,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 17, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Breaks Into Sheriff's Station, Steals Framed Photos of the Sheriff Himself",
+      description:
+        "A Florida man breaks into a sheriff's substation and steals framed portraits of the sheriff and his command staff off the lobby wall.",
+      fullStory:
+        "Mark Byram, 34, of Polk City, allegedly broke into the Polk County Sheriff's Office substation on Broadway Boulevard Southeast in Polk City on September 15, 2025, and stole framed photos of Sheriff Grady Judd and his command staff off the lobby wall. Judd posted video of the break-in on the sheriff's office Facebook page, saying, 'Someone broke into the Polk City Sheriff's Station. He stole my picture.' Investigators, who questioned Byram while he was already jailed on an unrelated theft charge, said he admitted being under the influence of drugs that night and claimed he thought he had taken the photos, which he'd wrapped in a towel and left by a tree, where deputies recovered them undamaged. Byram was charged with multiple counts of burglary and petit theft, and Judd joked the photos were 'no worse for wear' and that 'he's in jail with some more charges.'",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/polk-sheriff-grady-judds-picture-stolen-from-substation-florida-man-arrested-he-stole-my-picture",
+    },
+    {
+      id: "busch-gardens-alligator-enclosure-crikey",
+      date: "June 1, 2023",
+      year: "2023",
+      month: "June",
+      day: "1",
+      city: "Tampa",
+      score: 86,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 18, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Sneaks Into Busch Gardens, Climbs Into the Alligator Enclosure for a Video",
+      description:
+        "A Florida man climbs into Busch Gardens' alligator enclosure after hours so a friend can film him for social media.",
+      fullStory:
+        "Jacob Pursifull, 20, climbed a fence to sneak into Busch Gardens Tampa Bay after hours on June 1, 2023, then climbed into the park's alligator enclosure, which is protected by two layers of metal fencing, while a companion filmed him for social media. Onlookers shouted at him to get out as the stunt unfolded, and in footage of the incident Pursifull can be heard saying, 'Another wild Karen. Crikey!' Tampa police identified him using leads gathered from social media after the video went viral, and he was arrested and later released on $8,500 bond. He was charged with theft of services, trespassing, and burglary of an occupied structure.",
+      source: "CBS News Miami (CNN)",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/man-arrested-after-breaking-into-florida-theme-park-hopping-into-alligator-enclosure-filming-for-social-media-authorities-say",
+    },
+    {
+      id: "slow-speed-motorcycle-pursuit-implies-speed",
+      date: "June 5, 2026",
+      year: "2026",
+      month: "June",
+      day: "5",
+      city: "Flagler County",
+      score: 74,
+      rubric: { absurdity: 17, humor: 20, floridaFactor: 14, unexpectedness: 10, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man's Motorcycle 'Chase' Tops Out at 40 MPH, Sheriff's Office Says 'A Pursuit Implies Speed'",
+      description:
+        "A Florida man leads deputies on a motorcycle chase that tops out around 40 mph, prompting the sheriff's office to note that a pursuit implies speed.",
+      fullStory:
+        "Flagler County deputies tried to stop Brian Swartz, 33, around 2:30 a.m. on June 5, 2026, after spotting him riding a motorcycle with no headlight, taillight, or license plate, but Swartz took off, leading deputies on a chase that topped out around 40 mph on the road and slowed to about 15 mph through Hidden Trails Park before he fell off the bike and was arrested. Dashcam footage of the incident prompted the sheriff's office to roast the suspect on social media, writing, 'A pursuit implies speed,' and noting the motorcycle could have been outrun by 'a brisk jog.' Swartz was charged with fleeing from law enforcement and operating a vehicle without a driver's license and released on $2,800 bond, with the sheriff's office adding that 'fleeing from law enforcement is a dangerous, deadly, and terrible idea at any speed.'",
+      source: "ABC6 (WSYX)",
+      sourceUrl:
+        "https://abc6onyourside.com/news/nation-world/pursuit-implies-speed-sheriffs-office-roasts-suspect-slow-speed-motorcycle-chase-brian-swartz-flagler-county-florida-blowby-betty-crime-news",
+    },
+    {
+      id: "disney-r2d2-security-test-heist",
+      date: "May 31, 2022",
+      year: "2022",
+      month: "May",
+      day: "31",
+      city: "Lake Buena Vista",
+      score: 83,
+      rubric: { absurdity: 22, humor: 21, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Poses as Disney Cast Member, 'Steals' an R2-D2 Statue to Prove Security Is Weak",
+      description:
+        "A former school principal disguised as a Disney World employee moves a replica R2-D2 statue and an arcade machine to expose gaps in the resort's security.",
+      fullStory:
+        "David Proudfoot, a former Baltimore County elementary school principal and onetime Seminole County assistant principal, was caught by Disney security around 5 a.m. on May 31, 2022, pushing a cart suspiciously near the Swan Reserve hotel at Walt Disney World, wearing a Disney-issued name tag reading 'David' and claiming to work in receiving at the Yacht Club Resort. When deputies could find no record of his employment and his wallet revealed his real identity, he admitted moving a replica R2-D2 statue valued at up to $10,000 and an arcade game machine to an undisclosed spot on the property, explaining he did it to 'show weaknesses in the security of the resorts' after previously applying for a Disney security job. He said he never intended to remove the items from Disney property, and he was charged with third-degree grand theft, petit theft, obstruction by false information, and scheming to defraud.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://clickorlando.com/news/local/2022/06/30/former-educator-arrested-after-moving-r2-d2-statue-at-disney-hotel-deputies-say",
+    },
+    {
+      id: "toothbrush-heist-bridge-toss",
+      date: "December 5, 2022",
+      year: "2022",
+      month: "December",
+      day: "5",
+      city: "Marathon",
+      score: 71,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 13, unexpectedness: 11, headlineQuality: 7, sourceQuality: 3 },
+      title: "Florida Man Steals $1,400 in Electric Toothbrushes, Then Tosses Them Off a Bridge",
+      description:
+        "A Florida man steals nearly $1,400 worth of electric toothbrushes from a Walgreens, then throws them off the Long Key Bridge.",
+      fullStory:
+        "Tracy Jay Mofield, 37, of Islamorada, allegedly walked out of a Walgreens in Marathon on December 5, 2022, with six high-end electric toothbrushes worth nearly $1,400 without paying, then drove off in a white Lexus. Monroe County deputies tracked down his car near Mile Marker 73, and Mofield admitted taking the toothbrushes but told them he had already thrown all six off the Long Key Bridge. Deputies did not recover the toothbrushes from the water, and Mofield was arrested and charged with larceny.",
+      source: "WSVN",
+      sourceUrl:
+        "https://wsvn.com/news/local/florida/islamorada-man-arrested-accused-of-stealing-electric-toothbrushes-worth-over-1k/",
+    },
+    {
+      id: "pants-dropped-wheres-my-weapon-palm-coast",
+      date: "October 22, 2023",
+      year: "2023",
+      month: "October",
+      day: "22",
+      city: "Palm Coast",
+      score: 76,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Drops His Pants and Yells 'Where's My Weapon?' at Deputies",
+      description:
+        "A Palm Coast man strips down and shouts about a missing weapon while deputies try to break up a roadside argument.",
+      fullStory:
+        "Flagler County deputies responding to a report of a shirtless man arguing with a woman in the road on Wedgewood Lane in Palm Coast on October 22, 2023, found Shawn Madden, 40, acting aggressively before he dropped his pants and exposed himself while yelling, 'Where's my weapon?' Madden then shouted, 'Let's go! Let's go! I'm swinging on everybody,' as deputies worked to detain him. He was charged with exposure of sexual organs, assault on a law enforcement officer, disorderly intoxication, and resisting an officer without violence, then released after posting a $2,000 bond.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/video-drunk-florida-man-says-wheres-my-weapon-then-exposes-self-to-deputies-in-bizarre-encounter",
+    },
+    {
+      id: "turtle-army-threat-indialantic",
+      date: "April 7, 2019",
+      year: "2019",
+      month: "April",
+      day: "7",
+      city: "Indialantic",
+      score: 85,
+      rubric: { absurdity: 22, humor: 23, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Threatens to 'Destroy Everyone' With His Army of Turtles",
+      description:
+        "An Indialantic man calls 911 to warn that his army of turtles will destroy the town after a string of disturbance calls.",
+      fullStory:
+        "Indialantic police responded to at least seven disturbance calls involving Thomas Devaney Lane, 61, at coffee shops along N. Miramar Avenue on April 7, 2019, after he called himself 'the saint' and threatened to unleash turtles on nearby residents. Lane went to the police department lobby and pounded on the walls and glass, then was found in his car at a nearby 7-Eleven, where he called 911 and said, 'I need to leave now or you will all be sorry you f***ed with the saint.' When he refused to get out of his vehicle, officers removed him by force. Lane was charged with breach of the peace, misuse of 911, and resisting an officer without violence.",
+      source: "CBS News Miami",
+      sourceUrl:
+        "https://www.cbsnews.com/miami/news/florida-man-threatens-destruction-army-of-turtles/",
+    },
+    {
+      id: "lawnmower-dui-crashes-into-cruiser",
+      date: "May 6, 2019",
+      year: "2019",
+      month: "May",
+      day: "6",
+      city: "Haines City",
+      score: 79,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 15, unexpectedness: 10, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Driving a Riding Lawn Mower Crashes Into a Police Cruiser While Drunk",
+      description:
+        "A Haines City man towing a trailer behind his riding lawn mower rear-ends a parked police cruiser with a blood alcohol level three times the legal limit.",
+      fullStory:
+        "Haines City police found that Gary Wayne Anderson, 68, had struck a parked police cruiser outside a store on U.S. 17-92 while driving a riding lawn mower with an attached trailer on May 6, 2019. Anderson admitted he had been drinking, and testing showed his blood alcohol content was 0.241, more than three times Florida's legal limit, along with cocaine in his system. Police Chief Jim Elensky said, 'It's never a good idea to get behind the wheel drunk, even if that wheel is to a Craftsman, Massey Ferguson or John Deere.' Anderson, whose driver's license had been suspended since 1978, was charged with DUI.",
+      source: "ClickOrlando",
+      sourceUrl:
+        "https://www.clickorlando.com/traffic/florida-man-with-0241-bac-crashes-mower-into-cop-car-police-say",
+    },
+    {
+      id: "crocodile-enclosure-break-in-crocs",
+      date: "November 6, 2018",
+      year: "2018",
+      month: "November",
+      day: "6",
+      city: "St. Augustine",
+      score: 80,
+      rubric: { absurdity: 22, humor: 19, floridaFactor: 15, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Wearing Crocs Breaks Into a Crocodile Enclosure and Gets Bitten",
+      description:
+        "A Florida man vandalizes the St. Augustine Alligator Farm and spends hours jumping into a crocodile pool before one of the crocodiles bites his foot.",
+      fullStory:
+        "Brandon Keith Hatfield broke into the St. Augustine Alligator Farm Zoological Park overnight on November 6, 2018, damaged the snack bar, and spent roughly four hours in the 'Oasis on the Nile' exhibit, repeatedly jumping from a 20-foot structure into a pit holding three 12-foot Nile crocodiles. Surveillance video showed one of the crocodiles biting his left foot, and he was later found wandering a nearby neighborhood wearing only boxers, bloodied, with bite marks on his foot. Park director John Brueggen said, 'I would think he's on some sort of drugs,' and noted it was the first time in the park's 125-year history that anyone had tried to go swimming with the crocodiles. Hatfield caused more than $5,000 in damage and was charged with burglary, criminal mischief, and violation of probation.",
+      source: "Action News Jax",
+      sourceUrl:
+        "https://actionnewsjax.com/news/local/florida-man-breaks-into-st-augustine-alligator-farm-jumps-into-crocodile-pool/867644141",
+    },
+    {
+      id: "olive-garden-spaghetti-bare-hands",
+      date: "April 7, 2019",
+      year: "2019",
+      month: "April",
+      day: "7",
+      city: "Naples",
+      score: 73,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Eats Spaghetti With His Bare Hands Outside an Olive Garden",
+      description:
+        "A shirtless, intoxicated Naples man sits on a bench outside an Olive Garden shoveling spaghetti into his mouth with his hands.",
+      fullStory:
+        "Naples police responded to a disturbance call at an Olive Garden on April 7, 2019, after Ben Padgett, 32, shirtless and smelling of alcohol, asked customers for money near the entrance, then was found sitting on a bench outside eating spaghetti with his bare hands. When an employee asked him to stop, Padgett told her, 'I could beat your a--,' before officers handed him a paper towel to wipe the pasta from his face and handcuffed him. He thrashed in the back of the patrol car, hitting his head on the cage partition, and was charged with disorderly intoxication and resisting an officer without violence.",
+      source: "Local 10",
+      sourceUrl:
+        "https://local10.com/news/2019/04/10/florida-man-arrested-after-dining-on-spaghetti-with-his-bare-hands",
+    },
+    {
+      id: "peyote-mushrooms-facebook-marketplace-church",
+      date: "September 30, 2026",
+      year: "2026",
+      month: "September",
+      day: "30",
+      city: "Riverview",
+      score: 71,
+      rubric: { absurdity: 19, humor: 17, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Sells Mescaline Cacti and Mushrooms on Facebook Marketplace",
+      description:
+        "A Riverview man selling psilocybin mushrooms and mescaline-laced cacti on Facebook Marketplace is hit with extra charges because his home operation sits within 1,000 feet of a church.",
+      fullStory:
+        "The Hillsborough County Sheriff's Office executed a search warrant at Zachary Diaz's Riverview home on September 30, 2026, after investigators tied him to Facebook Marketplace listings selling psilocybin mushrooms and mescaline-containing peyote cacti. Deputies seized 131 live cacti plants, about 50 pounds of mescaline-containing cacti, 1.5 pounds of psilocybin mushrooms, and cultivation equipment from the property. Diaz, 32, was booked on three counts of possession with intent to sell within 1,000 feet of a church, three counts of delivering a controlled substance within 1,000 feet of a church, and two counts of manufacturing a controlled substance, and he had outstanding warrants from the same investigation at the time of his arrest.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/florida-man-accused-of-selling-peyote-mushrooms-on-facebook-marketplace-deputies-say-mescaline-cacti-psilocybin-mushrooms-drugs-hallucinogenic-drugs-hillsborough-county",
+    },
+    {
+      id: "buc-ees-bathroom-117-mph",
+      date: "August 8, 2026",
+      year: "2026",
+      month: "August",
+      day: "8",
+      city: "Cocoa",
+      score: 85,
+      rubric: { absurdity: 21, humor: 22, floridaFactor: 16, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Clocked at 117 MPH Says He Was Rushing to a Buc-ee's Bathroom 61 Miles Away",
+      description:
+        "A Cocoa man caught going 47 miles per hour over the limit tells deputies he was racing to use the restroom at a Buc-ee's an hour away.",
+      fullStory:
+        "A Brevard County deputy clocked Omar Soliman, 30, driving 117 mph in a 70 mph zone on I-95 and State Road 528 near Cocoa on August 8, 2026, after watching him make unsafe lane changes and tailgate other drivers. When asked why he was speeding, Soliman said he urgently needed to use the restroom at Buc-ee's, though the nearest location was about 61 miles away in Daytona Beach. He was arrested on charges of reckless driving and driving 100 mph or more, then released on $500 bond. The arresting deputy wrote in the report that the bathrooms at Buc-ee's are exceptionally clean, but that Soliman should probably be closer than 60 miles from his restroom destination before using it as an excuse for speeding.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/florida-man-caught-excessively-speeding-bucees-bathroom-deputies-say",
+    },
+    {
+      id: "ninety-year-old-punches-neighbor-gardener-dispute",
+      date: "October 2, 2021",
+      year: "2021",
+      month: "October",
+      day: "2",
+      city: "Sorrento",
+      score: 73,
+      rubric: { absurdity: 18, humor: 20, floridaFactor: 13, unexpectedness: 10, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man, 90, Punches Neighbor Over a Gardener Crossing the Property Line",
+      description:
+        "A 90-year-old Sorrento man punches his neighbor twice in the face after accusing the neighbor's landscaper of crossing onto his property.",
+      fullStory:
+        "Thomas Conrad, 90, got into a dispute with neighbor Jack Henson, 46, in their gated Sorrento community on October 2, 2021, after accusing Henson's gardener of crossing onto his property. Conrad punched Henson twice in the face, and when deputies arrived he told them to get out of his house and claimed he hadn't done anything wrong because, in his telling, Henson had asked to be punched. Conrad was arrested on misdemeanor charges of battery and resisting arrest without violence, posted a $2,000 bond, and was released that evening under a no-contact order with Henson.",
+      source: "The Smoking Gun",
+      sourceUrl:
+        "https://www.thesmokinggun.com/buster/battery/get-off-my-lawn-arrest-275936",
+    },
+    {
+      id: "chucky-doll-surfside-scare",
+      date: "February 20, 2025",
+      year: "2025",
+      month: "February",
+      day: "20",
+      city: "Surfside",
+      score: 75,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 13, unexpectedness: 11, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Terrorizes Shoppers Outside Supermarket With a Chucky Doll",
+      description:
+        "A Florida man waves a Chucky doll at pedestrians outside a supermarket and mimes stabbing motions until police arrest him.",
+      fullStory:
+        "Rit Arias, 35, allegedly spent the morning of February 20, 2025, pacing the sidewalk outside the Grove Kosher Market on Harding Avenue in Surfside, brandishing a Chucky doll at pedestrians and miming attacks on them. Police said officers responded to multiple complaints and warned him to stop, but he kept it up, so they arrested him on a misdemeanor charge of disorderly conduct. He was booked into the Turner Guilford Knight Correctional Center.",
+      source: "Local 10",
+      sourceUrl:
+        "https://www.local10.com/news/local/2025/02/24/man-arrested-in-surfside-after-odd-behavior-with-chucky-doll/",
+    },
+    {
+      id: "cocaine-snort-flee-traffic-stop",
+      date: "September 17, 2024",
+      year: "2024",
+      month: "September",
+      day: "17",
+      city: "Holiday",
+      score: 71,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 13, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Snorts His Own Cocaine to Destroy the Evidence After Fleeing a Traffic Stop",
+      description:
+        "A Florida man snorts his cocaine stash to get rid of the evidence after refusing to stop for troopers.",
+      fullStory:
+        "Florida Highway Patrol troopers tried to pull over Joel Craig Wallace, 40, for speeding on US-19 near Holiday on September 17, 2024, but he refused to stop and led them on a brief pursuit back to his home on Kibler Lane. Troopers said that before they could reach him, Wallace snorted a bag of cocaine to destroy it. He was arrested and charged with fleeing and eluding, possession of cocaine, and tampering with evidence.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-snorts-cocaine-hide-evidence-after-fleeing-traffic-stop-troopers-say",
+    },
+    {
+      id: "towel-head-tequila-break-in",
+      date: "July 24, 2026",
+      year: "2026",
+      month: "July",
+      day: "24",
+      city: "Jupiter",
+      score: 77,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 14, unexpectedness: 12, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man With a Towel on His Head Breaks Into a Home, Raids the Liquor Cabinet, Slices a Lime",
+      description:
+        "A Florida man wearing a towel on his head breaks into a neighbor's home, drinks the liquor, and slices up a lime before fleeing over a fence.",
+      fullStory:
+        "Geoffrey Bartimus, 30, allegedly broke into a neighbor's occupied home in Jupiter around 6:30 a.m. on July 24, 2026, wearing a towel wrapped around his head, and helped himself to the homeowner's vodka and tequila, leaving a cut lime and knife on the counter. Ring camera footage showed him outside with a six-pack before he apologized to the startled homeowner and fled over the back fence, and a police K-9 tracked him to a nearby house. He was arrested and charged with unarmed burglary of an occupied dwelling, petit theft, and resisting an officer without violence, and had to be pulled into the patrol car when he refused to get in.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/towel-tequila-and-trouble-jupiter-man-accused-of-bizarre-early-morning-break-in-jupiter-jupiter-police-department-geoffrey-bartimus-palm-beach-county-jail-florida-man-burglary-break-in-trespass-residential-burglary-petit-theft-resisting-arrest",
+    },
+    {
+      id: "lynn-university-golf-cart-joyride",
+      date: "March 12, 2026",
+      year: "2026",
+      month: "March",
+      day: "12",
+      city: "Boca Raton",
+      score: 61,
+      rubric: { absurdity: 16, humor: 16, floridaFactor: 10, unexpectedness: 9, headlineQuality: 6, sourceQuality: 4 },
+      title: "Florida Man Steals a $17,000 Golf Cart, Heads for the Train Station",
+      description:
+        "A Florida man steals a golf cart left running on a college campus and tries to ride it to the train station.",
+      fullStory:
+        "Gannon Reid McLaughlin took a golf cart that a maintenance worker had left idling in a loading zone at Lynn University in Boca Raton on March 12, 2026, campus security footage showed. A property manager spotted him driving it toward North 1st Avenue, stepped in front of the cart, and pulled the key, but McLaughlin kept walking toward the Brightline station, apparently trying to catch a train home to Orlando. Officers caught up with him there, and after being read his rights, he admitted taking the cart and said he had impulsively decided to take it for a ride. He was charged with grand theft of property valued between $10,000 and $20,000.",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/crime/lynn-university-student-accused-stealing-17000-golf-cart-going-joy-ride-brightline-station-adhd-boca-raton-grand-theft",
+    },
+    {
+      id: "publix-shopping-cart-return-excuse",
+      date: "February 22, 2024",
+      year: "2024",
+      month: "February",
+      day: "22",
+      city: "Lady Lake",
+      score: 66,
+      rubric: { absurdity: 16, humor: 18, floridaFactor: 12, unexpectedness: 9, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Caught With Two Stolen Shopping Carts Says He Was on His Way to Return Them",
+      description:
+        "A Florida man found with two stolen Publix shopping carts tells officers he was on his way to return them.",
+      fullStory:
+        "A Publix manager in Lady Lake spotted Michael Thomas Tazzetto, 50, pushing one of the store's shopping carts away from the parking lot on February 22, 2024, and reported it with surveillance video. About an hour later, a sheriff's corporal found him nearby, still wearing the same clothes, now in possession of two Publix carts worth about $300 total. Tazzetto told the corporal he was on his way to return both of them. He was arrested on a felony petit theft charge given his prior theft convictions, plus two counts of possession of a stolen shopping cart, and held on $3,500 bail.",
+      source: "The National Desk",
+      sourceUrl:
+        "https://thenationaldesk.com/news/americas-news-now/arrested-florida-publix-stolen-shopping-carts-michael-thomas-tazzetto-lake-county-sheriff-office-corporal-prosecute-surveillance-video-walk-property-arrests-repeat-offender-grocery-store-supermarket",
+    },
+    {
+      id: "lawn-mower-railroad-tracks-chase",
+      date: "July 26, 2023",
+      year: "2023",
+      month: "July",
+      day: "26",
+      city: "Pensacola",
+      score: 67,
+      rubric: { absurdity: 17, humor: 17, floridaFactor: 12, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Steals a Lawn Mower, Gets Caught Pushing It Down the Railroad Tracks",
+      description:
+        "A Florida man burglarizes a home for a lawn mower and then gets caught pushing it down a set of railroad tracks.",
+      fullStory:
+        "Escambia County deputies responding to a home burglary in Pensacola on July 26, 2023, were still taking the report when a neighbor pointed out that the stolen lawn mower was being pushed down the railroad tracks behind the houses. A deputy spotted Marcus Dale with the mower, and when he took off running, the deputy chased him over two fences before catching him. Dale abandoned the mower during the chase and was charged with two counts of burglary, felony petit theft, and resisting an officer without violence.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://fox13news.com/news/video-florida-man-pushing-stolen-lawn-mower-along-railroad-tracks-arrested-after-chase",
+    },
+    {
+      id: "waffle-house-tattoo-theft",
+      date: "December 2, 2023",
+      year: "2023",
+      month: "December",
+      day: "2",
+      city: "St. Petersburg",
+      score: 70,
+      rubric: { absurdity: 18, humor: 19, floridaFactor: 13, unexpectedness: 10, headlineQuality: 7, sourceQuality: 3 },
+      title: "Florida Man Gets a 'Waffle House' Tattoo, Then Tries to Skip Out on the $250 Bill",
+      description:
+        "A Florida man gets a Waffle House tattoo and then tries to leave the shop without paying the $250 charge.",
+      fullStory:
+        "Max Krejckant, 33, of Clearwater, got a tattoo reading 'Waffle House' at Ink Godz in St. Petersburg, then told the artist he didn't have his debit card on him when it came time to pay the $250 bill. When officers caught up with him, Krejckant could only produce $6 in cash and his driver's license. He was arrested on December 2, 2023, on a charge of petit theft, booked into the Pinellas County Jail, and released the next day on a $150 bond.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-waffle-house-tattoo-arrest",
+    },
+    {
+      id: "naked-mud-man-barn-van-vandalism",
+      date: "June 24, 2025",
+      year: "2025",
+      month: "June",
+      day: "24",
+      city: "Osteen",
+      score: 73,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 15, unexpectedness: 12, headlineQuality: 5, sourceQuality: 3 },
+      title: "Naked, Mud-Covered Florida Man Says He Was 'Following the Sun' After Vandalizing a Van",
+      description:
+        "A naked, mud-covered Florida man emerges from a barn and admits he might have smashed a company van's windows while following instructions from a 'higher power.'",
+      fullStory:
+        "Jared Gaver found his company van's windows shattered and its door hanging open outside his Osteen home on June 24, 2025, then watched a naked, mud-covered man climb out of a nearby barn. The man, identified as 31-year-old Xaid Khan, told deputies he had been 'following the sun under instruction from a higher power' and admitted he might have caused the damage, though he couldn't fully recall doing it. Deputies found his clothes scattered around the property, along with an open patio door and running hose, and Khan was treated for dehydration at a hospital before being booked into the Volusia County Branch Jail on charges of burglary of an unoccupied conveyance, trespassing, and indecent exposure.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/naked-mud-covered-florida-man-arrested-after-vandalizing-van-osteen-deputies-say",
+    },
+    {
+      id: "naked-beach-beer-underwear-no-women",
+      date: "March 27, 2025",
+      year: "2025",
+      month: "March",
+      day: "27",
+      city: "Freeport",
+      score: 68,
+      rubric: { absurdity: 17, humor: 18, floridaFactor: 14, unexpectedness: 11, headlineQuality: 6, sourceQuality: 2 },
+      title: "Florida Man Caught Naked on Crowded Beach With Beer Cans and Women's Underwear, No Women in Sight",
+      description:
+        "A Florida man is arrested after deputies find him naked between two beach umbrellas surrounded by beer cans and women's underwear with no women anywhere nearby.",
+      fullStory:
+        "Walton County deputies responded to Topsail Hill Preserve State Park on March 27, 2025, after reports of a man exposing himself on a crowded beach, and found 60-year-old Martin Lebouef, of Freeport, naked between two umbrellas with several beer cans and women's underwear scattered around him, though no women were with him. The sheriff's office said that despite the many families at the park that day, only two adults actually witnessed the exposure. Lebouef was arrested on a charge of exposure of sexual organs, booked into the Walton County Jail, and released the next day on a $2,500 bond.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/naked-florida-man-beer-womens-underwear-arrested-exposure-crowded-beach-deputies",
+    },
+    {
+      id: "radioactive-gauge-facebook-marketplace",
+      date: "May 28, 2026",
+      year: "2026",
+      month: "May",
+      day: "28",
+      city: "Bradenton",
+      score: 82,
+      rubric: { absurdity: 23, humor: 19, floridaFactor: 15, unexpectedness: 14, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Tries to Sell a Stolen Radioactive Device on Facebook Marketplace",
+      description:
+        "A Florida man lists a stolen radioactive soil-testing gauge for sale on Facebook Marketplace and gets caught in a state trooper sting.",
+      fullStory:
+        "Florida Highway Patrol investigators got a tip that 24-year-old Marco Antonio Benitez Jr., of Bradenton, was trying to sell a stolen moisture density gauge, a device containing the radioactive isotope cesium-137 and worth $10,000 to $20,000, on Facebook Marketplace. Troopers arranged an undercover buy, but when Benitez failed to show up, they ran a radiation screening from outside his home that set off an industrial-level alert and recovered the intact device inside. He was arrested on May 28, 2026, on charges of grand theft and possession of a controlled radiation device without a license.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-arrested-trying-sell-stolen-radioactive-device-facebook-fhp",
+    },
+    {
+      id: "derelict-boats-airbnb-key-west",
+      date: "May 29, 2024",
+      year: "2024",
+      month: "May",
+      day: "29",
+      city: "Key West",
+      score: 78,
+      rubric: { absurdity: 21, humor: 18, floridaFactor: 18, unexpectedness: 11, headlineQuality: 6, sourceQuality: 4 },
+      title: "Florida Man Rented Out His Six Sinking, Abandoned Boats on Airbnb, Then Got Hit With a $345,000 Cleanup Bill",
+      description:
+        "A Florida man is sentenced after abandoning six derelict boats in a channel and renting the deteriorating vessels out on Airbnb anyway.",
+      fullStory:
+        "James Lee Huckabay Jr., 67, of Key West, abandoned six derelict vessels, including a 1969 Chris-Craft, a 1972 Pacemaker, and a 110-foot steel barge, in the Cow Key Channel off Stock Island while continuing to rent several of the deteriorating boats out to guests on Airbnb. Huckabay pleaded no contest on May 29, 2024, to 23 charges, including six counts of abandonment of a derelict vessel and 16 safety and compliance violations, and was sentenced to six months in jail and ordered to pay the Florida Fish and Wildlife Conservation Commission $345,000 for removing and cleaning up the boats. A spokesman for the Monroe County State Attorney's Office, Steve Torrence, said the vessels' damage to the sea floor, including destroyed seagrass, was 'reprehensible.'",
+      source: "Florida Keys Weekly",
+      sourceUrl:
+        "https://keysweekly.com/42/key-west-man-jailed-for-derelict-boats-he-rented-on-airbnb-owes-345k-for-cleanup/",
+    },
+    {
+      id: "kissing-bar-social-distancing-911",
+      date: "May 15, 2020",
+      year: "2020",
+      month: "May",
+      day: "15",
+      city: "Indialantic",
+      score: 83,
+      rubric: { absurdity: 22, humor: 22, floridaFactor: 14, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Woman Tries to Kiss Strangers at a Bar, Then Calls 911 Five Times Over Its Social Distancing",
+      description:
+        "A Florida woman tries to kiss random strangers at a bar, then calls 911 five times to complain that the bar is not following social distancing rules.",
+      fullStory:
+        "Indialantic police say Audra Adams, 32, walked into the Monkey Bar and Grille on May 15, 2020, and tried to kiss several random customers, prompting the owner to ask her to leave after other patrons complained. When officers arrived, Adams refused to go, then called 911 five times to report that the bar itself was not following coronavirus social distancing guidelines. She was arrested on charges of trespassing after warning, disorderly conduct, resisting an officer without violence, and misuse of the 911 system, telling police as they led her to the car, 'I'll sit in the parking lot all night.'",
+      source: "ClickOrlando.com (WKMG)",
+      sourceUrl:
+        "https://clickorlando.com/news/local/2020/05/15/florida-woman-who-tried-to-kiss-strangers-calls-911-about-lack-of-social-distancing-police-say",
+    },
+    {
+      id: "cia-impersonator-collier-alfonso",
+      date: "January 2, 2025",
+      year: "2025",
+      month: "January",
+      day: "2",
+      city: "Collier County",
+      score: 85,
+      rubric: { absurdity: 23, humor: 20, floridaFactor: 16, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Pulled Over on I-75 Claiming to Be a CIA Agent Has Fake Badges, Guns, and a Bulletproof Vest",
+      description:
+        "A Cape Coral man pulled over on I-75 for driving with flashing emergency lights tells troopers he is a CIA agent and is found with fake federal badges, multiple guns, and a bulletproof vest.",
+      fullStory:
+        "Florida Highway Patrol troopers pulled over a pickup truck rigged with flashing red and blue emergency lights on I-75 in Collier County on January 2, 2025, and the driver, 63-year-old Jorge Alberto Alfonso of Cape Coral, told them he was a CIA agent. A search of the truck turned up multiple firearms, several passports, a bulletproof vest, suspected prescription pills with no prescription, and fake federal agent badges including fabricated CIA credentials. Alfonso was arrested on charges of false personation of an officer and drug possession.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-accused-impersonating-cia-official-caught-guns-fakes-federal-agent-badges-fhp",
+    },
+    {
+      id: "911-call-traffic-ticket-fentanyl",
+      date: "June 22, 2026",
+      year: "2026",
+      month: "June",
+      day: "22",
+      city: "Lake Wales",
+      score: 81,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Woman Calls 911 to Complain About Her Traffic Ticket, Gets Caught With 28 Bags of Fentanyl",
+      description:
+        "A Florida woman dials 911 to gripe about a traffic citation and ends up facing felony drug trafficking charges after a body scan at booking.",
+      fullStory:
+        "Polk County deputies had a roadway blocked off for utility crews when Gina Redding, 48, of Lake Wales, drove around the barricade and was cited for the violation on June 22, 2026. Angry about the ticket, she followed the deputy's patrol car and called 911 to complain about it, which got her pulled over again, this time for illegally tinted windows. A search of her vehicle turned up marijuana, and a body scan during jail booking found 28 bags of fentanyl concealed internally. She was charged with felony drug trafficking, misuse of the 911 system, and marijuana possession. Sheriff Grady Judd said, 'She decides, I'll just dial 911 because I don't like this traffic ticket.'",
+      source: "CBS12",
+      sourceUrl:
+        "https://cbs12.com/news/local/florida-woman-calls-911-over-ticket-deputies-find-28-bags-of-fentanyl-polk-county-sheriff-fentanyl-fentanyl-trafficking-drug-trafficking-hidden-drugs-body-scan-jail-booking-traffic-ticket",
+    },
+    {
+      id: "mosquito-truck-ebike-swap-chase",
+      date: "December 16, 2024",
+      year: "2024",
+      month: "December",
+      day: "16",
+      city: "Orange County",
+      score: 76,
+      rubric: { absurdity: 20, humor: 18, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Swaps an E-Bike for a Mosquito Control Truck, Leads Deputies on a Three-County Chase",
+      description:
+        "A Florida man already out on a felony bond abandons his e-bike to steal a running mosquito control truck, then leads deputies on a chase through three counties before being caught with meth inside.",
+      fullStory:
+        "Mario Powers, 36, of Sarasota, allegedly rode up on an electric bicycle and drove off in an Orange County Mosquito Control truck on Oberry Hoover Road on December 16, 2024, while the employee operating it stepped out to check a nearby ditch for mosquito activity. He left the bicycle behind at the scene. The truck was tracked into Brevard County and then into Seminole County, where deputies deployed stop sticks and took Powers into custody after he drove recklessly trying to escape; investigators said they found suspected methamphetamine inside the truck. Powers, who was already out on an active felony bond at the time, was arrested on charges including grand theft and drug possession.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://clickorlando.com/news/local/2024/12/16/orange-county-mosquito-control-truck-stolen-during-waterway-inspection-officials-say",
+    },
+    {
+      id: "daytona-airport-aircraft-piracy-mustang",
+      date: "March 25, 2026",
+      year: "2026",
+      month: "March",
+      day: "25",
+      city: "Daytona Beach",
+      score: 86,
+      rubric: { absurdity: 23, humor: 21, floridaFactor: 14, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Crashes Through Airport Gate, Tries to Board Three Different Planes",
+      description:
+        "A drunk Florida man smashes his Mustang through a security gate at Daytona Beach International Airport and tries to climb aboard three different airplanes before deputies catch him.",
+      fullStory:
+        "Bryan J. Parker, 58, of Holly Hill, drove his blue Ford Mustang through a perimeter gate at Daytona Beach International Airport on March 25, 2026, crossing a taxiway and narrowly missing an Embry-Riddle Aeronautical University training plane that was taxiing nearby. He got out and tried to board an occupied aircraft, failed, then ran across the airfield trying to climb into two more planes before an airport gate agent and Embry-Riddle security held him until deputies arrived. Parker told investigators in bodycam footage, 'I went to an AA meeting, and next thing I know, I'm doing cocaine,' and he was charged with attempted aircraft piracy, burglary of an unoccupied conveyance, trespassing on an airport operation area, two counts of indecent exposure, criminal mischief, and DUI with property damage. No one was hurt, and airport officials said operations continued without disruption.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/video-florida-man-drives-mustang-through-daytona-beach-airport-gate-tried-board-3-planes",
+    },
+    {
+      id: "porta-potty-wooden-stakes-standoff",
+      date: "October 27, 2025",
+      year: "2025",
+      month: "October",
+      day: "27",
+      city: "Sanibel",
+      score: 85,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 15, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Hides From Deputies in a Porta-Potty, Then Emerges Pantless With Two Wooden Stakes",
+      description:
+        "A Florida man steals a construction worker's SUV, tries to run him over, then hides in a porta-potty before coming out without pants and wielding two wooden stakes.",
+      fullStory:
+        "Joshua Mulnix, 43, allegedly wandered onto a construction site near Blind Pass Beach on Sanibel on October 27, 2025, and when a worker told him to leave, took the keys left in the worker's Nissan SUV and accelerated toward him, forcing the worker to jump out of the way. Mulnix abandoned the SUV on another property and ran into a nearby porta-potty, leaving his pants inside when deputies found him, then burst out holding two wooden stakes and fled on foot before being stopped with a Taser. He was booked into the Lee County Jail on charges of aggravated assault with a deadly weapon, grand theft auto, criminal mischief, and leaving the scene of a crash.",
+      source: "WSVN",
+      sourceUrl:
+        "https://wsvn.com/news/local/florida/florida-man-accused-of-stealing-car-trying-to-run-over-victim-found-hiding-in-porta-potty/",
+    },
+    {
+      id: "backward-driver-autozone-palm-coast",
+      date: "March 13, 2026",
+      year: "2026",
+      month: "March",
+      day: "13",
+      city: "Palm Coast",
+      score: 78,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Caught Driving in Reverse on a Highway Says It Was His Best Option to Reach AutoZone",
+      description:
+        "A Florida man drives his car backward down a busy highway, telling deputies it was the best way to get it to AutoZone.",
+      fullStory:
+        "Flagler County deputies responded to multiple 911 calls about a silver sedan traveling in reverse along State Road 100 on March 13, 2026, and tracked the car to a Panda Express parking lot before stopping William Murphy III, 47, of Palm Coast, near Airport Road. Murphy told deputies his car had a mechanical problem and that driving it backward to AutoZone was his best option, then claimed on body camera that the car was stuck in reverse, insisting he wasn't swerving or driving fast. Deputies noted the mechanical problem seemed to vanish once Murphy shifted into drive with them behind him, and he was arrested on a charge of habitual driving with a suspended license, citing his more than 10 prior convictions for the same offense, then released on $1,000 bond.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/03/18/i-wasnt-even-swerving-florida-man-caught-driving-backward-on-highway",
+    },
+    {
+      id: "counterfeit-cash-eaten-walmart-arrest",
+      date: "November 26, 2023",
+      year: "2023",
+      month: "November",
+      day: "26",
+      city: "North Miami Beach",
+      score: 76,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 12, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Woman Tries to Eat Counterfeit Bills to Destroy the Evidence During Her Own Arrest",
+      description:
+        "A Florida woman caught paying with fake bills at a Walmart stuffs about $200 of the counterfeit cash into her mouth and tries to eat it while being arrested.",
+      fullStory:
+        "A Walmart loss prevention officer in North Miami Beach stopped Zipporah Abraham, 38, on November 26, 2023, after she allegedly hid merchandise in a storage bin and walked past every register without paying, then tried to pass counterfeit bills for the items. When an officer told her to remove her jewelry before the arrest, Abraham allegedly stuffed about $200 in fake currency into her mouth and tried to swallow it rather than hand it over as evidence. She was booked into the Turner Guilford Knight Correctional Center on charges of third-degree grand theft and uttering forged bills, held on $10,000 bond.",
+      source: "Local 10",
+      sourceUrl:
+        "https://www.local10.com/news/local/2023/11/27/woman-tries-eating-counterfeit-bills-as-cops-arrest-her-at-miami-dade-walmart-police-say",
+    },
+    {
+      id: "fake-cop-pulls-over-driver-kissimmee",
+      date: "March 5, 2026",
+      year: "2026",
+      month: "March",
+      day: "5",
+      city: "Kissimmee",
+      score: 81,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 14, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Rigs His SUV With Lights and a Siren, Pulls Over a Teen Driver, Claims to Be a Retired Puerto Rico Cop",
+      description:
+        "A Florida man flips on hidden blue lights and a siren in his SUV to pull over an 18-year-old driver, then flashes a badge and claims to be a retired police officer and Department of Defense investigator.",
+      fullStory:
+        "Carlos Barros-Villahermosa, 59, allegedly stopped his Chevy Trailblazer in the middle of the road on Buenaventura Boulevard in Osceola County on March 5, 2026, then activated hidden blue lights and a siren to chase down an 18-year-old driver who had gone around him. Barros-Villahermosa pulled alongside the teen's moving car, showed a badge, and directed him to a parking lot, where he demanded the driver's license and registration and argued with him about his driving before fleeing when the teen grew suspicious and asked for backup. Deputies tracked him down and found switches wired to the SUV's lights and siren along with a badge and a gun, and he told investigators he was a retired police officer from Puerto Rico and a Department of Defense contract investigator, a claim the sheriff's office said it could not confirm. He was charged with impersonating a police officer and false imprisonment.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/03/07/man-with-lights-and-siren-on-suv-charged-with-impersonating-police-officer",
+    },
+    {
+      id: "bicycle-fender-bender-fake-deputy-panama-city",
+      date: "February 13, 2023",
+      year: "2023",
+      month: "February",
+      day: "13",
+      city: "Panama City",
+      score: 78,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 12, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man on a Bicycle Bumps Into a Car, Demands the Driver's Keys While Posing as a Deputy",
+      description:
+        "A Florida man riding a bicycle bumps into a woman's car over a turn signal dispute, then claims to be a sheriff's deputy and demands she hand over her keys.",
+      fullStory:
+        "Luigi Lucian Michael Morin, 34, was riding a bicycle in Panama City on February 13, 2023, when he bumped into a woman's vehicle and got off to yell at her, accusing her of using the wrong turn signal, even though neither the bike nor the car was damaged. Wearing a Bay County Sheriff's Office T-shirt, Morin told the woman he was a deputy and ordered her to hand over her car keys, but she flagged down an actual passing deputy instead. Morin rode off on his bicycle but was caught moments later, and investigators said they were still trying to determine how he had obtained the sheriff's office shirt. He was booked on charges of grand theft and impersonating a law enforcement officer.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/trending/florida-man-accused-attempting-steal-womans-car-while-impersonating-deputy/7ZU5PB4QF5DPVPFMOUVEVIGGPQ/",
+    },
+    {
+      id: "stolen-yacht-chase-martin-county",
+      date: "May 5, 2025",
+      year: "2025",
+      month: "May",
+      day: "5",
+      city: "Hobe Sound",
+      score: 88,
+      rubric: { absurdity: 23, humor: 20, floridaFactor: 18, unexpectedness: 14, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals a $2.5 Million Yacht, Leads Deputies on a Slow-Speed Boat Chase",
+      description:
+        "A man steals a 68-foot, $2.5 million yacht from a Jupiter marina and leads Martin County deputies on a boat chase until one of them shoves the yacht into the mangroves.",
+      fullStory:
+        "A dockmaster at Blowing Rocks Marina in Jupiter called the Martin County Sheriff's Office around 4 p.m. on May 5, 2025, to report that a 68-foot, three-story yacht worth about $2.5 million had been stolen and was heading north with nobody authorized aboard. Deputies in smaller patrol boats chased the yacht into Hobe Sound, struggling to keep up because of its size and height, until one deputy pulled alongside and pushed the yacht into the mangroves, where it ran aground. The suspect, identified as Russian national Nikolai Vilkov, surrendered a few minutes later with no shots fired and no weapon involved. Sheriff John Budensiek called the case bizarre, saying, 'A Russian coming into South Martin County and stealing a 68-foot, $2,500,000 yacht is just not something that you see.'",
+      source: "WSVN",
+      sourceUrl:
+        "https://wsvn.com/news/local/florida/man-in-stolen-luxury-yacht-leads-authorities-on-brief-chase-in-florida/",
+    },
+    {
+      id: "bedside-mumbling-intruder-defuniak-springs",
+      date: "August 26, 2025",
+      year: "2025",
+      month: "August",
+      day: "26",
+      city: "DeFuniak Springs",
+      score: 79,
+      rubric: { absurdity: 20, humor: 21, floridaFactor: 13, unexpectedness: 13, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Man Sneaks Into a Woman's Home, Eats Her Snacks, Then Falls Asleep in Her Car",
+      description:
+        "A Florida man breaks into a sleeping woman's home near DeFuniak Springs, mumbles beside her bed, eats some of her snacks, then is found asleep in the back seat of her car.",
+      fullStory:
+        "A woman near DeFuniak Springs woke up around 5:30 a.m. on August 26, 2025, to find a man standing beside her bed, mumbling and appearing disoriented, and called 911 after yelling at him until he left through the back door. She later discovered he had left behind some of his clothing and eaten some of her prepackaged snacks, and when she checked her car she found Elijah Spencer, 40, asleep in the back seat. Walton County deputies had to pull him out after he refused to leave on his own, and he was arrested on charges of burglary of an occupied dwelling, burglary of an unoccupied conveyance, criminal mischief, and resisting an officer without violence.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-wakes-woman-up-mumbling-next-her-bed-deputies-catch-him-sleeping-her-car-wcso",
+    },
+    {
+      id: "ketchup-packet-felony-battery-bus-station",
+      date: "January 19, 2026",
+      year: "2026",
+      month: "January",
+      day: "19",
+      city: "St. Petersburg",
+      score: 74,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 10, unexpectedness: 12, headlineQuality: 9, sourceQuality: 4 },
+      title: "Florida Man Charged With Felony Battery for Throwing a Ketchup Packet at a Bus Station",
+      description:
+        "A Florida man wakes up angry after a stranger checks on him at a bus station and throws a ketchup packet at the man's jacket, earning a felony battery charge.",
+      fullStory:
+        "Austin Simmons, 28, was found apparently passed out at a St. Petersburg bus terminal on January 19, 2026, when another man stopped to check on him. According to a St. Petersburg Police Department affidavit, Simmons woke up irate and hurled an opened ketchup packet at the man, leaving a stain on his jacket as the packet's contents leaked onto the ground. Simmons told officers he was only trying to hand the man a ketchup packet and denied hitting him with it, but because he had a prior 2019 battery conviction, he was charged with felony battery and held without bond at the Pinellas County Jail.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-felony-charge-ketchup-packet-attack-bus-station-police",
+    },
+    {
+      id: "traffic-light-sit-in-south-beach",
+      date: "May 14, 2021",
+      year: "2021",
+      month: "May",
+      day: "14",
+      city: "Miami Beach",
+      score: 70,
+      rubric: { absurdity: 17, humor: 19, floridaFactor: 14, unexpectedness: 9, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man Climbs a Traffic Light and Sits on Top of It During Rush Hour in South Beach",
+      description:
+        "A Florida man climbs a traffic signal pole at a busy South Beach intersection and sits on top of it for several minutes, stopping traffic and drawing a crowd.",
+      fullStory:
+        "Todd Boothe, 29, of Miramar, climbed a traffic light post at 10th Street and Collins Avenue in South Beach around 5:25 p.m. on May 14, 2021, and sat on top of the signal as a crowd gathered and most traffic in the area came to a stop. When police arrived and asked him to come down, Boothe instead jumped from a building ledge to the sidewalk and ran into a nearby hotel before officers caught him a block away. Sherbrooke Hotel owner Mitch Novick, who watched the whole thing unfold, called it 'great entertainment for a Friday afternoon,' and Boothe was arrested on charges of disorderly conduct and resisting arrest without violence, held on a $1,500 bond.",
+      source: "WSVN",
+      sourceUrl:
+        "https://wsvn.com/news/local/miami-dade/man-arrested-after-sitting-atop-south-beach-traffic-light-police-foot-chase/",
+    },
+    {
+      id: "dog-ransom-facebook-marion-county",
+      date: "October 10, 2026",
+      year: "2026",
+      month: "October",
+      day: "10",
+      city: "Marion County",
+      score: 77,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 14, unexpectedness: 11, headlineQuality: 8, sourceQuality: 4 },
+      title: "Florida Woman Finds a Lost Dog on Facebook, Tries to Ransom Him Back to His Owners for $1,000",
+      description:
+        "A Florida woman finds a family's lost dog and demands $1,000 to return him instead of giving him back.",
+      fullStory:
+        "Christina Spence Reid, 37, posted on Facebook that she had found a missing dog named Teddy, but when the dog's owners reached out to get him back, she sent them a photo of herself with Teddy and demanded $1,000 for his return. Marion County sheriff's deputies went to Reid's home on the night of October 10, 2026, and found her still holding the dog, which she admitted she planned to keep unless the owners paid up. She was arrested on a charge of grand theft and released on a $2,500 bond, and Teddy was returned to his family unharmed.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2026/10/14/mcso-central-florida-woman-jailed-after-trying-to-ransom-dog-she-found/",
+    },
+    {
+      id: "stolen-jet-ski-mangrove-manhunt-keys",
+      date: "April 27, 2026",
+      year: "2026",
+      month: "April",
+      day: "27",
+      city: "Grassy Key",
+      score: 76,
+      rubric: { absurdity: 19, humor: 18, floridaFactor: 17, unexpectedness: 11, headlineQuality: 8, sourceQuality: 3 },
+      title: "Florida Man Docks a Stolen Jet Ski at a Stranger's Dock, Claims He Got Lost on a Tour, Then Bolts Into the Mangroves",
+      description:
+        "A Florida man ties a stolen Jet Ski to a stranger's dock, claims he got lost on a tour, then flees into the mangroves when deputies catch up to him.",
+      fullStory:
+        "Jose Roberto Munoz Garcia, 34, of Homestead, docked a Jet Ski at a stranger's waterfront property near Grassy Key around 9 p.m. on April 27, 2026, and told a resident who confronted him that he had been on a tour and gotten lost before walking away on foot. The resident didn't believe him and called the Monroe County Sheriff's Office, and deputies soon spotted him walking along U.S. 1, where he ran into the mangroves before being caught. The Jet Ski turned out to be stolen from a local rental business, and investigators said he was a suspect in several other recent watercraft and trailer thefts in the area. He was charged with grand theft of a vessel, resisting arrest, and giving a false name to law enforcement.",
+      source: "Tampa Free Press",
+      sourceUrl:
+        "https://www.tampafp.com/florida-mangrove-manhunt-lost-tourist-jailed-after-botched-jet-ski-getaway/",
+    },
+    {
+      id: "lakeland-grandma-inflatable-ghost-heist",
+      date: "October 17, 2026",
+      year: "2026",
+      month: "October",
+      day: "17",
+      city: "Lakeland",
+      score: 89,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 18, unexpectedness: 13, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Grandma Steals Neighbor's Inflatable Ghost While Babysitting Grandkids",
+      description:
+        "A Lakeland grandmother steals a stranger's inflatable Halloween ghost off a porch after her grandchildren admire it during a decorations drive.",
+      fullStory:
+        "Tonya Mannion, 53, was driving her three grandchildren around a south Lakeland neighborhood on October 17, 2026 to look at Halloween decorations when one of the kids admired an inflatable ghost on a stranger's porch. Surveillance video shows Mannion stopping the car, walking up, unplugging the roughly $15 decoration, and driving off with it. Deputies tracked her down and recovered the ghost, and Polk County Sheriff Grady Judd said, 'Trick or treat grandma, we recovered the ghost, and you got the trick.' Mannion was charged with unarmed burglary of an unoccupied structure, petit theft, criminal mischief, and three counts of contributing to a child's delinquency.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/lakeland-grandmother-accused-stealing-inflatable-halloween-ghost-while-babysitting-grandkids",
+    },
+    {
+      id: "winter-haven-beef-jerky-pistachios-theft",
+      date: "March 27, 2024",
+      year: "2024",
+      month: "March",
+      day: "27",
+      city: "Winter Haven",
+      score: 80,
+      rubric: { absurdity: 21, humor: 20, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Shoplifts Beef Jerky and Pistachios After Reading Sign Warning Him Not To",
+      description:
+        "A Florida man steals beef jerky and pistachios from a Love's gas station after walking past a sign joking about shoplifters getting a free ride in a patrol car.",
+      fullStory:
+        "Surveillance video shows Anton Aftonov Karamfilov pausing at a sign inside a Love's truck stop in Winter Haven that joked 'Free ride if you shoplift from this store' next to a photo of a patrol car, then grabbing more than $100 worth of beef jerky and pistachios and walking out without paying on March 27, 2024. When employees tried to stop him, he ran to a Lowe's box truck and drove off. Polk County Sheriff Grady Judd said, 'Nuts for a nut, right? I bet Lowes was not happy this morning.' Karamfilov, of Windermere, was charged with first degree petit theft.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/beef-jerky-pistachios-land-florida-man-behind-bars-pcso",
+    },
+    {
+      id: "winter-haven-horn-honking-911-citation",
+      date: "June 30, 2024",
+      year: "2024",
+      month: "June",
+      day: "30",
+      city: "Winter Haven",
+      score: 76,
+      rubric: { absurdity: 20, humor: 19, floridaFactor: 14, unexpectedness: 11, headlineQuality: 7, sourceQuality: 5 },
+      title: "Correctional Officer Gets Cited for Honking His Horn, Calls 911 to Complain About It",
+      description:
+        "A Polk County correctional officer who repeatedly honks his horn in traffic gets a citation, then calls 911 to argue about it and refuses to hang up.",
+      fullStory:
+        "A deputy on patrol near Recker Highway in Winter Haven stopped Douglas Morse, 34, a correctional officer at Polk Correctional Institute, late on June 30, 2024 after he repeatedly honked his horn in traffic, which Morse said he did because honking 'makes him drive faster.' After the deputy wrote him a citation, Morse became upset, called 911 to complain, and refused to hang up, then pulled his arm away and resisted when the deputy tried to escort him from his Jeep. Sheriff Grady Judd said, 'We expect more professional behavior from those who work in the public service industry,' adding that dialing 911 over a traffic citation 'is not only ridiculous.' Morse was charged with misusing 911 and resisting arrest without violence.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/correctional-officer-honking-his-horn-drive-faster-calls-911-after-getting-traffic-citation-pcso",
+    },
+    {
+      id: "ormond-beach-jet-ski-cant-swim",
+      date: "June 5, 2022",
+      year: "2022",
+      month: "June",
+      day: "5",
+      city: "Ormond Beach",
+      score: 81,
+      rubric: { absurdity: 21, humor: 19, floridaFactor: 16, unexpectedness: 12, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Steals a Jet Ski, Can't Restart It, Then Admits He Can't Swim",
+      description:
+        "A man who steals a jet ski in Ormond Beach drifts helplessly down the Intracoastal after it dies, then tells deputies he cannot swim.",
+      fullStory:
+        "Ronald Williams, 48, allegedly took a stolen Yamaha WaveRunner and was drifting down the Intracoastal near Ormond Beach on June 5, 2022 after it died and he could not restart it. Volusia County deputies had no boat available, so they borrowed one from an Ormond Beach family who happened to be nearby, then drew their weapons and ordered Williams to swim over. Williams responded, 'I don't know how to swim,' so deputies threw him a rope and pulled him aboard instead. Boat owner Jimmy Hagen said, 'life is about experiences and we're going to be talking about this one probably for the rest of our lives.' Williams was charged with grand theft and trespassing.",
+      source: "Click Orlando (WKMG)",
+      sourceUrl:
+        "https://www.clickorlando.com/news/local/2022/06/06/i-dont-know-how-to-swim-video-shows-strange-arrest-on-volusia-waterway/",
+    },
+    {
+      id: "auburndale-serial-dine-and-dash",
+      date: "December 26, 2024",
+      year: "2024",
+      month: "December",
+      day: "26",
+      city: "Winter Haven",
+      score: 66,
+      rubric: { absurdity: 17, humor: 16, floridaFactor: 12, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Serial Dine-and-Dasher Skips Out on Nearly $500 in Food at Two Restaurants in 12 Days",
+      description:
+        "An Auburndale man dines and dashes at two different Winter Haven restaurants within two weeks, racking up almost $500 in unpaid tabs.",
+      fullStory:
+        "Shane Wiley, 24, of Auburndale, ran up a $285.50 tab over three hours at The Harborside Restaurant in Winter Haven on December 14, 2024, then left through the back patio doors without paying. Twelve days later, on December 26, 2024, he spent five hours at The Hungry Crab in Winter Haven, claimed he had already paid his $209.04 bill when staff approached him, and fled on foot, but restaurant workers posted his photo and identified him as the same man from the first incident. Officers arrested Wiley at his Auburndale home both times and charged him with two counts of defrauding an innkeeper.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://fox35orlando.com/news/florida-polk-county-man-dine-and-dash-arrested",
+    },
+    {
+      id: "pasco-county-i75-34-white-claws-dui",
+      date: "June 12, 2026",
+      year: "2026",
+      month: "June",
+      day: "12",
+      city: "Pasco County",
+      score: 81,
+      rubric: { absurdity: 22, humor: 20, floridaFactor: 15, unexpectedness: 11, headlineQuality: 8, sourceQuality: 5 },
+      title: "Florida Man Clocked at 90 MPH on I-75 Had 34 Open White Claws on the Passenger Seat",
+      description:
+        "A Florida man speeding on I-75 at over 90 miles per hour is pulled over and found with 34 open White Claw cans in his car.",
+      fullStory:
+        "Conor William Parady, 33, was clocked going more than 90 miles per hour in a Honda Civic on northbound I-75 near the 280-mile marker in Pasco County around 10:46 p.m. on June 12, 2026, and passed a trooper's patrol car in the process. When Florida Highway Patrol pulled him over, troopers found 34 open White Claw hard seltzer cans in the vehicle, and Parady's blood alcohol content measured 0.177, more than twice Florida's legal limit of 0.08. He was arrested and charged with driving under the influence.",
+      source: "WFTV",
+      sourceUrl:
+        "https://www.wftv.com/news/local/speeding-driver-i-75-arrested-dui-had-34-open-white-claws-fhp-says/T4NVX6YI25DWHKF5XZSWLNXZRM/",
+    },
+    {
+      id: "nassau-county-chick-fil-a-doordash-dui-delivery",
+      date: "January 5, 2024",
+      year: "2024",
+      month: "January",
+      day: "5",
+      city: "Nassau County",
+      score: 76,
+      rubric: { absurdity: 19, humor: 20, floridaFactor: 13, unexpectedness: 12, headlineQuality: 8, sourceQuality: 4 },
+      title: "Deputy Arrests DoorDash Driver for DUI, Then Finishes His Chick-fil-A Delivery Himself",
+      description:
+        "A Nassau County deputy arrests a DoorDash driver for DUI outside a Chick-fil-A, then drives the food to the customer who ordered it.",
+      fullStory:
+        "Deputies responded to a report of a possible drunk driver hitting cones and nearly striking other vehicles in the drive-thru of a Chick-fil-A on State Road 200 in Nassau County on the morning of January 5, 2024. They pulled over John Kaminski, 57, a short distance from the restaurant and said he had slurred speech, stumbled during field sobriety exercises, and was carrying prescription pills in unapproved containers without a valid prescription. After arresting Kaminski on suspicion of DUI and possession of a scheduled substance, Deputy Hutcherson took the Chick-fil-A order still sitting in his car and personally delivered it to the customer who had placed it through DoorDash.",
+      source: "News4JAX",
+      sourceUrl:
+        "https://www.news4jax.com/news/local/2024/01/06/another-one-nassau-county-deputy-completes-doordash-delivery-after-arresting-driver/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
