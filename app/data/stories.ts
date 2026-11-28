@@ -5417,6 +5417,78 @@ export const stories: Story[] = [
       sourceUrl:
         "https://wsvn.com/news/local/deputies-fla-woman-bites-mans-fishing-line-swims-away-with-lure/",
     },
+    {
+      id: "retired-drug-dealer-shirt-citrus-county",
+      date: "November 20, 2026",
+      year: "2026",
+      month: "November",
+      day: "20",
+      city: "Citrus County",
+      score: 79,
+      rubric: { absurdity: 18, humor: 21, floridaFactor: 15, unexpectedness: 11, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Woman Wearing a 'Retired Drug Dealer' Shirt Is Arrested on a Drug Dealing Charge",
+      description:
+        "A Florida woman wearing a shirt that reads 'Retired Drug Dealer' is arrested after deputies find crack cocaine, a scale and about 150 baggies in a backpack beside her.",
+      fullStory:
+        "A Citrus County deputy stopped a car that could not stay in its lane on November 20, 2026, and a consensual search turned up a backpack near passenger Angela Moore holding crack cocaine, a digital scale, about 150 baggies and a handwritten ledger. Moore was wearing a shirt that read 'Retired Drug Dealer.' At the detention facility, cut straws found in her undergarments tested positive for fentanyl. She was charged with possession of cocaine with intent to sell, possession of drug paraphernalia and introduction of contraband into a detention facility, on top of two active warrants and a probation violation.",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-woman-retired-drug-dealer-shirt-arrested-deputies-cocaine-fentanyl",
+    },
+    {
+      id: "i-am-butt-naked-flagler-chase",
+      date: "June 22, 2023",
+      year: "2023",
+      month: "June",
+      day: "22",
+      city: "Flagler County",
+      score: 81,
+      rubric: { absurdity: 20, humor: 20, floridaFactor: 15, unexpectedness: 12, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Flees a Crash Across an Elementary School Track and Into a Landfill, Then Announces 'I Am Butt Naked'",
+      description:
+        "A Florida man hits several cars, speeds across an elementary school running track and through a county landfill, then tells deputies on body camera that he is completely naked.",
+      fullStory:
+        "A Florida Fish and Wildlife officer watched an SUV strike several vehicles at State Road 100 and Old Kings Road South in Flagler County in June 2023, and the driver, Stephen Peterson, 22, of Port Orange, took off at high speed. He drove onto the running track at Old Kings Elementary School, then through the county landfill and into the woods before getting stuck against a concrete barrier. Peterson and his passenger refused to get out, and as deputies pulled him from the SUV he could be heard on body camera saying, 'I am butt naked.' He was charged with fleeing and eluding, leaving the scene of a crash with damage, resisting without violence, trespassing on school grounds and marijuana possession.",
+      source: "FOX 35 Orlando",
+      sourceUrl:
+        "https://www.fox35orlando.com/news/i-am-butt-naked-nude-florida-man-takes-deputies-on-high-speed-chase",
+    },
+    {
+      id: "thermos-exit-ramp-polk-jail",
+      date: "October 8, 2025",
+      year: "2025",
+      month: "October",
+      day: "8",
+      city: "Winter Haven",
+      score: 90,
+      rubric: { absurdity: 23, humor: 22, floridaFactor: 17, unexpectedness: 14, headlineQuality: 9, sourceQuality: 5 },
+      title: "Florida Man Sneaks a Thermos Into Jail Inside His Body, Sheriff Says He 'Put It Up the Exit Ramp'",
+      description:
+        "A Winter Haven man arrested for trespassing on a railroad track gets past the Polk County Jail body scanner with a thermos hidden inside his body.",
+      fullStory:
+        "Polk County deputies answering a call about a naked man in a Winter Haven park restroom found Walter Frymire, 51, dressed and walked him out, but he then trespassed onto a railroad track and was arrested. Sheriff Grady Judd said in October 2025 that Frymire, who had 25 prior arrests, had inserted a thermos into his body about 24 hours earlier and that it slipped past the jail's body scanner, and hospital staff needed a specialist to remove it. 'That's right, he put it up the exit ramp,' Judd said, adding, 'It was quite the ordeal, but he's thermos-less in the county jail today.'",
+      source: "FOX 13 Tampa Bay",
+      sourceUrl:
+        "https://www.fox13news.com/news/florida-man-thermos-inserted-body-caught-sneaking-polk-county-jail-put-up-exit-ramp",
+    },
+    {
+      id: "hard-hat-high-pants-winter-haven",
+      date: "July 3, 2026",
+      year: "2026",
+      month: "July",
+      day: "3",
+      city: "Winter Haven",
+      score: 69,
+      rubric: { absurdity: 17, humor: 16, floridaFactor: 15, unexpectedness: 10, headlineQuality: 7, sourceQuality: 4 },
+      title: "Florida Man in a Hard Hat and Rolled-Up Pants Calls 911 Again After a Deputy Tells Him Not To",
+      description:
+        "A man reported wandering a Winter Haven shopping plaza in a hard hat and what looked like underwear calls 911 a second time right after a deputy tells him to stop.",
+      fullStory:
+        "A caller reported a man in a hard hat and underwear at a shopping plaza on Cypress Gardens Boulevard in Winter Haven on the night of July 3, 2026, and Polk County deputies found Walter William Frymire, 52, wearing pants with the legs rolled up high. Deputies said he appeared highly intoxicated, walked away while ignoring commands to stop, and called 911 again after a deputy told him not to. During the arrest he allegedly spit on two deputies and repeatedly kicked a patrol car. He was charged with two counts of battery on a law enforcement officer, resisting with violence, threatening a law enforcement officer, misuse of 911, resisting without violence and disorderly conduct.",
+      source: "Tampa Free Press",
+      sourceUrl:
+        "https://www.tampafp.com/hard-hat-and-high-pants-winter-haven-man-arrested-after-bizarre-shopping-plaza-meltdown/",
+    },
   ];
 
 // O(1) id -> array-index lookup, built once at module load instead of every
